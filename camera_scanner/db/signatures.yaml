@@ -419,6 +419,10 @@ manufacturers:
     html_markers:
     - '--- video web server ---'
     - ['Remote Surveillance', 'Any time & Any where']
+    # src: FingerprintHub v4; id: avtech-video-web-server
+    - /av732e/setup.exe
+    # src: FingerprintHub v4; id: avtech-video-web-server
+    - "please visit 'www.avtech.com.tw'"
     favicon_paths:
       /nobody/favicon.ico:
       - 6a7e13b3f9197a383c96618fe32e345a
@@ -501,6 +505,8 @@ manufacturers:
     - Nuuo
     html_markers:
     - network video recorder login
+    # src: FingerprintHub v4; id: nvrsolo_firmware
+    - nvrsolo
     favicon_md5: []
 engines:
   nginx:
