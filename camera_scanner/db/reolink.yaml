@@ -1,0 +1,2463 @@
+reolink:
+  E1 Pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    ptz: []
+    other: []
+  '110':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  '410':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_ext.bcs?channel=0&stream=2&user=[USERNAME]&password=[PASSWORD]%20-map%200%20-an%20-dn%20-flags%20-global_header
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_02_main
+    - rtsp://{user}:{pass}@{ip}:554/ucast/12
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/api.cgi?cmd=Snap&channel=0&user=[USERNAME]&password=[PASSWORD]
+  410S:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  410W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  '420':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  510AW:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  510WA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  511w:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  '520':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  '522':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  810A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=1&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_sub
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=1&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  811A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h265Preview_01_main
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/api.cgi?cmd=Snap&channel=0&user=[USERNAME]&password=[PASSWORD]
+    - https://{user}:{pass}@{ip}:553/
+  820a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_sub
+    ptz: []
+    other: []
+  822a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  A822:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  Argus:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  Argus PT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  B400:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  B500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  B800:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:8554/Salon/mainstream
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_04_main
+    ptz: []
+    other: []
+  B820A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_02_main
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_04_main
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_02_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_03_main
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_03_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_04_sub
+    ptz: []
+    other: []
+  C1 PRO:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  c1pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  C1-Pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  C2 Pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  C2-Pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  CX810:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - https://{user}:{pass}@{ip}:443/flv?port=1935&app=bcs&stream=channel0_main.bcs&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554/Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h264
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  D104:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  D800:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_02_sub
+    ptz: []
+    other: []
+  Doorbell PoE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - rtsp://{user}:{pass}@{ip}:554/h265Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_main
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  Duo:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_02_main
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_02_sub
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_main
+    ptz: []
+    other: []
+  Duo 2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h265Preview_01_main
+    ptz: []
+    other: []
+  Duo 2 POE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    ptz: []
+    other: []
+  Duo 2 Security Light:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  Duo 2 Wifi:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    ptz: []
+    other: []
+  duo 3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  Duo 3 PoE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h265Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_main
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  Duo Floodlight PoE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  Duo PoE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_02_main
+    ptz: []
+    other: []
+  E1 outdoor:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  E1 Outdoor SE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  E1 pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/ucast/12
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h265Preview_01_sub
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  e1 pro PTZ:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_main
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  E1 pro sub:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  E1 Zomm:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  E1 Zoom:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_ext.bcs?channel=0&stream=2&user=[USERNAME]&password=[PASSWORD]%20-map%200%20-an%20-dn%20-flags%20-global_header
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h264Main_08_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_08_sub
+    - http://{user}:{pass}@{ip}:80/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320*240
+    - rtsp://{user}:{pass}@{ip}:554/live
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:8554/e1/subStream
+    - rtsp://{user}:{pass}@{ip}:8554/e1/mainStream
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/api.cgi?cmd=Snap&channel=0&user=[USERNAME]&password=[PASSWORD]
+  Ei Pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  FE-P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_02_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    ptz: []
+    other: []
+  FE-W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  P344:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  P850:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  RC-840a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  rcl-1240a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  RCL-410:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    ptz: []
+    other: []
+  RCL-410-5MP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_main
+    ptz: []
+    other: []
+  rcl-420:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_05_main
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_05_sub
+    ptz: []
+    other: []
+  RCL-510WA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  rcl-511:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  RCL-520:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/ucast/12
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  rcl-522:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=0
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=1
+    ptz: []
+    other: []
+  RCL-540A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  RCL-810A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_02_main
+    - rtsp://{user}:{pass}@{ip}:554/ucast/12
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=1&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554/h265Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_02_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_03_main
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_03_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_04_sub
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_05_main
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_05_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_09_sub
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs&channel=0&stream=0
+    - rtsp://{user}:{pass}@{ip}:554/1/h264major
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_06_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_07_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_07_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_ext.bcs?channel=0&stream=2&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  RCL-811A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RCL-823A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  C2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  RLC-423:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_ext.bcs?channel=0&stream=2&user=[USERNAME]&password=[PASSWORD]%20-map%200%20-an%20-dn%20-flags%20-global_header
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  Video Doorbell PoE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_sub
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  Video Doorbell WiFi:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - https://{user}:{pass}@{ip}:443/flv?port=1935&app=bcs&stream=channel0_main.bcs&user=[USERNAME]&password=[PASSWORD]
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_sub
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=1&user=[USERNAME]&password=[PASSWORD]
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554/Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h264
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  rlc-410-5mp:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/ucast/12
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - http://{user}:{pass}@{ip}:80/flv?port=1935&app=bcs&stream=channel0_main.bcs&token=[TOKEN]
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  rlc 410w:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=1&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  RLC 482a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  rlc 510:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLC 520:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLC 830A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_ext.bcs?channel=0&stream=2&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  RLC 842:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_sub
+    ptz: []
+    other: []
+  RLC-1210a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h265Preview_01_main
+    ptz: []
+    other: []
+  RLC-1220A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/videoMain
+    ptz: []
+    other: []
+  RLC-1224A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h265Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h265Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/Preview_01_sub
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/api.cgi?cmd=Snap&channel=0&user=[USERNAME]&password=[PASSWORD]
+    - https://{user}:{pass}@{ip}:553/
+  RLC-1240a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  RLC-410:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - http://{user}:{pass}@{ip}:80/flv?port=1935&app=bcs&stream=channel0_main.bcs&token=[TOKEN]
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel1_main.bcs?token=[TOKEN]&channel=0&stream=1
+    - rtsp://{user}:{pass}@{ip}/:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLC-410-5MP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264_stream
+    ptz: []
+    other: []
+  RLC-410W:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  RLC-410WS:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  RLC-411:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  RLC-411WS:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  RLC-420:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=1&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_main
+    ptz: []
+    other: []
+  rlc-420-5mp:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  RLC-420-5MP-V2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:8554/dome/subStream
+    - rtsp://{user}:{pass}@{ip}:8554/dome/mainStream
+    ptz: []
+    other: []
+  RLC-422:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  RLC-423WS:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  RLC-510A:
+    snapshot:
+    - http://{user}:{pass}@{ip}:81/cam.mjpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_ext.bcs?channel=0&stream=2&user=[USERNAME]&password=[PASSWORD]%20-map%200%20-an%20-dn%20-flags%20-global_header
+    - rtsp://{user}:{pass}@{ip}:554/ucast/12
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    - rtsp://{user}:{pass}@{ip}:554/Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=1
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_ext.bcs?channel=0&stream=2&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554/img/media.sav
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/api.cgi?cmd=Snap&channel=0&user=[USERNAME]&password=[PASSWORD]
+    - https://{user}:{pass}@{ip}:553/
+  RLC-510AW:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  RLC-510WA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  RLC-511:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/api.cgi?cmd=Snap&channel=0&user=[USERNAME]&password=[PASSWORD]
+  RLC-511W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  RLC-520:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/ucast/12
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554/videoSub
+    ptz: []
+    other: []
+  RLC-520-5mp:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/ucast/12
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  rlc-520a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554/ROH/channel/11
+    ptz: []
+    other: []
+  RLC-522:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  RLC-523WA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  RLC-542WA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLC-810:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  rlc-810a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/ucast/12
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=1&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554/h265Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  rlc-810c:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  RLC-811A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=1&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554/h265Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=1
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  RLC-812A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLC-81MA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_02_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_main
+    ptz: []
+    other: []
+  rlc-820a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/live
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  rlc822a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  RLC-822A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h265Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/1
+    ptz: []
+    other: []
+  RLC-832A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLC-833A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    ptz: []
+    other: []
+  RLC840A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLC-843A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  RLN8-410:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  rls-410s:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  RTC-410:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RWC-511:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - http://{user}:{pass}@{ip}:80/flv?port=1935&app=bcs&stream=channel0_sub.bcs&token=[TOKEN]
+    ptz: []
+    other: []
+  Trackmix POE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_02_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_02_sub
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  TrackMix WiFi:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_02_sub
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  w511:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  w320:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  w760:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  P437:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    ptz: []
+    other: []
+  D340P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/ucast/12
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=1&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_main
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  CX820:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  rlc-540a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  Trackmix:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/Preview_01_main
+    - http://{user}:{pass}@{ip}:80/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  Duo 3 Pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLC-1212A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  E540:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  P340:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  D340W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=1&user=[USERNAME]&password=[PASSWORD]
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554/Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_sub
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_ext.bcs?channel=0&stream=2&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  rlc-81rl0a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  Duo 2V PoE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    ptz: []
+    other: []
+  RLC 520a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_main
+    ptz: []
+    other: []
+  '1010':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  1240A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  '250':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  3816M:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  '430':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  '510':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  510A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - https://{user}:{pass}@{ip}:443/flv?port=1935&app=bcs&stream=channel0_main.bcs&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  510aw:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  510w:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  511W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  511WA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  523WA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  '540':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?channel=0&stream=1&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  811a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  81Ma:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  820A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  '8224':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  '823':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  823A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  842-A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  A1 Pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  Argus 2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  B1200:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_04_main
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  C1 Pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/ucast/12
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  c2 pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  C2 PRO:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  C310:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  CX410:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=1&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  D400:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  D4K23:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  D4K30:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h265Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_sup
+    ptz: []
+    other: []
+  Doorbell WiFi:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=1&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  Duo Poe:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  Duo WiFi:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_sub
+    ptz: []
+    other: []
+  Duo2 Wifi:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  E1 Outdoor:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h265Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  E1 Outdoor POE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  E1 Outdoor SE PoE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    ptz: []
+    other: []
+  E1 Pro Outdoor:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  e1 zoom:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - http://{user}:{pass}@{ip}:80/?&AUDIO=YES&CHOPIMAGE=YES&STREAM=YES&WANTIMAGE=0.JPG&SENDEMPTYIMAGES=NO
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h265Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/videoSub
+    ptz: []
+    other: []
+  E1Zoom:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  E330:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  FE-p:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  FP-E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  F-W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  Inside 2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  Lumus:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - https://{user}:{pass}@{ip}:443/flv?port=1935&app=bcs&stream=channel1_main.bcs&user=[USERNAME]&password=[PASSWORD]
+    - https://{user}:{pass}@{ip}:443/flv?port=1935&app=bcs&stream=channel3_main.bcs&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  Outdoor E1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  P320:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  P324:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/Preview_01_main
+    ptz: []
+    other: []
+  P730:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  R1 Outdoor:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  R510:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RCL410:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  rcl-410w:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=1
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=0
+    ptz: []
+    other: []
+  RCL-411W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RCL-510:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RCL-510A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  rcl-510wa:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RCL-511WA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RCL-811WA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_sub
+    ptz: []
+    other: []
+  RCL-81MA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RCL-820A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h265Preview_01_main
+    ptz: []
+    other: []
+  Argus Eco:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    ptz: []
+    other: []
+  833A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  RL-810A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLC 420:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLC 422W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLC 510A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - https://{user}:{pass}@{ip}:443/flv?port=1935&app=bcs&stream=channel0_main.bcs&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554/h265Preview_01_main
+    ptz: []
+    other: []
+  RLC 810A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h264
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_sub
+    ptz: []
+    other: []
+  RLC-%10WA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLC-1212a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554/s0
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  rlc-1240a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  rlc-210w:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLC-243:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLC-410 (rtsp):
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLC-422W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  rlc-432ws:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLC-511WA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLC-520A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - https://{user}:{pass}@{ip}:443/flv?port=1935&app=bcs&stream=channel0_main.bcs&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  rlc-522:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  RLC-810WA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLC-81PA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  RLC-8232S:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    ptz: []
+    other: []
+  RLC-823A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_ext.bcs?channel=0&stream=2&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  RLC-830A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_main
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  RLC-833A 2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLC-840A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_main
+    ptz: []
+    other: []
+  RLC-840WA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_main
+    ptz: []
+    other: []
+  RLC-842A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_ext.bcs?channel=0&stream=2&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/api.cgi?cmd=Snap&channel=0&user=[USERNAME]&password=[PASSWORD]
+    - https://{user}:{pass}@{ip}:553/
+  RLK8-410B:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLN16-410:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    ptz: []
+    other: []
+  rln36:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLN36-410:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  rst-520:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  rtl-1224a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RTL-510WA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  T1 Pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  TrackMix:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  Video Doorbell Wifi:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_ext.bcs?channel=0&stream=2&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  VLC-410:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  Wifi Doorbell 5mp:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLC-811WA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  Duo 2V:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  Duo3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  F750P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  Vidoe Doorbell Wifi:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  FLC-510WS:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLC-823S1W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_main
+    ptz: []
+    other: []
+  Duo 3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  RLC-823S1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  TrackMix PoE P760:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_01_main
+    ptz: []
+    other: []
+  810a:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/api.cgi?cmd=Snap&channel=0&user=[USERNAME]&password=[PASSWORD]
+  E1 OUTDOOR:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/api.cgi?cmd=Snap&channel=0&user=[USERNAME]&password=[PASSWORD]
+  RLC 510-WA:
+    snapshot: []
+    stream:
+    - https://{user}:{pass}@{ip}:443/flv?port=1935&app=bcs&stream=channel0_main.bcs&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/api.cgi?cmd=Snap&channel=0&user=[USERNAME]&password=[PASSWORD]
+    - https://{user}:{pass}@{ip}:553/
+  RLC-811:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/api.cgi?cmd=Snap&channel=0&user=[USERNAME]&password=[PASSWORD]
+    - https://{user}:{pass}@{ip}:553/
+  RLC-810A:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/api.cgi?cmd=Snap&channel=0&user=[USERNAME]&password=[PASSWORD]
+    - https://{user}:{pass}@{ip}:553/
+  TrackMix Wifi:
+    snapshot:
+    - http://{user}:{pass}@{ip}:81/cam.mjpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_02_main
+    - http://{user}:{pass}@{ip}:80/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - rtsp://{user}:{pass}@{ip}:554/media/video1
+    ptz: []
+    other: []
+  DUO POE 2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ucast/12
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  RCL-511W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ucast/12
+    ptz: []
+    other: []
+  '411':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ucast/12
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_04_main
+    ptz: []
+    other: []
+  C1:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  E1 zoom:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  RC410:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    ptz: []
+    other: []
+  Rcl 410:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  rlc 411s:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  rlc 420:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  RLC-410S:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  rlc-411ws:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_main
+    ptz: []
+    other: []
+  rlc-422w:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  rlc423:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  RLC-WS423WS:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  rls-410:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  W410S:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  W437:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  W330:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?token=[TOKEN]&channel=0&stream=0
+    ptz: []
+    other: []
+  Duo 2 PoE:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?token=[TOKEN]&channel=0&stream=1
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  b510:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_04_main
+    ptz: []
+    other: []
+  RLN36:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_04_main
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_03_main
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_main
+    ptz: []
+    other: []
+  Lumis:
+    snapshot: []
+    stream:
+    - https://{user}:{pass}@{ip}:443/flv?port=1935&app=bcs&stream=channel0_main.bcs&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  RCL-510wa:
+    snapshot: []
+    stream:
+    - https://{user}:{pass}@{ip}:443/flv?port=1935&app=bcs&stream=channel0_main.bcs&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  '690':
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  CX410W:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  duo 2 POE:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  duo 2v poe:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=1&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  RCL-81PA:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  RLC-1210A:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_sub
+    ptz: []
+    other: []
+  RLC520:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  TrackMix PoE:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_sub
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=1&user=[USERNAME]&password=[PASSWORD]
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554/Preview_01_main
+    ptz: []
+    other: []
+  TrackMix Wired LTE:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  RLC-1240A:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  RLC-540A:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  Elite Floodlight:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  '800':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    ptz: []
+    other: []
+  '822':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    ptz: []
+    other: []
+  E1 Outdoor CX:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    ptz: []
+    other: []
+  E1 Outdoor Pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    ptz: []
+    other: []
+  E3 Pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    ptz: []
+    other: []
+  EI Outdoor:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    ptz: []
+    other: []
+  RCL-812A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_sub
+    ptz: []
+    other: []
+  RLC-820A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h265Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554/h265Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/Preview_01_sub
+    ptz: []
+    other: []
+  RTL-830A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_sub
+    ptz: []
+    other: []
+  Traxmix POE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    ptz: []
+    other: []
+  wlc-823a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    ptz: []
+    other: []
+  cx810:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    ptz: []
+    other: []
+  omvi 3i PoE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554//h265Preview_01_main
+    ptz: []
+    other: []
+  Argus3E:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=1&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  Lumus Pro:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=1&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  z1 zoom:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_sub.bcs?channel=1&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  E340:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554//h264Preview_01_sub
+    ptz: []
+    other: []
+  C810:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  DUO PTZ WiFi:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  duo wifi:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_02_sub
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  P430:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  RLC 423:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  RLC 482A:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  RLC-82:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  rlc-822a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  RLC-823a:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  RLC-840a:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  W760:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:553/
+  843a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h265Preview_01_main
+    ptz: []
+    other: []
+  Trackmix-PoE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h265Preview_01_main
+    ptz: []
+    other: []
+  822A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Main_08_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_08_sub
+    ptz: []
+    other: []
+  ARGUS 2:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - mms://{user}:{pass}@{ip}:554/img/video.asf
+  argus eco:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/?&AUDIO=YES&CHOPIMAGE=YES&STREAM=YES&WANTIMAGE=0.JPG&SENDEMPTYIMAGES=NO
+    ptz: []
+    other: []
+  Argus PT 2K:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/?&AUDIO=YES&CHOPIMAGE=YES&STREAM=YES&WANTIMAGE=0.JPG&SENDEMPTYIMAGES=NO
+    ptz: []
+    other: []
+  Argus pro:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/videostream.asf?
+    ptz: []
+    other: []
+  Argus Pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/stream1
+    - http://{user}:{pass}@{ip}:80/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320*240
+    ptz: []
+    other: []
+  c100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/stream1
+    ptz: []
+    other: []
+  Argus Track:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?q=30&fps=33&id=0.5
+    stream: []
+    ptz: []
+    other: []
+  E320:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_02_sub
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_03_sub
+    ptz: []
+    other: []
+  Doorbell Wifi:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:1935/bcs/channel0_main.bcs?channel=0&stream=0&user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  P820A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Preview_01_main
+    ptz: []
+    other: []
+  D360p:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264
+    ptz: []
+    other: []
+  EZ1 Zoom:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264
+    ptz: []
+    other: []
+  Unknown:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/livingroom/mainStream
+    - rtsp://{user}:{pass}@{ip}:8554/CarPort/mainStream
+    ptz: []
+    other: []
+  rc510:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/mpeg4/media.amp?resolution=640x480
+    ptz: []
+    other: []
+  RLC 843:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch0_0.h264
+    ptz: []
+    other: []
+  rlc-510WA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/1
+    ptz: []
+    other: []

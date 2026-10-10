@@ -1,0 +1,1318 @@
+swann:
+  005FTCD:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  440-IPC:
+    snapshot:
+    - http://{user}:{pass}@{ip}/img/snapshot.cgi?size=2
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/img/snapshot.cgi?size=3
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - 'http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0 '
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/goform/video
+  ADS-440:
+    snapshot:
+    - http://{user}:{pass}@{ip}/img/snapshot.cgi?size=2
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - 'http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0 '
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/goform/video
+  ADS-440_VLC:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  Unknown:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/stillimg[CHANNEL].jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/?action=stream
+    - rtsp://{user}:{pass}@{ip}:1935/cam1/onvif-h264
+    - http://{user}:{pass}@{ip}/Getvideo.cgi?Cookie=
+    - http://{user}:{pass}@{ip}/cgi-bin/Stream?Video
+    - http://{user}:{pass}@{ip}/video.cgi
+    - rtsp://{user}:{pass}@{ip}/[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live/ch00_0
+    ptz: []
+    other: []
+  '440':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/snapshot.jpg?account=[USERNAME]&password=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}/mpeg4
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_sub
+    ptz: []
+    other: []
+  SWADS-440-IPC:
+    snapshot:
+    - http://{user}:{pass}@{ip}/img/snapshot.cgi?size=2
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - 'http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0 '
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/user/videostream.cgi
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/goform/video
+  1080msb:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch04/1
+    - rtsp://{user}:{pass}@{ip}:554/ch01/1
+    - rtsp://{user}:{pass}@{ip}:554/ch02/0
+    ptz: []
+    other: []
+  '5580':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch04/1
+    - rtsp://{user}:{pass}@{ip}:554/ch02/1
+    - rtsp://{user}:{pass}@{ip}:554/ch03/1
+    - rtsp://{user}:{pass}@{ip}:554/ch05/1
+    ptz: []
+    other: []
+  SWANHD-830:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch04/1
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    ptz: []
+    other: []
+  SWIFI-PTCAM2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch04/1
+    - rtsp://{user}:{pass}@{ip}:554/ch06/0
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/Camera%201/Channel1/1
+    ptz: []
+    other: []
+  swifi-spotcam:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch04/1
+    - rtsp://{user}:{pass}@{ip}:554/ch06/0
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}/0
+    - rtsp://{user}:{pass}@{ip}/cam1/mpeg4
+    - rtsp://{user}:{pass}@{ip}:554/live/h264/HD1080P
+    ptz: []
+    other: []
+  SWNHD-830CAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch04/1
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/1520p
+    ptz: []
+    other: []
+  DVR8-4680xc8:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch04/1
+    - rtsp://{user}:{pass}@{ip}:8282/12
+    ptz: []
+    other: []
+  SW-WIFIPTX:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch04/1
+    ptz: []
+    other: []
+  '1590':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/1
+    - rtsp://{user}:{pass}@{ip}:554/ch07/0
+    ptz: []
+    other: []
+  '8580':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/1
+    ptz: []
+    other: []
+  '875':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/1
+    - rtsp://{user}:{pass}@{ip}:554/ch07/0
+    ptz: []
+    other: []
+  885F:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/1
+    - rtsp://{user}:{pass}@{ip}:554/ch02/0
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    - rtsp://{user}:{pass}@{ip}:554/ch02/1
+    ptz: []
+    other: []
+  '886':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/1
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    ptz: []
+    other: []
+  887 MSB:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/1
+    ptz: []
+    other: []
+  '888':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/1
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    ptz: []
+    other: []
+  900pt:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/1
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    ptz: []
+    other: []
+  DV84780:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/1
+    - rtsp://{user}:{pass}@{ip}:554/ch00/0
+    ptz: []
+    other: []
+  DVR8-5580RN:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/1
+    - rtsp://{user}:{pass}@{ip}:554/ch02/0
+    ptz: []
+    other: []
+  DVR8-5680RN:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/1
+    - rtsp://{user}:{pass}@{ip}:554/ch02/0
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    - rtsp://{user}:{pass}@{ip}:554/ch03/0
+    - rtsp://{user}:{pass}@{ip}:554/ch06/1
+    ptz: []
+    other: []
+  NHD-865:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/1
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  NHD-865MSB:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/1
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    ptz: []
+    other: []
+  NHD-887FN:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/1
+    - rtsp://{user}:{pass}@{ip}:554/ch02/0
+    ptz: []
+    other: []
+  NHD-900BE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/1
+    - rtsp://{user}:{pass}@{ip}:554/rtsp/streaming?channel=8&subtype=0
+    ptz: []
+    other: []
+  swifi-4kflocam:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/1
+    - rtsp://{user}:{pass}@{ip}:554/ch06/0
+    ptz: []
+    other: []
+  SWIFI-FLOCAM2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/1
+    - rtsp://{user}:{pass}@{ip}/mpeg4
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}:554/ch0/01
+    ptz: []
+    other: []
+  SWIFI-FLOCAMB-AU:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/1
+    ptz: []
+    other: []
+  2KMQB:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/1
+    ptz: []
+    other: []
+  DVR8-4580V:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/1
+    - rtsp://{user}:{pass}@{ip}:554/ch02/0
+    - rtsp://{user}:{pass}@{ip}:554/ch07/0
+    - rtsp://{user}:{pass}@{ip}:554/ch06/0
+    - rtsp://{user}:{pass}@{ip}:554/ch03/1
+    - rtsp://{user}:{pass}@{ip}:554/ch05/1
+    - rtsp://{user}:{pass}@{ip}:554/ch04/0
+    - rtsp://{user}:{pass}@{ip}:554/ch08/0
+    ptz: []
+    other: []
+  SWWHD-FLOCAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/1
+    - rtsp://{user}:{pass}@{ip}:554/ch06/0
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  '4575':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch02/0
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    - rtsp://{user}:{pass}@{ip}:554/ch03/0
+    ptz: []
+    other: []
+  DVR4-4500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch02/0
+    - rtsp://{user}:{pass}@{ip}/Streaming/Unicast/channels/401
+    ptz: []
+    other: []
+  DVR4-4580RN:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch02/0
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    ptz: []
+    other: []
+  NHD-887MSFB:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch02/0
+    ptz: []
+    other: []
+  NVR8-8580:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch02/0
+    - rtsp://{user}:{pass}@{ip}:554/ch07/0
+    - rtsp://{user}:{pass}@{ip}:554/ch06/0
+    - rtsp://{user}:{pass}@{ip}:554/ch03/0
+    - rtsp://{user}:{pass}@{ip}:554/ch06/1
+    ptz: []
+    other: []
+  111WP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/jpg/image.cgi
+    stream: []
+    ptz: []
+    other: []
+  ip1000:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/jpg/image.cgi
+    stream: []
+    ptz: []
+    other: []
+  IP-3G:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/jpg/image.cgi
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  SW111-UIP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/jpg/image.cgi
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  SW111-wip:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/jpg/image.cgi
+    stream: []
+    ptz: []
+    other: []
+  SW111-WIP-21030:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/jpg/image.cgi
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DVR8-4900:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch07/0
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/102
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}/Streaming/Unicast/channels/401
+    - rtsp://{user}:{pass}@{ip}/Streaming/Unicast/channels/201
+    ptz: []
+    other: []
+  '2009':
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  2KOCAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch06/0
+    ptz: []
+    other: []
+  DVR8-5580:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch06/0
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    - rtsp://{user}:{pass}@{ip}:554/ch04/0
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  DVR8-4780:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch06/0
+    ptz: []
+    other: []
+  SWIFI-2KOCAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch06/0
+    ptz: []
+    other: []
+  SWWHD-INTCAM-AU:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch06/0
+    - rtsp://{user}:{pass}@{ip}:8282/12
+    ptz: []
+    other: []
+  440abaj:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  ADS-440-PTZ:
+    snapshot:
+    - http://{user}:{pass}@{ip}/img/snapshot.cgi?size=2
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/img/snapshot.cgi?img=vga
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  AJ-COWA-C116:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  SWADS-440IPC:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  swads-440:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  ADS440:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/user/videostream.cgi
+    ptz: []
+    other: []
+  540d04w:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  SWADS-440-PTZ:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  440-IPC-2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/mpeg4
+    ptz: []
+    other: []
+  446-IPC:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/mpeg4
+    ptz: []
+    other: []
+  '456':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/mpeg4
+    ptz: []
+    other: []
+  ADS446:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/mpeg4
+    ptz: []
+    other: []
+  ADS-446CAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/mpeg4
+    ptz: []
+    other: []
+  C3MPCAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/mpeg4
+    ptz: []
+    other: []
+  NHD-850CAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/mpeg4
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/102
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  nhd-851:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/mpeg4
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  SVC01K:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/mpeg4
+    ptz: []
+    other: []
+  SWADS-446-CAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/mpeg4
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}/ch0_0.h264
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/2
+    - rtsp://{user}:{pass}@{ip}/cam1/mpeg4
+    ptz: []
+    other: []
+  SWADS-466CAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/mpeg4
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    ptz: []
+    other: []
+  SWIFI-ALERTCAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/mpeg4
+    - rtsp://{user}:{pass}@{ip}:8282/12
+    - rtsp://{user}:{pass}@{ip}/0
+    ptz: []
+    other: []
+  SWIFI-SPOTCAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/mpeg4
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_main
+    ptz: []
+    other: []
+  SWNHD-820CAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/mpeg4
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    ptz: []
+    other: []
+  SWWHD-OUTCAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/mpeg4
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/0
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/2
+    - rtsp://{user}:{pass}@{ip}:554/live/h264/HD1080P
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  '446':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_sub
+    ptz: []
+    other: []
+  '460':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_main
+    ptz: []
+    other: []
+  '470':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_sub
+    ptz: []
+    other: []
+  470CAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_sub
+    ptz: []
+    other: []
+  '815':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_main
+    ptz: []
+    other: []
+  ADS-466CAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_sub
+    ptz: []
+    other: []
+  N-470CAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_sub
+    ptz: []
+    other: []
+  NHD-806:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_main
+    ptz: []
+    other: []
+  NVW-470CAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_sub
+    ptz: []
+    other: []
+  PAT160:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_sub
+    ptz: []
+    other: []
+  SRNHD-815:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_main
+    ptz: []
+    other: []
+  SWNHD-825CAM:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    ptz: []
+    other: []
+  SWO-SVC02K:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/2
+    ptz: []
+    other: []
+  SWWHD-PTCAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_main
+    ptz: []
+    other: []
+  SWWHD-PTCAM160:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_sub
+    ptz: []
+    other: []
+  SW-WIFIPT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_sub
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    ptz: []
+    other: []
+  '4400':
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/?action=stream
+    ptz: []
+    other: []
+  DVR4-720P:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/?action=stream
+    ptz: []
+    other: []
+  DVR8-1525:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/?action=stream
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/102
+    ptz: []
+    other: []
+  dvr8-4580g:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/?action=stream
+    ptz: []
+    other: []
+  dvr9-1425:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/?action=stream
+    ptz: []
+    other: []
+  nvr16-7090:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/?action=stream
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/102
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channel1/102
+    - rtsp://{user}:{pass}@{ip}/Camera%201/Channel1/1
+    ptz: []
+    other: []
+  NVR-7200:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/?action=stream
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/102
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    ptz: []
+    other: []
+  NVR8-7400:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/?action=stream
+    ptz: []
+    other: []
+  ADS-CAMAX1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  SWADS-466-CAM:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/mpeg4
+    ptz: []
+    other: []
+  '450':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/goform/video
+  ADS-450:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/goform/video
+    - http://{user}:{pass}@{ip}/videofeed
+  SWADS-450-IPC:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/goform/video
+  '4480':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch04/01
+    ptz: []
+    other: []
+  '4860':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    ptz: []
+    other: []
+  DVR8-1500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/102
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch2/main/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch4/main/av_stream
+    ptz: []
+    other: []
+  DVR8-4575:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    ptz: []
+    other: []
+  DVR8-4680:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    ptz: []
+    other: []
+  NHD-880:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}/ch0_0.h264
+    ptz: []
+    other: []
+  NHD-886MSD:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    ptz: []
+    other: []
+  NHD-887:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/index.html?
+  nhd-900be:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    ptz: []
+    other: []
+  NHD-900DE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    ptz: []
+    other: []
+  SWNHD-888MSD-US:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    - rtsp://{user}:{pass}@{ip}:554/ch02/1
+    ptz: []
+    other: []
+  SW-WIFISPOTCAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch01/0
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  '818':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_main
+    ptz: []
+    other: []
+  HD-815:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_main
+    ptz: []
+    other: []
+  SWNHD-806CAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_main
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  swnhd-816cam:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_main
+    ptz: []
+    other: []
+  SWPTCAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264Preview_01_main
+    ptz: []
+    other: []
+  SWPRO-2KMQB:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch02/1
+    ptz: []
+    other: []
+  NHD-888N:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch03/1
+    ptz: []
+    other: []
+  7-12:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    ptz: []
+    other: []
+  dv8-3425:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    ptz: []
+    other: []
+  DVR4-4350:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/102
+    - rtsp://{user}:{pass}@{ip}/Streaming/channels/101
+    ptz: []
+    other: []
+  DVR8:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    ptz: []
+    other: []
+  DVR8-8050:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    ptz: []
+    other: []
+  DVR8-8075:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}/Streaming/channels/101
+    ptz: []
+    other: []
+  HDR8050:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/102
+    ptz: []
+    other: []
+  lv-9808:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/102
+    - rtsp://{user}:{pass}@{ip}/Streaming/channels/101
+    ptz: []
+    other: []
+  NHH-880CAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    ptz: []
+    other: []
+  SWIFI-XTRCAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    ptz: []
+    other: []
+  T855:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    ptz: []
+    other: []
+  DVR-8-4900:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    ptz: []
+    other: []
+  '880':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/102
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  DVR8-4500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/102
+    - rtsp://{user}:{pass}@{ip}/Streaming/Unicast/channels/101
+    - rtsp://{user}:{pass}@{ip}/Streaming/Unicast/channels/401
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/301
+    - rtsp://{user}:{pass}@{ip}/Streaming/Unicast/channels/201
+    - rtsp://{user}:{pass}@{ip}:554/ch08/0
+    ptz: []
+    other: []
+  WIFI-PT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/102
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  DM-299:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  DVR 4680:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  dvr8-4850v:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  NHD-836CAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  SR-SVC01K:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  SWIFI-BUDDY:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  swifi-corecam:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  SWIFI-FLOCAM2W-EU:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  SWIFI-PTCAM232GB:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  SWIFI-TRACKCM32GB:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  SWNHD-800CAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    ptz: []
+    other: []
+  SWWHD-FLOCAM-US:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  SWWHD-INTCAM-US:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}:8282/12
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  SE3KPT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  '887':
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  ads440:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  SWADS-440IPC-AU:
+    snapshot:
+    - http://{user}:{pass}@{ip}/img/snapshot.cgi?img=vga
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  ADS-446:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    ptz: []
+    other: []
+  SWADS-456-CAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    ptz: []
+    other: []
+  SWO-SVC01K:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    ptz: []
+    other: []
+  DV8-4780:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch04/0
+    ptz: []
+    other: []
+  DVR-1500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/701
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/601
+    ptz: []
+    other: []
+  DVR4:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Unicast/channels/101
+    ptz: []
+    other: []
+  DVR4-1500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/channels/101
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/301
+    ptz: []
+    other: []
+  DVR8-4580G:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  SWIFT-ALERTCAM:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  DVR8-4580NR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/main/av_stream
+    ptz: []
+    other: []
+  DVR8-4580RN:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/main/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/sub/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch2/sub/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch3/sub/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch2/main/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch3/main/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch4/main/av_stream
+    ptz: []
+    other: []
+  NVW-AS4KCAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/main/av_stream
+    ptz: []
+    other: []
+  VDD16KATLD9BDJDG111A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8282/12
+    ptz: []
+    other: []
+  SWIFI-ALERTCAM-EU:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  GS3500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/0
+    ptz: []
+    other: []
+  T852CAM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/0
+    ptz: []
+    other: []
+  SWADS456:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/0
+    ptz: []
+    other: []
+  NHD-1200BE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/rtsp/streaming?channel=6&subtype=0
+    ptz: []
+    other: []
+  NHD-900PT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/rtsp/streaming?channel=11&subtype=0
+    ptz: []
+    other: []
+  SWADS-440UIPC:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/videostream.cgi
+    ptz: []
+    other: []
+  SWK-2550:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?resolution=8&rate=13
+    ptz: []
+    other: []

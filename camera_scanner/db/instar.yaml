@@ -1,0 +1,509 @@
+instar:
+  1080HD:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  '5905':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  5907HD:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - rtsp://{user}:{pass}@{ip}:554/live.sdp
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    - rtsp://{user}:{pass}@{ip}/cam[CHANNEL]/h264
+    - rtsp://{user}:{pass}@{ip}/medias[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/12
+    ptz: []
+    other: []
+  5907HD-oniv:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  '6001':
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  6001HD:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - rtsp://{user}:{pass}@{ip}/12
+    ptz: []
+    other: []
+  '6012':
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - rtsp://{user}:{pass}@{ip}/cam[CHANNEL]/h264
+    ptz: []
+    other: []
+  6012HD:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - rtsp://{user}:{pass}@{ip}/cam[CHANNEL]/h264
+    ptz: []
+    other: []
+  '7011':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - rtsp://{user}:{pass}@{ip}:554/live.sdp
+    ptz: []
+    other: []
+  7011HD:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  '9003':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  9008FullHD:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - rtsp://{user}:{pass}@{ip}/12
+    ptz: []
+    other: []
+  '9020':
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  HD6014:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - rtsp://{user}:{pass}@{ip}/12
+    ptz: []
+    other: []
+  IN-1612HD:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  IN2901:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other: []
+  IN-5907:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  IN-6012:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other: []
+  IN-6012HD:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  IN-6014:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  IN-6014HD:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    - rtsp://{user}:{pass}@{ip}/cam[CHANNEL]/h264
+    ptz: []
+    other: []
+  IN-8001:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  IN-8003FHD-PoE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - rtsp://{user}:{pass}@{ip}/12
+    ptz: []
+    other: []
+  IN-9008FHD-POE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - rtsp://{user}:{pass}@{ip}:554/13
+    ptz: []
+    other: []
+  IN-9020HD:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  '2090':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live.sdp
+    ptz: []
+    other: []
+  5905-HD:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live.sdp
+    ptz: []
+    other: []
+  IN-9020:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live.sdp
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other: []
+  '29025':
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  '2905':
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  '3003':
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  '3005':
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  '3011':
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  '4010':
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  '4011':
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    ptz: []
+    other: []
+  IN-2905 V2:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  IN-2908:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  IN-3010:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - rtsp://{user}:{pass}@{ip}:554/
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other: []
+  IN-3011:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    ptz: []
+    other: []
+  INSTAR3011:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  INSTAR3100:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  IN-2905:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554/
+    - http://{user}:{pass}@{ip}/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - rtsp://{user}:{pass}@{ip}/cam[CHANNEL]/h264
+    ptz: []
+    other: []
+  '3010':
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  '5908':
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  IN-2905 v2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  IN-2907:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  '5907':
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other: []
+  5907HD-ONIV:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream: []
+    ptz: []
+    other: []
+  '6011':
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=M
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/iphone/11?[USERNAME]:[PASSWORD]&
+  6014HD:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam[CHANNEL]/h264
+    ptz: []
+    other: []
+  '8015':
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream: []
+    ptz: []
+    other: []
+  9008HD:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream: []
+    ptz: []
+    other: []
+  HD5907:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream: []
+    ptz: []
+    other: []
+  IN-6001HD:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/12
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  IN-6011:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream: []
+    ptz: []
+    other: []
+  in-8015:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream: []
+    ptz: []
+    other: []
+  IN-8015:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream: []
+    ptz: []
+    other: []
+  IN-9008HD:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/iphone/11?[USERNAME]:[PASSWORD]&
+  IN-9010FullHD:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/12
+    ptz: []
+    other: []
+  5907HD-rtsp:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/12
+    ptz: []
+    other: []
+  IN-9408 2K+ POE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/12
+    - rtsp://{user}:{pass}@{ip}:554/livestream/11
+    - http://{user}:{pass}@{ip}:80/livestream/11?action=play&media=mjpeg
+    ptz: []
+    other: []
+  8415 2K+:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/livestream/11
+    ptz: []
+    other: []
+  '9820':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/livestream/11
+    ptz: []
+    other: []
+  IN-9408:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/livestream/11
+    ptz: []
+    other: []
+  IN-9408 2K+:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/livestream/11
+    - rtsp://{user}:{pass}@{ip}:554/livestream/13
+    - http://{user}:{pass}@{ip}:80/livestream/12?action=play&media=mjpeg&user=[USERNAME]&pwd=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554/livestream/12
+    ptz: []
+    other: []
+  IN-9420 2K:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/livestream/11
+    - http://{user}:{pass}@{ip}:80/livestream/11?action=play&media=mjpeg
+    ptz: []
+    other: []
+  '9420':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/livestream/11
+    - rtsp://{user}:{pass}@{ip}:554/livestream/13
+    ptz: []
+    other: []
+  IN-8401 2K+:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/livestream/13
+    - http://{user}:{pass}@{ip}:80/livestream/12?action=play&media=mjpeg&user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  9420 4k+:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/livestream/11?action=play&media=mjpeg&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}:80/livestream/13?action=play&media=mjpeg&user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  9408 2K:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/livestream/12?action=play&media=mjpeg&user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  IN-9280:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/livestream/12
+    ptz: []
+    other: []
+  Instar9408:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/livestream/11?action=play&media=mjpeg
+    ptz: []
+    other: []

@@ -1,0 +1,170 @@
+rvi:
+  1nct-2023:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/RVi/1/1
+    ptz: []
+    other: []
+  1nct4033:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/RVi/1/1
+    - rtsp://{user}:{pass}@{ip}:554/RVi/1/2
+    ptz: []
+    other: []
+  1NCT4052:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/RVi/1/1
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  1NCT4143:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/RVi/1/1
+    - rtsp://{user}:{pass}@{ip}:554/RVi/2/1
+    ptz: []
+    other: []
+  1NCE2022:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/RVi/1/2
+    ptz: []
+    other: []
+  1nct-4033:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IPC43L:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/1/2?transmode=unicast&profile=vam
+    ptz: []
+    other: []
+  '2063':
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  IPC32MS:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  42dn:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream: []
+    ptz: []
+    other: []
+  ipc52z4i:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream: []
+    ptz: []
+    other: []
+  Unknown:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/VideoInput/1/h264/1
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/channels/101
+    - rtsp://{user}:{pass}@{ip}/video.h264
+    ptz: []
+    other: []
+  1NCT2025:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/VideoInput/1/h264/1
+    ptz: []
+    other: []
+  IPC12SW:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/VideoInput/1/h264/1
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    ptz: []
+    other: []
+  HDR04LA-T:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}:10554/Streaming/channels/201
+    ptz: []
+    other: []
+  HDR04LA-TA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    ptz: []
+    other: []
+  HDR04LA-TA-1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    ptz: []
+    other: []
+  IPC11S:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    ptz: []
+    other: []
+  ips12sw:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/2
+    ptz: []
+    other: []
+  IPC31S:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    ptz: []
+    other: []
+  IPC42S:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other:
+    - mms://{user}:{pass}@{ip}:554/img/video.asf
+  ipc50dn12:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/channel3
+    - rtsp://{user}:{pass}@{ip}:554/channel1
+    ptz: []
+    other: []
+  IPC52Z30:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor
+    ptz: []
+    other: []
+  R16LA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=[CHANNEL]&subtype=1
+    ptz: []
+    other: []
+  IPC11:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg?size=3
+    stream: []
+    ptz: []
+    other: []
+  IPC32DNS:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0
+    ptz: []
+    other: []

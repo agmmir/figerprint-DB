@@ -1,0 +1,12 @@
+xiongmai:
+  # Chipset-level patterns applied across OEM brands/models (no per-model data yet)
+  default:
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/user={user}&password={pass}&channel=1&stream=0.sdp
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}:554/11
+    snapshot:
+    - http://{ip}/webcapture.jpg?command=snap&channel=1&user={user}&password={pass}
+    - http://{ip}/cgi-bin/snapshot.cgi?channel=1
+    - http://{ip}/snapshot.cgi?user={user}&pwd={pass}

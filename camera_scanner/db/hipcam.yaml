@@ -1,0 +1,101 @@
+hipcam:
+  default:
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10554/11
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - rtsp://{user}:{pass}@{ip}:554/1
+    - rtsp://{user}:{pass}@{ip}:554/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/user={user}&password={pass}&channel=1&stream=0.sdp
+    snapshot:
+    - http://{ip}/tmpfs/snap.jpg
+    - http://{ip}/tmpfs/auto.jpg
+    - http://{ip}/snapshot.jpg
+    - http://{ip}/cgi-bin/snapshot.cgi
+  Unknown:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10554/snapshot.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/1
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    ptz: []
+    other: []
+  C6F0SeZ0N0P3L0:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/1
+    ptz: []
+    other: []
+  C9F0SEZ0N0P0L0:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    - http://{user}:{pass}@{ip}:80/tmpfs/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/1
+    ptz: []
+    other: []
+  '2345':
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream: []
+    ptz: []
+    other: []
+  '425':
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream: []
+    ptz: []
+    other: []
+  C6F0SEZ0N0P3L0:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream: []
+    ptz: []
+    other: []
+  C7815WIP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - rtsp://{user}:{pass}@{ip}:10554/tcp/av0_0
+    - rtsp://{user}:{pass}@{ip}:10554/udp/av0_0
+    - rtsp://{user}:{pass}@{ip}:10554/h264_stream
+    ptz: []
+    other: []
+  FDT-FD7902:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream: []
+    ptz: []
+    other: []
+  NCM620W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    ptz: []
+    other: []
+  c6f0snz0n0pml2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  C9F0SeZ0N0P0L0:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  SCM-SW2666FD-3.6HD:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  CMT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/medias2
+    ptz: []
+    other: []

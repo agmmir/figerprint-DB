@@ -1,0 +1,1812 @@
+ezviz:
+  C3C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    ptz: []
+    other: []
+  CS-C1C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}:554/h.265
+    ptz: []
+    other: []
+  Ztube:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    ptz: []
+    other: []
+  C1C:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/channel0
+    - rtsp://{user}:{pass}@{ip}:554/1
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor
+    - rtsp://{user}:{pass}@{ip}:554/HighResolutionVideo
+    ptz: []
+    other: []
+  C3N:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/H_264
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  CS-C8C-A0-1F2WFL1(G05708394):
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/h.264
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/1
+    - rtsp://{user}:{pass}@{ip}:554/h.265
+    ptz: []
+    other: []
+  CS-DP2C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/H.265
+    ptz: []
+    other: []
+  CSH8c:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    ptz: []
+    other: []
+  EL3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H_264
+    ptz: []
+    other: []
+  H3c:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/1
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  Mini O Plus:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/h.264
+    - rtsp://{user}:{pass}@{ip}:554/live/ch00_0
+    ptz: []
+    other: []
+  C6N:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/channel1
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/h265_stream
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/channel0
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    - rtsp://{user}:{pass}@{ip}:554/h264/ch1/main/av_stream
+    ptz: []
+    other: []
+  CS-C6N:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/channel1
+    - rtsp://{user}:{pass}@{ip}:554/H_264
+    - rtsp://{user}:{pass}@{ip}:554/h265_stream
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/channel0
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    - rtsp://{user}:{pass}@{ip}:554/0
+    - rtsp://{user}:{pass}@{ip}:554/H.265
+    - rtsp://{user}:{pass}@{ip}:10554/channel[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}:554/h.265
+    - rtsp://{user}:{pass}@{ip}:554/h264
+    - rtsp://{user}:{pass}@{ip}:554/channel2
+    - rtsp://{user}:{pass}@{ip}:554/ch1/main
+    ptz: []
+    other: []
+  C6T:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    ptz: []
+    other: []
+  CS-CV2-6-C0-1A1WFR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    ptz: []
+    other: []
+  H4C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    ptz: []
+    other: []
+  H6C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/HighResolutionVideo
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101
+    ptz: []
+    other: []
+  3cn:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  C1P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  C2W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  C3HW:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  C3S:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  C3T:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  C3TN:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  C3W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/channel80
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  C3X:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/h265_stream
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/h264/ch1/main/av_stream
+    ptz: []
+    other: []
+  C6C:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}:554/h264/ch1/main/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/cam0/mjpeg
+    - rtsp://{user}:{pass}@{ip}:554/mpeg4
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/channels/201
+    - rtsp://{user}:{pass}@{ip}:10554/channel[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}:554/h264/ch1/sub/av_stream
+    ptz: []
+    other: []
+  C6CN:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/channel1
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/channel0
+    - rtsp://{user}:{pass}@{ip}:554/mpeg4
+    - rtsp://{user}:{pass}@{ip}:554//Channel/01
+    ptz: []
+    other: []
+  c8c:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  C8c:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}:554/h265_stream
+    - rtsp://{user}:{pass}@{ip}:554/cam1/h264
+    ptz: []
+    other: []
+  CS-CV210:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  CS-H6C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/h265
+    ptz: []
+    other: []
+  CS-C2mini-31WFR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  CS-C3HC:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  cs-c3n:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/channel1
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/channel0
+    ptz: []
+    other: []
+  CS-C6CN-A0-3H2WF:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  CS-C6N-R101-1G2WF:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/h.264_stream
+    - rtsp://{user}:{pass}@{ip}:554/h.265
+    ptz: []
+    other: []
+  CS-C8W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/H.265
+    - rtsp://{user}:{pass}@{ip}:554/ch0_0.264
+    ptz: []
+    other: []
+  CS-CTQ3N:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  CS-CV200:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  CS-CV206:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/channel1
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  CS-CV216:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  CS-CV246:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  CS-CV248:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/h265_stream
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/channel0
+    - rtsp://{user}:{pass}@{ip}:554/h.264_stream
+    - rtsp://{user}:{pass}@{ip}:554/live/ch00_0
+    ptz: []
+    other: []
+  CS-CV248-A0-32WFR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  CS-CV310:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/channel1
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  cs-cw310:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  CS-H1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  CS-H3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/Channel/01
+    - rtsp://{user}:{pass}@{ip}:554/h265
+    - rtsp://{user}:{pass}@{ip}:554/cam1/h264
+    ptz: []
+    other: []
+  CS-H6c-R101-1G2WF:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}:554/h265_stream
+    ptz: []
+    other: []
+  CS-H8C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}:554/h.265
+    ptz: []
+    other: []
+  CS-LC3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  cs-ty1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/channel1
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/ch0_0.h264
+    ptz: []
+    other: []
+  CTQ3N:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/channel0
+    - rtsp://{user}:{pass}@{ip}:554/1
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    ptz: []
+    other: []
+  CTQ3W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/channel1
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/H_264
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/1
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    - rtsp://{user}:{pass}@{ip}:554/live_mpeg4.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live/h264_ulaw/HD720P
+    - rtsp://{user}:{pass}@{ip}:554/video.mp4
+    - rtsp://{user}:{pass}@{ip}:554/cam1/mpeg4
+    - rtsp://{user}:{pass}@{ip}:554/cam101/h264
+    ptz: []
+    other: []
+  CTQ6C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  cv210:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  cv310:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  CV4:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  CZQ3W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  DB1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/channel1
+    - rtsp://{user}:{pass}@{ip}:554/H_264
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  DB1C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/h265_stream
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  exCube Pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  ezCube pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  eztube:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  H1c:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}:554/channel1
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor
+    ptz: []
+    other: []
+  H3C:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/h264/ch1/main/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/h.265
+    ptz: []
+    other: []
+  H8C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}:554/h265_stream
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    - rtsp://{user}:{pass}@{ip}:554/h_264
+    - rtsp://{user}:{pass}@{ip}:554/0
+    - rtsp://{user}:{pass}@{ip}:554/H.265
+    - rtsp://{user}:{pass}@{ip}:554/onvif/live/2
+    ptz: []
+    other: []
+  H8C-R200:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  H9C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}:554/onvif/live/2
+    ptz: []
+    other: []
+  LC3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/h.264
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    - rtsp://{user}:{pass}@{ip}:554/h264/ch1/main/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/mpeg4
+    - rtsp://{user}:{pass}@{ip}:554/h.265
+    - rtsp://{user}:{pass}@{ip}:554/h265Preview_01_main
+    ptz: []
+    other: []
+  Mini-O:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/h.264
+    ptz: []
+    other: []
+  TY1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/channel1
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/h.264
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    - rtsp://{user}:{pass}@{ip}:554/h.265
+    ptz: []
+    other: []
+  TY2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/1
+    - rtsp://{user}:{pass}@{ip}:554/live1.264
+    ptz: []
+    other: []
+  YT1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  CS-C8c-R100-1J4WKFL:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  CS-H8c-R100-1J4WKFL:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    - rtsp://{user}:{pass}@{ip}:554/h.265
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102
+    ptz: []
+    other: []
+  C8W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/1
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor
+    ptz: []
+    other: []
+  CS-H8:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/H_264
+    - rtsp://{user}:{pass}@{ip}:554/Channel/01
+    ptz: []
+    other: []
+  C6:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}:554/H.265
+    ptz: []
+    other: []
+  CS-TY2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/channel1
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/ch1/main
+    - rtsp://{user}:{pass}@{ip}:554/live1.264
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101
+    ptz: []
+    other: []
+  CS-C3TN-A0-1H3WKFL:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  CS-EL3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/
+    ptz: []
+    other: []
+  3CN:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/channel1
+    ptz: []
+    other: []
+  c1c:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/channel1
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/h265_stream
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/Channel/01
+    ptz: []
+    other: []
+  C1mini:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    ptz: []
+    other: []
+  C3WN:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/channel0
+    ptz: []
+    other: []
+  C4W:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/stream
+    ptz: []
+    other: []
+  C6c:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  C6HN:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/H.265
+    ptz: []
+    other: []
+  C6W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  C8C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    - rtsp://{user}:{pass}@{ip}:554/h_264
+    - rtsp://{user}:{pass}@{ip}:554/channel80
+    - rtsp://{user}:{pass}@{ip}:554/0
+    - rtsp://{user}:{pass}@{ip}:554/H.265
+    - rtsp://{user}:{pass}@{ip}:554/h.264_stream
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp
+    ptz: []
+    other: []
+  C8W Pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  CP1 4MP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    ptz: []
+    other: []
+  CS-C1C-E0-1E2WF:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    ptz: []
+    other: []
+  CS-C1HC:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H.265
+    ptz: []
+    other: []
+  CS-C6CN-A0-8C4WF:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    ptz: []
+    other: []
+  CS-C6HN-1C2WFR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H.265
+    ptz: []
+    other: []
+  CS-C8c:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/ch1/main
+    ptz: []
+    other: []
+  CS-C8C-A0-1F2WF0:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/h265
+    ptz: []
+    other: []
+  CS-CP1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    - rtsp://{user}:{pass}@{ip}:554/H.265
+    - rtsp://{user}:{pass}@{ip}:554/HighResolutionVideo
+    ptz: []
+    other: []
+  cs-cv246:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  CSCV310:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/h.265
+    ptz: []
+    other: []
+  CS-CV311:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/channel1
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    ptz: []
+    other: []
+  CS-CY310:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    ptz: []
+    other: []
+  CS-DB1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  CS-H3c:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/h265_stream
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    ptz: []
+    other: []
+  CS-H3-R100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/H.265
+    ptz: []
+    other: []
+  CS-H8c:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/h.264
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    - rtsp://{user}:{pass}@{ip}:554/0
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101?transportmode=unicast&profile=Profile_2
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101?transportmode=unicast&profile=Profile_1
+    ptz: []
+    other: []
+  CS-H8c-R100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}:554/streaming/Channels/102
+    - rtsp://{user}:{pass}@{ip}:554/streaming/Channels/101
+    ptz: []
+    other: []
+  CS-LC1C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    ptz: []
+    other: []
+  CTQ2C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/channel1
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/Channel/01
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/channel0
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    - rtsp://{user}:{pass}@{ip}:554/H.265
+    - rtsp://{user}:{pass}@{ip}:554/mpeg4
+    - rtsp://{user}:{pass}@{ip}:554/h.265
+    ptz: []
+    other: []
+  CV206:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    ptz: []
+    other: []
+  CV228:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    ptz: []
+    other: []
+  cw3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    ptz: []
+    other: []
+  DC1P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    ptz: []
+    other: []
+  e3s:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    ptz: []
+    other: []
+  H80x:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/101
+    ptz: []
+    other: []
+  H8c:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/channel1
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/h.264
+    - rtsp://{user}:{pass}@{ip}:554/1
+    - rtsp://{user}:{pass}@{ip}:554/h.264_stream
+    - rtsp://{user}:{pass}@{ip}:554/h.265
+    - rtsp://{user}:{pass}@{ip}:554/h264
+    ptz: []
+    other: []
+  H9c:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/Channel/01
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/channels/201
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}:554/streaming/Channels/201
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/201?transportmode=unicast&profile=Profile_201
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101?transportmode=unicast&profile=Profile_101
+    ptz: []
+    other: []
+  LC1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    ptz: []
+    other: []
+  ycc365 Plus:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    ptz: []
+    other: []
+  CS-CTQ2C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/H.265
+    - rtsp://{user}:{pass}@{ip}:554/h.264_stream
+    ptz: []
+    other: []
+  cn3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    ptz: []
+    other: []
+  H90:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/HighResolutionVideo
+    ptz: []
+    other: []
+  CS-H5:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  CS-H3-R100-1H3WKFL:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    ptz: []
+    other: []
+  CS-TY1-R101-1G2WF:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    ptz: []
+    other: []
+  CS-CV206-C0-3B2WFR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/channel1
+    ptz: []
+    other: []
+  CS-CV246-A0-1C2WFR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/channel1
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    ptz: []
+    other: []
+  3CW:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    ptz: []
+    other: []
+  c3n:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    ptz: []
+    other: []
+  C3Q:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    ptz: []
+    other: []
+  C3W Pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  C6 2K:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    ptz: []
+    other: []
+  c6s:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/channel0
+    ptz: []
+    other: []
+  CQ6N:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/channel0
+    ptz: []
+    other: []
+  CS-C3HW-1C2WFR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    ptz: []
+    other: []
+  CS-C4:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    ptz: []
+    other: []
+  CS-C6:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    ptz: []
+    other: []
+  CS-C6C-3B2WFR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    ptz: []
+    other: []
+  CS-C6H:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  cs-cv-246:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  cs-cv310:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/h265_stream
+    - rtsp://{user}:{pass}@{ip}:554/h.264
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/channel0
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    - rtsp://{user}:{pass}@{ip}:10554/channel[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}:8001/0/av0
+    ptz: []
+    other: []
+  CS-DB1C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/h265_stream
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/1
+    - rtsp://{user}:{pass}@{ip}:554//Channel/01
+    ptz: []
+    other: []
+  CS-H1c:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/HighResolutionVideo
+    ptz: []
+    other: []
+  CS-H1c-R101-1G2WR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    ptz: []
+    other: []
+  CS-H6:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    ptz: []
+    other: []
+  CSH8C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  CT3N:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    ptz: []
+    other: []
+  cw-c310:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    ptz: []
+    other: []
+  db1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    ptz: []
+    other: []
+  DS-72xx:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    ptz: []
+    other: []
+  EZ360:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:10554/channel[CHANNEL]
+    ptz: []
+    other: []
+  H8C 4MP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    ptz: []
+    other: []
+  cs-c6n:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/ch0_0.h264
+    ptz: []
+    other: []
+  8psd:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    ptz: []
+    other: []
+  h8ad:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    ptz: []
+    other: []
+  TY1 Pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/h265_stream
+    ptz: []
+    other: []
+  H7c:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.264
+    - rtsp://{user}:{pass}@{ip}:554/h265_stream
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/channels/201
+    - rtsp://{user}:{pass}@{ip}:554/channel2
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101?transportmode=unicast&profile=Profile_2
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101?transportmode=unicast&profile=Profile_1
+    ptz: []
+    other: []
+  9h9C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H_264
+    ptz: []
+    other: []
+  CS-C6H-31WRF:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H_264
+    ptz: []
+    other: []
+  C8c 2K+:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h265_stream
+    - rtsp://{user}:{pass}@{ip}:554/stream
+    - rtsp://{user}:{pass}@{ip}:554/h264_hd.sdp
+    ptz: []
+    other: []
+  CS-C3TN:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h265_stream
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    ptz: []
+    other: []
+  C1C-B:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  C1HC:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    ptz: []
+    other: []
+  C1Mini:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  C2C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/channel0
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor
+    ptz: []
+    other: []
+  C3A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/h_264
+    ptz: []
+    other: []
+  c3c:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  c6cnpro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  C6TC:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  CS H8C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  CS-H6c-R100-8B4WF:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  C-SH8:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  CTQ20:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  ctq6tc:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  cw310:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  CW3N:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  cw8:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  dp1s:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  H1C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  MINI O:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  MINI PLUS:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  OutPro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  CS-C3N:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Channel/01
+    - rtsp://{user}:{pass}@{ip}:554/Channels/01
+    ptz: []
+    other: []
+  CS-H3C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Channel/01
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    - rtsp://{user}:{pass}@{ip}:554/H264
+    ptz: []
+    other: []
+  CS-H6c:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Channel/01
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  c1C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h.264
+    ptz: []
+    other: []
+  CS-C6H-31WFR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h.264
+    ptz: []
+    other: []
+  CS-TY1-R101:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h.264
+    ptz: []
+    other: []
+  H6c PRO:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h.264
+    - rtsp://{user}:{pass}@{ip}:554/cam101/h264
+    ptz: []
+    other: []
+  YCC365 Plus:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h.264
+    ptz: []
+    other: []
+  DP1C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  ep3z:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?q=30&fps=33&id=0.5
+    stream: []
+    ptz: []
+    other: []
+  NV841F-SIR:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?q=30&fps=33&id=0.5
+    stream: []
+    ptz: []
+    other: []
+  CS-C8PF:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/channel0
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/channels/201
+    ptz: []
+    other: []
+  h8c:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  CS-H5-R201:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  H8C Pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101?transportmode=unicast&profile=Profile_101
+    ptz: []
+    other: []
+  CS-cv246:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/channel0
+    ptz: []
+    other: []
+  CS-c2c:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/1
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  CS-C6N-D0:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    ptz: []
+    other: []
+  CS-C8T:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    ptz: []
+    other: []
+  H8c 2K+:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    - rtsp://{user}:{pass}@{ip}:554/ch1/main
+    - rtsp://{user}:{pass}@{ip}:554/HighResolutionVideo
+    ptz: []
+    other: []
+  c2cube:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam[CHANNEL]/h264
+    ptz: []
+    other: []
+  Unknown:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam[CHANNEL]/h264
+    - rtsp://{user}:{pass}@{ip}:554/cam0/h264
+    ptz: []
+    other: []
+  C2Q:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  CS-CV228:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  H8 3k:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  CS-C3U-22ER:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  CS-C6N-B0:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  H4:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  TY82:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  H80X:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264/ch1/main/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/h264/ch1/sub/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101
+    ptz: []
+    other: []
+  C4S:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.265
+    ptz: []
+    other: []
+  CS-C1T:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.265
+    - rtsp://{user}:{pass}@{ip}:554/live/ch00_0
+    ptz: []
+    other: []
+  hC1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.265
+    ptz: []
+    other: []
+  C6N-G1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.265
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/2
+    ptz: []
+    other: []
+  CS-CW8:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H.265
+    ptz: []
+    other: []
+  C8PF:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/channels/201
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/2
+    ptz: []
+    other: []
+  cs-c3tn:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10554/channel[CHANNEL]
+    ptz: []
+    other: []
+  CS-C6W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch1/main
+    ptz: []
+    other: []
+  CS-C8C-A0-1F2WF:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif/live/2
+    ptz: []
+    other: []
+  CS-H3-R100-1J3WKFL:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h265
+    ptz: []
+    other: []
+  CS-TY1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h265
+    ptz: []
+    other: []
+  CS-CV248-B1-32WVFMR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/HighResolutionVideo
+    ptz: []
+    other: []
+  HC8:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/HighResolutionVideo
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101
+    ptz: []
+    other: []
+  H6c G1 3K:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101
+    ptz: []
+    other: []
+  c8pf:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101
+    ptz: []
+    other: []
+  CS-H6C-R105-1L3WF:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam1/mpeg4
+    ptz: []
+    other: []
+  GK-200MP2B:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/av_stream/ch0
+    ptz: []
+    other: []
+  H7C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101
+    ptz: []
+    other: []
+  CS-H9c:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101
+    ptz: []
+    other: []
+  LC1C:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/?action=stream
+    ptz: []
+    other: []
+  H8c SE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam1/h264
+    ptz: []
+    other: []

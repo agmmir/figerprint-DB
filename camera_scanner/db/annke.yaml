@@ -1,0 +1,1201 @@
+annke:
+  131m:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    ptz: []
+    other: []
+  141cs:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    ptz: []
+    other: []
+  141CS TJF:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    ptz: []
+    other: []
+  151dj:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    ptz: []
+    other: []
+  151DM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/sub/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/2
+    ptz: []
+    other: []
+  151DS:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    ptz: []
+    other: []
+  151EH:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    ptz: []
+    other: []
+  191BF:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  191BL:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/main/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    - rtsp://{user}:{pass}@{ip}:554/onvif2
+    ptz: []
+    other: []
+  AC500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102
+    ptz: []
+    other: []
+  C1DSP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    ptz: []
+    other: []
+  C500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    - rtsp://{user}:{pass}@{ip}:554/cam1/onvif-h264-1
+    ptz: []
+    other: []
+  c800:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_Chayse01April=tlJwpbo6_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]
+    ptz: []
+    other: []
+  FCD600:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  I51DL:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}:5544/11
+    - rtsp://{user}:{pass}@{ip}:554/video1
+    - rtsp://{user}:{pass}@{ip}:554/h265_stream
+    ptz: []
+    other: []
+  I51DM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}:554/ch0_0.h264
+    ptz: []
+    other: []
+  i51DS:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  I51DW:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/cam1/onvif-h264-1
+    ptz: []
+    other: []
+  I51DX:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/sub/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102
+    ptz: []
+    other: []
+  I51EC:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    ptz: []
+    other: []
+  I51EG:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=2.sdp
+    ptz: []
+    other: []
+  I51EH:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/main/av_stream
+    ptz: []
+    other: []
+  i61dq:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    ptz: []
+    other: []
+  I61DR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    ptz: []
+    other: []
+  I61DU:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    ptz: []
+    other: []
+  i61fb:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    ptz: []
+    other: []
+  I91BF:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102
+    ptz: []
+    other: []
+  I91BH:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    ptz: []
+    other: []
+  I91BL:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}:554/0
+    - rtsp://{user}:{pass}@{ip}:554/stream/main
+    - rtsp://{user}:{pass}@{ip}:554/stream/sub
+    ptz: []
+    other: []
+  I91DB:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    ptz: []
+    other: []
+  I91F:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    ptz: []
+    other: []
+  l21G:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    ptz: []
+    other: []
+  NC400:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    - rtsp://{user}:{pass}@{ip}:5544/11
+    ptz: []
+    other: []
+  NC800:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102
+    - rtsp://{user}:{pass}@{ip}:554/video1
+    ptz: []
+    other: []
+  NOVA S:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/main/av_stream
+    ptz: []
+    other: []
+  NP41F1P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/view.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+  w300:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    ptz: []
+    other: []
+  I51EM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    ptz: []
+    other: []
+  151DX:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    ptz: []
+    other: []
+  I61G:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi/mjpg/mjpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    ptz: []
+    other: []
+  i91dl:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1.sdp
+    ptz: []
+    other: []
+  131v:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  DE41g:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  DL81A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  I21DE:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  I21G:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  I31V:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  i41ec:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  i71gd:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  K9504:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  K9604-W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  N34WDB+I31DB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  n441l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  N44WBD1T:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  131V:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    ptz: []
+    other: []
+  141 fl:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  i31:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  i41:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  I4iDG:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  l31v:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  141CW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/video.cgi?msubmenu=mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  141gd:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:5544/11
+    ptz: []
+    other: []
+  171gp:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    - http://{user}:{pass}@{ip}:8554/snapshot.jpg
+    stream: []
+    ptz: []
+    other: []
+  I21v:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  I23EB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  i41fl:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    - http://{user}:{pass}@{ip}:8554/snapshot.jpg
+    stream: []
+    ptz: []
+    other: []
+  141CS:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8554/snapshot.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    ptz: []
+    other: []
+  I41GD:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8554/snapshot.jpg
+    stream: []
+    ptz: []
+    other: []
+  151DB:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    ptz: []
+    other: []
+  151de:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    ptz: []
+    other: []
+  191BS:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102
+    ptz: []
+    other: []
+  AK-N48PIA0-68DT:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    ptz: []
+    other: []
+  c500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    - rtsp://{user}:{pass}@{ip}:554/cam2/onvif-h264
+    ptz: []
+    other: []
+  C800:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}:554/cam2/onvif-h264
+    ptz: []
+    other: []
+  DE81GB:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    ptz: []
+    other: []
+  DN41R:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  DN81R:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    - rtsp://{user}:{pass}@{ip}/Streaming/Unicast/channels/501
+    - rtsp://{user}:{pass}@{ip}/Streaming/Unicast/channels/401
+    ptz: []
+    other: []
+  DW81KD:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/main/av_stream
+    ptz: []
+    other: []
+  i15dx:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    ptz: []
+    other: []
+  i51dm:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}:5544/11
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102/?transportmode=unicast.sdp
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101/?transportmode=unicast.sdp
+    ptz: []
+    other: []
+  I51DS:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    - rtsp://{user}:{pass}@{ip}:554/h264/0/sub/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/h264/0/main/av_stream
+    ptz: []
+    other: []
+  I61BK:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    ptz: []
+    other: []
+  I61FC:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    ptz: []
+    other: []
+  I91BD:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    ptz: []
+    other: []
+  I91BM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    ptz: []
+    other: []
+  l51DM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    ptz: []
+    other: []
+  N481Y:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    ptz: []
+    other: []
+  N48PI:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    ptz: []
+    other: []
+  NCPT500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/main/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  P01:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    ptz: []
+    other: []
+  C1200:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102
+    - rtsp://{user}:{pass}@{ip}:554/cam1/onvif-h264-1
+    ptz: []
+    other: []
+  I91DN:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    ptz: []
+    other: []
+  I51ex:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/101
+    ptz: []
+    other: []
+  151DE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    - rtsp://{user}:{pass}@{ip}:5544/11
+    ptz: []
+    other: []
+  161fc:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    ptz: []
+    other: []
+  181HD:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    ptz: []
+    other: []
+  191BM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  191DB:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    ptz: []
+    other: []
+  CZ400:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    ptz: []
+    other: []
+  I51DF:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    - rtsp://{user}:{pass}@{ip}:5544/11
+    ptz: []
+    other: []
+  I61DS:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    ptz: []
+    other: []
+  I81HB:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    ptz: []
+    other: []
+  I81HD:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    ptz: []
+    other: []
+  i91be:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    ptz: []
+    other: []
+  I91BN:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101/?transportmode=unicast.sdp
+    - rtsp://{user}:{pass}@{ip}:554/cam2/onvif-h264
+    - rtsp://{user}:{pass}@{ip}:554/0
+    - rtsp://{user}:{pass}@{ip}:554/ch0_0.h264
+    - rtsp://{user}:{pass}@{ip}:554/h264_stream
+    ptz: []
+    other: []
+  I91BQ:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    - rtsp://{user}:{pass}@{ip}:554/2
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    ptz: []
+    other: []
+  I91DH:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    - rtsp://{user}:{pass}@{ip}:5544/11
+    ptz: []
+    other: []
+  l61fc:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    ptz: []
+    other: []
+  PO1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    ptz: []
+    other: []
+  FCD800:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    ptz: []
+    other: []
+  I81EM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  I81HN:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    ptz: []
+    other: []
+  de81g:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  C800-4k:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/sub/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  DL81A1t:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  i21ae:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  i21G:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  I41G:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  I91DQ:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  l91BL:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    ptz: []
+    other: []
+  N44SU:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  I51DE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:5544/11
+    ptz: []
+    other: []
+  i91bn:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:5544/11
+    ptz: []
+    other: []
+  '151':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    ptz: []
+    other: []
+  I19BN:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    ptz: []
+    other: []
+  I51DN:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/main/av_stream
+    ptz: []
+    other: []
+  I51ds:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    ptz: []
+    other: []
+  I51ES:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    ptz: []
+    other: []
+  I91dn:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    ptz: []
+    other: []
+  p10:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    ptz: []
+    other: []
+  Unknown:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi/mjpg/mjpeg.cgi
+    - http://{user}:{pass}@{ip}:80/snapshot.jpg?
+    - http://{user}:{pass}@{ip}:80/cgi-bin/snapshot.cgi?chn=4&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/201
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]&password=[PASSWORD]&channel=&stream=.sdp?real_stream--rtp-caching=100
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/view.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]
+  151CK:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/sub/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/main/av_stream
+    ptz: []
+    other: []
+  I51CK:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/sub/av_stream
+    ptz: []
+    other: []
+  WZ500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/sub/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/main/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/1/h264major
+    ptz: []
+    other: []
+  i51EM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/sub/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/H265/ch1/main/av_stream
+    ptz: []
+    other: []
+  I91DS:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/main/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/onvif2
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_Chayse01April=tlJwpbo6_channel=1_stream=1.sdp
+    ptz: []
+    other: []
+  WS500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/main/av_stream
+    ptz: []
+    other: []
+  WZ504:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/main/av_stream
+    ptz: []
+    other: []
+  I91DF:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H264/ch1/main/av_stream
+    ptz: []
+    other: []
+  l51DS:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/2
+    ptz: []
+    other: []
+  I91EV:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/2
+    ptz: []
+    other: []
+  151DQ:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102/?transportmode=unicast.sdp
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101/?transportmode=unicast.sdp
+    ptz: []
+    other: []
+  191BV:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/102/?transportmode=unicast.sdp
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/101/?transportmode=unicast.sdp
+    ptz: []
+    other: []
+  191BE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=[USERNAME]_stream=0.sdp
+    ptz: []
+    other: []
+  191bk:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    ptz: []
+    other: []
+  C800-4K:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    ptz: []
+    other: []
+  I19BM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    ptz: []
+    other: []
+  isb92:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    ptz: []
+    other: []
+  l51DL:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    ptz: []
+    other: []
+  l91bm:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    ptz: []
+    other: []
+  l91bn:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    ptz: []
+    other: []
+  Pano360 Pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    - rtsp://{user}:{pass}@{ip}:554/onvif2
+    ptz: []
+    other: []
+  I91BZ:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    ptz: []
+    other: []
+  I51EL:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    ptz: []
+    other: []
+  cpt500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    ptz: []
+    other: []
+  I91DL:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    ptz: []
+    other: []
+  161DQ:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif1
+    ptz: []
+    other: []
+  191df:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/channels/102
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/channels/101
+    ptz: []
+    other: []
+  ACZ800:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/H265/ch1/main/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/H265/ch1/sub/av_stream
+    ptz: []
+    other: []
+  i51el:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam1/onvif-h264-1
+    ptz: []
+    other: []
+  NCD8000:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam1/onvif-h264-1
+    ptz: []
+    other: []
+  151DN:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam1/onvif-h264-1
+    ptz: []
+    other: []
+  I51HM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  DN61R:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Unicast/channels/501
+    ptz: []
+    other: []
+  dt81dx:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/PSIA/Streaming/channels/[CHANNEL]
+    ptz: []
+    other: []
+  i21an:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  I21eb:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=0
+    stream: []
+    ptz: []
+    other: []
+  i91bf:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/ch0_0.h264
+    ptz: []
+    other: []
+  I51HD:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264/0/sub/av_stream
+    - rtsp://{user}:{pass}@{ip}:554/h264/0/main/av_stream
+    ptz: []
+    other: []
+  151DW:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264_stream
+    ptz: []
+    other: []
+  I91DG:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264_stream
+    - rtsp://{user}:{pass}@{ip}/h264/ch1/main/av_stream
+    ptz: []
+    other: []
+  K8208-W:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/snapshot.cgi?chn=1&u=[USERNAME]&p=
+    stream: []
+    ptz: []
+    other: []
+  N48PAW:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - mms://{user}:{pass}@{ip}:554/img/video.asf
+  NCD800:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/1/h264major
+    ptz: []
+    other: []
+  vc500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264/ch1/main/av_stream
+    ptz: []
+    other: []
+  I91ET:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264/ch1/main/av_stream
+    ptz: []
+    other: []

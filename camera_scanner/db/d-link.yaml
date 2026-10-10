@@ -1,0 +1,7027 @@
+d-link:
+  '0015':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    ptz: []
+    other: []
+  2132LB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other: []
+  2332L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other: []
+  5222LB1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/dms.jpg
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  '6110':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  '7110':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  DCS-2132LB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-4701E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    - http://{user}:{pass}@{ip}:80/video1.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-5222:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}:80/video1.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - rtsp://{user}:{pass}@{ip}/OVProfile01
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS_2330L:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    ptz: []
+    other: []
+  DCS-1130:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=3
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/play3.sdp
+    ptz: []
+    other: []
+  DCS-2103:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/dms.jpg
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    - rtsp://{user}:{pass}@{ip}/h264/ch1/sub/
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:88/dms
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+    - http://{user}:{pass}@{ip}:80/dms?nowprofileid=1
+  DCS-2121:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}/play3.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  DCS2132BL:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-2132L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    - http://{user}:{pass}@{ip}/video[CHANNEL].mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-2132L-2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/dms.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    ptz: []
+    other: []
+  DCS-2132LB1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/dms.jpg
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-2230:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/dms.jpg
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=[CHANNEL]
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-2310L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/dms.jpg
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    - http://{user}:{pass}@{ip}:80/H.264.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=[CHANNEL]
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS2330:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    ptz: []
+    other: []
+  DCS-2330L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/dms.jpg
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:88/dms
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=[CHANNEL]
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-2332l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-2332L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/dms.jpg
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    ptz: []
+    other: []
+  DCS-3716:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  dcs-4602ev:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}:80/video1.mjpg
+    - http://{user}:{pass}@{ip}/video[CHANNEL].mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - http://{user}:{pass}@{ip}:80/?action=appletvstream
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_dL!nK2021$=1B4VOjqw_channel=1_stream=0.sdp
+    - http://{user}:{pass}@{ip}:80/?&AUDIO=YES&CHOPIMAGE=YES&STREAM=YES&WANTIMAGE=0.JPG&SENDEMPTYIMAGES=NO
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  DCS-4614EK:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video1.mp4
+    - http://{user}:{pass}@{ip}:80/video2.mp4
+  DCS-4622:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}:80/video2.mjpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/dms?nowprofileid=2&0.7186259560150474
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+    - http://{user}:{pass}@{ip}:80/dms?nowprofileid=1&0.7094712289387304
+  DCS-4714E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  dcs-4718E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    ptz: []
+    other: []
+  DCS-5029L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/dms.jpg
+    - http://{user}:{pass}@{ip}:80/video1.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:88/dms
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-5030L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=3
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - http://{user}:{pass}@{ip}:80/dgh264.raw?Profile=1
+    - http://{user}:{pass}@{ip}:80/video.cgi?resolution=320x240
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  DCS-5220:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?cam=[CHANNEL]&quality=3&size=2
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  DCS-5222L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/Image.jpg
+    - http://{user}:{pass}@{ip}:80/video1.mjpg
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - http://{user}:{pass}@{ip}:80/dgh264.raw?Profile=1
+    - rtsp://{user}:{pass}@{ip}/OVProfile01
+    - rtsp://{user}:{pass}@{ip}/play4.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video/flv.cgi
+  dcs5222lb:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    ptz: []
+    other: []
+  DCS-5222LB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/dms.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:88/dms
+  DCS-5222LB1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/dms.jpg
+    - http://{user}:{pass}@{ip}:80/video1.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:88/dms
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=[CHANNEL]
+  DCS-6010L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-6112:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    ptz: []
+    other: []
+  DCS-6113:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  DCS-6513:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/dms.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  DCS-6620:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?cam=[CHANNEL]&quality=3&size=2
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DCS-6818B1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DCS700L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    ptz: []
+    other: []
+  DCS7010L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DCS-7010L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    - http://{user}:{pass}@{ip}/video[CHANNEL].mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=[CHANNEL]
+  DCS-7110:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    - http://{user}:{pass}@{ip}/video[USERNAME].mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-935L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DCS-936L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/img/video.mjpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/h264_hd.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video/flv.cgi
+  DSC-2230L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other: []
+  DVS-301:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - rtsp://{user}:{pass}@{ip}/OVProfile00
+    ptz: []
+    other: []
+  DCS-5222lb:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+    - http://{user}:{pass}@{ip}:80/
+  '1100':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  '1130':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  '2121':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  2132L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=[CHANNEL]
+  2132LB1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream: []
+    ptz: []
+    other: []
+  2136l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  2230L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  '2232':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  '2330':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  2330l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  2350l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  '2630':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  2630L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video/flv.cgi
+  2670L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  '3420':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  '4201':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  4602EV:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  4701E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  4703E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  5000L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  '5009':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  5009L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  5010L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  '5020':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}:80/dgh264.raw?Profile=1
+    ptz: []
+    other: []
+  5025L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}:80/dgh264.raw?Profile=1
+    ptz: []
+    other: []
+  '5030':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  5030L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}:80/dgh264.raw?Profile=1
+    ptz: []
+    other: []
+  5211L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  '5220':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    ptz: []
+    other: []
+  '5222':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  5225l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  '5230':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  6010L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:88/dms
+  '6210':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  '6510':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream: []
+    ptz: []
+    other: []
+  '8000':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  8000hl:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  8000L8000H:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  8000LH:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video/flv.cgi
+  850L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  '8800':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  '910':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}:80/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=0
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  '920':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  924L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  930L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/img/video.mjpeg
+    - http://{user}:{pass}@{ip}:80/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=0&snapshot=on
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/aview.htm
+    - http://{user}:{pass}@{ip}:80/
+  930-lb:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  930LB1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  '932':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - 'http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0 '
+    ptz: []
+    other: []
+  932l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    stream:
+    - http://{user}:{pass}@{ip}:80/dgvideo.cgi
+    ptz: []
+    other: []
+  932L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    - http://{user}:{pass}@{ip}/Image.jpg
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  932LB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  932LB1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  932LB2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  '933':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    ptz: []
+    other: []
+  933-L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:80/video.cgi?resolution=320x240
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  934L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  935L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/cgi/jpg/image.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  936l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    ptz: []
+    other: []
+  '940':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  940l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  942-L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  960L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  Unknown:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/image[CHANNEL].jpg
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}/?action=snapshot
+    - http://{user}:{pass}@{ip}/temp/image.jpg
+    - http://{user}:{pass}@{ip}/snapshot.jpg
+    - http://{user}:{pass}@{ip}/img/snapshot.cgi?size=2
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - http://{user}:{pass}@{ip}:80/?action=appletvstream
+    - rtsp://{user}:{pass}@{ip}:554/h264_hd.sdp
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&password=[PASSWORD]
+    - http://{user}:{pass}@{ip}/user/videostream.cgi
+    - http://{user}:{pass}@{ip}/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554/h264_vga.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/view/image?pro_[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/view.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+  B8820:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  d5009l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  D5030L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DC920:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  DC932L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}:80/image/jpeg.cgi?user=
+    stream: []
+    ptz: []
+    other: []
+  DCC 933L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCC 942L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DCS-2130:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/dms.jpg
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    - rtsp://{user}:{pass}@{ip}/h264/ch1/sub/
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=[CHANNEL]
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-2360L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-4210:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-5020L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/img/snapshot.cgi?size=3
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/img/video.mjpeg
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=3
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}:80/dgh264.raw?Profile=1
+    - http://{user}:{pass}@{ip}:81/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}:80/dgvideo.cgi
+    - http://{user}:{pass}@{ip}:80/video.cgi?resolution=320x240
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}:80/video.cgi?resolution=640x480
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+    - http://{user}:{pass}@{ip}:80/
+  DCS-5230:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DCS-5320:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-7010:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=[CHANNEL]
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-930:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/Image.jpg
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - rtsp://{user}:{pass}@{ip}/play3.sdp
+    - rtsp://{user}:{pass}@{ip}:10554/tcp/av0_0
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  DCS-930L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/img/snapshot.cgi?size=3
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/dms.jpg
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    - http://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}:80/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=0
+    - http://{user}:{pass}@{ip}/Image.jpg
+    - http://{user}:{pass}@{ip}/img/video.mjpeg
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=3
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]&snapshot=on
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}:81/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}:80/video.cgi?resolution=320x240
+    - 'http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0 '
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}:80/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}/h264/ch1/sub/
+    - http://{user}:{pass}@{ip}:80/?&AUDIO=YES&CHOPIMAGE=YES&STREAM=YES&WANTIMAGE=0.JPG&SENDEMPTYIMAGES=NO
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  DCS-932L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/Image.jpg
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    - http://{user}:{pass}@{ip}:80/image/jpeg.cgi?user=
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]&snapshot=on
+    - http://{user}:{pass}@{ip}/snapshot/view[CHANNEL].jpg
+    - http://{user}:{pass}@{ip}:80/img/video.mjpeg?channel=2
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}:80/dgvideo.cgi
+    - http://{user}:{pass}@{ip}:80/video.cgi?resolution=640x480
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0
+    - http://{user}:{pass}@{ip}/stream.jpg
+    - rtsp://{user}:{pass}@{ip}/HighResolutionVideo
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-932LB1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}:80/video.cgi?resolution=640x480
+    ptz: []
+    other: []
+  DCS-942:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/play3.sdp
+    - rtsp://{user}:{pass}@{ip}/OVProfile00
+    - rtsp://{user}:{pass}@{ip}/OVProfile02
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/?&AUDIO=YES&CHOPIMAGE=YES&STREAM=YES&WANTIMAGE=[CHANNEL].JPG&SENDEMPTYIMAGES=NO
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video/flv.cgi
+  DCS_5010L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=3
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}:80/dgh264.raw?Profile=1
+    ptz: []
+    other: []
+  DCS_934:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  DCS=933L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  DCS-033L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  dcs0930l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-100:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-1030:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-1100:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DCS-1100L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    ptz: []
+    other: []
+  dcs-1130l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  dcs-132:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  DCS-132L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-132LB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-132LB1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-133l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-2000:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DCS-2021:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-2030L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  dcs-2031:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-2102:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/play3.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-2120:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?cam=[CHANNEL]&quality=3&size=2
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0
+    ptz: []
+    other: []
+  dcs-2130:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other: []
+  DCS-2131L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-2132L-ES:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DCS-2136l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-2210:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/dms.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=[CHANNEL]
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+    - http://{user}:{pass}@{ip}:80/
+  DCS-2210L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-222L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other: []
+  DCS-2232:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DCS-230LB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-2310:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DCS-232:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-2326L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  dcs2330l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-2332:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-233OL:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-2530-L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-2630L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=3
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/OVProfile01
+    - rtsp://{user}:{pass}@{ip}:554/1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video/flv.cgi
+    - http://{user}:{pass}@{ip}:80/
+  DCS-2670:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-26700L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-2670l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-2670L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=3
+    - http://{user}:{pass}@{ip}:80/video1/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-3010:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  DCS-3112:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/dms.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-3210L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-32LB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-3410:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DCS3411:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  DCS-3420:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  DCS-3430:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS3710B1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-3715:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  dcs-4201:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-450:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-4602EV:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    - rtsp://{user}:{pass}@{ip}:554/1
+    ptz: []
+    other: []
+  DCS-4603:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  DCS-4662:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  dcs-4701:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS4701E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  DCS-4703E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-4705E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}:80/video2.mjpeg
+    stream: []
+    ptz: []
+    other: []
+  DCS-4802E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/dms.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:88/dms
+  DCS-5000L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - http://{user}:{pass}@{ip}:80/dgvideo.cgi
+    - http://{user}:{pass}@{ip}:80/video.cgi?resolution=320x240
+    ptz: []
+    other: []
+  DCS-5000S:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  dcs-5009l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  DCS-5010:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320x240
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  DCS5020L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-5020L/RE:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS5025L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  dcs5029:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-5030:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  dcs5030L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}:80/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=0
+    stream: []
+    ptz: []
+    other: []
+  DCS-5050L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-510L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-520:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-5201:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  dcs-520l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-5211L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DCS-5220L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-5222B1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/OVProfile00
+    ptz: []
+    other: []
+  DCS-5222l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/dms.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/play3.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-5222L1B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/dms.jpg
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    - http://{user}:{pass}@{ip}:80/video1.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:88/dms
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+    - http://{user}:{pass}@{ip}:80/
+  DCS5222LB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-5222l-BA:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-5229L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-5230L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/play3.sdp
+    ptz: []
+    other: []
+  DCS-5300:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/Image.jpg
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?cam=[CHANNEL]&quality=3&size=2
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DCS-5320l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-5330:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-5520l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-555L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-5605:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    ptz: []
+    other: []
+  DCS-5606:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-5615:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  dcs-5617:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  dcs-5635:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-5653:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-6004L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  dcs-6045l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  DCS-6054L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-6112V:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-6113V:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  DCS-6140:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-6210:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/dms.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  dcs-630L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-6314:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-632L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-6410:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-6511:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:88/dms
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=[CHANNEL]
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-6616:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/dms.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-6815:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=[CHANNEL]
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=[CHANNEL]
+  DCS-7000L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other: []
+  DCS-700L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-7110L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-7410:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-7413:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/dms.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-7510:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-7513:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:80/video1.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - rtsp://{user}:{pass}@{ip}/onvif-media/media.amp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  dcs-7710:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  DCS-7710L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/dms.jpg
+    stream: []
+    ptz: []
+    other: []
+  dcs8000:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-8000l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  dcs-8000lh:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - rtsp://{user}:{pass}@{ip}:554/onvif_camera/profile.0
+    ptz: []
+    other: []
+  DCS-8000-LH:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  dcs8000llh:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-800L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-8010LH:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  dcs-8100lh:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - https://{user}:{pass}@{ip}:443/video/mjpg.cgi?.mjpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-8100LH:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-820L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - http://{user}:{pass}@{ip}:80/dgvideo.cgi
+    - rtsp://{user}:{pass}@{ip}/play3.sdp
+    ptz: []
+    other: []
+  DCS-825:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-825L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/play3.sdp
+    ptz: []
+    other: []
+  dcs-832l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-834lb:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-8525LH:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video/flv.cgi
+  DCS-8525LH-977F:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-8525LH-B003:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-855L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    ptz: []
+    other: []
+  DCS900:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-90005L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-903:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  dcs910:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  DCS-910:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    - http://{user}:{pass}@{ip}:80/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=0
+    - http://{user}:{pass}@{ip}/Image.jpg
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}:81/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  DCS-920:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/Image.jpg
+    - http://{user}:{pass}@{ip}/img/video.mjpeg
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-920L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-920LB1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-930 L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    ptz: []
+    other: []
+  DCS-930BL1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-930L 2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  DCS-930L-1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  DCS930lb:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-930-Lb:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  dcs930lb1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  DCS-930lb1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-931:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-931l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}:80/video1.mjpg
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  DCS-931L 1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  DCS932:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-9326l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  dcs-932b1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS932BL:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  DCS-932L (81):
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=3
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}:80/dgvideo.cgi
+    ptz: []
+    other: []
+  DCS-932L (B1):
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}:80/dgvideo.cgi
+    - http://{user}:{pass}@{ip}:80/video.cgi?resolution=640x480
+    ptz: []
+    other: []
+  DCS-932l B2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-932L NEW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-932L1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  dcs-932lb:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-932LB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}:80/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=0
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  dcs-933:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-933:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/dms.jpg
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-9331l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-9333L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-933L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/img/video.mjpeg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}:80/dgh264.raw?Profile=1
+    - http://{user}:{pass}@{ip}:80/dgvideo.cgi
+    ptz: []
+    other: []
+  DCS-933L A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-933L_CAM2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  DCS-933lb:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-9343lb:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-934L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/img/snapshot.cgi?size=3
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/img/video.mjpeg
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=3
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}:80/dgvideo.cgi
+    - http://{user}:{pass}@{ip}:80/video.cgi?resolution=320x240
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}:80/video.cgi?resolution=640x480
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  DCS-935:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DCS-935L MJPEG OK:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    ptz: []
+    other: []
+  dcs-936:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video/flv.cgi
+  DCS-936L2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DCS93L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-942l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    stream: []
+    ptz: []
+    other: []
+  DCS-942LA1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/OVProfile02
+    ptz: []
+    other: []
+  DCS-942LA3:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-942LB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}/OVProfile00
+    ptz: []
+    other: []
+  DCS-942LB1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}/OVProfile00
+    ptz: []
+    other: []
+  DCS-942LBI:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-950L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-960L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DCS-960L PS:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  dcs-963l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-D30L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-D910:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  DCS-D930L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-D930LB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-D942L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-G900:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    stream: []
+    ptz: []
+    other: []
+  DL2332L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream: []
+    ptz: []
+    other: []
+  DL-936L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  DS-2330:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DS-933L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DSC 2132L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream: []
+    ptz: []
+    other: []
+  DSC 5222:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DSC-5222L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DSC 8000-LH:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  DSC 930-L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/Image.jpg
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DSC 960L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  dsc-100:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DSC-2103:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    - rtsp://{user}:{pass}@{ip}:554/live
+    ptz: []
+    other: []
+  DSC-2103_MY:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  DSC-2132L-ES:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  dsc-2330:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DSC-2530:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  dsc-2670l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DSC3410:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DSC-5010L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  dsc-5030L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  dsc5211l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DSC-7010:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DSC-8525LH:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DSC-9000L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DSC-930LB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  DSC-932L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DSC-932LB1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/Image.jpg
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DSC-933:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DSC-933L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DSC934L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DSC-935:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DSC-936L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    ptz: []
+    other: []
+  dsc-942l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-8000LHV2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/profile.0
+    ptz: []
+    other: []
+  DCS-932:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/Image.jpg
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]&snapshot=on
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  dcs920:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  '942':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    ptz: []
+    other: []
+  132l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  2100+:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  2330L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=[CHANNEL]
+  '329':
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  5020l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/dms.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  5025l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  5222L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/dms.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - rtsp://{user}:{pass}@{ip}/OVProfile01
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video/flv.cgi
+  '732':
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  920l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  9300L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  930lb:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  930-lb1:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  932bl:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  932lb1:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  933bl:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  933L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  934l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  936L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/img/video.mjpeg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/play3.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video/flv.cgi
+  940L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/GetData.cgi
+  952l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  CL-5000L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  D925:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  d930l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  d932:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCC 932L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  DCS-5010L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}:80/dgvideo.cgi
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/img/video.asf
+  DCS-900:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}:80/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=0
+    - http://{user}:{pass}@{ip}/Image.jpg
+    - http://{user}:{pass}@{ip}/java.jpg
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-90L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-930LB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  DCS-930LB1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/Image.jpg
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=3
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}:80/video.cgi?resolution=320x240
+    - http://{user}:{pass}@{ip}:80/video.cgi?resolution=640x480
+    ptz: []
+    other: []
+  DCS0930L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-1000:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/Image.jpg
+    - http://{user}:{pass}@{ip}/java.jpg
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]
+    ptz: []
+    other: []
+  DCS-1000W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  dcs132:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  dcs132l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-202L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  DCS-2050L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}:80/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=0
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/?action=appletvstream
+    ptz: []
+    other: []
+  DCS-4020:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  dcs-5000l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-5009l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  dcs-5010l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:80/?&AUDIO=YES&CHOPIMAGE=YES&STREAM=YES&WANTIMAGE=0.JPG&SENDEMPTYIMAGES=NO
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  dcs5020:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-5020l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-5025:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  DCS-5030L-56FB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  DCS-5092L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/dms.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-520L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-530:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-6030L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-6618:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-6818:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DCS-830L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  dcs-900:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  dcs-9005l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-900W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/java.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  dcs-920:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-9203:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  dcs930:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  dcs-930:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-930 MJPG:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  dcs930l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-930l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-930L1:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-930L2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-930Lb:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}:80/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=0
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  DCS-931L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:80/dgh264.raw?Profile=1
+    ptz: []
+    other: []
+  DCS-931LB1:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  dcs932:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  DCS-932l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}:80/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=0
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}:80/video.cgi?resolution=320x240
+    ptz: []
+    other: []
+  DCS-932L2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-932Lb:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-932LB2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  dcs933la1:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  dcs934L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-934L-3:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-934lb:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-993L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  DCS-p33L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DL911:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  5020L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - http://{user}:{pass}@{ip}:81/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}:80/dgvideo.cgi
+    ptz: []
+    other: []
+  DP1309:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DS200L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DS-920:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DSC-930:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DSC 930:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DSC 932L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  dsc132l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  dsc-5010l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  DSC5020L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DSC900:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DSC-910:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  DSC-930L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  DSC-930LB1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DSC-934L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DSC-S5030L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-5025L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  DCL-930L:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=0
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}:80/dgvideo.cgi
+    ptz: []
+    other: []
+  132L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/img/snapshot.cgi?size=3
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  5009l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  5220L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    - http://{user}:{pass}@{ip}:80/dgvideo.cgi
+    ptz: []
+    other: []
+  700L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  '930':
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  930LB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}:80/dgvideo.cgi
+    - http://{user}:{pass}@{ip}:80/video.cgi?resolution=320x240
+    ptz: []
+    other: []
+  931L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    stream: []
+    ptz: []
+    other: []
+  932-L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:88/dms
+    - http://{user}:{pass}@{ip}:80/
+  9340L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  cds-920:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  DC 930:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-5009L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/Image.jpg
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-5020L_rev:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  DCS5030L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  DCS-5201L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  DCS-530L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  dcs730l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  DCS-800LH:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  DCS-8302LH:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/profile.0
+    ptz: []
+    other: []
+  DCS-8526LH:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/profile.0
+    - http://{user}:{pass}@{ip}:80/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  DCS-90001:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  DCS-9005l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  DCS-930B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DCS-930L_Rev_B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  dcs-930lb:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  dcs932l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    stream: []
+    ptz: []
+    other: []
+  DCS-932L_Rev_B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  DCS-9331:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  dcs-933L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  DCS-933l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=3
+    stream: []
+    ptz: []
+    other: []
+  dcs-934L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  dcs-940lb:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  DCS-942L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/Image.jpg
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=3
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/play3.sdp
+    - rtsp://{user}:{pass}@{ip}/OVProfile00
+    - rtsp://{user}:{pass}@{ip}/OVProfile02
+    - rtsp://{user}:{pass}@{ip}:554/img/video.sav
+    ptz: []
+    other: []
+  DCS-963L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    ptz: []
+    other: []
+  DL-932L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  DSC-5009L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  dsc-5020l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    stream: []
+    ptz: []
+    other: []
+  DSC5025:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  DSC-5030L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  dsc930LB1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  DSC-931S:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  DSC-932LB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other: []
+  '1121':
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video/flv.cgi
+  942L:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/OVProfile00
+    - rtsp://{user}:{pass}@{ip}/OVProfile02
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video/flv.cgi
+  DCS-8000LH:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/profile.0
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video/flv.cgi
+  dsc-936l:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video/flv.cgi
+  5030l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  932lb:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  933l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}:80/dgh264.raw?Profile=1
+    ptz: []
+    other: []
+  942l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    ptz: []
+    other: []
+  CDS-6818:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  CDS930:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  DCL-930:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-320:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-5009:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  dcs-132l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-202l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-245L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-320L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-5003DL:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-5010l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-5020 L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}:80/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=0
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  dcs-5030l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}:80/dgh264.raw?Profile=1
+    ptz: []
+    other: []
+  dcs-5030L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}:80/dgvideo.cgi
+    ptz: []
+    other: []
+  DCS-5120L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-5520L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream: []
+    ptz: []
+    other: []
+  dcs-8600lh:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  DCS-930LPGB20:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-931LA1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS932L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  DCS933LA1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-934LB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-950:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  dcs-960l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  dcsg900:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-G932:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-L5020L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  '5025':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  '900':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  5000l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DSC-5020L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  DSC-5020LA1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  dsc-900:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DSC930L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  dsc931:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  dsc932l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  dsc-933l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DSC-960L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  932I:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-5020:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    - http://{user}:{pass}@{ip}:80/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=0
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  '5000':
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  '5010':
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  5029L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/dms.jpg
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    stream:
+    - http://{user}:{pass}@{ip}:80/dgh264.raw?Profile=1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:88/dms
+  5222l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  920L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  930L2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  930lb1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  '931':
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  932BL:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  943l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  dcs15000l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  DCS2010L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  DCS-2100:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?cam=[CHANNEL]&quality=3&size=2
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other: []
+  dcs-302:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  DCS-32L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-360L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  dcs-5030:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  dcs5120l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  dcs-520:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  dcs832l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  dcs900:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  dcs-931:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  dcs-932lb1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  DCS932LB1_mm:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  dcs933 l-44:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  DCS-9332LB1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  DCS-933L_Cam2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  dcs-980:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  DCS-P6000LH:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  DS-930L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    stream: []
+    ptz: []
+    other: []
+  DSC-900L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  DSC920:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  dsc930L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  932-l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  932-LB:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  '934':
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  DCS-3110:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  DCS-3220:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/Image.jpg
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-6111:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    - http://{user}:{pass}@{ip}/video[USERNAME].mjpg
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  DCS920:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - http://{user}:{pass}@{ip}:80/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  DCVS-930L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  DSC 5020L:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=3
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    ptz: []
+    other: []
+  DSC-5000L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi
+    - http://{user}:{pass}@{ip}:80/dgvideo.cgi
+    ptz: []
+    other: []
+  DC8942L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    ptz: []
+    other: []
+  DCS-8200LH:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    ptz: []
+    other: []
+  DCS930l:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    ptz: []
+    other: []
+  dcs936l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    ptz: []
+    other: []
+  DCS-936l:
+    snapshot:
+    - https://{user}:{pass}@{ip}:443/video/mjpg.cgi?.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    ptz: []
+    other: []
+  dcs942:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DCS-9552:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    ptz: []
+    other: []
+  DSC940:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play2.sdp
+    ptz: []
+    other: []
+  700l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  930-L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  930-LB:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  dcs-5009L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  dcs-5020l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  dcs-5025l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  DCS-700l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  DCS-900 GPI:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  DCS-900-910-120:
+    snapshot:
+    - http://{user}:{pass}@{ip}/java.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  DCS932l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  dcs932lb1:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  DCS942L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  DCS-d332:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  dcs-g900:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  dsc5000l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  dsc920:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  DCS-1091:
+    snapshot:
+    - http://{user}:{pass}@{ip}/img/snapshot.cgi?size=3
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream: []
+    ptz: []
+    other: []
+  '2000':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  '2100':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  5300G:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  5300W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  DCS-3220G:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  DCS-3500:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-2100g:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  DCS2120:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  DCS-300G:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  dcs-5250:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  DCS-5300g:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  DCS-5300W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  DCS-5520:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  DCS-6620g:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  DSC2000:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  5222lb1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  '6513':
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  942Lb:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  '960':
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS_5020L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  DCS=936L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-1130L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-2132l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/dms.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=[CHANNEL]
+  DCS-2136L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-2230L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-2330LL:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other: []
+  DCS-2350L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-2530L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  dcs3410:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-4601EV:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  dcs-5000L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-5022L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  dcs5030:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS5222L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    - rtsp://{user}:{pass}@{ip}/OVProfile00
+    - http://{user}:{pass}@{ip}:80/?action=appletvstream
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  DCS-522L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/dms.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-5552l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play3.sdp
+    ptz: []
+    other: []
+  DCS-5635:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-6201:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-632l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-7010Loma:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  dcs-8000hl:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-902L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-910L2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-934L-2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-935l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  dcs942l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/OVProfile02
+    ptz: []
+    other: []
+  dcs-942l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  DCS-942L me:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS950G:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  522lB1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DSC 942L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  dsc-1100:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DSC2530L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  dsc6100lh:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  dsc-930L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi?resolution=320x240
+    ptz: []
+    other: []
+  DVC-5552L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-932L B2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    stream: []
+    ptz: []
+    other: []
+  '5300':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  dcs2120:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-5300G:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    ptz: []
+    other: []
+  DCS-5300w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-5610:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  dsc2120:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  DSC-3220:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  '2103':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  '2130':
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg?size=3
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  '2132':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  2530L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=[CHANNEL]
+    - http://{user}:{pass}@{ip}:80/dms?nowprofileid=2&0.7186259560150474
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  4701e:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  '500':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DCS-4605EV:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  dcs-2103:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  DCS-2132:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DCS-2136:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS2230:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DCS-2311L:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DCS-2311L-ES:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DCS2330l:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DCS-2330L/RE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  dcs-2332:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DCS-3511:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DCS-3710:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/dms.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:88/dms
+  DCS-4212:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  dcs-4612EK:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DCS-4618EK:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DCS-4712E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DCS-4718E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  DCS-5220B:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DCS-5222LB-sesipod:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DCS-6002L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DCS-6004:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DCS-6010LLH:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  dcs-7313:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  dcs-935l:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DCS-D5552:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DSC2210:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  DSC-7513:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1.sdp
+    ptz: []
+    other: []
+  d-932:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DCS-L935:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DCS-121:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  dcs-935L:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/play1.mjpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DCS-960:
+    snapshot:
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DCS-960L2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DL935:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DSC-2630L:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DSC-820L:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DSC-935L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  DSC-942L:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/play1.sdp
+    ptz: []
+    other: []
+  dcs-2120:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  DCS-3415:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  dcs-5610:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  DCS-6010:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-6110:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  DCS-6113VB1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  DCS-6915:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  DCS-7110B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  DCS-7110B1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  DCS-932LKB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg?size=3
+    stream: []
+    ptz: []
+    other: []
+  2132BL:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:88/dms
+  DCS-2330:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=[CHANNEL]
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-2330lL:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=[CHANNEL]
+  DCS-3712:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=[CHANNEL]
+  DCS-4633EV:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  DCS-5221:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  dcs-5222l:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - rtsp://{user}:{pass}@{ip}/OVProfile01
+    - rtsp://{user}:{pass}@{ip}:554/h264_hd.sdp
+    ptz: []
+    other: []
+  DCS-7000l:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other: []
+  dcs7110:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  DSC-2210:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  DSC2530:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  D6511:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other: []
+  DCS-2200:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/dms.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other: []
+  DCS-2310l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCs-4622:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other: []
+  dcs-5222lb1:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other: []
+  dsc-2330l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/ipcam/stream.cgi?nowprofileid=2
+    ptz: []
+    other: []
+  '6511':
+    snapshot:
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-7517:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-2130L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream: []
+    ptz: []
+    other: []
+  dcs-2132lb:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream: []
+    ptz: []
+    other: []
+  dcs2132lb1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-5029l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-6212L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-6517:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}:80/video1.mjpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-7010l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DSC-2230:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}:80/video1.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  4602ev:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  '7513':
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-2123L1B:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-2350:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-2626:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-2760L:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-3223L:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  dcs-4602:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-5222lb1:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS-6010L_cso:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DCS930L:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DS-2330L:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  DSC-2103_my:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms?nowprofileid=2
+  '4860':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  8010LH:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  DCP-8010LH:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  DCS-8515LH:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  DCS-8300LH:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}/live/profile.0
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  dsc6100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  DCS-8600LH-EFC3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  DCS-83:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  DCS-1000w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/Image.jpg
+    - http://{user}:{pass}@{ip}/java.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-600:
+    snapshot:
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-900a:
+    snapshot:
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    stream: []
+    ptz: []
+    other: []
+  DCS-932LB 2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    stream:
+    - http://{user}:{pass}@{ip}:80/dgvideo.cgi
+    ptz: []
+    other: []
+  DCS-932lb1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    stream: []
+    ptz: []
+    other: []
+  dsc-932:
+    snapshot:
+    - http://{user}:{pass}@{ip}/IMAGE.JPG
+    stream: []
+    ptz: []
+    other: []
+  '50009':
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-32l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-5000l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS5020l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-502L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-5030l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-5030L FAF:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-533L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-903L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-930L s:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-932L-00:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS-933L-00:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  dsc-943l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  DCS932 A:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  931l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-932L_3:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DSC931:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-5900L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/dgh264.raw?Profile=1
+    ptz: []
+    other: []
+  DSC-500:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/dgh264.raw?Profile=1
+    ptz: []
+    other: []
+  DCS-930-lb:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/dgvideo.cgi
+    ptz: []
+    other: []
+  DCS-d5009l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/dgvideo.cgi
+    ptz: []
+    other: []
+  DCS-932lb:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/dgvideo.cgi
+    ptz: []
+    other: []
+  DCS-5020/RE:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    stream: []
+    ptz: []
+    other: []
+  DCS932LB:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=1
+    stream: []
+    ptz: []
+    other: []
+  DCS-7710:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  '6116':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  DCS-6113B1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  DSC5610:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream: []
+    ptz: []
+    other: []
+  DSC-6112:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  DCS-3514:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  8000L-HV2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/profile.0
+    ptz: []
+    other: []
+  8350H:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/profile.0
+    ptz: []
+    other: []
+  8526LH:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/profile.0
+    ptz: []
+    other: []
+  DCS-8300LHV2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/profile.0
+    ptz: []
+    other: []
+  DCS-8320LH:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/profile.0
+    ptz: []
+    other: []
+  DCS-8350LH:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/profile.0
+    ptz: []
+    other: []
+  DCS-8627LH:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/profile.0
+    ptz: []
+    other: []
+  DCS-8630LH:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/profile.0
+    ptz: []
+    other: []
+  DCS-8635LH:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/profile.0
+    ptz: []
+    other: []
+  '8526':
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=0
+    stream: []
+    ptz: []
+    other: []
+  930l:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=0
+    stream: []
+    ptz: []
+    other: []
+  DCS-932bl:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=0
+    stream: []
+    ptz: []
+    other: []
+  DCS:231L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS=933l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-1150:
+    snapshot:
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-636:
+    snapshot:
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-6811:
+    snapshot:
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream: []
+    ptz: []
+    other: []
+  dcs900w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream: []
+    ptz: []
+    other: []
+  dcs930L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-932lbs:
+    snapshot:
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-9333l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS934L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream: []
+    ptz: []
+    other: []
+  dsc934l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream: []
+    ptz: []
+    other: []
+  930bl1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-4602:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/?action=appletvstream
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  DCS-932L.:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  dcs-930l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi?resolution=320x240
+    ptz: []
+    other: []
+  DCS-930lb:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/video.cgi?resolution=320x240
+    ptz: []
+    other: []
+  DSC932L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  C935IP:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    ptz: []
+    other: []
+  960l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  dcs-6100lh:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/1
+    - rtsp://{user}:{pass}@{ip}:554/live/profile.1/video
+    - rtsp://{user}:{pass}@{ip}:554/live/profile.0/video
+    ptz: []
+    other: []
+  DCS530:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/video/mjpg.cgi?profileid=3
+    stream: []
+    ptz: []
+    other: []
+  DCS-8000:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  DSC-2230-91:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  dcs-8200LH:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  DSC-900:
+    snapshot:
+    - http://{user}:{pass}@{ip}/java.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-5220 V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/_gCVimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-1263WH:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/onvif/media
+    ptz: []
+    other: []
+  DCS-210:
+    snapshot:
+    - http://{user}:{pass}@{ip}/ipcam/mjpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-6620G:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?cam=[CHANNEL]&quality=3&size=2
+    stream: []
+    ptz: []
+    other: []
+  DCS-2131lb1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video[CHANNEL].mjpg
+    stream: []
+    ptz: []
+    other: []
+  DCS-2132l-ES:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:554/video1.mpg
+  DCS-2414:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream
+    ptz: []
+    other: []
+  DES5222L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/?&AUDIO=YES&CHOPIMAGE=YES&STREAM=YES&WANTIMAGE=0.JPG&SENDEMPTYIMAGES=NO
+    ptz: []
+    other: []
+  DCS-6100LH-3C82:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?q=30&fps=33&id=0.5
+    stream: []
+    ptz: []
+    other: []
+  dcs-6100lhv2:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?q=30&fps=33&id=0.5
+    stream: []
+    ptz: []
+    other: []
+  DSC7110:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?q=30&fps=33&id=0.5
+    stream: []
+    ptz: []
+    other: []
+  DCS-5614:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/mode=real&idc=1&ids=2
+    ptz: []
+    other: []
+  DCS-F5-5614-L1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/mode=real&idc=1&ids=2
+    ptz: []
+    other: []
+  DCS-F5614-L1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/mode=real&idc=1&ids=2
+    ptz: []
+    other: []
+  DCS-6500LH:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live/profile.0/video
+    ptz: []
+    other: []
+  DCS7110:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    ptz: []
+    other: []
+  DCS-8000LHv2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif_camera/profile.0
+    - rtsp://{user}:{pass}@{ip}:554/live/profile.1
+    ptz: []
+    other: []
+  DCS-8302LH-E8E9:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live/profile.1
+    ptz: []
+    other: []
+  DSC-8300HV2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live/profile.1
+    ptz: []
+    other: []
+  DSC 8810:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]&snapshot=on
+    stream: []
+    ptz: []
+    other: []
+  DSC-8600:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]&snapshot=on
+    stream: []
+    ptz: []
+    other: []
+  CDS-3220:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/video.jpg?cam=0&quality=3&size=2
+    stream: []
+    ptz: []
+    other: []

@@ -1,0 +1,1708 @@
+sony:
+  10 MINI:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/videofeed
+  C6603:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video?submenu=mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/videofeed
+  f3111:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/videofeed
+  F3111:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/videofeed
+  SNC-RZ25N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg
+    - http://{user}:{pass}@{ip}/mjpeg?res=full&x0=0&y0=0&x1=100%&y1=100%&quality=12&doublescan=0
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/videofeed
+    - http://{user}:{pass}@{ip}/image
+  ST25I:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/videofeed
+  U20I:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/videofeed
+  '110':
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream: []
+    ptz: []
+    other: []
+  210T:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream: []
+    ptz: []
+    other: []
+  CH-110:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/mjpeg
+    stream:
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  ch-120:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video1
+    ptz: []
+    other: []
+  CH160:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream: []
+    ptz: []
+    other: []
+  CH180:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  ch210:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream: []
+    ptz: []
+    other: []
+  CH-220:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other: []
+  CH-240:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/mjpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  CH-260:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  CH-280:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other: []
+  DH-110:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  DH-120:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/media/video2
+    ptz: []
+    other: []
+  DH-140:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/media/video2
+    - rtsp://{user}:{pass}@{ip}/video1
+    ptz: []
+    other: []
+  DH-160:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/img/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/image/qvga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  DH-180:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  DH-210:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/img/mjpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  DH-210T:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-DM110:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/1
+    ptz: []
+    other: []
+  MueCH-120:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-CH140:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    - rtsp://{user}:{pass}@{ip}/video1
+    ptz: []
+    other: []
+  SNC-ER580:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other: []
+  SNC-580:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-CH110:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}/img/mjpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  SNC-CH120:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}:80/img/snapshot.cgi?size=2
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    - rtsp://{user}:{pass}@{ip}/image.mpg
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/oneshotimage[CHANNEL]
+  SNC-CH160:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+    - http://{user}:{pass}@{ip}/oneshotimage[CHANNEL]
+  SNC-CH210:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/mjpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other: []
+  SNC-CH260:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-CM120:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/mjpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-CS50P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/mjpeg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}/CH[CHANNEL]/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live1.264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  SNC-DF50N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  SNC-DF80N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/av0_0
+    ptz: []
+    other: []
+  SNC-DH110:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/oneshotimage[CHANNEL]
+  SNC-DH110T:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other: []
+  SNC-DH120:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other: []
+  SNC-DH120T:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-DH140:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    - rtsp://{user}:{pass}@{ip}/video1
+    ptz: []
+    other: []
+  SNC-DH160:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-DH180:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  SNC-DH210T:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other: []
+  SNC-DH220:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other: []
+  SNC-DH240:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-DH240T:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-DH260:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other: []
+  SNC-DH280:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-DM160:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  SNC-DS10:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/mjpeg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-DS60:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/mjpeg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  SNC-EP520:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-EP550:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-EP580:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/mjpeg
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other: []
+  SNC-ER550:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-RX550N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live/mpeg4
+    ptz: []
+    other: []
+  SNC-RX550P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/mjpeg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}/img/mjpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/av0_0
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp?real_stream
+    - rtsp://{user}:{pass}@{ip}/image.mpg
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+    - http://{user}:{pass}@{ip}/image
+    - http://{user}:{pass}@{ip}/image?res=half&x0=0&y0=0&x1=1600&y1=1200&quality=15&doublescan=0&ssn=1340443365044&id=1340443379230
+  SNC-RX570N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-RX570P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live/mpeg4
+    ptz: []
+    other: []
+  SNC-RZ25:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/mjpeg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    - http://{user}:{pass}@{ip}/img/mjpeg.cgi
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+    - http://{user}:{pass}@{ip}/oneshotimage[CHANNEL]
+    - http://{user}:{pass}@{ip}/image?res=half&x0=0&y0=0&x1=1600&y1=1200&quality=15&doublescan=0&ssn=1340443365044&id=1340443379230
+    - http://{user}:{pass}@{ip}/image[CHANNEL]
+    - http://{user}:{pass}@{ip}:80/image?speed=25
+  SNC-RZ50N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/mjpeg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video2
+    - http://{user}:{pass}@{ip}:8554/h264
+    - rtsp://{user}:{pass}@{ip}/videoinput_1:0/h264_1/onvif.stm
+    - rtsp://{user}:{pass}@{ip}:554/live1.264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+    - http://{user}:{pass}@{ip}:80/image?speed=25
+  SNC-RZ50P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/mjpeg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video2
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+    - http://{user}:{pass}@{ip}/image
+    - http://{user}:{pass}@{ip}:80/image?speed=25
+  SNC-VB600:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  dh280:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    stream: []
+    ptz: []
+    other: []
+  DM110:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/mjpeg
+    stream: []
+    ptz: []
+    other: []
+  SNC-RX530:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/mjpeg
+    stream:
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  '210':
+    snapshot:
+    - http://{user}:{pass}@{ip}:8554/axis-cgi/mjpg/video.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/media/video2
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other: []
+  300se:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  BRC-X400:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  CH-120:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/oneshotimage[CHANNEL]
+  CH-140:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other: []
+  CH-160:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    - http://{user}:{pass}@{ip}/img/mjpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  CH-180:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  CH-210:
+    snapshot:
+    - http://{user}:{pass}@{ip}/img/mjpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    - rtsp://{user}:{pass}@{ip}/video1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  CH280:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  DH110:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  DH-220:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  DH-240:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  DH-260:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  DH-280:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  DM-110:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  EM600:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  EMC-EM642R:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  ER-6032-VAP-B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-EB600:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-EM632R:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  Unknown:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8554/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    - http://{user}:{pass}@{ip}/mjpeg
+    - http://{user}:{pass}@{ip}/now.jpg
+    - http://{user}:{pass}@{ip}:80/img/snapshot.cgi?size=2
+    - http://{user}:{pass}@{ip}:4747/video.mjpg
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/encoder?USER=[USERNAME]&PWD=[PASSWORD]&SNAPSHOT
+    - http://{user}:{pass}@{ip}/out.jpg?id=0.5
+    - http://{user}:{pass}@{ip}/GetData.cgi?CH=[CHANNEL]&Codec=jpeg&Size=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/net_jpeg.cgi?ch=[CHANNEL]
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    - rtsp://{user}:{pass}@{ip}/av0_0
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp?real_stream
+    - http://{user}:{pass}@{ip}:80/?action=stream
+    - rtsp://{user}:{pass}@{ip}:8080/h264_stream
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/stream.asf
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=[CHANNEL]&subtype=1
+    - rtsp://{user}:{pass}@{ip}/profile
+    - rtsp://{user}:{pass}@{ip}:554/cam1/onvif-h264
+    - http://{user}:{pass}@{ip}:88/videostream.cgi?
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+    - http://{user}:{pass}@{ip}/vdata.v
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]
+  RH-124:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/media/video2
+    ptz: []
+    other: []
+  RH-164:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SG300se:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-VM601:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image[CHANNEL]
+  SNC-VB770:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-630N:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-CH180:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-CH1810:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-CH220:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-CH240:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-CH280:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-CX600W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/media/video2
+    - rtsp://{user}:{pass}@{ip}/video1
+    ptz: []
+    other: []
+  SNC-EB602R:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-EB630:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-EB630B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-EB640:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-EM601:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-EM602R:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/media/video2
+    ptz: []
+    other: []
+  SNC-EM602RC:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-EM630:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}:80/img/snapshot.cgi?size=2
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-EM631:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-EM632:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-EP521:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other: []
+  SNC-ER521:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other: []
+  SNC-ER585:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other: []
+  SNC-RH164:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-VB600B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/profile
+    ptz: []
+    other: []
+  SNC-VB630:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/profile
+    ptz: []
+    other: []
+  SNC-VB632D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-VM600:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/video1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/image1
+  SNC-VM601B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-VM630:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/video1
+    ptz: []
+    other: []
+  SNC-VM632R:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-WR600:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/profile
+    ptz: []
+    other: []
+  SNC-WR630:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/profile
+    ptz: []
+    other: []
+  SNC-XM631:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/video1
+    ptz: []
+    other: []
+  SNC-XM632:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/media/video2
+    - rtsp://{user}:{pass}@{ip}/profile
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:82/oneshotimage1?COUNTER
+  SNC-Z25N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg?res=full&x0=0&y0=0&x1=100%&y1=100%&quality=12&doublescan=0
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNC-ZP550:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SNT-EX104:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}/CH[CHANNEL]/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SRG300SE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/video1
+    ptz: []
+    other: []
+  SRG-X120:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  SRG-X400:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  VB-630:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/profile
+    ptz: []
+    other: []
+  WR-630:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/profile
+    ptz: []
+    other: []
+  XM-632:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/profile
+    ptz: []
+    other: []
+  SNC-WR632:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video2
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/image1
+  c110:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other: []
+  dh140:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other: []
+  dh180:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other: []
+  DHC110:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other: []
+  EP-550:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    stream:
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other: []
+  SNC-DH220T:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other: []
+  SNC-RX570n:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    stream:
+    - http://{user}:{pass}@{ip}:8554/h264
+    ptz: []
+    other: []
+  SNC-RZ50:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - http://{user}:{pass}@{ip}:8554/h264
+    - rtsp://{user}:{pass}@{ip}:554/live/mpeg4
+    ptz: []
+    other: []
+  '510':
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    ptz: []
+    other: []
+  DM160:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/av0_0
+    ptz: []
+    other: []
+  SNC-EB632R:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}/snapshot.jpg?account=[USERNAME]&password=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video1
+    - rtsp://{user}:{pass}@{ip}:8080/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/live1.264
+    - rtsp://{user}:{pass}@{ip}/image.mpg
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  DF-70N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  DS10:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg
+    stream: []
+    ptz: []
+    other: []
+  ds-60:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-CS11:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  SNC-CS3N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  SNC-CS50n:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg
+    stream: []
+    ptz: []
+    other: []
+  SNC-DF40N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  SNC-DF40P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  SNC-DF70N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    - http://{user}:{pass}@{ip}/img/mjpeg.cgi
+    - http://{user}:{pass}@{ip}/mjpeg?res=full&x0=0&y0=0&x1=100%&y1=100%&quality=12&doublescan=0
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+    - http://{user}:{pass}@{ip}/image?res=half&x0=0&y0=0&x1=1600&y1=1200&quality=15&doublescan=0&ssn=1340443365044&id=1340443379230
+  SNC-M1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+    - http://{user}:{pass}@{ip}/img/video.asf
+  SNC-P1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-P5:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-P5S-3:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg
+    stream: []
+    ptz: []
+    other: []
+  SNC-RZ25P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  SND-160:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg
+    stream: []
+    ptz: []
+    other: []
+  ICS-3178DN:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  RZ-25P:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  SNC-20:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  SNC-CS20:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+    - http://{user}:{pass}@{ip}:80/image?speed=25
+  SNC-CS3:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  SNC-CS3P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  SNC-DF50p:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  SNC-M3:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}/mjpeg?res=full&x0=0&y0=0&x1=100%&y1=100%&quality=12&doublescan=0
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+    - http://{user}:{pass}@{ip}/img/video.asf
+  SNC-M3W:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  SNC-P5S-2:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  SNC-RS84N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  SNC-RZ20P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  SNC-RZ25n:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  SNC-RZ30:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  SNC-RZ30N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}/img/mjpeg.cgi
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+    - http://{user}:{pass}@{ip}/video?profile=[CHANNEL]
+  SNC-RZ30P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}/img/mjpeg.cgi
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+    - http://{user}:{pass}@{ip}:80/image?speed=25
+  SNC-z20N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+    - http://{user}:{pass}@{ip}:80/image?speed=25
+  SNT-EP104:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  SNT-EX101:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image
+  SNC-EB600B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/oneshotimage[CHANNEL]
+  SNC-EM600:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video1
+    ptz: []
+    other: []
+  SNC-HM662:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video1
+    ptz: []
+    other: []
+  SNC-VB635:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video1
+    ptz: []
+    other: []
+  SNC-VM772R:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/image1
+  SRG-300SE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video1
+    ptz: []
+    other: []
+  XM-631:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/oneshotimage[CHANNEL]
+  Em600:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  em-602r:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  RZ-25p:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-VM602R:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-50:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-642R:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-CX600:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-DF80P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-EB602:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-P5S-1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-RX750N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-VM600b:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-VM630B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-WR62:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-Z20:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-Z20N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  SNC-Z20P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  SRG300se:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  VB600:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  VM601:
+    snapshot:
+    - http://{user}:{pass}@{ip}/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other: []
+  ICS-3718DN:
+    snapshot:
+    - http://{user}:{pass}@{ip}/img/mjpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  CIP-WD-2048W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/ipcam/avc.cgi?audiostream=[CHANNEL]
+    ptz: []
+    other: []
+  FCB-EH6300:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/fwstream.cgi?ServerId=0&AppKey=0x00006784&PortId=0&CameraId=[CHANNEL]&PauseTime=0&FwCgiVer=0x0001
+    ptz: []
+    other: []
+  PCAM-6300:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/fwstream.cgi?ServerId=0&AppKey=0x00006784&PortId=0&CameraId=[CHANNEL]&PauseTime=0&FwCgiVer=0x0001
+    ptz: []
+    other: []
+  FCB-EV7500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoinput_1:0/h264_1/onvif.stm
+    ptz: []
+    other: []
+  HI-6440A:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  ICS3178DN:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]
+    ptz: []
+    other: []
+  sip-k678a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8080/h264_stream
+    ptz: []
+    other: []
+  SN9C202:
+    snapshot:
+    - http://{user}:{pass}@{ip}:4747/video.mjpg
+    stream: []
+    ptz: []
+    other: []
+  NC1500-1600:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/GetData.cgi
+  SDE-3000n:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/webra_fcgi.fcgi?api=get_jpeg_raw&chno=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  SNC-CS10:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpeg?res=full&x0=0&y0=0&x1=100%&y1=100%&quality=12&doublescan=0
+    stream: []
+    ptz: []
+    other: []
+  SNT-V704:
+    snapshot:
+    - http://{user}:{pass}@{ip}/CH[CHANNEL]/oneshotimage.jpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/command/image.cgi?grant=User&channelno=[CHANNEL]
+  SNC-EM641:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/image1
+  SNC-RH124:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/image1
+  VB-635:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/profile
+    ptz: []
+    other: []
+  VB-65:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/profile
+    ptz: []
+    other: []
+  STS-3282TE:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream: []
+    ptz: []
+    other: []

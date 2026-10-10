@@ -1,0 +1,1563 @@
+geovision:
+  '1':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  '2100':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  '3402':
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/snapshot/view[CHANNEL].jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  '8711':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  ABD1300:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}:554/PSIA/Streaming/channels/1?videoCodecType=MPEG4
+    - rtsp://{user}:{pass}@{ip}:554/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  ABL2703:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  adb1300:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}:554/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  ADR1300:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  BL110:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  Bl2501:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  BL320:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  bx110d:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  BX2700:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  BX-4700:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  CB120:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  Cube220:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  EBD2702:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  EBD4711:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}/[CHANNEL]/[USERNAME]:[PASSWORD]/main
+    ptz: []
+    other: []
+  EBL1100-2F:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  EBL2100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}:554/PSIA/Streaming/channels/1?videoCodecType=MPEG4
+    ptz: []
+    other: []
+  EBL2100E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  EBL1100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  edr2100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  EDR-2100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  FE520:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  GV-CB220:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}:554/PSIA/Streaming/channels/1?videoCodecType=MPEG4
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:8554/0/[USERNAME]:[PASSWORD]/main
+    ptz: []
+    other: []
+  GV-EBX1100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-FD2400:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  GV2500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV600:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  GV-ADR2701:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}:554/h264_stream
+    ptz: []
+    other: []
+  GV-BL-1501:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  GV-BL220:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  GV-BX2400:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}/[CHANNEL]/[USERNAME]:[PASSWORD]/main
+    ptz: []
+    other: []
+  GV-BX520D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-CB120:
+    snapshot:
+    - http://{user}:{pass}@{ip}/out.jpg?id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}:554/PSIA/Streaming/channels/1?videoCodecType=MPEG4
+    ptz: []
+    other: []
+  GV-DVR:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cam[CHANNEL].jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH00[CHANNEL].sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/getimage
+  GV-EBD4700:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-EBD4711:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/0
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/[CHANNEL]/[USERNAME]:[PASSWORD]/main
+    ptz: []
+    other: []
+  GV-EBL1100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}:554/PSIA/Streaming/channels/1?videoCodecType=MPEG4
+    ptz: []
+    other: []
+  GV-EDR1100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-EDR2100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-EDR2700:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-EDR-4700:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  gv-efd2101:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  GV-EFER3700:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}:554/PSIA/Streaming/channels/1?videoCodecType=MPEG4
+    ptz: []
+    other: []
+  GV-EVD2100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-FER3402:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-FX120D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  GV-MDF120:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  GV-MDF130:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-MDR120:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  GV-MFD130:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  gv-mfd2700:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  gv-mfd520:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  GV-PPTZ7300-SD:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  GV-TDR2700:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}:554/h264_stream
+    ptz: []
+    other: []
+  GV-TDR2704-2F:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  GV-tdr4700:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  GV-VD2530:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-VD2540:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  GV-VD2712:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  GV-VD3400:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  GV-VD5340:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  gv-vs2800:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}:8554/CH010.sdp
+    - rtsp://{user}:{pass}@{ip}:8554/CH014.sdp
+    - rtsp://{user}:{pass}@{ip}:8554/CH012.sdp
+    - rtsp://{user}:{pass}@{ip}:8554/CH013.sdp
+    ptz: []
+    other: []
+  HCW-120:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}:554/PSIA/Streaming/channels/1?videoCodecType=MPEG4
+    - rtsp://{user}:{pass}@{ip}:554/h264_stream
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/CH000.sdp
+    - rtsp://{user}:{pass}@{ip}:554/0/Pinology101:has2bepuyyps/main
+    ptz: []
+    other: []
+  MFD120:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  s200-s:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  SD2322:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  TDR2704-2F:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  VD-2712:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    ptz: []
+    other: []
+  gv-ebd4704:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  ebd4704:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-FD120D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH002.sdp
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}/CH00[CHANNEL].sdp
+    ptz: []
+    other: []
+  '1220':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  '1224':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  '1501':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  '2211':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  '2401':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  360_Fish:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  BL1100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  BL1300:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  BL-2400:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  bl2410:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  bl2501:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  BL-5310:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  BX120:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  bx130d:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  BX520D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  BX5300:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  caw120:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  CB220:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  CBW220:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}:554/PSIA/Streaming/channels/1?videoCodecType=MPEG4
+    ptz: []
+    other: []
+  ebd-4711:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  EBL1100F:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  EBX1100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  EBX2100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  EDF1100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  edr2001-of:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  EDR2100-0F:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    ptz: []
+    other: []
+  EFD1100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  EFER3700:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  EVD3100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  FD120:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  FD-2500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  FER521:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  FER5701:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-BL120D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}:554/PSIA/Streaming/channels/1?videoCodecType=MPEG4
+    ptz: []
+    other: []
+  GV-BX1300:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-EBL1100-1F:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  gv-1100-2f:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  gv-1300:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV1500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  gv220:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV320:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}:554/PSIA/Streaming/channels/1?videoCodecType=MPEG4
+    ptz: []
+    other: []
+  GV-ABL2701:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}:554/PSIA/Streaming/channels/1?videoCodecType=MPEG4
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  GV-BL1200:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-BL130D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  gv-bl1500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-BL-1500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  GV-BL3400:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-BL3410:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-BL5311:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-BX110:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-BX130D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-BX1500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  gv-bx2500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-BX320D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-BX-3400:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-CA220:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-CAW220:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-CW220:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GVEBL1100F:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-EBL2100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-EBL2100-2F:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-EBL2101:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-EBL2702:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  GV-EDR1100-0f:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-EDR2100-0f:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-EFD1100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}/0
+    ptz: []
+    other: []
+  GV-EFD1100-0f:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-EFD2100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-EFD2700-2F:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  gv-EFD4700:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-EFD4700-0F:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-EFR3700:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-EVD3100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-EVD5100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-EVD5700:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-FD1200:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-FD1500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-FD2200:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-FD-220D:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-FD2410:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  GV-FE2301:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-FE3402:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-FE520:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}:8554//CH001.sdp
+    ptz: []
+    other: []
+  GV-FER521:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-FER5303:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-FER5701:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-GA220:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-LPC2011:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-LPR1200:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-MDR220:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  GV-MDR320:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-MDR530:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-MFD110:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-MFD1501:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}/0
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    ptz: []
+    other: []
+  GV-MFD320:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-MFP1501:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-SD220:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  GV-TBL4810:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-UBL1211:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-UBL3401:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-UBX1301:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-UNP2500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-VCBW-1201:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-VD120:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-VD120D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  GV-VD1540:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-VD4711:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  GV-VD5700:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}:8554//CH001.sdp
+    ptz: []
+    other: []
+  mfd120:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  mfd2401:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  TVD4710:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  UBL1211:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  UBX1320:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  VD1500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  VS2400:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH001.sdp
+    ptz: []
+    other: []
+  19803p:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/snapshot/view[CHANNEL].jpg
+    stream: []
+    ptz: []
+    other: []
+  19804P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/snapshot/view[CHANNEL].jpg
+    stream: []
+    ptz: []
+    other: []
+  '3600':
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/snapshot/view[CHANNEL].jpg
+    - http://{user}:{pass}@{ip}/img/snapshot.cgi?size=2
+    stream: []
+    ptz: []
+    other: []
+  '3601':
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/snapshot/view[CHANNEL].jpg
+    stream: []
+    ptz: []
+    other: []
+  bx2400:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/snapshot/view[CHANNEL].jpg
+    stream: []
+    ptz: []
+    other: []
+  2008R:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8080/mjpeg?cam=[USERNAME]&IDKey=cfaa5afa-fc84-4c29-bafd-6fa43ef1cd58&time=674724540681
+    stream: []
+    ptz: []
+    other: []
+  200s:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image.cgi
+    stream: []
+    ptz: []
+    other: []
+  250`:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/0
+    ptz: []
+    other: []
+  BX1111:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/0
+    ptz: []
+    other: []
+  GV-BX110D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/0
+    ptz: []
+    other: []
+  GV-FD5300:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/0
+    ptz: []
+    other: []
+  GV-FE420:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/0
+    ptz: []
+    other: []
+  GV-MFD120:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/0
+    ptz: []
+    other: []
+  GV-MFD220:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/0
+    ptz: []
+    other: []
+  GV-MFD3401:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/0
+    ptz: []
+    other: []
+  Unknown:
+    snapshot:
+    - http://{user}:{pass}@{ip}/[USERNAME]/cam[CHANNEL].jpg
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/dms.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/jpg/1/image.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/
+    - rtsp://{user}:{pass}@{ip}/CH00[CHANNEL].sdp
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  gv-4700:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  GV-AVD2700:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  PT220:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  GV-EBD2702:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264_stream
+    ptz: []
+    other: []
+  GV-BL3700:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  BL4713:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  ebd8711:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  EDR-2100-0F:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  GV-ABL4703:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  GV-ADR2702:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/CH000.sdp
+    ptz: []
+    other: []
+  GV-BL320D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  gv-bx1500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  GV-EBL3101:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  GV-EFD2700:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  gv-fd2400:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  GV-VD220:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  MSJ10:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  SD2301:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  vd320:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  EBD4704:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/Streaming/Channels/1
+    ptz: []
+    other: []
+  BL2072:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/rtsph2641080p
+    ptz: []
+    other: []
+  ebd4700:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH00[CHANNEL].sdp
+    ptz: []
+    other: []
+  gv600:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH00[CHANNEL].sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/getimage
+    - http://{user}:{pass}@{ip}/GetImage.cgi
+  GV-Hybrid LPR 10R:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/CH00[CHANNEL].sdp
+    ptz: []
+    other: []
+  ebd8800:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media2/video2
+    ptz: []
+    other: []
+  GV-BL3411:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/1
+    ptz: []
+    other: []
+  GV-TR2700:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554/0/[USERNAME]:[PASSWORD]/main
+    ptz: []
+    other: []
+  GV-1120:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/mjpeg?cam=8&IDKey=7646000c-b634-4941-a4bc-197f6e92fe3a&time=1691500263890
+    - http://{user}:{pass}@{ip}:80/mjpeg?cam=9&IDKey=7646000c-b634-4941-a4bc-197f6e92fe3a&time=1691500428125
+    - http://{user}:{pass}@{ip}:80/mjpeg?cam=10&IDKey=7646000c-b634-4941-a4bc-197f6e92fe3a&time=1691500492344
+    - http://{user}:{pass}@{ip}:80/mjpeg?cam=11&IDKey=7646000c-b634-4941-a4bc-197f6e92fe3a&time=1691500531652
+    - http://{user}:{pass}@{ip}:80/mjpeg?cam=12&IDKey=7646000c-b634-4941-a4bc-197f6e92fe3a&time=1691500570470
+    - http://{user}:{pass}@{ip}:80/mjpeg?cam=13&IDKey=7646000c-b634-4941-a4bc-197f6e92fe3a&time=1691500638126
+    stream: []
+    ptz: []
+    other: []
+  GV-1480:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/getimage
+  gv-650:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/mjpeg?cam=[USERNAME]&IDKey=cfaa5afa-fc84-4c29-bafd-6fa43ef1cd58&time=[PASSWORD]674724540681
+    stream: []
+    ptz: []
+    other: []
+  GV-ABL2702:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  GV-PTZ5810-IR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  GV-AVD4710:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/CH000.sdp
+    ptz: []
+    other: []
+  GV-EBD2704:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/CH000.sdp
+    ptz: []
+    other: []
+  GV-CA120:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8554//CH001.sdp
+    ptz: []
+    other: []
+  HWK-2008-DVR:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/view.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]

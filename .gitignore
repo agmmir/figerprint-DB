@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Project-specific
+_archive/
+*.bak
+*.bak2
+*.tmp
+*.log
+*.disabled
+generated_url.txt
+snapshots/
+results.txt
+test_snapshots/
+
+# Secrets (NEVER commit)
+.env
+*.key
+*.pem
+credentials.json
+credentials.txt
+
+# Third-party repos
+vendor/
+
+# Model artifacts
+*.pt
+*.pth
+*.onnx
+*.h5
+*.pkl
+*.bin
+*.safetensors
+
+# Work-in-progress (not ready)
+fingerprint_trainer/
+
+# Local notes
+notes/
+*.local.md

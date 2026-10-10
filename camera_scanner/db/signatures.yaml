@@ -1,0 +1,541 @@
+manufacturers:
+  hikvision:
+    names:
+    - Hikvision
+    - HIKVISION
+    - Hikvison
+    http_server:
+    - App-webs
+    - DVRDVS-Webs
+    - DNVRS-Webs
+    - Hikvision-Webs
+    - Hikvision
+    www_auth_realm:
+    - IP Camera
+    - Hikvision
+    html_markers:
+    - <title>HIKVISION</title>
+    - /doc/page/login.asp
+    - [g_szCacheTime, iVMS]
+    - /ISAPI/
+    - hikvision
+    favicon_md5:
+    - 89b932fcc47cf4ca3faadb0cfdef89cf
+    mac_oui:
+    - 44:19:B6
+    - C0:56:E3
+    - BC:AD:28
+    - 4C:BD:8F
+    - 00:12:12
+    - 00:1D:8C
+    model_regex:
+    - (DS-2[A-Z0-9]+(?:-[A-Z0-9]+)*)
+    - (DS-7[A-Z0-9]+(?:-[A-Z0-9]+)*)
+    - (iDS-[A-Z0-9]+(?:-[A-Z0-9]+)*)
+    - (DS-2[A-Z0-9]+)
+  dahua:
+    names:
+    - Dahua
+    - DAHUA
+    - Dahua Technology
+    http_server:
+    - DahuaHttpd
+    - Dahua
+    - NetSurf
+    www_auth_realm:
+    - Login to
+    - Dahua
+    html_markers:
+    - /RPC2_Login
+    - Dahua
+    - dahua
+    - /cgi-bin/magicBox.cgi
+    # source: supplied Shodan observation (Dahua DVR web plugin object in page body)
+    - WebActiveEXE.Plugin
+    - jsCore/rpcLogin.js
+    - /webplugin.exe
+    favicon_md5:
+    - bd9e17c46bbbc18af2a2bd718dddad0e
+    - 605f51b413980667766a9aff2e53b9ed
+    - b39f249362a2e4ab62be4ddbc9125f53
+    favicon_paths:
+      /image/lgbg.jpg:
+      - 4ff53be6165e430af41d782e00207fda
+    mac_oui:
+    - 3C:EF:8C
+    - 90:02:A9
+    - E0:50:8B
+    - 4C:11:BF
+    model_regex:
+    - (IPC-H[A-Z0-9]+(?:-[A-Z0-9]+)*)
+    - (SD[0-9A-Z]+(?:-[A-Z0-9]+)*)
+    - (NVR[0-9A-Z]+(?:-[A-Z0-9]+)*)
+    - (IPC-[A-Z0-9]+)
+  axis:
+    names:
+    - Axis
+    - AXIS
+    http_server:
+    - Apache
+    - lighttpd
+    - Axis
+    www_auth_realm:
+    - AXIS_
+    html_markers:
+    - /axis-cgi/
+    - AXIS
+    - /view/index.shtml
+    favicon_md5:
+    - a3fd8705f010b90e37d42128000f620b
+    mac_oui:
+    - 00:40:8C
+    - AC:CC:8E
+    - B8:A4:4F
+    - 00:16:6E
+    - 00:1D:4A
+    model_regex:
+    - (AXIS [A-Z0-9-]+)
+    - (M[0-9]{4}-[A-Z]+)
+    - (P[0-9]{4}-[A-Z]+)
+    - (Q[0-9]{4}-[A-Z]+)
+  uniview:
+    names:
+    - Uniview
+    - UNIVIEW
+    - Uniview Technologies
+    http_server:
+    - Uniview
+    - Uniview-Webs
+    www_auth_realm:
+    - Uniview
+    html_markers:
+    - /uniview
+    - /cgi-bin/login.cgi
+    - /view/index.html
+    favicon_md5:
+    - 1536f25632f78fb03babedcb156d3f69
+    favicon_paths:
+      /skin/default_1/images/logo.png:
+      - c30a692ad0d1324389485de06c96d9b8
+    mac_oui:
+    - 70:B3:D5
+    - 70:B3:D6
+    - 00:1B:06
+    - 00:1F:33
+    model_regex:
+    - (IPC[0-9A-Z]+(?:-[A-Z0-9]+)*)
+    - (NVR[0-9A-Z]+(?:-[A-Z0-9]+)*)
+  reolink:
+    names:
+    - Reolink
+    - REOLINK
+    http_server:
+    - Reolink
+    - Reolink-Webs
+    www_auth_realm:
+    - Reolink
+    html_markers:
+    - /reolink
+    - /cgi-bin/login.cgi
+    - /view/index.html
+    favicon_md5: []
+    mac_oui:
+    - B0:BE:76
+    - B0:BE:77
+    - 00:1B:06
+    - 00:1F:33
+    model_regex:
+    - (RLC[0-9A-Z]+(?:-[A-Z0-9]+)*)
+    - (RLO[0-9A-Z]+(?:-[A-Z0-9]+)*)
+  amcrest:
+    names:
+    - Amcrest
+    - AMCREST
+    http_server:
+    - Amcrest
+    - NetSurf
+    www_auth_realm:
+    - Amcrest
+    html_markers:
+    - /amcrest
+    - /cgi-bin/login.cgi
+    - /view/index.html
+    favicon_md5: []
+    mac_oui:
+    - 00:16:6E
+    - 00:1D:4A
+    - 00:1B:06
+    model_regex:
+    - (AMC[0-9A-Z]+(?:-[A-Z0-9]+)*)
+  ezviz:
+    names:
+    - Ezviz
+    - EZVIZ
+    http_server:
+    - Ezviz
+    - Ezviz-Webs
+    www_auth_realm:
+    - Ezviz
+    html_markers:
+    - /ezviz
+    - /cgi-bin/login.cgi
+    - /view/index.html
+    favicon_md5: []
+    mac_oui:
+    - 70:4F:57
+    - 70:4F:58
+    - 00:1B:06
+    - 00:1F:33
+    model_regex:
+    - (CS[0-9A-Z]+(?:-[A-Z0-9]+)*)
+  annke:
+    names:
+    - Annke
+    - ANNKE
+    http_server:
+    - Annke
+    - Annke-Webs
+    www_auth_realm:
+    - Annke
+    html_markers:
+    - /annke
+    - /cgi-bin/login.cgi
+    - /view/index.html
+    favicon_md5: []
+    mac_oui:
+    - 00:1B:06
+    - 00:1F:33
+    - 00:16:6E
+    - 00:1D:4A
+    model_regex:
+    - (ANK[0-9A-Z]+(?:-[A-Z0-9]+)*)
+  lorex:
+    names:
+    - Lorex
+    - LOREX
+    http_server:
+    - Lorex
+    - Lorex-Webs
+    www_auth_realm:
+    - Lorex
+    html_markers:
+    - /lorex
+    - /cgi-bin/login.cgi
+    - /view/index.html
+    favicon_md5: []
+    mac_oui:
+    - 00:1B:06
+    - 00:1F:33
+    - 00:16:6E
+    - 00:1D:4A
+    model_regex:
+    - (LR[0-9A-Z]+(?:-[A-Z0-9]+)*)
+  swann:
+    names:
+    - Swann
+    - SWANN
+    http_server:
+    - Swann
+    - Swann-Webs
+    www_auth_realm:
+    - Swann
+    html_markers:
+    - /swann
+    - /cgi-bin/login.cgi
+    - /view/index.html
+    favicon_md5: []
+    mac_oui:
+    - 00:1B:06
+    - 00:1F:33
+    - 00:16:6E
+    - 00:1D:4A
+    model_regex:
+    - (SWN[0-9A-Z]+(?:-[A-Z0-9]+)*)
+  bosch:
+    names:
+    - Bosch
+    - BOSCH
+    http_server:
+    - Bosch
+    - Bosch-Webs
+    www_auth_realm:
+    - Bosch
+    html_markers:
+    - /bosch
+    - /cgi-bin/login.cgi
+    - /view/index.html
+    favicon_md5: []
+    mac_oui:
+    - 00:1B:06
+    - 00:1F:33
+    - 00:16:6E
+    - 00:1D:4A
+    model_regex:
+    - (AUTODOME[0-9A-Z]+(?:-[A-Z0-9]+)*)
+  d-link:
+    names:
+    - D-Link
+    - DLink
+    www_auth_realm:
+    - realm="DCS
+    - realm=DCS
+    html_markers:
+    - d-link
+    - dlink
+    - dcs-
+    favicon_md5: []
+  foscam:
+    names:
+    - Foscam
+    html_markers:
+    - foscam
+    favicon_md5: []
+  hipcam:
+    names:
+    - Hipcam
+    - HIPCAM
+    - Hipcam RealServer
+    http_server:
+    - Hipcam RealServer
+    - Hipcam
+    - VodServer/1.0.0
+    - HiIpcam
+    rtsp_server:
+    - Hipcam RealServer
+    - Hipcam
+    - HiIpcam
+    www_auth_realm:
+    - Hipcam RealServer
+    - Hipcam
+    html_markers:
+    - hipcam
+    - Hipcam RealServer
+    favicon_md5: []
+    mac_oui: []
+    model_regex: []
+    specific_ports:
+    - 10554
+  imou:
+    names:
+    - Imou
+    - IMOU
+    html_markers:
+    - imou
+    favicon_md5: []
+  rvi:
+    names:
+    - RVi
+    - RVI
+    # The bare 3-char html marker "rvi" was removed: as a case-insensitive
+    # substring it false-matched generic text (e.g. "WEB SERVICE", "preserving").
+    # No reliable RVi-specific HTML marker is available yet (WhatWeb rvi-camera.rb
+    # uses xdview.exe / hhdigital, which are shared OEM indicators, not RVi-unique).
+    # `names` is kept so ONVIF-reported "RVi" still normalizes correctly.
+    html_markers: []
+    favicon_md5: []
+  samsung:
+    names:
+    - Samsung
+    - Hanwha
+    - Wisenet
+    html_markers:
+    - samsung
+    - wisenet
+    - ipolis
+    favicon_md5: []
+  sony:
+    names:
+    - Sony
+    html_markers:
+    - sony
+    # source: WhatWeb sony-network-camera.rb (title "Sony Network Camera ...")
+    - Sony Network Camera
+    model_regex:
+    - (SNC-[A-Z0-9]+)
+    favicon_md5: []
+  tplink:
+    names:
+    - TP-Link
+    - TP-LINK
+    - TPLINK
+    - Tapo
+    html_markers:
+    - tp-link
+    - tplink
+    - tapo
+    favicon_md5: []
+  vivotek:
+    names:
+    - Vivotek
+    - VIVOTEK
+    - VVTK
+    html_markers:
+    - vivotek
+    - vvtk
+    favicon_md5: []
+  panasonic:
+    # source: WhatWeb panasonic-network-camera.rb (WJ-NT104 MAIN PAGE / Matsushita copyright / WJ-HD recorders)
+    names:
+    - Panasonic
+    - Matsushita
+    html_markers:
+    - wj-nt104
+    - matsushita electric
+    # source: Nuclei http/iot/panasonic-network-management.yaml (title "Panasonic Network Camera Management System")
+    - panasonic network camera
+    model_regex:
+    - (WJ-[A-Z0-9]+)
+    favicon_md5: []
+  mobotix:
+    # source: WhatWeb mobotix-network-camera.rb (MOBOTIX AG meta publisher/copyright)
+    names:
+    - Mobotix
+    html_markers:
+    - mobotix ag
+    # source: Nuclei http/iot/mobotix-guest-camera.yaml (body word "MOBOTIX")
+    - mobotix
+    favicon_md5: []
+  toshiba:
+    # source: WhatWeb toshiba-network-camera.rb (title "TOSHIBA Network Camera")
+    names:
+    - Toshiba
+    html_markers:
+    - toshiba network camera
+    favicon_md5: []
+  canon:
+    # source: WhatWeb canon-network-camera.rb (Network Camera VB-C50i)
+    names:
+    - Canon
+    html_markers:
+    - network camera vb-c50i
+    model_regex:
+    - (VB-C[0-9A-Z]+)
+    favicon_md5: []
+  avtech:
+    # source: WhatWeb avtech-video-web-server.rb (title "--- VIDEO WEB SERVER ---")
+    names:
+    - AVTech
+    - AVTECH
+    html_markers:
+    - '--- video web server ---'
+    - ['Remote Surveillance', 'Any time & Any where']
+    favicon_paths:
+      /nobody/favicon.ico:
+      - 6a7e13b3f9197a383c96618fe32e345a
+    favicon_md5: []
+  intellinet:
+    # source: WhatWeb intellinet-ip-camera.rb (INTELLINET ... Network IP Camera Homepage)
+    names:
+    - Intellinet
+    html_markers:
+    - intellinet
+    favicon_md5: []
+  novus:
+    # source: Nuclei http/iot/novus-ip-camera.yaml (title "NoVus IP camera")
+    names:
+    - Novus
+    html_markers:
+    - novus ip camera
+    favicon_md5: []
+  selea:
+    # source: Nuclei http/iot/selea-ip-camera.yaml (Server banners + "Selea CarPlateServer")
+    names:
+    - Selea
+    http_server:
+    - SeleaCPSHttpServer
+    - selea_httpd
+    html_markers:
+    - Selea CarPlateServer
+    favicon_md5: []
+  xiongmai:
+    # source: Ingram rules.csv (title "NETSurveillance WEB") + chipset markers,
+    # moved into `manufacturers` so the fingerprint engine actually consumes them.
+    # NOTE: port 34567 is deliberately NOT used (shared DVRIP/Sofia port).
+    names:
+    - Xiongmai
+    - XMEye
+    - XM
+    html_markers:
+    - NETSurveillance WEB
+    - XMEye
+    - xm0301
+    favicon_md5: []
+    model_regex:
+    - (XM-[A-Z0-9]+)
+  geovision:
+    # source: Ingram rules.csv (title "GeoVision")
+    names:
+    - GeoVision
+    html_markers:
+    - GeoVision
+    favicon_md5: []
+  instar:
+    # source: Ingram rules.csv (title "INSTAR" && "Camera")
+    names:
+    - INSTAR
+    html_markers:
+    - [INSTAR, Camera]
+    favicon_md5: []
+  netwave:
+    # source: Ingram rules.csv (header "Netwave IP Camera")
+    names:
+    - Netwave
+    http_server:
+    - Netwave IP Camera
+    html_markers:
+    - Netwave IP Camera
+    favicon_md5: []
+  reecam:
+    # source: Ingram rules.csv (header "ReeCam IP Camera")
+    names:
+    - ReeCam
+    http_server:
+    - ReeCam IP Camera
+    html_markers:
+    - ReeCam IP Camera
+    favicon_md5: []
+  nuuo:
+    # source: Ingram rules.csv (title "network video recorder login")
+    names:
+    - NUUO
+    - Nuuo
+    html_markers:
+    - network video recorder login
+    favicon_md5: []
+engines:
+  nginx:
+    http_server:
+    - nginx
+  apache:
+    http_server:
+    - Apache
+  lighttpd:
+    http_server:
+    - lighttpd
+  goahead:
+    http_server:
+    - GoAhead
+  boa:
+    http_server:
+    - Boa
+
+# Chipset / firmware-family signatures. These are SEPARATE from `manufacturers`
+# above and are NOT used by the manufacturer fingerprint engine, so a chipset
+# match never overwrites a detected OEM brand. Reserved for chipset-level detection.
+chipsets:
+  xiongmai:
+    names:
+    - Xiongmai
+    - XMEye
+    - XM
+    www_auth_realm:
+    - Login to XM
+    - Xiongmai
+    html_markers:
+    - XMEye
+    - xm0301
+    favicon_md5: []
+    model_regex:
+    - (XM-[A-Z0-9]+)
+    specific_ports:
+    - 34567

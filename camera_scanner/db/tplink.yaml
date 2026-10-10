@@ -1,0 +1,2232 @@
+tplink:
+  '001':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  '110':
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  '210':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  520ws:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  553AE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  AS1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  AS2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C100:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.h264
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    - rtsp://{user}:{pass}@{ip}:554/mpeg4
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?
+    ptz: []
+    other: []
+  C110:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  C111:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  c120:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C120:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  C121:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    - rtsp://{user}:{pass}@{ip}:554/live/stream1
+    ptz: []
+    other: []
+  c125:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  c200:
+    snapshot:
+    - http://{user}:{pass}@{ip}:800/mjpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  C200:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - http://{user}:{pass}@{ip}/?action=stream
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    - rtsp://{user}:{pass}@{ip}:554/h264_hd.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live/stream1
+    - rtsp://{user}:{pass}@{ip}:554/Camera%201
+    - rtmp://{user}:{pass}@{ip}:554/live/BalconyCam
+    - rtsp://{user}:{pass}@{ip}:554/onvif/stream1
+    - http://{user}:{pass}@{ip}:80/cgi-bin/net_video.cgi?channel=0
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:2020/onvif/device_service
+  C201:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C2010:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  c210:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C210:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    - rtsp://{user}:{pass}@{ip}:554/
+    - rtmp://{user}:{pass}@{ip}:554/live/BalconyCam
+    - rtsp://{user}:{pass}@{ip}:554/onvif-stream2
+    ptz: []
+    other: []
+  C211:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C212:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  c220:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C222:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C225:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  C230:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  C240:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C240I:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    - rtsp://{user}:{pass}@{ip}:554/1/stream1/Profile1
+    ptz: []
+    other: []
+  C250:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  c300hp:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C310:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}/video.pro1
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    - rtsp://{user}:{pass}@{ip}:554/h264_hd.sdp
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - rtmp://{user}:{pass}@{ip}:554/live/BalconyCam
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=0&subtype=1
+    - http://{user}:{pass}@{ip}:80/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320x240
+    - rtsp://{user}:{pass}@{ip}:554/onvif/stream1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/view.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]
+  C320i:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C320WS:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    - rtsp://{user}:{pass}@{ip}:554/live/stream1
+    - rtsp://{user}:{pass}@{ip}:554/live/stream2
+    ptz: []
+    other: []
+  C325WB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  C330:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C340:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  C350:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  C385:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C400HP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  C420i:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C425:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C430I:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    - rtsp://{user}:{pass}@{ip}:554/live/stream1
+    ptz: []
+    other: []
+  C440I:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  c500:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    - rtsp://{user}:{pass}@{ip}:554/live/stream1
+    - rtsp://{user}:{pass}@{ip}:554/onvif/stream1
+    - rtsp://{user}:{pass}@{ip}:554/onvif-stream2
+    ptz: []
+    other: []
+  C500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  C510:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C510w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C520:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C520SW:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  c520ws:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C520ws:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C530WS:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    - rtsp://{user}:{pass}@{ip}:554/stream8
+    ptz: []
+    other: []
+  C70:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  CP 310:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  cp11:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  CS510W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  CW320WS:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  D130:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  IPC42A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  IPC443AM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  IPC44AN:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  IPC48AW:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  IPC55AE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  IPC64NA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  NC-200:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.jpg
+    - http://{user}:{pass}@{ip}:8080/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=0
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - http://{user}:{pass}@{ip}/?action=stream
+    ptz: []
+    other: []
+  NC450-2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:10554/h264_vga.sdp
+    - rtsp://{user}:{pass}@{ip}:554/h264_hd.sdp
+    - rtsp://{user}:{pass}@{ip}:554/
+    - http://{user}:{pass}@{ip}:8080/stream/video/mjpeg
+    ptz: []
+    other: []
+  SC-200:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  SC3171:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}/video.pro1
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    ptz: []
+    other: []
+  C200C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/onvif/stream1
+    ptz: []
+    other: []
+  C60:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C71:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/onvif/stream1
+    ptz: []
+    other: []
+  TC60:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    - rtsp://{user}:{pass}@{ip}:554/mpeg4
+    ptz: []
+    other: []
+  TC70:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}/video.h264
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    - rtsp://{user}:{pass}@{ip}:554/onvif/stream1
+    ptz: []
+    other: []
+  TC75:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  TC40:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  tc41:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  TC65:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  TC71:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  tl-ipc44aw:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  TL-IPC633-Z:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  TL-IPC638-AEZ:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  TL-IPC63N:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  TP70:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C320WB:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  TL-IPC423P-6:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  VIGI C240:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/live/stream1
+    - rtsp://{user}:{pass}@{ip}:554/onvif/stream1
+    ptz: []
+    other: []
+  VIGI C300HP-6:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  VIGI C340I:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  VIGI C340W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C400HP-2.8:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  VIGI C400HP-4:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  VIGI C440:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    - rtsp://{user}:{pass}@{ip}:554/onvif/stream1
+    ptz: []
+    other: []
+  VIGI C440I:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  VIGI C440-W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  VIGI C450:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  VIGI C540:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  C540:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  C540V:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C540-W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  c246d:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C210P2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  c440:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  TL-IPC48AW-PLUS:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  TL-IPC637:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  CW61:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C720:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  tc43:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  D225:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  C260:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  TC42:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    - rtsp://{user}:{pass}@{ip}:554/stream8
+    ptz: []
+    other: []
+  VIGI C240I:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C560WS:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  C445:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  IPC44AW-COLOR1.0:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  C545d:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  TL-IPC682P-A4:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  TL-IPC44AW-PRO 1.0:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []
+  IP-501P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream: []
+    ptz: []
+    other: []
+  TL-SC4171G 5:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  TV-751WIC:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  TVIP551WI:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  252P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/Image.jpg
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  '321':
+    snapshot:
+    - http://{user}:{pass}@{ip}/Image.jpg
+    stream: []
+    ptz: []
+    other: []
+  '2020':
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    stream: []
+    ptz: []
+    other: []
+  '3130':
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.pro1
+    - rtsp://{user}:{pass}@{ip}/video.pro2
+    - rtsp://{user}:{pass}@{ip}/video.pro3
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/view/image?pro_[CHANNEL]
+  3130G:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}:5544/live0.264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/view/image?pro_[CHANNEL]
+  '3171':
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.pro2
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/view/image?pro_[CHANNEL]
+  3171G:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.pro1
+    - rtsp://{user}:{pass}@{ip}/video.pro3
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/view/image?pro_[CHANNEL]
+  '3220':
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  3230n:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream: []
+    ptz: []
+    other: []
+  '3741':
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    ptz: []
+    other: []
+  DCS-2020:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    ptz: []
+    other: []
+  NC220:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - http://{user}:{pass}@{ip}:8080/stream/getvideo
+    ptz: []
+    other: []
+  SC-2020:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/view/image?pro_[CHANNEL]
+  SC-2020N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    ptz: []
+    other: []
+  SC-3031:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    ptz: []
+    other: []
+  SC-3130:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    ptz: []
+    other: []
+  SC-3130G:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.pro1
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    - rtsp://{user}:{pass}@{ip}/video.h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/view/image?pro_[CHANNEL]
+  SC-3171:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.pro2
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/view/image?pro_[CHANNEL]
+  SC-3171G:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.pro1
+    - rtsp://{user}:{pass}@{ip}/video.pro3
+    ptz: []
+    other: []
+  SC-3230N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/jpg/image.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.h264
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - rtsp://{user}:{pass}@{ip}/media.amp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - http://{user}:{pass}@{ip}/cgi-bin/net_video.cgi?channel=[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/cam[CHANNEL]/h264
+    ptz: []
+    other: []
+  SC-3430:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    - rtsp://{user}:{pass}@{ip}/video.h264
+    ptz: []
+    other: []
+  SC-3430n:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.h264
+    ptz: []
+    other: []
+  SC-3741:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    stream: []
+    ptz: []
+    other: []
+  SC-4171G:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    ptz: []
+    other: []
+  TL-2020:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  tl-3130g:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  TLSC-2020:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    - rtsp://{user}:{pass}@{ip}/video.h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/view/image?pro_[CHANNEL]
+  TL-SC2020N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    ptz: []
+    other: []
+  TLSC-3020N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/axis-cgi/jpg/image.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - http://{user}:{pass}@{ip}/cgi-bin/net_video.cgi?channel=[CHANNEL]
+    ptz: []
+    other: []
+  TLSC-3130:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}/cgi-bin/net_video.cgi?channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/videostream.cgi?resolution=8&rate=13
+    - http://{user}:{pass}@{ip}/live/mjpeg
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/view/image?pro_[CHANNEL]
+  TLSC-3130G:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}/live/mjpeg
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/view/image?pro_[CHANNEL]
+  TLSC-3171:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.pro2
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}/live/mjpeg
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/view/image?pro_[CHANNEL]
+  TLSC-3171G:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.pro3
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}/live/mjpeg
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/view/image?pro_[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/view.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+  TLSC-3230:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/jpg/image.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    - rtsp://{user}:{pass}@{ip}/video.h264
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - http://{user}:{pass}@{ip}/cgi-bin/net_video.cgi?channel=[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/cam[CHANNEL]/h264
+    ptz: []
+    other: []
+  TLSC-3230N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    - rtsp://{user}:{pass}@{ip}/video.h264
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - rtsp://{user}:{pass}@{ip}/media.amp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - http://{user}:{pass}@{ip}/cgi-bin/net_video.cgi?channel=[CHANNEL]
+    ptz: []
+    other: []
+  TLSC-3430:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    - rtsp://{user}:{pass}@{ip}/video.h264
+    ptz: []
+    other: []
+  TLSC-3430N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.h264
+    ptz: []
+    other: []
+  TLSC-4171:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    ptz: []
+    other: []
+  TL-SC4171:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  TLSC-41716:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  TLSC-4171G:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}/live/mjpeg
+    ptz: []
+    other: []
+  TL-SC4171G 4:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  WVC54GCA:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  3130g:
+    snapshot:
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    stream: []
+    ptz: []
+    other: []
+  3170C:
+    snapshot:
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    ptz: []
+    other: []
+  '3430':
+    snapshot:
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.h264
+    ptz: []
+    other: []
+  SC-1713G:
+    snapshot:
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.pro2
+    ptz: []
+    other: []
+  sc-2020:
+    snapshot:
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    stream: []
+    ptz: []
+    other: []
+  sc3030:
+    snapshot:
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    stream: []
+    ptz: []
+    other: []
+  sc3031:
+    snapshot:
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    stream: []
+    ptz: []
+    other: []
+  SC3130:
+    snapshot:
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/view/image?pro_[CHANNEL]
+  SC3230:
+    snapshot:
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  TLSC-2020N:
+    snapshot:
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    ptz: []
+    other: []
+  tl-sc3130:
+    snapshot:
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    stream: []
+    ptz: []
+    other: []
+  TLSC-3130g:
+    snapshot:
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    stream: []
+    ptz: []
+    other: []
+  TL-SC3130G V1:
+    snapshot:
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.pro1
+    ptz: []
+    other: []
+  WXH-103232-EACBA:
+    snapshot:
+    - http://{user}:{pass}@{ip}:5544/jpg/image.jpg?size=3
+    stream: []
+    ptz: []
+    other: []
+  IP-110:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  IP-TV422W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/mpeg4
+    ptz: []
+    other: []
+  TV-410W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  TVIP-100W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  TVIP-110WN:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  TV-IP252P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  '3020':
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/?action=stream
+    ptz: []
+    other: []
+  nc210:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/?action=stream
+    ptz: []
+    other: []
+  TL-SC4171G:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/?action=stream
+    ptz: []
+    other: []
+  IPC-43AN-ZOOM-DUAL 1.0:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/?action=stream
+    ptz: []
+    other: []
+  '311':
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=[CHANNEL]
+    ptz: []
+    other: []
+  311PI:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    ptz: []
+    other: []
+  IP-311:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=[CHANNEL]
+    ptz: []
+    other: []
+  TV-314pi:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=[CHANNEL]
+    ptz: []
+    other: []
+  TV-IP314PI:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=[CHANNEL]
+    ptz: []
+    other: []
+  IP-320PI:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    ptz: []
+    other: []
+  TV-IP319PI:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/Streaming/Channels/1
+    ptz: []
+    other: []
+  '3120':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    ptz: []
+    other: []
+  3171g:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.pro2
+    ptz: []
+    other: []
+  3171G RTSP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    ptz: []
+    other: []
+  3230N:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    ptz: []
+    other: []
+  4171g:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    ptz: []
+    other: []
+  4171G:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    ptz: []
+    other: []
+  C510W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    - rtsp://{user}:{pass}@{ip}:554/1/stream1/Profile1
+    - rtsp://{user}:{pass}@{ip}:554/onvif-stream2
+    ptz: []
+    other: []
+  SC3171Gv1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    ptz: []
+    other: []
+  SC-3220:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/media.amp
+    ptz: []
+    other: []
+  SC-3230:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/media.amp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - http://{user}:{pass}@{ip}/cgi-bin/net_video.cgi?channel=[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/cam[CHANNEL]/h264
+    ptz: []
+    other: []
+  SC-4171G-2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    ptz: []
+    other: []
+  TL-3050:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    ptz: []
+    other: []
+  TLSC-31:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    ptz: []
+    other: []
+  TLsc3130g:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    ptz: []
+    other: []
+  TLSC-4171g:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    ptz: []
+    other: []
+  TL-SC4171G 2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    ptz: []
+    other: []
+  TL-SC3191:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    ptz: []
+    other: []
+  sc3171g:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.pro2
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/view/image?pro_[CHANNEL]
+  TLSC-3171 v2:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/view/image?pro_[CHANNEL]
+  '3160':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.pro1
+    ptz: []
+    other: []
+  TL-SC3170G:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.pro1
+    ptz: []
+    other: []
+  SC-3130Gv2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.pro2
+    ptz: []
+    other: []
+  tlsc31:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.pro2
+    ptz: []
+    other: []
+  TL-SC3171G:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.pro2
+    ptz: []
+    other: []
+  SC3130v2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.pro3
+    ptz: []
+    other: []
+  TLSC-3130PC:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    stream: []
+    ptz: []
+    other: []
+  SC-2020DN:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    ptz: []
+    other: []
+  SC-3220N:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    - rtsp://{user}:{pass}@{ip}/video.h264
+    - rtsp://{user}:{pass}@{ip}/media.amp
+    ptz: []
+    other: []
+  TL-MR2020:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    ptz: []
+    other: []
+  TLSC-3137G:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    ptz: []
+    other: []
+  TV-300i:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.mjpg
+    ptz: []
+    other: []
+  C220:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  c310:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  c420:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream: []
+    ptz: []
+    other: []
+  kc420ws:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream: []
+    ptz: []
+    other: []
+  NC400:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264_hd.sdp
+    ptz: []
+    other: []
+  SC-3040:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream: []
+    ptz: []
+    other: []
+  tc70:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream: []
+    ptz: []
+    other: []
+  TL-IP551W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  BASIC 01:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream: []
+    ptz: []
+    other: []
+  TL-SC3230:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream: []
+    ptz: []
+    other: []
+  TVIP-310PI:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.h264
+    ptz: []
+    other: []
+  430C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  c100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  C320Ws:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  C520WS:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  cs320:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  CW320:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  TC100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  VIGI C300:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  VIGI C300HP-4:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  C206:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  TCA72:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  '450':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10554/h264_vga.sdp
+    - rtsp://{user}:{pass}@{ip}:554/h264_hd.sdp
+    ptz: []
+    other: []
+  nc220:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10554/h264_vga.sdp
+    - http://{user}:{pass}@{ip}:8080/stream/video/mjpeg
+    ptz: []
+    other: []
+  NC230:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10554/h264_vga.sdp
+    - rtsp://{user}:{pass}@{ip}:554/h264_hd.sdp
+    - http://{user}:{pass}@{ip}:8080/stream/video/mjpeg
+    ptz: []
+    other: []
+  NC250:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10554/h264_vga.sdp
+    - rtsp://{user}:{pass}@{ip}:554/h264_hd.sdp
+    - http://{user}:{pass}@{ip}:8080/stream/video/mjpeg
+    ptz: []
+    other: []
+  NC260:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10554/h264_vga.sdp
+    - rtsp://{user}:{pass}@{ip}:554/h264_hd.sdp
+    ptz: []
+    other: []
+  NC450:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10554/h264_vga.sdp
+    - rtsp://{user}:{pass}@{ip}:554/h264_hd.sdp
+    ptz: []
+    other: []
+  nc-260:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264_hd.sdp
+    ptz: []
+    other: []
+  NC260 RTSP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264_hd.sdp
+    ptz: []
+    other: []
+  TL-NC230:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/h264_hd.sdp
+    ptz: []
+    other: []
+  Unknown:
+    snapshot:
+    - http://{user}:{pass}@{ip}/imagep/picture.jpg
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/goform/capture
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  tc310:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/mpeg4
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  TV-IP310:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/mpeg4
+    ptz: []
+    other: []
+  SC-32230:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - rtsp://{user}:{pass}@{ip}/media.amp
+    ptz: []
+    other: []
+  VIGI C330I:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  C100x:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  c330:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live/stream1
+    ptz: []
+    other: []
+  C125:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live/stream1
+    ptz: []
+    other: []
+  IP311PI:
+    snapshot:
+    - http://{user}:{pass}@{ip}:800/mjpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  KC100:
+    snapshot: []
+    stream:
+    - rtmp://{user}:{pass}@{ip}:554/live/BalconyCam
+    ptz: []
+    other: []
+  D235:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif/stream1
+    - rtsp://{user}:{pass}@{ip}:554/onvif/stream2
+    ptz: []
+    other: []
+  VIGI C355:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif/stream1
+    ptz: []
+    other: []
+  TL-IPC48AW:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif/stream1
+    ptz: []
+    other: []
+  DCS-931L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-2102:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-2130:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms
+  DCS-930L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  dcs-932l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  IP-551W1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  IP-672W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  TV-851WI:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  TV-IP110WN:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/cgi/jpg/image.cgi
+    stream: []
+    ptz: []
+    other: []
+  TVIP551W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  TV-IP551WI:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  TV-IP672PI:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  TV-IP751WC:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  TV-IP851WIC:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-2332L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/dms
+  DCS-935L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  IP-572PI:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  TV-IP562WI:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  TV-IP571PI:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  TV-IP745SIC:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video/mjpg.cgi
+    stream: []
+    ptz: []
+    other: []
+  DCS-5020L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-520L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-930:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-932l:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  DCS-932LB:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  IP751:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  TV-IP551W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  TV-IP751WIC:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  IC-5150W:
+    snapshot:
+    - 'http://{user}:{pass}@{ip}/mjpg/video.mjpg '
+    stream: []
+    ptz: []
+    other: []
+  IPC669-A4:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live/stream1?channel=2
+    ptz: []
+    other: []
+  TCw30:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live/stream1?channel=2
+    ptz: []
+    other: []
+  N3230:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  NC200:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:8080/stream/getvideo
+    ptz: []
+    other: []
+  S1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media.amp
+    ptz: []
+    other: []
+  IPC48:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live/stream2
+    ptz: []
+    other: []
+  TL-SC3230N:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=[CHANNEL]&subtype=1
+    ptz: []
+    other: []
+  TV-IP311PI:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=[CHANNEL]&subtype=1
+    ptz: []
+    other: []
+  '3230':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10554/tcp/av0_0
+    ptz: []
+    other: []
+  TV-IP110W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/jpg/image.cgi
+    stream: []
+    ptz: []
+    other: []
+  TV-IP262PI:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/jpg/image.cgi
+    stream: []
+    ptz: []
+    other: []
+  TV-IP312:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/jpg/image.cgi
+    stream: []
+    ptz: []
+    other: []
+  TV-IP312W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi/jpg/image.cgi
+    stream: []
+    ptz: []
+    other: []
+  545d:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream6
+    ptz: []
+    other: []
+  C246D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream6
+    ptz: []
+    other: []
+  C545D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream7
+    ptz: []
+    other: []

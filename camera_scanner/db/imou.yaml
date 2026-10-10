@@ -1,0 +1,650 @@
+imou:
+  2c-d:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - mms://{user}:{pass}@{ip}:554/img/video.asf
+  Bullet 2:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - mms://{user}:{pass}@{ip}:554/img/video.asf
+  Cue2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&amp;subtype=00&amp;authbasic=[AUTH]
+    ptz: []
+    other:
+    - mms://{user}:{pass}@{ip}:554/img/video.asf
+  ipc-a26hp-v2:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - mms://{user}:{pass}@{ip}:554/img/video.asf
+  IPC-F22P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other:
+    - mms://{user}:{pass}@{ip}:554/img/video.asf
+  ADC2W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  bullet:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  Bullet lite:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  Bullet Lite:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=[CHANNEL]&subtype=1&authBasic=[AUTH]
+    ptz: []
+    other: []
+  Cell Pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  Cue:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  G22P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  G26E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  G26EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IPC-G22:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    - rtsp://{user}:{pass}@{ip}:1935/h264_stream
+    ptz: []
+    other: []
+  IPC-A12:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IPC-A22:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IPC-C26EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ipc-c26ep:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IPC-D42:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ipc-g42:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IPC-S3D-5M0WJ:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  Lite:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  looc:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  ranger:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=[CHANNEL]&subtype=1&authBasic=[AUTH]
+    ptz: []
+    other: []
+  RANGER 2C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  Ranger IQ-B6E4:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ranger pro:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=[CHANNEL]&subtype=1&authBasic=[AUTH]
+    ptz: []
+    other: []
+  Ranger Pro:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  Ranger pro z:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IPC-C32SP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IPC-G26P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  BULLET LITE:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  ipc-g26ep:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IPC-T26EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  Looc:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=[CHANNEL]&subtype=1&authBasic=[AUTH]
+    ptz: []
+    other: []
+  LOOC2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  TURRET:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  Bullet:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  Bullet 4MP lite:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  Floodlight:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IPC-A26HI:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IPC-D22:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  Knight:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  LITE:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  Ranger IQ:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  RANGER IQ:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  Ranger pro:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  Ranger Pro V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  rangeriq:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  DB61I:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  Ranger 2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1&unicast=true&proto=Onvif
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  T-26E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  Turret:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  bullet 2c:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?oids=1&username=[USERNAME]&password=[USERNAME]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/view.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]
+  Bullet 2C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0
+    ptz: []
+    other: []
+  IPC-S42F:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0
+    ptz: []
+    other: []
+  IPC-S7XEN-10M0WED:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/onvifsnapshot/media_service/snapshot?channel=1&subtype=0
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0
+    ptz: []
+    other: []
+  Looc2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0
+    ptz: []
+    other: []
+  Rex:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0
+    ptz: []
+    other: []
+  TP2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0
+    ptz: []
+    other: []
+  Ranger eC 2MP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1
+    ptz: []
+    other: []
+  RANGER 2C 3MP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1
+    ptz: []
+    other: []
+  IPC-F42:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?oids=1&username=[USERNAME]&password=[USERNAME]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  IPC-F42F-D:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?oids=1&username=[USERNAME]&password=[USERNAME]
+    stream: []
+    ptz: []
+    other: []
+  IPC-F42FN:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?oids=1&username=[USERNAME]&password=[USERNAME]
+    stream: []
+    ptz: []
+    other: []
+  RANGER:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?oids=1&username=[USERNAME]&password=[USERNAME]
+    stream: []
+    ptz: []
+    other: []
+  RANGER 2C 4MP-D:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?oids=1&username=[USERNAME]&password=[USERNAME]
+    stream: []
+    ptz: []
+    other: []
+  Bullet 2c 4mp:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  Bullet 3C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  clue 2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  IPC-S42-FP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  IPC-S21FE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  DB61i:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  IPC-A42-L:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  IPC-C22F-C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  IPC-C26E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    - rtsp://{user}:{pass}@{ip}:554/live
+    ptz: []
+    other: []
+  IPC-C26E-V2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  IPC-F22FE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  IPC-G26EP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  IPC-T22A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  IPC-TA32CP-L:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  Ranger 2C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  Ranger Dual 6MP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  Ranger SE 4MP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  IPC-K3C:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  cell c3:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?oids=1&username=[USERNAME]&password=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IPC-F42FE:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?oids=1&username=[USERNAME]&password=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  Cruiser 2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&amp;subtype=1
+    ptz: []
+    other: []
+  Cruiser 2C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1
+    ptz: []
+    other: []
+  T42EA:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00
+    ptz: []
+    other: []
+  F22AP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&resolution=2560x1440
+    ptz: []
+    other: []
+  IPC-A43P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&resolution=2560x1440
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  IPC-K42P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  Looc-v2:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IPC-S6D:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/onvifsnapshot/media_service/snapshot?channel=1&subtype=0
+    stream: []
+    ptz: []
+    other: []
+  RANGER DUAL 6MP:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/onvifsnapshot/media_service/snapshot?channel=1&subtype=0
+    stream: []
+    ptz: []
+    other: []
+  Ranger A22E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif/stream2
+    ptz: []
+    other: []
+  GC42:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream1
+    ptz: []
+    other: []

@@ -1,0 +1,35 @@
+netwave:
+  003F0000063:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  APM-J011-WS:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:81/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}:81/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  Unknown:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    ptz: []
+    other: []
+  SIP-V150:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  n287:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]
+    ptz: []
+    other: []

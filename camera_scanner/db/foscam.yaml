@@ -1,0 +1,9 @@
+foscam:
+  snapshot:
+  - http://{ip}/snapshot.cgi
+  - http://{ip}/video/mjpg.cgi
+  stream:
+  - rtsp://{user}:{pass}@{ip}:554/videoMain
+  - rtsp://{user}:{pass}@{ip}:554/videoSub
+  overlay:
+  - http://{ip}/set_misc.cgi?osd_enable=1

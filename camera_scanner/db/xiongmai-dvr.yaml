@@ -1,0 +1,57 @@
+xiongmai-dvr:
+  X6C-WEQ:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/1
+    ptz: []
+    other: []
+  X3-WQ-B:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/1
+    ptz: []
+    other: []
+  AHB8008R-LME:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]&password=[PASSWORD]&channel=4&stream=1.sdp?
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]&password=[PASSWORD]&channel=4&stream=0.sdp?real_stream
+    ptz: []
+    other: []
+  IPC_HI3516D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=1.sdp?real_stream
+    ptz: []
+    other: []
+  nbd6808t-pl:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?real_stream
+    ptz: []
+    other: []
+  R80X20-PQL:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?real_stream
+    ptz: []
+    other: []
+  Unknown:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=1.sdp?
+    ptz: []
+    other: []
+  MB068167:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]&password=&channel=1&stream=0.sdp?
+    ptz: []
+    other: []
+  a35:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif3
+    ptz: []
+    other: []

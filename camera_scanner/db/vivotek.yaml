@@ -1,0 +1,3342 @@
+vivotek:
+  0301-G:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?cam=[CHANNEL]&quality=3&size=2
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-2122:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?cam=[CHANNEL]&quality=3&size=2
+    stream: []
+    ptz: []
+    other: []
+  PT-3112/3122:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?cam=[CHANNEL]&quality=3&size=2
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}/video.jpg
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}:8554/jpg/image.jpg?size=3
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  PT-3122:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?cam=[CHANNEL]&quality=3&size=2
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  PZ-71X1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?cam=[CHANNEL]&quality=3&size=2
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  VS2402:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?cam=[CHANNEL]&quality=3&size=2
+    stream: []
+    ptz: []
+    other: []
+  VS2403:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?cam=[CHANNEL]&quality=3&size=2
+    - http://{user}:{pass}@{ip}/cgi-bin/video[CHANNEL].jpg?size=2&quality=3
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live/ch00_0
+    ptz: []
+    other: []
+  '1027':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '3102':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '3121':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  '3127':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  '6122':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  '7131':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '7133':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '7135':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '7138':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '7330':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '8123':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  8134V:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    ptz: []
+    other: []
+  '8161':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}/video[CHANNEL].mjpg
+    - http://{user}:{pass}@{ip}/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '8362':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  CC-8160:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  FD-6112V:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  FD-6121V:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  fd6122v:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  FD61X1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  IP1731:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  IP-1739:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  IP3111:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  IP3112:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-3121:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  IP-3132:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  IP-3135:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  IP-6122:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  IP-6127:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  IP-61X2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  IP-622:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  IP-7131:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-7132:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  ip7133:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  IP-7135:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}/video.jpg
+    - http://{user}:{pass}@{ip}:80/cgi-bin/video.jpg?cam=0&quality=3&size=2
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-7137:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-7138:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP7139:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  ip7151:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  IP-7160:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}/video[CHANNEL].mjpg
+    - http://{user}:{pass}@{ip}/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  IP-7361:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  IP-8332:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  IP-8362:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  PT-3114:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  pt7137:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  PT-3112:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  PT-7135:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  PT-7137:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  PT-8133:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}/video[CHANNEL].mjpg
+    - http://{user}:{pass}@{ip}/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  PZ-6114:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  pz-6122:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  PZ-6124:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  PZ-61X2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  PZ-61x4:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  PZ-7122:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/video[CHANNEL].mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  PZ-71x2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  PZ-8111W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    - http://{user}:{pass}@{ip}/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  SD-6112:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  SD-7313:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}/video[CHANNEL].mjpg
+    stream: []
+    ptz: []
+    other: []
+  SD-81X1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  ST-3402:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  TC-5331:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  TC-5333:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  TC-5631:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  v7131:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  VS3100:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  VS-3100P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  '1234':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  '1729':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '360':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  '7111':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '7132':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '7151':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  '7160':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '7161':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '7361':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  '8100':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '8113':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    ptz: []
+    other: []
+  '8130':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  8130w:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '8131':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '8132':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  '8133':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  '8134':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  '8136':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  8154V:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '8164':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '8171':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '8172':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  8177-HT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '8221':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '8331':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '8332':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  '8361':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '8369':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  ab5376:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  ab5396:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  AD5166A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  AD5196A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  Adc-520ir:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  ADC-V510:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  ADC-V520:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  ADC-V520IR:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  ADC-V610PT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  ADC-V620PT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  ADC-V720W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  BD-5115:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/root/stream0
+    ptz: []
+    other: []
+  BD-5153:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/root/stream0
+    - rtsp://{user}:{pass}@{ip}:554/video.mp4
+    ptz: []
+    other: []
+  BD5153H:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/video.mp4
+    - rtsp://{user}:{pass}@{ip}:554/live1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live/ch00_0
+    ptz: []
+    other: []
+  cc3160:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  CC8130:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  CC-8130:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  cc8160:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  cc8360:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  CC8370-HV:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    ptz: []
+    other: []
+  ds-2cd2132f-1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  fd8134v:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  fd46:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  FD-7130:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD-7131:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD-7132:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD-7141:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD8131:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD8131V:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD-8133:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD-8134:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  FD8134V:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    ptz: []
+    other: []
+  FD-8136:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  FD8137H:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD-8137VH:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  fd8145:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD-8152:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD8154:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD8154V-F2:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  FD8160:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD-8161:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  FD-8162:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD8164:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  FD-8164V:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD-8166:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    ptz: []
+    other: []
+  FD8167:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD8167-T:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD8169:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD8169a:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD8169A:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  FD816BA:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    ptz: []
+    other: []
+  FD816B-HF2:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD-816V:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD-8177-HT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD8179-H:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD-8335H:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD8355EHV:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD-8361:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD-8361L:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD-8362E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  FD8363:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD8369A-V:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD836b-htv:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD836B-HVF2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD8371:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  FD8371V:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD-8372:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD-8382:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD9181-HT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  FD9365:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD9391-EHTV:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    ptz: []
+    other: []
+  FE-8174:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  FE-8171v:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FE-8172:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FE-8172V:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FE-8174V:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FE8180:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  FE-8181:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FE8391-V:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FE9182-h:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FE9381-EHV:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  Unknown:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/img.jpg
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/goform/capture
+    - http://{user}:{pass}@{ip}:8554/jpg/image.jpg?size=3
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/video.mp4
+    - http://{user}:{pass}@{ip}:80/videostream.cgi?
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/sf.cgi
+  IB8168:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IB-8354:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  ib8360w:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IB-8367:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IB-8367-10:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IB8367A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    ptz: []
+    other: []
+  IB-8367-T:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  IB8368:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IB-8369:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  IB8369A:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  IB836BA-HT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IB836B-HT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IB8373_EH:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  ib8377-eht:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IB8377-HT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IB8379-H:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IB8382 T:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IB9360-H:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    - rtsp://{user}:{pass}@{ip}/live1s2.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/8080
+  IB9365-HT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IB9367-H:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IB9371:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IB9381:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IB9387:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  id10:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-7130P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-3122:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  ip3332:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-7130:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP7131:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-7133:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  ip7134:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-7134:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-7139:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-7141:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-7142:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    - http://{user}:{pass}@{ip}/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-7151:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-7152:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-7154:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-7161:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    ptz: []
+    other: []
+  IP-7330:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  ip7332:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-8130:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP8131:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-8131:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-8131w:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP8131W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-8133:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  IP-8152:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live/ch00_0
+    ptz: []
+    other: []
+  ip8160:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  IP-8161:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-8162:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP8166:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-8330:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    ptz: []
+    other: []
+  IP-8331:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-8332C:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/video[CHANNEL].mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - http://{user}:{pass}@{ip}:80/cgi-bin/viewer/video.jpg?channel=0&streamid=1&resolution=1024x768&quality=5
+    ptz: []
+    other: []
+  IP-8335H:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  ip8336w:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-8336W:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP8361:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP-8364-c:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP8372:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IZ9631-EH:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  MD-7160:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  MD-7560:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  MD-8562:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  MD-8562D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  MS8392-EV:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  NR-8X01NVR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}/[USERNAME]/stream0
+    ptz: []
+    other: []
+  P-8133:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  PD-8136:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  pt7135:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  PT-8133W:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  PZ-61x2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  PZ-7111:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  PZ-7131:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  PZ-7135:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  PZ-7151:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  PZ-71x1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video[CHANNEL].mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  PZ-8111:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  PZ-81x1:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  SD-7151:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  SD-81x1:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/video[CHANNEL].mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  SD-8362:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  SD-8362E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  SD-8363E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  SD8364E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  SD83X1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  ST-7501:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  TC 5631:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  TC5332:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other:
+    - mms://{user}:{pass}@{ip}/img/video.asf
+  TC56:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554//stream0
+    - rtsp://{user}:{pass}@{ip}:554/stream2
+    ptz: []
+    other: []
+  V520ir:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  V8201:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  SD9361-EHL:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  VS-7100:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  VS8100:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  VS-8102:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  VS8401:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  VS-8401:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD7130:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  FD8377:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IP8355EH:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  MD-7500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  CC8160:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  '7142':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  '720':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  '8000':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  '8111':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  8133W:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  '8135':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  '8137':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  8151V:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream: []
+    ptz: []
+    other: []
+  8174V:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  '8364':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  '8371':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  '8832':
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  adc-510:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  adc-v52ir:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  adc-v610pt:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  adc-v700x:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  FD-7131V:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  FD-7361:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  FD-8133V:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  FD8134:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    ptz: []
+    other: []
+  fd8134d:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  FD-8135H:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  FD8138-H:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  fd8154:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  FD-8154V:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  FD-8167-T:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  FD-8168:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  FD-8169:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  fd816b-ht:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  fd816-ht:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  fd8179-H:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  FD8182-F2:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  FD8367A-V:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  FD8367-V:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  FD8369:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  FD836B-(E)HVF2:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  fd836ba-htv:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  FD8373-EHV:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  FD9182-H:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  FD9367-HV:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  FD9381:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/viewer/video.jpg?channel=0&streamid=1&resolution=1024x768&quality=5
+    ptz: []
+    other: []
+  FD9381-HT:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  FE9182-H:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  FT9368-HTV:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  IB8338-h:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  IB8367:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  ib8369:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream: []
+    ptz: []
+    other: []
+  IB836B:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream: []
+    ptz: []
+    other: []
+  ib8381:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  IB8381-E:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  IB9365:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  IB9368-HT:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/viewer/video.jpg?channel=0&streamid=1&resolution=1024x768&quality=5
+    ptz: []
+    other: []
+  ib9380-h:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  iip8133w:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  ip8133w:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  IP17134:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  ip1734:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  IP-3133:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  IP3761:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  ip7139:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  IP-7142e:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  ip7152:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  IP-7251:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  IP-8131W:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  IP-8136W:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  ip8335:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  IP8336:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  IP8352:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  IP8364-C:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  IP8371E:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  IP9165-LPR:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:80/cgi-bin/viewer/video.jpg?resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  IPV7361:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  ir520:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  ndp8322p:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  PTZ7131:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  pz7112:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  PZ71X2:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  pz81x1w:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  SD8312E:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  TC-5633:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  v520ir:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  VS7100:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}:80/cgi-bin/viewer/video.jpg?resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  VS8012:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  VS-8801:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  vws7100:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  '8801':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  DB8332-W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  FD8136-F2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  fd9391-ehtv:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - rtsp://{user}:{pass}@{ip}/live1s2.sdp
+    ptz: []
+    other: []
+  IB8369:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  IP-8361:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  IP8132:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  IP9191-HT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  MS9390-HV:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    ptz: []
+    other: []
+  pz71x1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    ptz: []
+    other: []
+  vs8401:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live2.sdp
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  '2020':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  '2022':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  '205':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  ip7160:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  PZ71x2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  PZ81X1w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  SD-9362:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  FD8163:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    ptz: []
+    other: []
+  FE8171V:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    ptz: []
+    other: []
+  IP8332:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live1.sdp
+    ptz: []
+    other: []
+  8183w:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  '8367':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  CC8371-HV:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  FD8366-V:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    ptz: []
+    other: []
+  FD9387_HTV:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  IP7161:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  ip8132:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  IP-8372:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live3.sdp
+    ptz: []
+    other: []
+  ANC-800V:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  FD7131:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  FD8137:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  ip3135:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  IP_6114:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  IP-3105:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  ip3136:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  IP-3137:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  IP-31x2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  ip6112:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  IP-61x2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  PZ-6112:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  PZ-6122:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  pz61x2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  VS-3102:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  '2001':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?size=2
+    stream: []
+    ptz: []
+    other: []
+  8136W:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  8364ehv:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  FD8367-TV:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  FD-8371:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  fd9380-h:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/img/video.sav
+    ptz: []
+    other: []
+  FD9387-HTV-A:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}:80/cgi-bin/viewer/video.jpg?resolution=320x240
+    stream:
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    ptz: []
+    other: []
+  ib8329:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  ib8362:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  IB8365:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  ib8382-t:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  IB9380-H:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live1s3.sdp
+    ptz: []
+    other: []
+  ip8130:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  IP7134:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  ip8133W:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  IP8151:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  ip8332:
+    snapshot:
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/viewer/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/root/stream0
+    ptz: []
+    other: []
+  FD816B-HT:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/viewer/video.jpg?channel=0&streamid=1&resolution=1024x768&quality=5
+    ptz: []
+    other: []
+  IP7330:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream: []
+    ptz: []
+    other: []
+  ip-8152:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  IP-8337H-C:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  PZ7111:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  S9C1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?channel=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  adc-v520ir:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream: []
+    ptz: []
+    other: []
+  IP-8336w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream: []
+    ptz: []
+    other: []
+  SD8324E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream: []
+    ptz: []
+    other: []
+  IP7140:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream: []
+    ptz: []
+    other: []
+  IP7142:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream: []
+    ptz: []
+    other: []
+  IP8162:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream: []
+    ptz: []
+    other: []
+  IP8362:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video2.mjpg
+    stream: []
+    ptz: []
+    other: []
+  CC9381-HV:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    ptz: []
+    other: []
+  FD816BA-HF2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    ptz: []
+    other: []
+  fd-816b-ht:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    ptz: []
+    other: []
+  FD9189-H:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    - rtsp://{user}:{pass}@{ip}/live1s2.sdp
+    ptz: []
+    other: []
+  FD-93280H:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    ptz: []
+    other: []
+  FD9360-H:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    ptz: []
+    other: []
+  FD9367-HTV:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    ptz: []
+    other: []
+  FD9369:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    - rtsp://{user}:{pass}@{ip}/live1s2.sdp
+    ptz: []
+    other: []
+  FD9380-H:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    - rtsp://{user}:{pass}@{ip}/live1s2.sdp
+    ptz: []
+    other: []
+  FD9389-HV:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    - rtsp://{user}:{pass}@{ip}/live1s2.sdp
+    ptz: []
+    other: []
+  FD9830:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    ptz: []
+    other: []
+  IB9381-HT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    - rtsp://{user}:{pass}@{ip}/live1s2.sdp
+    - rtsp://{user}:{pass}@{ip}:554/live1s3.sdp
+    ptz: []
+    other: []
+  IT9388-HT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    ptz: []
+    other: []
+  SC9133-RTL:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    ptz: []
+    other: []
+  FE9380-HV:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    ptz: []
+    other: []
+  FD9366-HV:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    ptz: []
+    other: []
+  BT9388-HT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    - rtsp://{user}:{pass}@{ip}/live1s2.sdp
+    ptz: []
+    other: []
+  h9161:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:1026/live1s1.sdp
+    ptz: []
+    other: []
+  DB8332-SW:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/viewer/video.jpg?channel=0&streamid=1&resolution=1024x768&quality=5
+    ptz: []
+    other: []
+  FD-816B:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/viewer/video.jpg?channel=0&streamid=1&resolution=1024x768&quality=5
+    ptz: []
+    other: []
+  fd8151v:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - mms://{user}:{pass}@{ip}/img/video.asf
+  IB9391-EHTV-v2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1s2.sdp
+    ptz: []
+    other: []
+  IT9380-H:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1s2.sdp
+    ptz: []
+    other: []
+  ib9388-ht:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1s2.sdp
+    ptz: []
+    other: []
+  '9388':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live1s2.sdp
+    ptz: []
+    other: []
+  NC-1600:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/GetData.cgi?Status=false
+  NCL-612W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    ptz: []
+    other: []
