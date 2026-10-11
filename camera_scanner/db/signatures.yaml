@@ -4,6 +4,11 @@ manufacturers:
     - Hikvision
     - HIKVISION
     - Hikvison
+    ssl_issuer:
+    - "Hangzhou Hikvision"
+    - "Hikvision Digital"
+    ssl_subject:
+    - "Hikvision"
     http_server:
     - App-webs
     - DVRDVS-Webs
@@ -38,6 +43,13 @@ manufacturers:
     - Dahua
     - DAHUA
     - Dahua Technology
+    ssl_issuer:
+    - "DahuaTech"
+    - "DAHUATECH"
+    - "Zhejiang Dahua"
+    ssl_subject:
+    - "DahuaTech"
+    - "Zhejiang Dahua"
     http_server:
     - DahuaHttpd
     - Dahua
@@ -75,6 +87,8 @@ manufacturers:
     names:
     - Axis
     - AXIS
+    ssl_issuer:
+    - "Axis Communications"
     http_server:
     - Apache
     - lighttpd
@@ -103,6 +117,10 @@ manufacturers:
     - Uniview
     - UNIVIEW
     - Uniview Technologies
+    ssl_issuer:
+    - "Uniview Technologies"
+    ssl_subject:
+    - "Uniview Technologies"
     http_server:
     - Uniview
     - Uniview-Webs

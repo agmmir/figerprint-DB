@@ -437,5 +437,56 @@ def test_dahua_by_favicon_md5_real():
     assert fp["manufacturer"] == "Dahua"
 
 
+def test_dahua_by_ssl_issuer():
+    # Real Shodan-observed Dahua DVR cert issuer DN (O=DahuaTech ...).
+    fp = fingerprint_camera({
+        "ssl_issuer": "O=DahuaTech OU=DAHUATECH C=CN ST=ZheJiang L=HangZhou"
+    })
+    assert fp is not None
+    assert fp["manufacturer"] == "Dahua"
+    assert fp["confidence"] >= 0.95
+    assert any(e.startswith("ssl_issuer:") for e in fp["evidence"])
+
+
+def test_hikvision_by_ssl_issuer():
+    fp = fingerprint_camera({
+        "ssl_issuer": "C=CN O=Hangzhou Hikvision Digital Technology CN=Hikvision"
+    })
+    assert fp is not None
+    assert fp["manufacturer"] == "Hikvision"
+    assert fp["confidence"] >= 0.95
+
+
+def test_unknown_ssl_issuer_returns_none():
+    # A generic/unknown issuer must not be attributed to any camera brand.
+    fp = fingerprint_camera({"ssl_issuer": "O=Let's Encrypt C=US CN=R3"})
+    assert fp is None or fp.get("manufacturer") is None
+
+
 if __name__ == "__main__":
     pytest.main([__file__])
+
+# ---- SSL certificate subject matching (Stage 8) ----
+
+def test_dahua_by_ssl_subject():
+    fp = fingerprint_camera({"ssl_subject": "C=CN O=DahuaTech OU=DAHUATECH CN=Dahua Technology"})
+    assert fp is not None
+    assert fp["manufacturer"] == "Dahua"
+    assert any(e.startswith("ssl_subject:") for e in fp["evidence"])
+
+
+def test_hikvision_by_ssl_subject():
+    fp = fingerprint_camera({"ssl_subject": "C=CN O=Hikvision CN=192.168.1.64"})
+    assert fp is not None
+    assert fp["manufacturer"] == "Hikvision"
+
+
+def test_uniview_by_ssl_subject():
+    fp = fingerprint_camera({"ssl_subject": "O=Uniview Technologies CN=uniview"})
+    assert fp is not None
+    assert fp["manufacturer"] == "Uniview"
+
+
+def test_unknown_ssl_subject_returns_none():
+    fp = fingerprint_camera({"ssl_subject": "O=Acme Corp C=US CN=device.local"})
+    assert fp is None or fp.get("manufacturer") is None

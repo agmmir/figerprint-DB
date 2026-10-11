@@ -62,6 +62,8 @@ def fingerprint_camera(data: Dict[str, Any]) -> Optional[Dict[str, Any]]:
       - http_favicon_md5
       - rtsp_server
       - mac_address
+      - ssl_issuer
+      - ssl_subject
     """
     fp = Fingerprint()
 
@@ -85,6 +87,34 @@ def fingerprint_camera(data: Dict[str, Any]) -> Optional[Dict[str, Any]]:
                 fp.confidence = max(fp.confidence, 0.95)
                 fp.evidence.append(f"mac_oui:{oui}->{_brand_display(brand, sig)}")
                 break
+
+    # ---------- 2b. SSL certificate issuer ----------
+    # Cert issuer DN is a very stable brand signal (e.g. O=DahuaTech); treated
+    # as high-confidence, on par with MAC OUI. Case-insensitive substring.
+    ssl_issuer = (data.get("ssl_issuer") or "").lower()
+    if ssl_issuer:
+        for brand, sig in SIGNATURES["manufacturers"].items():
+            for marker in sig.get("ssl_issuer", []):
+                if _marker_in(marker, ssl_issuer):
+                    if not fp.manufacturer:
+                        fp.manufacturer = _brand_display(brand, sig)
+                    fp.confidence = max(fp.confidence, 0.95)
+                    fp.evidence.append(f"ssl_issuer:{_marker_label(marker)}")
+                    break
+
+    # ---------- 2c. SSL certificate subject ----------
+    # Cert subject DN. For self-signed camera certs subject == issuer, so the
+    # same brand O= appears here; slightly lower confidence than issuer.
+    ssl_subject = (data.get("ssl_subject") or "").lower()
+    if ssl_subject:
+        for brand, sig in SIGNATURES["manufacturers"].items():
+            for marker in sig.get("ssl_subject", []):
+                if _marker_in(marker, ssl_subject):
+                    if not fp.manufacturer:
+                        fp.manufacturer = _brand_display(brand, sig)
+                    fp.confidence = max(fp.confidence, 0.90)
+                    fp.evidence.append(f"ssl_subject:{_marker_label(marker)}")
+                    break
 
     # ---------- 3. HTTP Server ----------
     server = (data.get("http_server") or "").lower()

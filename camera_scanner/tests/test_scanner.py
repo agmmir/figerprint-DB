@@ -249,6 +249,35 @@ def test_generic_rtsp_routes_loaded_unique_and_clean():
         assert bad not in joined, f"credential-ish token leaked into generic routes: {bad}"
 
 
+@pytest.mark.asyncio
+async def test_dahua_sdk_port_fallback_sets_manufacturer():
+    """Open port 37777 with no other signal -> Dahua as a weak (0.60) fallback."""
+    scanner = CameraScanner()
+    with patch.object(scanner, '_check_ports', return_value=[80, 37777]), \
+         patch.object(scanner, '_http_probe', return_value={}), \
+         patch.object(scanner, '_rtsp_probe', return_value={}), \
+         patch.object(scanner, '_gather_fingerprint_data', return_value={}), \
+         patch.object(scanner, '_test_url_patterns', new=AsyncMock()):
+        result = await scanner.scan("192.0.2.10")
+    assert result.manufacturer == "Dahua"
+    assert result.confidence == 0.60
+    assert "open_port:37777->dahua" in result.evidence
+
+
+@pytest.mark.asyncio
+async def test_dahua_sdk_port_does_not_override_stronger_signal():
+    """A stronger signal (fingerprint) must win; the port fallback must not override it."""
+    scanner = CameraScanner()
+    with patch.object(scanner, '_check_ports', return_value=[80, 37777]), \
+         patch.object(scanner, '_http_probe', return_value={'manufacturer': 'Hikvision'}), \
+         patch.object(scanner, '_rtsp_probe', return_value={}), \
+         patch.object(scanner, '_gather_fingerprint_data', return_value={}), \
+         patch.object(scanner, '_test_url_patterns', new=AsyncMock()):
+        result = await scanner.scan("192.0.2.11")
+    assert result.manufacturer == "Hikvision"
+    assert all("open_port:" not in e for e in result.evidence)
+
+
 def test_determine_protocols():
     """Test protocol determination from open ports."""
     scanner = CameraScanner()

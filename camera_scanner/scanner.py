@@ -189,6 +189,18 @@ class CameraScanner:
         # unsupported attribution. result.chipset is only set from genuinely
         # chipset-specific evidence (none inferred at scanner level at present).
 
+        # Dahua SDK ports (37777 TCP / 37778 UDP) are the Dahua SDK defaults. Unlike
+        # the shared 34567 above, they are used here ONLY as a weak, last-resort
+        # fallback: it fills the manufacturer solely when no stronger signal
+        # (ONVIF/SSL/MAC/http_server/favicon/html) identified one, and at a low
+        # confidence (0.60) so any real signal dominates. OEM clones reusing the
+        # Dahua SDK may be mislabeled; the low confidence and the guard bound that risk.
+        if (37777 in result.open_ports or 37778 in result.open_ports) and not result.manufacturer:
+            _dahua_port = 37777 if 37777 in result.open_ports else 37778
+            result.manufacturer = "Dahua"
+            result.confidence = max(result.confidence, 0.60)
+            result.evidence.append(f"open_port:{_dahua_port}->dahua")
+
         # Step 6: URL pattern matching — chipset first, then manufacturer, then generic
         lookup_key = None
         if result.chipset:
@@ -300,6 +312,15 @@ class CameraScanner:
             data['rtsp_raw_response'] = rtsp_info.get('raw_response', '')
         # Add port information
         data['open_ports'] = open_ports
+        # SSL certificate issuer/subject (stable brand signal) when a TLS port is open
+        if 443 in open_ports:
+            try:
+                from .probes.ssl_cert import ssl_cert_probe
+            except ImportError:
+                from probes.ssl_cert import ssl_cert_probe
+            ssl_info = await ssl_cert_probe(ip, 443, min(self.timeout, 5))
+            if ssl_info:
+                data.update(ssl_info)  # keys: ssl_issuer, ssl_subject
         # Try ISAPI if we suspect Hikvision
         if 'hikvision' in str(http_info.get('server', '')).lower() or \
            'hikvision' in str(http_info.get('www_authenticate', '')).lower():
