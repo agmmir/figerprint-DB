@@ -72,3 +72,21 @@ def test_extra_ports_appended_without_duplicates():
     ports = CameraScanner(extra_ports=[80, 7102]).common_ports
     assert ports.count(80) == 1 and ports[-1] == 7102
     assert CameraScanner(port=554, extra_ports=[7102]).common_ports == [554, 7102]
+
+
+def _run_cli(*args):
+    import subprocess, sys, os
+    root = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+    return subprocess.run([sys.executable, "-m", "camera_scanner.scanner", *args],
+                          cwd=root, capture_output=True, text=True, timeout=60)
+
+
+def test_cli_resolve_without_ip_and_with_ip():
+    raw = _run_cli("--resolve", "hikvision", "--model", "DS-2CD2143G0-I")
+    assert raw.returncode == 0 and "{ip}" in raw.stdout
+    filled = _run_cli("1.2.3.4", "--resolve", "hikvision", "--user", "a", "--password", "b")
+    assert filled.returncode == 0 and "1.2.3.4" in filled.stdout and "{ip}" not in filled.stdout
+
+
+def test_cli_requires_ip_or_resolve():
+    assert _run_cli().returncode == 2

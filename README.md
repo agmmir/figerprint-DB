@@ -51,6 +51,8 @@ The target may be `ip` or `ip:port` (e.g. `192.168.1.64:7102`): with an explicit
 
 `--ports 7102,9001` adds extra TCP ports to the port check (they are only connect-checked; the HTTP/RTSP probes keep their own targets).
 
+Offline URL lookup (no network, no scan): `--resolve BRAND [--model MODEL]` prints candidate URL templates with `{ip}`/`{user}`/`{pass}` placeholders; add an `ip` (and `--user/--password`) to get them filled in, e.g. `python -m camera_scanner.scanner 192.168.1.64 --resolve dahua --user admin --password 'secret'`. An unknown brand returns no patterns; use `--resolve generic` for the brand-less list.
+
 Add `--json` for raw JSON output. Illustrative report (values are examples, not a real scan):
 
 ```

@@ -832,7 +832,10 @@ if __name__ == "__main__":
     import sys
 
     parser = argparse.ArgumentParser(description='Scan an IP address for IP cameras.')
-    parser.add_argument('ip', help='Target IP address or ip:port to scan (ip:port scans only that port)')
+    parser.add_argument('ip', nargs='?', help='Target IP address or ip:port to scan (ip:port scans only that port)')
+    parser.add_argument('--resolve', metavar='BRAND',
+                        help='Offline mode: list candidate URLs for BRAND (no scan). Use "generic" for brand-less patterns')
+    parser.add_argument('--model', default=None, help='Model for --resolve (optional)')
     parser.add_argument('--timeout', type=int, default=10, help='Timeout in seconds for each probe (default: 10)')
     parser.add_argument('--semaphore', type=int, default=50, help='Max concurrent requests (default: 50)')
     parser.add_argument('--user', default='', help='Username for authenticated probes (optional)')
@@ -842,6 +845,25 @@ if __name__ == "__main__":
                         help='Extra TCP ports to check, comma-separated (e.g. 7102,9001)')
     parser.add_argument('--json', action='store_true', help='Output raw JSON instead of the formatted report')
     args = parser.parse_args()
+    if not args.resolve and not args.ip:
+        parser.error("ip is required unless --resolve BRAND is given")
+
+    if args.resolve:
+        # Offline URL lookup: with a positional ip the placeholders are filled in.
+        scanner = CameraScanner()
+        urls = scanner.resolve_urls(manufacturer=args.resolve, model=args.model,
+                                    ip=parse_target(args.ip)[0] if args.ip else None,
+                                    user=args.user, password=args.password)
+        if args.json:
+            import json
+            print(json.dumps(urls, ensure_ascii=False, indent=2))
+        else:
+            print(f"=== URL candidates: {args.resolve}" + (f" {args.model}" if args.model else "") + " ===")
+            for kind, plist in urls.items():
+                print(f"  {kind} ({len(plist)}):")
+                for u in plist:
+                    print(f"    {u}")
+        sys.exit(0)
 
     async def main():
         host, explicit_port = parse_target(args.ip)
