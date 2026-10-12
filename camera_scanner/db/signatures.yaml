@@ -28,6 +28,15 @@ manufacturers:
     - 89b932fcc47cf4ca3faadb0cfdef89cf
     favicon_mmh3:
     - 999357577
+    # src: BishopFox/Favicons
+    - -1093172228
+    - -2066968828
+    - -387392219
+    - -931663453
+    - 1076004834
+    - 1140848131
+    - 1684574358
+    - 1782271534
     mac_oui:
     - 44:19:B6
     - C0:56:E3
@@ -74,6 +83,14 @@ manufacturers:
     - b39f249362a2e4ab62be4ddbc9125f53
     favicon_mmh3:
     - 2019488876
+    # src: BishopFox/Favicons
+    - -1240222446
+    - -1466785234
+    - -1984697014
+    - -926971827
+    - 1281253102
+    - 1653394551
+    - 833190513
     favicon_paths:
       /image/lgbg.jpg:
       - 4ff53be6165e430af41d782e00207fda
@@ -103,6 +120,9 @@ manufacturers:
     - /axis-cgi/
     - AXIS
     - /view/index.shtml
+    favicon_mmh3:
+    # src: BishopFox/Favicons
+    - -1616143106
     favicon_md5:
     - a3fd8705f010b90e37d42128000f620b
     mac_oui:
@@ -134,6 +154,9 @@ manufacturers:
     - /uniview
     - /cgi-bin/login.cgi
     - /view/index.html
+    favicon_mmh3:
+    # src: BishopFox/Favicons
+    - 1614036901
     favicon_md5:
     - 1536f25632f78fb03babedcb156d3f69
     favicon_paths:
@@ -160,6 +183,12 @@ manufacturers:
     - /reolink
     - /cgi-bin/login.cgi
     - /view/index.html
+    favicon_mmh3:
+    # src: BishopFox/Favicons
+    - -1308238121
+    - -38705358
+    - 14682897
+    - 1633932522
     favicon_md5: []
     mac_oui:
     - B0:BE:76
@@ -286,6 +315,9 @@ manufacturers:
     - /bosch
     - /cgi-bin/login.cgi
     - /view/index.html
+    favicon_mmh3:
+    # src: BishopFox/Favicons
+    - -1702769256
     favicon_md5: []
     mac_oui:
     - 00:1B:06
@@ -305,6 +337,12 @@ manufacturers:
     - d-link
     - dlink
     - dcs-
+    favicon_mmh3:
+    # src: BishopFox/Favicons
+    - -1354933624
+    - -1897829998
+    - 1144925962
+    - 31972968
     favicon_md5: []
   foscam:
     names:
@@ -364,6 +402,9 @@ manufacturers:
     - samsung
     - wisenet
     - ipolis
+    favicon_mmh3:
+    # src: BishopFox/Favicons
+    - 149496700
     favicon_md5: []
   sony:
     names:
@@ -385,6 +426,10 @@ manufacturers:
     - tp-link
     - tplink
     - tapo
+    favicon_mmh3:
+    # src: BishopFox/Favicons
+    - -1604856873
+    - -2101256422
     favicon_md5: []
   vivotek:
     names:
@@ -394,6 +439,12 @@ manufacturers:
     html_markers:
     - vivotek
     - vvtk
+    favicon_mmh3:
+    # src: BishopFox/Favicons
+    - -1654229048
+    - 1141146266
+    - 1357222088
+    - 432751668
     favicon_md5: []
   panasonic:
     # source: WhatWeb panasonic-network-camera.rb (WJ-NT104 MAIN PAGE / Matsushita copyright / WJ-HD recorders)
@@ -407,6 +458,11 @@ manufacturers:
     - panasonic network camera
     model_regex:
     - (WJ-[A-Z0-9]+)
+    favicon_mmh3:
+    # src: BishopFox/Favicons
+    - -1283493203
+    - -1468088148
+    - -1627209108
     favicon_md5: []
   mobotix:
     # source: WhatWeb mobotix-network-camera.rb (MOBOTIX AG meta publisher/copyright)
@@ -416,6 +472,9 @@ manufacturers:
     - mobotix ag
     # source: Nuclei http/iot/mobotix-guest-camera.yaml (body word "MOBOTIX")
     - mobotix
+    favicon_mmh3:
+    # src: BishopFox/Favicons
+    - 661332347
     favicon_md5: []
   toshiba:
     # source: WhatWeb toshiba-network-camera.rb (title "TOSHIBA Network Camera")
@@ -448,6 +507,9 @@ manufacturers:
     favicon_paths:
       /nobody/favicon.ico:
       - 6a7e13b3f9197a383c96618fe32e345a
+    favicon_mmh3:
+    # src: BishopFox/Favicons
+    - -194439630
     favicon_md5: []
   intellinet:
     # source: WhatWeb intellinet-ip-camera.rb (INTELLINET ... Network IP Camera Homepage)
@@ -485,6 +547,9 @@ manufacturers:
     - NETSurveillance WEB
     - XMEye
     - xm0301
+    favicon_mmh3:
+    # src: BishopFox/Favicons
+    - 2107438913
     favicon_md5: []
     model_regex:
     - (XM-[A-Z0-9]+)
@@ -494,6 +559,9 @@ manufacturers:
     - GeoVision
     html_markers:
     - GeoVision
+    favicon_mmh3:
+    # src: BishopFox/Favicons
+    - 2107072793
     favicon_md5: []
   instar:
     # source: Ingram rules.csv (title "INSTAR" && "Camera")
@@ -501,6 +569,10 @@ manufacturers:
     - INSTAR
     html_markers:
     - [INSTAR, Camera]
+    favicon_mmh3:
+    # src: BishopFox/Favicons
+    - -1169314298
+    - -1748763891
     favicon_md5: []
   netwave:
     # source: Ingram rules.csv (header "Netwave IP Camera")
