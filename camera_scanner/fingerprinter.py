@@ -177,6 +177,17 @@ def fingerprint_camera(data: Dict[str, Any]) -> Optional[Dict[str, Any]]:
             if matched:
                 break
 
+    # ---------- 5c. Favicon MurmurHash3 (Shodan / FingerprintHub) ----------
+    favicon_mmh3 = data.get("http_favicon_mmh3")
+    if favicon_mmh3 is not None:
+        for brand, sig in SIGNATURES["manufacturers"].items():
+            if favicon_mmh3 in (sig.get("favicon_mmh3") or []):
+                if not fp.manufacturer:
+                    fp.manufacturer = _brand_display(brand, sig)
+                fp.confidence = max(fp.confidence, 0.90)
+                fp.evidence.append(f"favicon_mmh3:{favicon_mmh3}")
+                break
+
     # ---------- 6. HTML markers ----------
     html = (data.get("http_html_content") or "")
     html_lower = html.lower()
@@ -275,3 +286,17 @@ def extra_favicon_paths() -> List[str]:
 def favicon_hash(raw_bytes: bytes) -> str:
     """MD5 от содержимого favicon.ico — используется как сигнатура."""
     return hashlib.md5(raw_bytes).hexdigest()
+
+
+def favicon_mmh3_hash(raw_bytes: bytes):
+    """Shodan/FingerprintHub favicon hash: mmh3.hash(base64.encodebytes(bytes)),
+    signed 32-bit int. Returns None when mmh3 is unavailable or input is empty,
+    so the scan never breaks if the optional dependency is missing."""
+    if not raw_bytes:
+        return None
+    try:
+        import base64
+        import mmh3
+        return mmh3.hash(base64.encodebytes(raw_bytes))
+    except Exception:
+        return None

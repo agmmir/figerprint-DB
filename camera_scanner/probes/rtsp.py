@@ -68,6 +68,16 @@ def _build_auth_header(user: str, password: str, method: str, uri: str, www_auth
     return header
 
 
+def _prefer_digest(values) -> str:
+    """Pick the Digest challenge when a 401 offers several WWW-Authenticate
+    values (commonly Digest AND Basic). Some devices — including some Dahua —
+    reject Basic for RTSP, so Digest must win. Falls back to the first value."""
+    for v in values:
+        if v.strip().lower().startswith("digest"):
+            return v
+    return values[0] if values else ""
+
+
 async def _rtsp_describe_once(ip: str, port: int, uri: str, cseq: int, timeout: int,
                              auth_header: Optional[str] = None) -> Tuple[Optional[int], Dict[str, str]]:
     """
@@ -108,12 +118,21 @@ async def _rtsp_describe_once(ip: str, port: int, uri: str, cseq: int, timeout: 
     text = data.decode('utf-8', errors='ignore')
     status = _parse_rtsp_status(text)
     headers: Dict[str, str] = {}
+    www_auth_values = []
     for line in text.split('\r\n')[1:]:
         if line == '':
             break
         if ':' in line:
             k, v = line.split(':', 1)
-            headers[k.strip().lower()] = v.strip()
+            key = k.strip().lower()
+            val = v.strip()
+            if key == 'www-authenticate':
+                www_auth_values.append(val)
+            else:
+                headers[key] = val
+    if www_auth_values:
+        # A 401 may carry several challenges (Digest and Basic). Prefer Digest.
+        headers['www-authenticate'] = _prefer_digest(www_auth_values)
     return status, headers
 
 
@@ -162,7 +181,7 @@ async def rtsp_probe(ip: str, port: int = 554, timeout: int = 10) -> Dict[str, A
     Returns:
         Dictionary with any discovered information
     """
-    info = {}
+    info = {'_status': 'unknown'}
     try:
         # Open connection to the RTSP port
         reader, writer = await asyncio.wait_for(
@@ -187,11 +206,13 @@ async def rtsp_probe(ip: str, port: int = 554, timeout: int = 10) -> Dict[str, A
         writer.close()
         await writer.wait_closed()
 
+        info['_status'] = 'empty'  # TCP connect succeeded
         if response:
             response_str = response.decode('utf-8', errors='ignore')
             # Check if it's a valid RTSP response
             if 'RTSP' in response_str and '200' in response_str:
                 info['rtsp_available'] = True
+                info['_status'] = 'ok'
                 info['raw_response'] = response_str
 
                 # Try to extract server information from headers
@@ -209,7 +230,9 @@ async def rtsp_probe(ip: str, port: int = 554, timeout: int = 10) -> Dict[str, A
 
     except asyncio.TimeoutError:
         logger.debug(f"RTSP probe timeout on {ip}:{port}")
+        info['_status'] = 'timeout'
     except ConnectionRefusedError:
+        info['_status'] = 'refused'
         logger.debug(f"RTSP connection refused on {ip}:{port}")
     except Exception as e:
         logger.debug(f"RTSP probe error on {ip}:{port}: {e}")

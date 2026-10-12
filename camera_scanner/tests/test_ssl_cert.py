@@ -52,3 +52,22 @@ def test_decode_der_recovers_issuer_subject_under_cert_none():
 def test_decode_der_empty_input():
     assert _decode_der_cert(b"") == {}
     assert _decode_der_cert(None) == {}
+
+
+# ---- TLS context fallback for legacy cameras (Stage 10) ----
+import ssl as _ssl_mod
+from camera_scanner.probes.ssl_cert import _legacy_context, _modern_context
+
+
+def test_legacy_context_caps_at_tls12_and_unverified():
+    ctx = _legacy_context()
+    assert ctx.maximum_version == _ssl_mod.TLSVersion.TLSv1_2
+    assert ctx.minimum_version == _ssl_mod.TLSVersion.TLSv1
+    assert ctx.verify_mode == _ssl_mod.CERT_NONE
+    assert ctx.check_hostname is False
+
+
+def test_modern_context_is_unverified():
+    ctx = _modern_context()
+    assert ctx.verify_mode == _ssl_mod.CERT_NONE
+    assert ctx.check_hostname is False

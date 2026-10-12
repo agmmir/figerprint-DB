@@ -15,6 +15,22 @@ except ImportError:  # aiohttp < 3.11
 
 logger = logging.getLogger(__name__)
 
+# Probe outcome ranking (best first) used to merge per-scheme results.
+_STATUS_RANK = {"ok": 0, "empty": 1, "refused": 2, "timeout": 3, "unknown": 4}
+
+
+def _classify_error(exc: BaseException) -> str:
+    """Map a connection exception to a probe status."""
+    if isinstance(exc, (asyncio.TimeoutError, TimeoutError)):
+        return "timeout"
+    if isinstance(exc, ConnectionRefusedError):
+        return "refused"
+    if isinstance(exc, aiohttp.ClientConnectorError) and \
+            isinstance(getattr(exc, "os_error", None), ConnectionRefusedError):
+        return "refused"
+    return "unknown"
+
+
 async def http_probe(ip: str, timeout: int = 10, extra_favicon_paths=None) -> Dict[str, Any]:
     """
     Probe HTTP/HTTPS endpoints on an IP address for camera information.
@@ -24,9 +40,12 @@ async def http_probe(ip: str, timeout: int = 10, extra_favicon_paths=None) -> Di
         timeout: Request timeout in seconds
 
     Returns:
-        Dictionary with any discovered information
+        Dictionary with any discovered information plus a "_status" key:
+        ok (camera-like response), empty (device answered, nothing useful),
+        refused, timeout or unknown. "_status" is not a fingerprint field.
     """
     info = {}
+    probe_status = "unknown"
     schemes = ['http', 'https']
 
     for scheme in schemes:
@@ -57,18 +76,31 @@ async def http_probe(ip: str, timeout: int = 10, extra_favicon_paths=None) -> Di
 
                 # Not a camera-like response on this scheme: try the next one.
                 if status is None:
+                    # The host did answer, so it is reachable, just not useful.
+                    if _STATUS_RANK["empty"] < _STATUS_RANK[probe_status]:
+                        probe_status = "empty"
                     continue
 
                 # Favicon requests are issued AFTER the main response context is
                 # closed. Many cameras send "Connection: close", which can abort a
                 # follow-up request made while the first response is still open.
                 favicon_md5 = None
+                favicon_mmh3 = None
                 try:
                     favicon_url = f"{scheme}://{ip}/favicon.ico"
                     async with session.get(favicon_url, ssl=False) as fav_resp:
                         if fav_resp.status == 200:
                             favicon_bytes = await fav_resp.read()
                             favicon_md5 = hashlib.md5(favicon_bytes).hexdigest()
+                            try:
+                                from ..fingerprinter import favicon_mmh3_hash
+                            except Exception:
+                                try:
+                                    from fingerprinter import favicon_mmh3_hash
+                                except Exception:
+                                    favicon_mmh3_hash = None
+                            if favicon_mmh3_hash is not None:
+                                favicon_mmh3 = favicon_mmh3_hash(favicon_bytes)
                 except Exception:
                     pass
 
@@ -92,8 +124,10 @@ async def http_probe(ip: str, timeout: int = 10, extra_favicon_paths=None) -> Di
                     'www_authenticate': www_auth,
                     'html_content': text,
                     'favicon_md5': favicon_md5,
+                    'favicon_mmh3': favicon_mmh3,
                     'favicon_md5_paths': favicon_md5_paths,
-                    'url': url
+                    'url': url,
+                    '_status': 'ok',
                 }
 
                 # If we got useful info, we can break
@@ -101,8 +135,13 @@ async def http_probe(ip: str, timeout: int = 10, extra_favicon_paths=None) -> Di
                     break
         except Exception as e:
             logger.debug(f"HTTP probe failed for {scheme}://{ip}: {e}")
+            err_status = _classify_error(e)
+            if _STATUS_RANK[err_status] < _STATUS_RANK[probe_status]:
+                probe_status = err_status
             continue
 
+    if not info:
+        info = {'_status': probe_status}
     return info
 
 async def check_http_endpoint(ip: str, path: str, timeout: int = 10,

@@ -165,3 +165,38 @@ async def test_scan_rtsp_no_creds_goes_to_requires_auth():
 
 if __name__ == "__main__":
     pytest.main([__file__])
+
+
+# ---- RTSP auth: multi-challenge selection + digest correctness (Stage 9) ----
+import base64 as _b64
+import hashlib as _md5lib
+from camera_scanner.probes.rtsp import _prefer_digest, _build_auth_header
+
+
+def test_prefer_digest_when_basic_listed_first():
+    # Regression: 401 offering Basic first then Digest must still pick Digest.
+    vals = ['Basic realm="x"', 'Digest realm="Login to DVR", nonce="abc"']
+    assert _prefer_digest(vals).lower().startswith("digest")
+
+
+def test_prefer_digest_single_values():
+    assert _prefer_digest(['Basic realm="x"']).lower().startswith("basic")
+    assert _prefer_digest(['Digest realm="x", nonce="n"']).lower().startswith("digest")
+    assert _prefer_digest([]) == ""
+
+
+def test_build_digest_header_matches_manual_computation():
+    uri = "rtsp://1.2.3.4:554/cam/realmonitor?channel=1&subtype=0"
+    www = 'Digest realm="Login to DVR", nonce="deadbeef"'
+    h = _build_auth_header("admin", "pass", "DESCRIBE", uri, www)
+    assert h.startswith("Digest ")
+    ha1 = _md5lib.md5(b"admin:Login to DVR:pass").hexdigest()
+    ha2 = _md5lib.md5(f"DESCRIBE:{uri}".encode()).hexdigest()
+    exp = _md5lib.md5(f"{ha1}:deadbeef:{ha2}".encode()).hexdigest()
+    assert f'response="{exp}"' in h
+    assert f'uri="{uri}"' in h  # query string preserved (Dahua requires it)
+
+
+def test_build_basic_header():
+    h = _build_auth_header("u", "p", "DESCRIBE", "rtsp://x/", 'Basic realm="x"')
+    assert h == "Basic " + _b64.b64encode(b"u:p").decode()

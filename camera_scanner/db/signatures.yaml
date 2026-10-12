@@ -26,6 +26,8 @@ manufacturers:
     - hikvision
     favicon_md5:
     - 89b932fcc47cf4ca3faadb0cfdef89cf
+    favicon_mmh3:
+    - 999357577
     mac_oui:
     - 44:19:B6
     - C0:56:E3
@@ -70,6 +72,8 @@ manufacturers:
     - bd9e17c46bbbc18af2a2bd718dddad0e
     - 605f51b413980667766a9aff2e53b9ed
     - b39f249362a2e4ab62be4ddbc9125f53
+    favicon_mmh3:
+    - 2019488876
     favicon_paths:
       /image/lgbg.jpg:
       - 4ff53be6165e430af41d782e00207fda

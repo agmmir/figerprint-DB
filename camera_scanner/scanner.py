@@ -137,7 +137,10 @@ class CameraScanner:
         # We'll use the collected information to fingerprint
         fingerprint_data = await self._gather_fingerprint_data(ip, open_ports, http_info, rtsp_info)
         if fingerprint_data:
-            fp_result = fingerprint_camera(fingerprint_data)
+            result.network_status = fingerprint_data.get('_network_status', 'unknown')
+            # Internal "_"-prefixed keys (probe statuses) are not fingerprint fields
+            fp_input = {k: v for k, v in fingerprint_data.items() if not k.startswith('_')}
+            fp_result = fingerprint_camera(fp_input)
             if fp_result:
                 if not result.manufacturer:
                     result.manufacturer = fp_result.get('manufacturer')
@@ -189,17 +192,18 @@ class CameraScanner:
         # unsupported attribution. result.chipset is only set from genuinely
         # chipset-specific evidence (none inferred at scanner level at present).
 
-        # Dahua SDK ports (37777 TCP / 37778 UDP) are the Dahua SDK defaults. Unlike
-        # the shared 34567 above, they are used here ONLY as a weak, last-resort
-        # fallback: it fills the manufacturer solely when no stronger signal
-        # (ONVIF/SSL/MAC/http_server/favicon/html) identified one, and at a low
-        # confidence (0.60) so any real signal dominates. OEM clones reusing the
-        # Dahua SDK may be mislabeled; the low confidence and the guard bound that risk.
-        if (37777 in result.open_ports or 37778 in result.open_ports) and not result.manufacturer:
+        # Dahua SDK ports (37777 TCP / 37778 UDP): weak, last-resort guess. Port 37777
+        # is NOT exclusive to Dahua (Hikvision devices expose it too), so it runs only
+        # when (a) no stronger signal identified a manufacturer and (b) we actually
+        # reached the device (network_status ok/partial). If every probe failed
+        # (unreachable/unknown) there is no basis for a brand and we stay honestly unknown.
+        if (37777 in result.open_ports or 37778 in result.open_ports) \
+                and not result.manufacturer \
+                and result.network_status in ("ok", "partial"):
             _dahua_port = 37777 if 37777 in result.open_ports else 37778
             result.manufacturer = "Dahua"
-            result.confidence = max(result.confidence, 0.60)
-            result.evidence.append(f"open_port:{_dahua_port}->dahua")
+            result.confidence = max(result.confidence, 0.40)
+            result.evidence.append(f"open_port:{_dahua_port}->dahua-guess")
 
         # Step 6: URL pattern matching — chipset first, then manufacturer, then generic
         lookup_key = None
@@ -286,11 +290,16 @@ class CameraScanner:
         except ImportError:
             from probes.rtsp import rtsp_probe
         # Try common RTSP ports
+        rank = {"ok": 0, "empty": 1, "refused": 2, "timeout": 3, "unknown": 4}
+        best_status = "unknown"
         for port in [554, 8554, 10554]:
             result = await rtsp_probe(ip, port, self.timeout)
             if result.get('rtsp_available'):
                 return result
-        return {}
+            st = (result or {}).get('_status', 'unknown')
+            if rank.get(st, 4) < rank[best_status]:
+                best_status = st
+        return {'_status': best_status}
 
     async def _gather_fingerprint_data(self, ip: str, open_ports: List[int],
                                       http_info: Dict[str, Any],
@@ -299,12 +308,18 @@ class CameraScanner:
         Gather data for fingerprinting by making specific requests to known endpoints.
         """
         data = {}
+        statuses = []
+        if http_info:
+            statuses.append(http_info.get('_status', 'unknown'))
+        if rtsp_info:
+            statuses.append(rtsp_info.get('_status', 'unknown'))
         # Add HTTP information
         if http_info:
             data['http_server'] = http_info.get('server', '')
             data['http_www_authenticate'] = http_info.get('www_authenticate', '')
             data['http_html_content'] = http_info.get('html_content', '')
             data['http_favicon_md5'] = http_info.get('favicon_md5')
+            data['http_favicon_mmh3'] = http_info.get('favicon_mmh3')
             data['http_favicon_paths'] = http_info.get('favicon_md5_paths') or {}
         # Add RTSP information
         if rtsp_info:
@@ -320,7 +335,8 @@ class CameraScanner:
                 from probes.ssl_cert import ssl_cert_probe
             ssl_info = await ssl_cert_probe(ip, 443, min(self.timeout, 5))
             if ssl_info:
-                data.update(ssl_info)  # keys: ssl_issuer, ssl_subject
+                statuses.append(ssl_info.get('_status', 'unknown'))
+                data.update({k: v for k, v in ssl_info.items() if not k.startswith('_')})
         # Try ISAPI if we suspect Hikvision
         if 'hikvision' in str(http_info.get('server', '')).lower() or \
            'hikvision' in str(http_info.get('www_authenticate', '')).lower():
@@ -351,7 +367,23 @@ class CameraScanner:
                             break
         except Exception as e:
             logger.debug(f"ONVIF probe or device info failed: {e}")
+        data['_network_status'] = self._aggregate_network_status(statuses)
         return data
+
+    @staticmethod
+    def _aggregate_network_status(statuses: List[str]) -> str:
+        """
+        Merge probe statuses into a single network status.
+
+        ok: some probe got a real answer. partial: the host answered at the
+        transport level (refused / empty) but nothing useful came back.
+        unreachable: no probe reached the host (timeouts, no data at all).
+        """
+        if any(s == "ok" for s in statuses):
+            return "ok"
+        if any(s in ("refused", "empty") for s in statuses):
+            return "partial"
+        return "unreachable"
 
     def _get_url_patterns(self, manufacturer: str, model: Optional[str]) -> Dict[str, List[str]]:
         """
@@ -611,6 +643,13 @@ def format_result(info: "CameraInfo") -> str:
 
     dash = "\u2014"
     lines = [f"=== Scan result: {d.get('ip')} ==="]
+    net = d.get("network_status") or "unknown"
+    lines.append(field("Network", net))
+    if net == "unreachable":
+        lines.append(field("Result", "could not contact device"))
+        lines.append(field("Open ports", (", ".join(map(str, d.get("open_ports") or [])) or dash)
+                           + "  (from port scan only)"))
+        return "\n".join(lines)
     lines.append(field("Manufacturer", d.get("manufacturer") or dash))
     if d.get("chipset"):
         lines.append(field("Chipset", d["chipset"]))

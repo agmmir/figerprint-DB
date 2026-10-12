@@ -68,23 +68,74 @@ def _decode_der_cert(der: Optional[bytes]) -> Dict[str, Any]:
         return {}
 
 
-def _get_cert_sync(ip: str, port: int, timeout: int) -> Optional[Dict[str, Any]]:
-    """Blocking TLS handshake; returns the parsed peer certificate dict or None."""
-    context = ssl.create_default_context()
-    context.check_hostname = False
-    context.verify_mode = ssl.CERT_NONE
+def _modern_context() -> ssl.SSLContext:
+    """Unverified context that still negotiates modern TLS (incl. TLS 1.3).
+    Used first so current cameras (Axis/Hikvision on 1.3) keep working."""
+    ctx = ssl._create_unverified_context()  # check_hostname=False, CERT_NONE
+    return ctx
+
+
+def _legacy_context() -> ssl.SSLContext:
+    """Permissive context for legacy cameras that falsely advertise TLS 1.3 but
+    only really speak TLS 1.0-1.2, often with weak ciphers. Verification stays
+    off (we only read the DN, never trust it)."""
+    ctx = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
+    # Old cameras lie about TLS 1.3 support: pin negotiation to <= 1.2.
+    ctx.minimum_version = ssl.TLSVersion.TLSv1
+    ctx.maximum_version = ssl.TLSVersion.TLSv1_2
+    # Allow weak ciphers used by 2010s firmware.
     try:
-        with socket.create_connection((ip, port), timeout=timeout) as sock:
-            with context.wrap_socket(sock, server_hostname=ip) as ssock:
-                # Under CERT_NONE getpeercert() returns {} (cert not validated),
-                # so fall back to parsing the always-available DER form.
-                cert = ssock.getpeercert()
-                if not cert:
-                    cert = _decode_der_cert(ssock.getpeercert(binary_form=True))
-                return cert
-    except (ssl.SSLError, socket.timeout, socket.gaierror, OSError) as e:
-        logger.debug(f"SSL cert probe failed for {ip}:{port}: {e}")
-        return None
+        ctx.set_ciphers("DEFAULT:@SECLEVEL=0")
+    except ssl.SSLError:
+        pass
+    # Legacy (unsafe) renegotiation some cameras require.
+    try:
+        ctx.options |= getattr(ssl, "OP_LEGACY_SERVER_CONNECT", 0x4)
+    except (AttributeError, ValueError):
+        pass
+    return ctx
+
+
+def _handshake_get_cert(ip: str, port: int, timeout: int,
+                        context: ssl.SSLContext) -> Optional[Dict[str, Any]]:
+    """One TLS handshake with `context`; returns the parsed peer cert or raises."""
+    with socket.create_connection((ip, port), timeout=timeout) as sock:
+        with context.wrap_socket(sock, server_hostname=ip) as ssock:
+            # Under CERT_NONE getpeercert() returns {} (cert not validated),
+            # so fall back to parsing the always-available DER form.
+            cert = ssock.getpeercert()
+            if not cert:
+                cert = _decode_der_cert(ssock.getpeercert(binary_form=True))
+            return cert
+
+
+def _get_cert_sync(ip: str, port: int, timeout: int) -> Optional[Dict[str, Any]]:
+    """Blocking TLS handshake with a modern-then-legacy fallback.
+
+    Attempt 1 (modern) keeps TLS 1.3-capable cameras working; attempt 2 (legacy)
+    rescues old cameras that advertise but break TLS 1.3 and only speak <= 1.2.
+    Returns the parsed peer certificate dict, or None if both attempts fail.
+    """
+    last_error = None
+    for make_ctx in (_modern_context, _legacy_context):
+        try:
+            return _handshake_get_cert(ip, port, timeout, make_ctx())
+        except (ssl.SSLError, socket.timeout, socket.gaierror, OSError) as e:
+            last_error = e
+            logger.debug(f"ssl_cert_probe {ip}:{port} handshake failed "
+                         f"({make_ctx.__name__}): {type(e).__name__}: {e}")
+            continue
+        except Exception as e:  # unexpected, but never break the scan
+            last_error = e
+            logger.debug(f"ssl_cert_probe {ip}:{port} unexpected error "
+                         f"({make_ctx.__name__}): {type(e).__name__}: {e}")
+            continue
+    if last_error is not None:
+        logger.debug(f"ssl_cert_probe {ip}:{port} gave up after fallback: "
+                     f"{type(last_error).__name__}: {last_error}")
+    return None
 
 
 async def ssl_cert_probe(ip: str, port: int = 443, timeout: int = 5) -> Optional[Dict[str, str]]:
@@ -109,4 +160,4 @@ async def ssl_cert_probe(ip: str, port: int = 443, timeout: int = 5) -> Optional
     subject = _flatten_dn(cert.get("subject"))
     if not issuer and not subject:
         return None
-    return {"ssl_issuer": issuer, "ssl_subject": subject}
+    return {"ssl_issuer": issuer, "ssl_subject": subject, "_status": "ok"}
