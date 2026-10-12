@@ -56,3 +56,4 @@ fingerprint_trainer/
 # Local notes
 notes/
 *.local.md
+*.old_snapshot
