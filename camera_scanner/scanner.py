@@ -307,6 +307,8 @@ class CameraScanner:
         """
         Gather data for fingerprinting by making specific requests to known endpoints.
         """
+        http_info = http_info or {}
+        rtsp_info = rtsp_info or {}
         data = {}
         statuses = []
         if http_info:

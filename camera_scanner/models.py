@@ -21,6 +21,8 @@ class CameraInfo(BaseModel):
     requires_auth_urls: List[str] = []
     open_ports: List[int] = []
     protocols: List[str] = []
+    # Did we actually reach the device: ok | partial | unreachable | unknown
+    network_status: str = "unknown"
 
     # Allow extra fields for flexibility
     model_config = ConfigDict(extra="allow")

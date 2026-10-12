@@ -5,7 +5,7 @@ Tests for the CameraScanner class.
 import asyncio
 import pytest
 from unittest.mock import AsyncMock, patch, MagicMock
-from camera_scanner.scanner import CameraScanner
+from camera_scanner.scanner import CameraScanner, format_result
 from camera_scanner.models import CameraInfo
 
 
@@ -251,17 +251,17 @@ def test_generic_rtsp_routes_loaded_unique_and_clean():
 
 @pytest.mark.asyncio
 async def test_dahua_sdk_port_fallback_sets_manufacturer():
-    """Open port 37777 with no other signal -> Dahua as a weak (0.60) fallback."""
+    """Port 37777, device reached, no other signal -> Dahua as a weak (0.40) guess."""
     scanner = CameraScanner()
     with patch.object(scanner, '_check_ports', return_value=[80, 37777]), \
          patch.object(scanner, '_http_probe', return_value={}), \
          patch.object(scanner, '_rtsp_probe', return_value={}), \
-         patch.object(scanner, '_gather_fingerprint_data', return_value={}), \
+         patch.object(scanner, '_gather_fingerprint_data', return_value={'_network_status': 'partial'}), \
          patch.object(scanner, '_test_url_patterns', new=AsyncMock()):
         result = await scanner.scan("192.0.2.10")
     assert result.manufacturer == "Dahua"
-    assert result.confidence == 0.60
-    assert "open_port:37777->dahua" in result.evidence
+    assert result.confidence == 0.40
+    assert "open_port:37777->dahua-guess" in result.evidence
 
 
 @pytest.mark.asyncio
@@ -271,11 +271,62 @@ async def test_dahua_sdk_port_does_not_override_stronger_signal():
     with patch.object(scanner, '_check_ports', return_value=[80, 37777]), \
          patch.object(scanner, '_http_probe', return_value={'manufacturer': 'Hikvision'}), \
          patch.object(scanner, '_rtsp_probe', return_value={}), \
-         patch.object(scanner, '_gather_fingerprint_data', return_value={}), \
+         patch.object(scanner, '_gather_fingerprint_data', return_value={'_network_status': 'ok'}), \
          patch.object(scanner, '_test_url_patterns', new=AsyncMock()):
         result = await scanner.scan("192.0.2.11")
     assert result.manufacturer == "Hikvision"
     assert all("open_port:" not in e for e in result.evidence)
+
+
+async def _scan_real_gather(http_ret, rtsp_ret=None, ports=(37777,)):
+    """Run scan() with the real _gather_fingerprint_data; only probes are mocked."""
+    scanner = CameraScanner()
+    with patch.object(scanner, '_check_ports', return_value=list(ports)), \
+         patch.object(scanner, '_http_probe', return_value=http_ret), \
+         patch.object(scanner, '_rtsp_probe', return_value=rtsp_ret), \
+         patch('camera_scanner.probes.onvif.onvif_probe', new=AsyncMock(return_value=[])), \
+         patch('camera_scanner.probes.isapi.isapi_probe', new=AsyncMock(return_value={})), \
+         patch.object(scanner, '_test_url_patterns', new=AsyncMock()):
+        return await scanner.scan("192.0.2.20")
+
+
+@pytest.mark.asyncio
+async def test_network_unreachable_no_port_fallback():
+    result = await _scan_real_gather(None, None)
+    assert result.network_status == "unreachable"
+    assert result.manufacturer is None
+    assert all("open_port:" not in e for e in result.evidence)
+
+
+@pytest.mark.asyncio
+async def test_network_timeout_statuses_are_unreachable():
+    result = await _scan_real_gather({'_status': 'timeout'}, {'_status': 'timeout'})
+    assert result.network_status == "unreachable"
+    assert result.manufacturer is None
+
+
+@pytest.mark.asyncio
+async def test_network_partial_port_fallback_allowed():
+    result = await _scan_real_gather({'_status': 'ok', 'server': 'x'})
+    assert result.network_status in ("ok", "partial")
+    assert result.manufacturer == "Dahua"
+    assert result.confidence == 0.40
+
+
+@pytest.mark.asyncio
+async def test_network_ok_strong_signal_wins():
+    http = {'_status': 'ok', 'server': 'App-webs/',
+            'www_authenticate': 'Digest realm="Hikvision"', 'html_content': ''}
+    result = await _scan_real_gather(http)
+    assert result.network_status == "ok"
+    assert result.manufacturer == "Hikvision"
+    assert all("open_port:" not in e for e in result.evidence)
+
+
+def test_format_result_unreachable():
+    out = format_result(CameraInfo(ip="192.0.2.1", network_status="unreachable", open_ports=[80]))
+    assert "unreachable" in out and "could not contact device" in out
+    assert "Manufacturer" not in out
 
 
 def test_determine_protocols():
