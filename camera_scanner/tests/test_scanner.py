@@ -453,3 +453,21 @@ async def test_onvif_result_from_other_device_is_ignored():
     result = await _scan_with_onvif([dev], info)
     assert result.manufacturer is None
     assert result.model is None
+
+
+@pytest.mark.asyncio
+async def test_isapi_mac_address_reaches_fingerprinter():
+    """mac_address found by the ISAPI probe must be exposed at the top level for MAC OUI matching."""
+    scanner = CameraScanner()
+    http = {'_status': 'ok', 'server': 'Hikvision-Webs'}
+    with patch.object(scanner, '_check_ports', return_value=[80]), \
+         patch.object(scanner, '_http_probe', return_value=http), \
+         patch.object(scanner, '_rtsp_probe', return_value={}), \
+         patch('camera_scanner.probes.onvif.onvif_probe', new=AsyncMock(return_value=[])), \
+         patch('camera_scanner.probes.isapi.isapi_probe',
+               new=AsyncMock(return_value={'mac_address': '44:19:B6:00:11:22'})), \
+         patch.object(scanner, '_test_url_patterns', new=AsyncMock()):
+        result = await scanner.scan("192.0.2.60")
+    assert result.manufacturer == "Hikvision"
+    assert result.confidence == 0.95
+    assert any(e.startswith("mac_oui:44:19:B6") for e in result.evidence)

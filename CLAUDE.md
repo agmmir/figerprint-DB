@@ -97,3 +97,10 @@ Extracts fingerprints from FingerprintHub under `vendor/` into `scripts/imported
 - Code, identifiers, filenames, commands: English. Many comments and reports are in Russian — match the surrounding file.
 - `_archive/` = one-off migration scripts (not runtime). `testing/` = ad-hoc import staging; brand YAMLs dropped in `testing/db/` are normalized and moved into `db/` (one brand per file). `vendor/` (WhatWeb, cameradar, nuclei-templates, FingerprintHub, Ingram) is **read-only source material** — never modify or add as a runtime dependency; it includes attack tooling, from which only identification signatures / benign media paths are ever taken (never exploitation, password-guessing or backdoor logic).
 - Adding a camera: add verified rules to `db/signatures.yaml` **and** a `db/<brand>.yaml`; add a focused positive test, plus a negative test for any short/ambiguous marker. Prefer removing an unsafe marker over inventing a speculative one. Prefer a clear `unknown` over a false positive.
+
+## Engineering rules (learned from past integration bugs)
+
+- **Never swallow exceptions silently.** Every `except` logs at least `logger.debug`.
+- **Mocked tests check logic, not contracts between modules.** Where one module's output feeds another (probe -> `_gather_fingerprint_data` -> `fingerprint_camera`), add a test that runs the real glue code with only the I/O mocked. Run against a real device periodically.
+- **When renaming a key in a probe, update every consumer.** Grep the key name across the whole project first. ONVIF details are namespaced `onvif_*` in `scanner.py` before they reach the fingerprinter; ONVIF replies are accepted only from the scanned IP (WS-Discovery is multicast).
+- `import_fingerprinthub.py` writes candidates to `scripts/imported/`, never `db/` (`db/*.yaml` is loaded at runtime).

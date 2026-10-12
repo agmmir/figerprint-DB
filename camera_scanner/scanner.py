@@ -348,6 +348,10 @@ class CameraScanner:
                 from probes.isapi import isapi_probe
             isapi_data = await isapi_probe(ip, self.timeout)
             data['isapi_data'] = isapi_data
+            # Expose the device MAC at the top level, where the fingerprinter reads it
+            if isinstance(isapi_data, dict) and isapi_data.get('mac_address') \
+                    and not data.get('mac_address'):
+                data['mac_address'] = isapi_data['mac_address']
         # ONVIF probe to get device information
         try:
             try:

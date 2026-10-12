@@ -5,8 +5,8 @@ emit a review-only candidate YAML plus a provenance report.
 This is OFFLINE tooling. It never performs network I/O and it NEVER modifies
 `signatures.yaml`, `vendor/`, or runtime code. Its only outputs are:
 
-  * camera_scanner/db/_imported_fingerprinthub.yaml        (candidate signatures)
-  * camera_scanner/db/_imported_fingerprinthub.report.yaml (per-entry/per-value provenance)
+  * camera_scanner/scripts/imported/_imported_fingerprinthub.yaml (candidate signatures)
+  * camera_scanner/scripts/_imported_fingerprinthub.report.yaml   (per-entry/per-value provenance)
 
 The candidate YAML uses only the fields the current matcher (`fingerprinter.py`)
 evaluates: `html_markers`, `http_server`, `favicon_md5`. It intentionally does
@@ -33,7 +33,9 @@ _PKG = os.path.dirname(_HERE)                    # camera_scanner/
 _REPO = os.path.dirname(_PKG)                    # GAMA_recognizer/
 VENDOR_JSON = os.path.join(_REPO, "vendor", "FingerprintHub", "web_fingerprint_v4.json")
 SIGNATURES_YAML = os.path.join(_PKG, "db", "signatures.yaml")
-OUT_CANDIDATES = os.path.join(_PKG, "db", "_imported_fingerprinthub.yaml")
+# Candidates are kept OUT of db/: scanner._load_url_patterns() loads every
+# db/*.yaml at runtime, so a candidate file there would leak into the scanner.
+OUT_CANDIDATES = os.path.join(_HERE, "imported", "_imported_fingerprinthub.yaml")
 # The report lives OUTSIDE db/ on purpose: scanner._load_url_patterns() globs
 # every db/*.yaml, so a large provenance file there would be parsed on each
 # scanner init. Keeping it in scripts/ avoids any runtime side effect.
@@ -479,6 +481,7 @@ def main() -> int:
     existing = _load_signatures(SIGNATURES_YAML)
     candidate_yaml, report = build(data, existing)
 
+    os.makedirs(os.path.dirname(OUT_CANDIDATES), exist_ok=True)
     with open(OUT_CANDIDATES, "w", encoding="utf-8") as f:
         f.write(_yaml_header("Candidate signatures (review only)"))
         yaml.safe_dump(candidate_yaml, f, sort_keys=False, allow_unicode=True,

@@ -217,7 +217,7 @@ Signal legend: **N** names (ONVIF name normalisation), **S** HTTP `Server`, **RS
 - **Shared generic HTML markers.** `/cgi-bin/login.cgi` and `/view/index.html` are html markers of **eight** brands (uniview, reolink, amcrest, ezviz, annke, lorex, swann, bosch). A page containing either string is attributed to the first one in file order, **Uniview** (0.75), and the evidence list repeats the marker once per brand.
 - **Templated rules.** Seven brands (reolink, amcrest, ezviz, annke, lorex, swann, bosch) share a near-identical shape: `names`, `<brand>` / `<Brand>-Webs` server and realm, markers `/<brand>`, `/cgi-bin/login.cgi`, `/view/index.html`, and 3-4 MAC OUIs. No source is recorded. Treat them as **unverified placeholders**, not as measured fingerprints.
 - **Shared MAC OUIs.** `00:16:6E`, `00:1D:4A`, `00:1B:06` and `00:1F:33` appear under 8, 7, 6 and 6 different brands respectively, so they cannot identify one brand. The matcher takes the first brand in file order.
-- **No MAC data reaches the matcher in a live scan** (see [section 3](#3-protocol-and-identification-coverage)).
+- **MAC OUI data reaches the matcher only in the narrow case described in [section 3](#3-protocol-and-identification-coverage).**
 - **Brand-level URL coverage** exists only for hikvision, dahua, axis, foscam, xiongmai (`default`), hipcam (`default`) and `generic`. For other brands, URL candidates are produced only when the model is resolved.
 - The 20 brand files with legacy `[USERNAME]` / `[PASSWORD]` / `[CHANNEL]` placeholders are: annke, axis, d-link, dahua, ezviz, geovision, hikvision, hipcam, imou, instar, lorex, netwave, reolink, rvi, samsung, sony, swann, tplink, vivotek, xiongmai-dvr.
 
@@ -238,9 +238,8 @@ Signal legend: **N** names (ONVIF name normalisation), **S** HTTP `Server`, **RS
 
 These were found while auditing the code and are documented here rather than silently assumed to work:
 
-- **ONVIF results are not consumed by the matcher in a live scan.** `onvif_get_device_info` returns the keys `manufacturer`, `model`, `firmware`, `serial`, but `fingerprint_camera` reads `onvif_manufacturer`, `onvif_model`, `onvif_firmware`, `onvif_serial`. The ONVIF branch is exercised only by unit tests that call `fingerprint_camera` directly.
-- **ONVIF discovery is not bound to the target IP.** WS-Discovery is multicast on the local segment; the scanner takes the first discovered device that offers an address. It is not an identification of the scanned IP.
-- **MAC OUI matching receives no data in a live scan.** The ISAPI probe extracts `mac_address` into `data['isapi_data']`, but `fingerprint_camera` reads a top-level `mac_address`.
+- **ONVIF discovery is multicast and local-segment only.** It cannot reach a remote or Internet-facing target. The scanner now accepts a WS-Discovery reply only if it came from, or advertises, the scanned IP; a neighbour's reply is ignored. (An earlier version merged the first discovered device under keys the matcher did not read, so ONVIF never contributed to a live scan; fixed together with this paragraph.)
+- **The ISAPI MAC address is now passed to the matcher**, so MAC OUI matching can fire, but only when the unauthenticated `isapi_probe` returns data, which requires the device to answer `/ISAPI/System/deviceInfo` without credentials and the HTTP headers to contain "hikvision".
 - **`chipset` is never set**, so chipset-first URL selection is dormant.
 
 ## 4. Confidence and evidence
@@ -310,7 +309,7 @@ Licences below were read from the `LICENSE` files in the local clones. They appl
 5. **Hash `2019488876`** under Dahua is labelled "Intelbras IP Camera" in BishopFox/Favicons but matches a Dahua firmware entry in FingerprintHub; Intelbras is not a brand in this database. Decide whether it should stay under Dahua.
 6. **MAC OUIs** have not been checked against the IEEE registry; four OUIs are each shared by 6-8 brands.
 7. **Cameradar `LICENSE`** has no copyright line in the local clone; confirm against the upstream repository.
-8. **ONVIF/MAC wiring gaps** (section 3) are code issues, not documentation issues; they are listed so the README does not overstate what a live scan does.
+8. **Limited ONVIF and MAC OUI reach** (section 3): ONVIF works only on the local segment and MAC OUI only when anonymous ISAPI answers. Both were previously not wired into the matcher at all; the wiring is fixed but neither has been validated on a real device.
 
 ### Responsible use
 
