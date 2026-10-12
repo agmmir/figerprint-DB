@@ -49,6 +49,8 @@ python -m camera_scanner.scanner 192.168.1.64 \
 
 The target may be `ip` or `ip:port` (e.g. `192.168.1.64:7102`): with an explicit port only that single TCP port is scanned and probed (HTTP/HTTPS, RTSP, URL checks); the fixed-port ISAPI and Dahua authenticated lookups are skipped.
 
+`--ports 7102,9001` adds extra TCP ports to the port check (they are only connect-checked; the HTTP/RTSP probes keep their own targets).
+
 Add `--json` for raw JSON output. Illustrative report (values are examples, not a real scan):
 
 ```

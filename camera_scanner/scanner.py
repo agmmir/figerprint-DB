@@ -25,7 +25,7 @@ class CameraScanner:
 
     def __init__(self, timeout: int = 10, semaphore_size: int = 50,
                  user: str = "", password: str = "", url_test_concurrency: int = 10,
-                 port: Optional[int] = None):
+                 port: Optional[int] = None, extra_ports: Optional[List[int]] = None):
         self.timeout = timeout
         self.semaphore = asyncio.Semaphore(semaphore_size)
         # Default credentials used when scan() is called without explicit ones
@@ -59,6 +59,11 @@ class CameraScanner:
         self.explicit_port = port
         if port is not None:
             self.common_ports = [port]
+        # User-requested additional TCP ports: port-checked only (HTTP/RTSP probes
+        # keep their own targets), appended after the defaults, deduplicated.
+        for extra in extra_ports or []:
+            if extra not in self.common_ports:
+                self.common_ports.append(extra)
         # Set per scan(): True when outbound TCP is intercepted (VPN/transparent
         # proxy), which makes every TCP connect "succeed" and open_ports unreliable.
         self._is_proxied = False
@@ -756,6 +761,24 @@ def parse_target(s: str) -> tuple:
     return s, None
 
 
+def parse_ports(s: str) -> List[int]:
+    """Parse '80,8080,7102' into a list of ports; reject anything outside 1..65535."""
+    ports = []
+    for part in s.split(","):
+        part = part.strip()
+        if not part:
+            continue
+        try:
+            port = int(part)
+            if not 1 <= port <= 65535:
+                raise ValueError
+        except ValueError:
+            raise SystemExit(f"Invalid port '{part}' in --ports")
+        if port not in ports:
+            ports.append(port)
+    return ports
+
+
 def format_result(info: "CameraInfo") -> str:
     """Render a CameraInfo as a readable, sectioned report for the CLI."""
     d = info.model_dump() if hasattr(info, "model_dump") else dict(info)
@@ -815,6 +838,8 @@ if __name__ == "__main__":
     parser.add_argument('--user', default='', help='Username for authenticated probes (optional)')
     parser.add_argument('--password', default='', help='Password for authenticated probes (optional)')
     parser.add_argument('--concurrency', type=int, default=10, help='Max concurrent URL checks per target (default: 10)')
+    parser.add_argument('--ports', default='',
+                        help='Extra TCP ports to check, comma-separated (e.g. 7102,9001)')
     parser.add_argument('--json', action='store_true', help='Output raw JSON instead of the formatted report')
     args = parser.parse_args()
 
@@ -823,7 +848,8 @@ if __name__ == "__main__":
         scanner = CameraScanner(timeout=args.timeout, semaphore_size=args.semaphore,
                                 user=args.user, password=args.password,
                                 url_test_concurrency=args.concurrency,
-                                port=explicit_port)
+                                port=explicit_port,
+                                extra_ports=parse_ports(args.ports))
         result = await scanner.scan(host)
         if args.json:
             import json

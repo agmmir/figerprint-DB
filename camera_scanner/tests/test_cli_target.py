@@ -57,3 +57,18 @@ async def test_explicit_port_reaches_probes_and_urls():
     assert seen["rtsp"] == [7102]
     assert seen["urls"] and all("1.2.3.4:7102" in u for u in seen["urls"] if u.startswith("http"))
     cp.assert_awaited_once()
+
+
+def test_parse_ports():
+    from camera_scanner.scanner import parse_ports
+    assert parse_ports("7102, 9001,7102") == [7102, 9001]
+    assert parse_ports("") == []
+    for bad in ("0", "70000", "abc"):
+        with pytest.raises(SystemExit):
+            parse_ports(bad)
+
+
+def test_extra_ports_appended_without_duplicates():
+    ports = CameraScanner(extra_ports=[80, 7102]).common_ports
+    assert ports.count(80) == 1 and ports[-1] == 7102
+    assert CameraScanner(port=554, extra_ports=[7102]).common_ports == [554, 7102]
