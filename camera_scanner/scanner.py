@@ -31,11 +31,28 @@ class CameraScanner:
         self.password = password
         # Max concurrent URL checks for a single target IP
         self.url_test_concurrency = url_test_concurrency
-        # Common ports to check for IP cameras.
-        # 37777 (Dahua proprietary TCP/DHIP) and 37778 (Dahua UDP SDK) are
-        # probed for Dahua DVRs/NVRs. They are only *candidates*: a port is
-        # reported open solely when _check_ports() confirms a TCP connection.
-        self.common_ports = [80, 443, 554, 8000, 8080, 34567, 37777, 37778]
+        # Candidate TCP ports for IP cameras. A port is reported open solely when
+        # _check_ports() confirms a TCP connection; no brand is attributed from a
+        # port here (37777/37778 only feed the guarded Dahua fallback in scan()).
+        self.common_ports = [
+            # Web admin (HTTP/HTTPS alternates)
+            80, 81, 82, 83, 84, 85, 88, 443, 8443,
+            # RTSP
+            554, 8554, 10554,
+            # Hikvision
+            8000, 8001, 8081, 9000, 9010,
+            # Dahua (37777 TCP/DHIP; 37778 is the SDK port, also probed over TCP)
+            37777, 37778, 50000,
+            # Xiongmai / generic DVR (shared DVRIP port, not brand evidence)
+            34567,
+            # Common alternates
+            8080, 8088, 8090, 5000,
+            # Legacy services
+            21, 22, 23,
+        ]
+        # Deduplicate, keep order
+        seen = set()
+        self.common_ports = [p for p in self.common_ports if not (p in seen or seen.add(p))]
         # Load URL patterns from YAML
         self.url_patterns = self._load_url_patterns()
         # Non-standard favicon/image paths that signatures want hashed
@@ -228,26 +245,34 @@ class CameraScanner:
         return result
 
     async def _check_ports(self, ip: str) -> List[int]:
-        """Check which common ports are open on the target IP."""
-        open_ports = []
-        for port in self.common_ports:
-            try:
-                # Use asyncio.open_connection to check if port is open
-                reader, writer = await asyncio.wait_for(
-                    asyncio.open_connection(ip, port),
-                    timeout=self.timeout
-                )
-                writer.close()
-                await writer.wait_closed()
-                open_ports.append(port)
-                logger.debug(f"Port {port} is open on {ip}")
-            except (asyncio.TimeoutError, ConnectionRefusedError, OSError):
-                # Port is closed or unreachable
-                logger.debug(f"Port {port} is closed or unreachable on {ip}")
-                continue
-            except Exception as e:
-                logger.warning(f"Error checking port {port} on {ip}: {e}")
-        return open_ports
+        """Check which common ports are open on the target IP (TCP connect only).
+
+        Uses a short per-port timeout (min(self.timeout, 3)) and checks the ports
+        concurrently, bounded by the scanner semaphore. Result order follows
+        self.common_ports.
+        """
+        port_scan_timeout = min(self.timeout, 3)
+
+        async def check(port: int) -> bool:
+            async with self.semaphore:
+                try:
+                    reader, writer = await asyncio.wait_for(
+                        asyncio.open_connection(ip, port),
+                        timeout=port_scan_timeout
+                    )
+                    writer.close()
+                    await writer.wait_closed()
+                    logger.debug(f"Port {port} is open on {ip}")
+                    return True
+                except (asyncio.TimeoutError, ConnectionRefusedError, OSError):
+                    logger.debug(f"Port {port} is closed or unreachable on {ip}")
+                    return False
+                except Exception as e:
+                    logger.warning(f"Error checking port {port} on {ip}: {e}")
+                    return False
+
+        results = await asyncio.gather(*(check(p) for p in self.common_ports))
+        return [p for p, ok in zip(self.common_ports, results) if ok]
 
     def _determine_protocols(self, open_ports: List[int]) -> List[str]:
         """Determine likely protocols based on open ports."""

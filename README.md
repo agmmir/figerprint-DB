@@ -90,7 +90,7 @@ scanner.resolve_urls(manufacturer="hikvision", ip="192.168.1.64", user="admin", 
 
 `CameraScanner.scan()` is a staged pipeline. Each stage only fills fields that an earlier stage left empty.
 
-1. **Port check**: 80, 443, 554, 8000, 8080, 34567, 37777, 37778.
+1. **Port check**: 28 candidate TCP ports (web 80-85/88/443/8443/8080/8088/8090, RTSP 554/8554/10554, Hikvision 8000/8001/8081/9000/9010, Dahua 37777/37778/50000, Xiongmai 34567, 5000, legacy 21/22/23), checked concurrently with a 3 s per-port timeout. An open port is not brand evidence. See `common_ports` in `scanner.py`.
 2. **HTTP probe**: `Server` header, `WWW-Authenticate`, first 2 KB of HTML, favicon MD5 and MMH3.
 3. **RTSP probe**: `OPTIONS` banner.
 4. **Data gathering**: SSL certificate issuer/subject (when 443 is open), ISAPI (when HTTP hints Hikvision), ONVIF WS-Discovery (multicast, local segment only).
@@ -225,7 +225,7 @@ Signal legend: **N** names (ONVIF name normalisation), **S** HTTP `Server`, **RS
 
 | Mechanism | What it can provide | Identifies | Credentials | Limitations / false positives |
 |---|---|---|---|---|
-| **Port scan** | Open ports among 80, 443, 554, 8000, 8080, 34567, 37777, 37778 | A service only. Ports 37777/37778 trigger a weak Dahua guess (0.40) when the device was reached and nothing else matched | No | Ports are shared across vendors; 37777/37778 are Dahua SDK defaults but are not exclusive to Dahua |
+| **Port scan** | Open ports among the 28 candidates in `common_ports` (TCP connect only) | A service only. Ports 37777/37778 trigger a weak Dahua guess (0.40) when the device was reached and nothing else matched | No | Ports are shared across vendors; 37777/37778 are Dahua SDK defaults but are not exclusive to Dahua |
 | **HTTP / HTTPS** (`probes/http.py`) | `Server` header, `WWW-Authenticate` realm, first 2 KB of HTML, favicon MD5 and MMH3, favicon hashes at signature-listed paths | Brand (and sometimes model via regex) | No | Generic markers and generic servers (`Apache`, `lighttpd`, `IP Camera`) can mismatch. Only 200/401/403 are treated as camera-like |
 | **RTSP** (`probes/rtsp.py`) | `OPTIONS` banner (`Server`); `DESCRIBE` with Digest/Basic auth to verify a stream URL | Brand only for `hipcam` (the only brand with RTSP-server signatures); otherwise a service | Only for stream verification | A 200 reply to `DESCRIBE` proves the stream answers, not that the video is decodable |
 | **SSL/TLS** (`probes/ssl_cert.py`) | Peer certificate issuer/subject DN (verification is off; modern-then-legacy TLS fallback) | Brand where a DN marker exists (hikvision, dahua, uniview, axis for issuer) | No | Self-signed certificates can carry arbitrary text. Only a few brands have markers |

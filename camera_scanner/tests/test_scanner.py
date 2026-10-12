@@ -15,7 +15,8 @@ async def test_scanner_initialization():
     scanner = CameraScanner(timeout=5, semaphore_size=10)
     assert scanner.timeout == 5
     assert scanner.semaphore._value == 10  # Semaphore internal value
-    assert scanner.common_ports == [80, 443, 554, 8000, 8080, 34567, 37777, 37778]
+    # the original camera ports must remain candidates (list was later expanded)
+    assert {80, 443, 554, 8000, 8080, 34567, 37777, 37778} <= set(scanner.common_ports)
 
 
 @pytest.mark.asyncio
@@ -471,3 +472,45 @@ async def test_isapi_mac_address_reaches_fingerprinter():
     assert result.manufacturer == "Hikvision"
     assert result.confidence == 0.95
     assert any(e.startswith("mac_oui:44:19:B6") for e in result.evidence)
+
+
+@pytest.mark.asyncio
+async def test_common_ports_include_alternates():
+    scanner = CameraScanner()
+    for p in [80, 81, 443, 554, 8000, 8080, 8443, 34567, 37777]:
+        assert p in scanner.common_ports
+    # dedup check
+    assert len(scanner.common_ports) == len(set(scanner.common_ports))
+    assert all(isinstance(p, int) for p in scanner.common_ports)
+
+
+@pytest.mark.asyncio
+async def test_check_ports_short_timeout_concurrent_and_ordered():
+    """Port scan uses min(timeout, 3) per port, runs concurrently, keeps list order."""
+    scanner = CameraScanner(timeout=10)
+    scanner.common_ports = [80, 81, 554, 8080]
+    seen_timeouts = []
+
+    async def fake_open(ip, port):
+        await asyncio.sleep(0.2)
+        if port in (81, 554):
+            writer = MagicMock()
+            writer.wait_closed = AsyncMock()
+            return MagicMock(), writer
+        raise ConnectionRefusedError
+
+    real_wait_for = asyncio.wait_for
+
+    async def spy_wait_for(coro, timeout):
+        seen_timeouts.append(timeout)
+        return await real_wait_for(coro, timeout)
+
+    loop = asyncio.get_event_loop()
+    start = loop.time()
+    with patch('camera_scanner.scanner.asyncio.open_connection', new=fake_open), \
+         patch('camera_scanner.scanner.asyncio.wait_for', new=spy_wait_for):
+        ports = await scanner._check_ports("192.0.2.1")
+    elapsed = loop.time() - start
+    assert ports == [81, 554]
+    assert set(seen_timeouts) == {3}
+    assert elapsed < 0.7  # 4 ports x 0.2s would be 0.8s if sequential
