@@ -420,3 +420,36 @@ def test_format_result_renders_sections():
     assert "Scan result: 1.2.3.4" in txt
     assert "Dahua" in txt
     assert "rtsp://1.2.3.4/cam" in txt
+
+
+async def _scan_with_onvif(devices, dev_info, target="192.0.2.50"):
+    scanner = CameraScanner()
+    with patch.object(scanner, '_check_ports', return_value=[80]), \
+         patch.object(scanner, '_http_probe', return_value={'_status': 'ok', 'server': 'x'}), \
+         patch.object(scanner, '_rtsp_probe', return_value={}), \
+         patch('camera_scanner.probes.onvif.onvif_probe', new=AsyncMock(return_value=devices)), \
+         patch('camera_scanner.probes.onvif.onvif_get_device_info', new=AsyncMock(return_value=dev_info)), \
+         patch.object(scanner, '_test_url_patterns', new=AsyncMock()):
+        return await scanner.scan(target)
+
+
+@pytest.mark.asyncio
+async def test_onvif_result_from_target_reaches_result():
+    dev = {'ip': '192.0.2.50', 'xaddr': 'http://192.0.2.50/onvif/device_service', 'onvif_capable': True}
+    info = {'manufacturer': 'Hikvision', 'model': 'DS-2CD2043G2-I', 'firmware': 'V5.7.3', 'serial': 'SN1'}
+    result = await _scan_with_onvif([dev], info)
+    assert result.manufacturer == "Hikvision"
+    assert result.model == "DS-2CD2043G2-I"
+    assert result.firmware_version == "V5.7.3"
+    assert result.serial_number == "SN1"
+    assert result.confidence >= 0.99
+
+
+@pytest.mark.asyncio
+async def test_onvif_result_from_other_device_is_ignored():
+    """A neighbour answering the multicast probe must not identify the target."""
+    dev = {'ip': '192.0.2.99', 'xaddr': 'http://192.0.2.99/onvif/device_service', 'onvif_capable': True}
+    info = {'manufacturer': 'Dahua', 'model': 'IPC-X'}
+    result = await _scan_with_onvif([dev], info)
+    assert result.manufacturer is None
+    assert result.model is None

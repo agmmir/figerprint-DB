@@ -355,22 +355,36 @@ class CameraScanner:
             except ImportError:
                 from probes.onvif import onvif_probe, onvif_get_device_info
             devices = await onvif_probe(timeout=self.timeout)
-            if devices:
-                # Take the first device with xaddr
-                for dev in devices:
-                    xaddr = dev.get('xaddr')
-                    if xaddr:
-                        dev_info = await onvif_get_device_info(xaddr, timeout=self.timeout)
-                        if dev_info:
-                            # Merge dev_info into data, preferring existing if conflict?
-                            for key, value in dev_info.items():
-                                if key not in data or not data[key]:
-                                    data[key] = value
-                            break
+            # WS-Discovery is multicast and not bound to the target: only accept a
+            # device that is actually the scanned IP, otherwise a neighbour's
+            # identity would be attributed to the target.
+            for dev in devices or []:
+                xaddr = dev.get('xaddr')
+                if not xaddr or not self._onvif_device_is_target(dev, ip):
+                    continue
+                dev_info = await onvif_get_device_info(xaddr, timeout=self.timeout)
+                if dev_info:
+                    # Namespace the keys for the fingerprinter (onvif_manufacturer, ...)
+                    for key, value in dev_info.items():
+                        okey = f"onvif_{key}"
+                        if value and not data.get(okey):
+                            data[okey] = value
+                    break
         except Exception as e:
             logger.debug(f"ONVIF probe or device info failed: {e}")
         data['_network_status'] = self._aggregate_network_status(statuses)
         return data
+
+    @staticmethod
+    def _onvif_device_is_target(dev: Dict[str, Any], ip: str) -> bool:
+        """True if a WS-Discovery response came from, or advertises, the target IP."""
+        if dev.get('ip') == ip:
+            return True
+        try:
+            from urllib.parse import urlparse
+            return urlparse(dev.get('xaddr') or '').hostname == ip
+        except ValueError:
+            return False
 
     @staticmethod
     def _aggregate_network_status(statuses: List[str]) -> str:

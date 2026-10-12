@@ -490,3 +490,11 @@ def test_uniview_by_ssl_subject():
 def test_unknown_ssl_subject_returns_none():
     fp = fingerprint_camera({"ssl_subject": "O=Acme Corp C=US CN=device.local"})
     assert fp is None or fp.get("manufacturer") is None
+
+
+def test_onvif_keys_reach_fingerprinter():
+    data = {"onvif_manufacturer": "Hikvision", "onvif_model": "DS-2CD2043G2-I"}
+    fp = fingerprint_camera(data)
+    assert fp is not None
+    assert fp["manufacturer"] == "Hikvision"
+    assert fp["model"] == "DS-2CD2043G2-I"
