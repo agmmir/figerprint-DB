@@ -1,0 +1,334 @@
+intellinet:
+  '5031277':
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  '503792':
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/temp/image.jpg
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi
+    ptz: []
+    other: []
+  '524421':
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  '5302468':
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  '550710':
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/jpg/image.jpg?size=3
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image.cgi
+  ICD-862 HD:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  IDC-862:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  INT-L200:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/jpg/image.jpg?size=3
+    stream: []
+    ptz: []
+    other: []
+  INT-L10:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image.cgi
+  INT-W200:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  L10:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/temp/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  MNC-L10:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/temp/image.jpg
+    - http://{user}:{pass}@{ip}/jpg/image.jpg?size=3
+    stream: []
+    ptz: []
+    other: []
+  N1000:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream: []
+    ptz: []
+    other: []
+  NBC30:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  NBC30-IR:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video.mp4
+  NCS18:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/temp/image.jpg
+    - http://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}/mjpg/video.mjpg
+    stream: []
+    ptz: []
+    other: []
+  NFC30:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video.mp4
+  NFC30IR:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video.mp4
+  NFC30-WG:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video.mp4
+  NFC31:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    - http://{user}:{pass}@{ip}/video.mjpg
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video.mp4
+  NFC31IR:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  NFC-WG:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/jpg/image.jpg?size=3
+    stream: []
+    ptz: []
+    other: []
+  NFD30:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video.mp4
+  NSC11:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/mjpg/video.mjpg
+    - http://{user}:{pass}@{ip}/mjpg/1/video.mjpg
+    stream: []
+    ptz: []
+    other: []
+  NSC11-WN:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/mjpg/video.mjpg
+    - http://{user}:{pass}@{ip}/mjpg/video.mjpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video.mp4
+  NSC15:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video.mp4
+  NSC16-WG:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/jpg/image.jpg?size=3
+    stream: []
+    ptz: []
+    other: []
+  '551106':
+    snapshot:
+    - http://{user}:{pass}@{ip}/temp/image.jpg
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    - http://{user}:{pass}@{ip}/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image.cgi
+    - http://{user}:{pass}@{ip}:80/video.mp4
+  NSC18:
+    snapshot:
+    - http://{user}:{pass}@{ip}/temp/image.jpg
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    - http://{user}:{pass}@{ip}/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/mjpg/video.mjpg
+    - http://{user}:{pass}@{ip}/snapshot.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi
+    ptz: []
+    other: []
+  '5057231':
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg?size=3
+    stream: []
+    ptz: []
+    other: []
+  '5237001':
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg?size=3
+    stream: []
+    ptz: []
+    other: []
+  NFD130-IR:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video.mp4
+  INT-W100:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/image.cgi
+  '550949':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    stream: []
+    ptz: []
+    other: []
+  NFC30-IR:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    stream: []
+    ptz: []
+    other: []
+  NFC31-IR:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream: []
+    ptz: []
+    other: []
+  NSC15-WG:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpg/image
+    stream: []
+    ptz: []
+    other: []
+  '550963':
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video.mp4
+  N1250:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/video.mp4
+  IBC-637IR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.pro1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/view/image?pro_[CHANNEL]
+  IDC-757IR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/video.pro1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/view/image?pro_[CHANNEL]
+  IDC-752IR:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/view/image?pro_[CHANNEL]
+  IDC-767IR:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/view/image?pro_[CHANNEL]
+  IC-1500S:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  NSC18-WN:
+    snapshot:
+    - http://{user}:{pass}@{ip}/mjpg/video.mjpg
+    stream: []
+    ptz: []
+    other: []
+  Unknown:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/loginfree.jpg
+    - http://{user}:{pass}@{ip}/snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []

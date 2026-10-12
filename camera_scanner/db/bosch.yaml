@@ -1,0 +1,1008 @@
+bosch:
+  4000 IP HD:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegSize=M
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    - rtsp://{user}:{pass}@{ip}:10600/video.h264
+    ptz: []
+    other: []
+  '455':
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegSize=M
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  '5000':
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegSize=M
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  NBC-265-P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegSize=M
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/video.h264
+    - rtsp://{user}:{pass}@{ip}/cgi-bin/rtspStream/[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/live/ch00_0
+    ptz: []
+    other: []
+  DINION HD:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegSize=M
+    - http://{user}:{pass}@{ip}/snap.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    - rtsp://{user}:{pass}@{ip}/h264
+    - rtsp://{user}:{pass}@{ip}/cgi-bin/rtspStream/[CHANNEL]
+    ptz: []
+    other: []
+  FLEXIDOME 2000 HD:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegSize=M
+    stream: []
+    ptz: []
+    other: []
+  FLEXIDOME IP INDOOR 5000 HD:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegSize=M
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/video.h264
+    - rtsp://{user}:{pass}@{ip}/1/stream1/Profile1
+    ptz: []
+    other: []
+  FLEXIDOME IP MICRO 2000:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegSize=M
+    stream:
+    - rtsp://{user}:{pass}@{ip}/1/stream1/Profile1
+    ptz: []
+    other: []
+  NBC-265:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegSize=M
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/video.h264
+    - rtsp://{user}:{pass}@{ip}/1/stream1/Profile1
+    - rtsp://{user}:{pass}@{ip}/cgi-bin/rtspStream/[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/live/ch00_0
+    ptz: []
+    other: []
+  NBC-265P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegSize=M
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ch0_0.h264
+    - rtsp://{user}:{pass}@{ip}/video
+    - rtsp://{user}:{pass}@{ip}/h264
+    ptz: []
+    other: []
+  NBC-265W:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegSize=M
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream: []
+    ptz: []
+    other: []
+  NBC-455-11P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegSize=M
+    stream: []
+    ptz: []
+    other: []
+  NDC-225-P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegSize=M
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream: []
+    ptz: []
+    other: []
+  NDC-455:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegSize=M
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    - http://{user}:{pass}@{ip}/snap.jpg
+    stream: []
+    ptz: []
+    other: []
+  NTC-255-PI:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegSize=M
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/img/mjpeg.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/video.h264
+    - rtsp://{user}:{pass}@{ip}/video
+    ptz: []
+    other: []
+  VG4:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegSize=M
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    - rtsp://{user}:{pass}@{ip}/video
+    - rtsp://{user}:{pass}@{ip}/h264
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?
+    ptz: []
+    other: []
+  VideoJet 10:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegSize=M
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  VIDEOJET X40:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegSize=M
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    - rtsp://{user}:{pass}@{ip}:10600/video.h264
+    ptz: []
+    other: []
+  VIP X1:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegSize=M
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264
+    ptz: []
+    other: []
+  VIP X1 XF:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegSize=M
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    - rtsp://{user}:{pass}@{ip}:10600/video.h264
+    - rtsp://{user}:{pass}@{ip}/h264
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=0.sdp?
+    ptz: []
+    other: []
+  '700':
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  '7000':
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  7000 IP:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/ch0_0.h264
+    - rtsp://{user}:{pass}@{ip}/1/stream1/Profile1
+    ptz: []
+    other: []
+  7000HD:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    - rtsp://{user}:{pass}@{ip}/ch0_0.h264
+    ptz: []
+    other: []
+  '71022':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  '800':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  AUTODOME 7000:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    - rtsp://{user}:{pass}@{ip}/video
+    ptz: []
+    other: []
+  AUTODOME JR800:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  AUTODOME starlight 7000:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  Autodome 2-700:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  DINION 138:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  DINION 5000:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  DINION 8000:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8075/snap.jpg?JpegCam=0
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  DINION 7000:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  Unknown:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg?cam=[CHANNEL]&quality=3&size=2
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    - rtsp://{user}:{pass}@{ip}/live/ch00_0
+    - rtsp://{user}:{pass}@{ip}/user=[USERNAME]&password=[PASSWORD]&channel=1&stream=[CHANNEL].sdp?
+    - rtsp://{user}:{pass}@{ip}:10600/live3.sdp
+    - rtsp://{user}:{pass}@{ip}/12
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/GetData.cgi
+  FLEXIDOME IP OUTDOOR:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    - rtsp://{user}:{pass}@{ip}:10600/live3.sdp
+    ptz: []
+    other: []
+  FLEXIDOME IP OUTDOOR 5000 IR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    - rtsp://{user}:{pass}@{ip}:10600/video.h264
+    - rtsp://{user}:{pass}@{ip}/ch0_0.h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  NDN-498-P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    - rtsp://{user}:{pass}@{ip}/h264
+    ptz: []
+    other: []
+  IP BULLET 5000:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    - rtsp://{user}:{pass}@{ip}/h264
+    ptz: []
+    other: []
+  NBC-262:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  NBN-498-P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/h264
+    ptz: []
+    other: []
+  NBN-50022-V3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  NBN-921:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  NDC 265-P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    - rtsp://{user}:{pass}@{ip}:10600/video.h264
+    - rtsp://{user}:{pass}@{ip}/video
+    ptz: []
+    other: []
+  NDC-225-PI:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    - http://{user}:{pass}@{ip}/snap.jpg
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  NDC-255-P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    - http://{user}:{pass}@{ip}/snap.jpg
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    - rtsp://{user}:{pass}@{ip}/1/stream1/Profile1
+    - rtsp://{user}:{pass}@{ip}/video
+    ptz: []
+    other: []
+  NDC-265:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    - rtsp://{user}:{pass}@{ip}:10600/video.h264
+    - rtsp://{user}:{pass}@{ip}/cgi-bin/rtspStream/[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/live/ch00_0
+    ptz: []
+    other: []
+  NDC-274-PT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  NDC-284-P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  NDC-284-PT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  NDC-455V03-21P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  NDN-265-PIO:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    - rtsp://{user}:{pass}@{ip}/h264
+    ptz: []
+    other: []
+  NDN-832-B:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  NDN-832v-A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  NIN733V0:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    - rtsp://{user}:{pass}@{ip}/h264
+    ptz: []
+    other: []
+  NIN832-V0P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  NTI-50022:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  NWD-495V03-20P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  Tinyon 2000 WiFi:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  VG5-7230-EPC4:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  VIP X1600:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    - rtsp://{user}:{pass}@{ip}:554/line=2
+    ptz: []
+    other: []
+  VIP-X1600M4A:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    - http://{user}:{pass}@{ip}/tmp/snap.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  VIP-X1600M4S:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  VJR-831:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/rtsp_tunnel
+    ptz: []
+    other: []
+  '495':
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  AUTODOME 4000:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  Autodome IP 4000 HD:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  AUTODOME IP 7000 HD:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ch0_0.h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  '4000':
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  FLEXIDOME IP MICRO 2000 HD:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  FLEXIDOME 7000:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  FLEXIDOME IP 7000:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  FLEXIDOME MICRO 5MP:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream: []
+    ptz: []
+    other: []
+  IR5000:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream: []
+    ptz: []
+    other: []
+  MC550:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  NBC-225-P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg
+    stream: []
+    ptz: []
+    other: []
+  NDC-255:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  NDC-265-P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  NDC-274P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  NDC-455-v03-12IP:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  NIN-50022-A3:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  NPC-20012-F2:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  NTC-265-PI:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264
+    ptz: []
+    other: []
+  NWC-0455-10P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  NWC-0455-20P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264
+    ptz: []
+    other: []
+  NWC-0495-10P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  VIDEOJET 10:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  VIP X10S:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10600/snap.jpg?JpegCam=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  AutoDome 700 IP 24:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/video.h264
+    ptz: []
+    other: []
+  Autodome II IP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/video.h264
+    - rtsp://{user}:{pass}@{ip}/h264
+    ptz: []
+    other: []
+  AUTODOME IP 5000 HD:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/video.h264
+    ptz: []
+    other: []
+  FLEXIDOME IP 5000 HD:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/video.h264
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/ch0_0.h264
+    ptz: []
+    other: []
+  NDN-921-P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/video.h264
+    - rtsp://{user}:{pass}@{ip}/1/stream1/Profile1
+    - rtsp://{user}:{pass}@{ip}/video
+    - rtsp://{user}:{pass}@{ip}:10600/live3.sdp
+    ptz: []
+    other: []
+  FLEXIDOME panoramic 5100i:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/video.h264
+    ptz: []
+    other: []
+  IP bullet 4000 HD:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/video.h264
+    ptz: []
+    other: []
+  NBN-733V-IP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/video.h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  '900':
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream: []
+    ptz: []
+    other: []
+  DINION IP 2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream: []
+    ptz: []
+    other: []
+  FLEXIDOME 1234:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream: []
+    ptz: []
+    other: []
+  MVC455:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream: []
+    ptz: []
+    other: []
+  nbc-225-p:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264
+    ptz: []
+    other: []
+  NDN-498-V03-21S:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream: []
+    ptz: []
+    other: []
+  NWC-0495-10p:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  VG4i:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264
+    ptz: []
+    other: []
+  VG4i1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream: []
+    ptz: []
+    other: []
+  NDI-50022_A3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  NTS-265-PI:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  MI 7000:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg
+    stream: []
+    ptz: []
+    other: []
+  ndc-225-p:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  NIN-733V10:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg
+    stream: []
+    ptz: []
+    other: []
+  NIN-833V10:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg
+    stream: []
+    ptz: []
+    other: []
+  V320:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg
+    stream: []
+    ptz: []
+    other: []
+  NDC-274:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ch0_0.h264
+    ptz: []
+    other: []
+  IP 5000:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/1/stream1/Profile1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  Starlight 6000 VR23:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/1/stream1/Profile1
+    ptz: []
+    other: []
+  Autodome IP 5000 IR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264
+    ptz: []
+    other: []
+  DINION starlight 8000:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264
+    ptz: []
+    other: []
+  FLEXIDOME IP starlight 6000 VR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264
+    ptz: []
+    other: []
+  NDC-265P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264
+    ptz: []
+    other: []
+  NTI-50022-V3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264
+    ptz: []
+    other: []
+  FLEXIDOME IP starlight 8000i:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/?inst=2
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  NBE-7604-AL:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  NBE-7604-AL-OC:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  DINION IP 7000 HD:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  D73W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream: []
+    ptz: []
+    other: []
+  HR06:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream: []
+    ptz: []
+    other: []
+  DINION 6000:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  NWC-0455:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  NDC-274-P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  VIP X2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  NBN-80025:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8075/snap.jpg?JpegCam=0
+    stream: []
+    ptz: []
+    other: []
+  DINION IP 5000 HD:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cgi-bin/rtspStream/[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/live/ch00_0
+    ptz: []
+    other: []
+  NBN921:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cgi-bin/rtspStream/[CHANNEL]
+    ptz: []
+    other: []
+  '154':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/ch00_0
+    ptz: []
+    other: []
+  DIVAR 3000:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  DIVAR 5000:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  DIVAR 3000 AN:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  DS-HD6462M-WD:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ch1-s1
+    ptz: []
+    other: []
+  NDN-912-P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:10600/live3.sdp
+    ptz: []
+    other: []
+  NWC-0800:
+    snapshot:
+    - http://{user}:{pass}@{ip}/img.jpg
+    - http://{user}:{pass}@{ip}/mjpeg?res=full&x0=0&y0=0&x1=100%&y1=100%&quality=12&doublescan=0
+    stream: []
+    ptz: []
+    other: []
+  NWC-0900:
+    snapshot:
+    - http://{user}:{pass}@{ip}/img.jpg
+    - http://{user}:{pass}@{ip}/mjpeg?res=full&x0=0&y0=0&x1=100%&y1=100%&quality=12&doublescan=0
+    stream: []
+    ptz: []
+    other: []

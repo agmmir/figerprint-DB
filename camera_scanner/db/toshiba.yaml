@@ -1,0 +1,299 @@
+toshiba:
+  Unknown:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8088/cgi-bin/net_jpeg.cgi?ch=0
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    - http://{user}:{pass}@{ip}:80/nphMotionJpeg?Resolution=1280x720&Quality=Standard
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpeg?stream=0
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/videofeed
+  IK-WB15A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - http://{user}:{pass}@{ip}/admin/cgi-bin/getstream.cgi?10&&&&&0&0&0&0
+    - http://{user}:{pass}@{ip}/__live.jpg?&&&
+    - http://{user}:{pass}@{ip}/getstream.cgi?10&10&&&10&0&0&0&0
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/GetData.cgi
+  IKWB-15:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/admin/cgi-bin/getstream.cgi?10&&&&&0&0&0&0
+    ptz: []
+    other: []
+  ikwb21:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/admin/cgi-bin/getstream.cgi?10&&&&&0&0&0&0
+    ptz: []
+    other: []
+  IK-WB21A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/GetData.cgi?CH=[CHANNEL]&Codec=jpeg&Size=[WIDTH]x[HEIGHT]
+    stream:
+    - http://{user}:{pass}@{ip}/admin/cgi-bin/getstream.cgi?10&&&&&0&0&0&0
+    - http://{user}:{pass}@{ip}/__live.jpg?&&&
+    - http://{user}:{pass}@{ip}/getstream.cgi?10&10&&&10&0&0&0&0
+    - http://{user}:{pass}@{ip}/user/cgi-bin/getstream.cgi?10&&&&0&0&0&0&0
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/GetData.cgi
+  IK-6420A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    ptz: []
+    other: []
+  ik-wb16:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    ptz: []
+    other: []
+  IK-WB16A-W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - http://{user}:{pass}@{ip}/__live.jpg?&&&
+    - http://{user}:{pass}@{ip}/getstream.cgi?10&10&&&10&0&0&0&0
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}/live2.sdp
+    ptz: []
+    other: []
+  IKWB-30A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    ptz: []
+    other: []
+  IK-WB80A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    ptz: []
+    other: []
+  IKWD-14A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}/live2.sdp
+    ptz: []
+    other: []
+  ik-WP41A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live3.sdp
+    ptz: []
+    other: []
+  IK-WB01A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/__live.jpg?&&&
+    - http://{user}:{pass}@{ip}/__live.jpg?&&[USERNAME]&[PASSWORD]
+    - http://{user}:{pass}@{ip}/getstream.cgi?10&10&&&10&0&0&0&0
+    - http://{user}:{pass}@{ip}/user/cgi-bin/getstream.cgi?10&&&&0&0&0&0&0
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/GetData.cgi
+  IK-WB16a:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  ik-wb70a:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  IKWB-80A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IKWB-81A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    ptz: []
+    other: []
+  IKWD-01A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/video[USERNAME].mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IKWD05A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  IK-WD31A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  IK-WR12A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  TD05W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg
+    stream: []
+    ptz: []
+    other: []
+  IK-WB11A:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/__live.jpg?&&&
+    - http://{user}:{pass}@{ip}/__live.jpg?&&[USERNAME]&[PASSWORD]
+    - http://{user}:{pass}@{ip}/getstream.cgi?10&10&&&10&0&0&0&0
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/GetData.cgi
+  ikwb15a:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/user/cgi-bin/getstream.cgi?10&&&&0&0&0&0&0
+    ptz: []
+    other: []
+  IK-WB02A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/Jpeg/CamImg.jpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/GetData.cgi?Status=0
+  IKWR-01A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/Jpeg/CamImg.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/GetData.cgi?Status=0
+  IK-WB16A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    - http://{user}:{pass}@{ip}/video.mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IKWB-70A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/video[USERNAME].mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}/live2.sdp
+    ptz: []
+    other: []
+  IK-WR14A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    ptz: []
+    other: []
+  IK-WB161A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  IK-WR04A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/viewer/video.jpg?resolution=640x480
+    stream: []
+    ptz: []
+    other: []
+  IK-WB16:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  ik-wb16a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IK-WD04A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IKWD-12A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - rtsp://{user}:{pass}@{ip}/live2.sdp
+    ptz: []
+    other: []
+  IKWP-41A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IKWR-04A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  IKWR-05:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    ptz: []
+    other: []
+  WD04A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live4.sdp
+    ptz: []
+    other: []

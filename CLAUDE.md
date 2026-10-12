@@ -83,6 +83,7 @@ Rule-based multi-signal scoring against **`db/signatures.yaml`**, which has thre
 - `scanner._load_url_patterns()` loads **every `*.yaml`/`*.yml`** in `db/` via `os.listdir` (order **not** sorted/guaranteed) and merges by brand with `dict.update()` (overlapping pattern keys are replaced, not merged). `.bak` is excluded by extension. Adding a brand = adding a file; no code change.
 - `_get_url_patterns(key, model)`: exact model → **longest-prefix** match (upper-cased, spaces stripped, `_`-keys skipped) → explicit `default:` sub-dict → brand-level categories (works even when `model` is `None`). Use a `default:` block for chipset/brand-wide patterns and prefix keys (e.g. `DS-2CD`) for many-model brands.
 - Placeholders: `{ip}`, `{user}`, `{pass}` (some legacy entries also contain `[USERNAME]`/`[PASSWORD]`/`[CHANNEL]`). Categories: `snapshot`, `stream`, `overlay`; per-model entries also use `ptz`, `other`.
+- Per-model entries (`<model>: {snapshot,stream,ptz,other}`) are bulk-scraped from iSpyConnect via `testing/ispyimport.py` and merged in with a dedup pass that keeps only URLs absent from both the brand file and `_generic` (~9,300 model entries total). `_get_url_patterns` returns only `snapshot`/`stream`/`overlay`; `ptz`/`other` are stored, not tested. These large files make `CameraScanner()` init take ~3 s (each instance re-parses all of `db/`): fine for a one-off scan; add a module-level load cache if it matters.
 
 ### Models (`models.py`) & capture (`capture.py`)
 

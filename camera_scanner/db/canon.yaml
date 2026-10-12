@@ -1,0 +1,341 @@
+canon:
+  '740':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/stream/profile2=r
+    ptz: []
+    other: []
+  CRN-300:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/stream/profile2=r
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/-wvhttp-01-/GetOneShot?image_size=320x240&frame_count=0
+  VB-M50B:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/stream/profile2=r
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    - rtsp://{user}:{pass}@{ip}/stream/profile1=r
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]
+  CN-R500:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    ptz: []
+    other: []
+  CR-N500:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    ptz: []
+    other: []
+  M42:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    ptz: []
+    other: []
+  m44:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    ptz: []
+    other: []
+  vb-610:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    ptz: []
+    other: []
+  VB-C10:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetLiveImage
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]&frame_count=0
+  VB-C300:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetLiveImage
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]&frame_count=0
+  VB-C50i/C50iR:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]&frame_count=0
+  VB-C60:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]&frame_count=0
+  VB-H41:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    ptz: []
+    other: []
+  VB-H43:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    - rtsp://{user}:{pass}@{ip}/stream/profile0=r
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]
+  VB-H45:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    ptz: []
+    other: []
+  VB-h610:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    ptz: []
+    other: []
+  VB-H610VE:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    ptz: []
+    other: []
+  VB-H630VE:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]
+  VB-H710F:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    - rtsp://{user}:{pass}@{ip}/stream/profile1=r
+    ptz: []
+    other: []
+  VB-H730F:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    ptz: []
+    other: []
+  VB-M40:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetLiveImage
+    - rtsp://{user}:{pass}@{ip}/profile1=u
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]&frame_count=0
+  VB-M42:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    - rtsp://{user}:{pass}@{ip}/stream/profile1=r
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]&frame_count=0
+  VB-M44:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    ptz: []
+    other: []
+  VB-M600D:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    - rtsp://{user}:{pass}@{ip}/profile1=r
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]&frame_count=0
+  VB-M620VE:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    ptz: []
+    other: []
+  VB-M700F:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    ptz: []
+    other: []
+  VB-M720F:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    - rtsp://{user}:{pass}@{ip}/stream/profile1=r
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/-wvhttp-01-/GetOneShot?image_size=320x240&frame_count=0
+    - http://{user}:{pass}@{ip}:80/-wvhttp-01-/GetOneShot?image_size=320x240
+  VBS30D:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]
+  VB-S30D:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    ptz: []
+    other: []
+  VB-S30VE:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    ptz: []
+    other: []
+  VB-S805D:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    ptz: []
+    other: []
+  VB-S900F:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    - rtsp://{user}:{pass}@{ip}/stream/profile1=r
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:80/viewer/admin/index.html?lang=en
+  VB-S905F:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    - rtsp://{user}:{pass}@{ip}/stream/profile1=r
+    ptz: []
+    other: []
+  VB-M46:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    ptz: []
+    other: []
+  CR-N100:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/video.cgi
+    ptz: []
+    other: []
+  DC210:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/?&AUDIO=YES&CHOPIMAGE=YES&STREAM=YES&WANTIMAGE=[CHANNEL].JPG&SENDEMPTYIMAGES=NO
+    ptz: []
+    other: []
+  i50:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]
+  VB300:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]
+  VB-C500D:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]
+  VB-C50FSi:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]&frame_count=0
+  vb-c50i:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]&frame_count=0
+  vb-h41:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/stream/profile1=r
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]
+  VB-H630:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]
+  Unknown:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam[CHANNEL]/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/vdata.v
+  vb150:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]&frame_count=0
+  vb-c10r:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]&frame_count=0
+  VB-C50Fi:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]&frame_count=0
+  vb-h630:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/stream/profile1=r
+    ptz: []
+    other: []
+  VB-S800D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/stream/profile0=r
+    ptz: []
+    other: []
+  VB-R12VE:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/-wvhttp-01-/GetOneShot?image_size=320x240

@@ -7,3 +7,4326 @@ foscam:
   - rtsp://{user}:{pass}@{ip}:554/videoSub
   overlay:
   - http://{ip}/set_misc.cgi?osd_enable=1
+  '1700':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    ptz: []
+    other: []
+  C1 V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  C1 V3:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  C2M:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI8903P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI8904W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    - http://{user}:{pass}@{ip}/snapshot.cgi?
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}:88/videostream.cgi?resolution=8&rate=13
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    - http://{user}:{pass}@{ip}/video.cgi
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0
+    - http://{user}:{pass}@{ip}/user/videostream.cgi
+    ptz: []
+    other: []
+  FI8905W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    - http://{user}:{pass}@{ip}/snapshot.cgi?
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    - http://{user}:{pass}@{ip}/snap.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:88/videostream.cgi?resolution=8&rate=13
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - rtsp://{user}:{pass}@{ip}/11
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}/live.sdp
+    - http://{user}:{pass}@{ip}:80/videostream.cgi?user=[USERNAME]&password=
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/videofeed
+  FI9800 P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9803 V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  FI9803EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}:88/snapshot/view[CHANNEL].jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9803P V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9803P v2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    ptz: []
+    other: []
+  FI9803P V3:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - rtsp://{user}:{pass}@{ip}/ucast/11
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}:554/2.3gp
+    - rtsp://{user}:{pass}@{ip}:8554/H264
+    ptz: []
+    other: []
+  Fi9804W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIStream.cgi?cmd=GetMJStream
+    ptz: []
+    other: []
+  FI9805:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  FI9805E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI9805W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video_snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - rtsp://{user}:{pass}@{ip}/11
+    - http://{user}:{pass}@{ip}/video.cgi
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=[CHANNEL]&subtype=1
+    ptz: []
+    other: []
+  fi9820w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    ptz: []
+    other: []
+  FI9821:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  FI9821EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:8082/
+  FI9821P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    ptz: []
+    other: []
+  fi9821p v2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    ptz: []
+    other: []
+  FI9821v2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    ptz: []
+    other: []
+  FI9821w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI9821W v2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI9821W V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIStream.cgi?cmd=GetMJStream
+    - rtsp://{user}:{pass}@{ip}:88/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  FI9826 v2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9826W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9828P V2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9828W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIStream.cgi?cmd=GetMJStream
+    - http://{user}:{pass}@{ip}:5894/cgi-bin/CGIStream.cgi?cmd=GetMJStream&usr=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI9831w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    ptz: []
+    other: []
+  FI9851P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf
+    ptz: []
+    other: []
+  FI9853EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    ptz: []
+    other: []
+  fi9900:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    ptz: []
+    other: []
+  FI9900P 2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9900P V4:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI9900PV5:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9903P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9912EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9912P-W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9928P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9938B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  QJ4:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  R2C:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  R2E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    ptz: []
+    other: []
+  R4M:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    ptz: []
+    other: []
+  RC2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    ptz: []
+    other: []
+  S41:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    ptz: []
+    other: []
+  SD4H:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  SDX2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  VZ4:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  X1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    ptz: []
+    other: []
+  FI9900EP V5:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9926P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    ptz: []
+    other: []
+  fl9853EP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9821 v2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/videoSub
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:8082/
+  C1 ISODOS:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  C1 ISODOS W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  C1 LIGHT:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  C1 LIte:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  C1/R2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  C1-Lite:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  C1-LITE2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  C1X:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  C2 V3:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  C5M:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  F19821EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI18904w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI18905W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}:80/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320*240
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  FI18910E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI18916W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi
+    ptz: []
+    other: []
+  FI18918W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    - http://{user}:{pass}@{ip}/snapshot.cgi?
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}:88/videostream.cgi?resolution=8&rate=13
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:8082/
+  FI18921W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI1931W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI19803:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI19803P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI19816P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI19821P V3:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI19821W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  FI1982w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI19831W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI19851P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI19853ep:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI19900EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI19900P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI2826P V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI720:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream: []
+    ptz: []
+    other: []
+  FI8093:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI8602:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    - http://{user}:{pass}@{ip}/snap.jpg
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - rtsp://{user}:{pass}@{ip}/11
+    - http://{user}:{pass}@{ip}/video.cgi
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/iphone/11?[USERNAME]:[PASSWORD]&
+  FI8605W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - rtsp://{user}:{pass}@{ip}/11
+    - http://{user}:{pass}@{ip}/video.cgi
+    ptz: []
+    other: []
+  FI8900E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI8902W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    ptz: []
+    other: []
+  FI8903EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI8903W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  FI8904:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}/snapshot.cgi?
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI8905:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?camera=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI8905P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/snapshot/view[CHANNEL].jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI8909W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}/snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/net_jpeg.cgi?ch=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/net_jpeg.cgi?ch=0
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&password=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/net_video.cgi?channel=[CHANNEL]
+    ptz: []
+    other: []
+  FI8910:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0
+    ptz: []
+    other: []
+  FI8910W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    - http://{user}:{pass}@{ip}/snapshot.cgi?
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    - http://{user}:{pass}@{ip}/snap.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/video_snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:80/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320*240
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    - http://{user}:{pass}@{ip}/video.cgi
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&password=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}/video.mp4
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0
+    - http://{user}:{pass}@{ip}:8282/video.cgi?resolution=640x480
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/iphone/11?[USERNAME]:[PASSWORD]&
+    - http://{user}:{pass}@{ip}/img/video.asf
+  FI8915p:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI8918W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video_snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:88/videostream.cgi?resolution=8&rate=13
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}/11
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    - http://{user}:{pass}@{ip}/video.cgi
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&password=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0
+    - rtsp://{user}:{pass}@{ip}:8554/H264
+    - rtsp://{user}:{pass}@{ip}/ch0_0.h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/videofeed
+    - http://{user}:{pass}@{ip}/getimage?camera=[CHANNEL]&fmt=full
+  FI8919W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}:88/videostream.cgi?resolution=8&rate=13
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0
+    - http://{user}:{pass}@{ip}:80/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]!
+    ptz: []
+    other: []
+  FI8920W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}/11
+    - http://{user}:{pass}@{ip}/video.cgi
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=[CHANNEL]&subtype=1
+    - rtsp://{user}:{pass}@{ip}/cam1/mpeg4
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/iphone/11?[USERNAME]:[PASSWORD]&
+  FI8921:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI8921p:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI8921P V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI8921W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=M
+    - http://{user}:{pass}@{ip}/cgi/mjpg/mjpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI8921w v2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI8928W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  FI8931W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  FI8953EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI903P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&password=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0
+    ptz: []
+    other: []
+  FI90803EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI908W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI9100P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9800:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9800 Pv3:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88//cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    ptz: []
+    other: []
+  FI98000P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    ptz: []
+    other: []
+  FI98009:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI9800P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}:554/2.3gp
+    ptz: []
+    other: []
+  FI9801:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI9801W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIStream.cgi?cmd=GetMJStream
+    ptz: []
+    other: []
+  FI9802W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}/11
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIStream.cgi?cmd=GetMJStream
+    ptz: []
+    other: []
+  FI9803:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9803 EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI9803p:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI9803P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}:88/snapshot/view[CHANNEL].jpg
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9803P_:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI9803PV4:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9803W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9804:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9804p:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  FI9804P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  FI9804W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - rtsp://{user}:{pass}@{ip}/11
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/user/videostream.cgi
+    ptz: []
+    other: []
+  FI9805EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  FI9805P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  fI9805s:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  fI9805w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/net_video.cgi?channel=0
+    ptz: []
+    other: []
+  FI9805w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    - http://{user}:{pass}@{ip}:80/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320x240
+    ptz: []
+    other: []
+  FI980P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI980p v4:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI980W5:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI9815P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI9816:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32
+    ptz: []
+    other: []
+  FI9816P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:88/videostream.cgi?resolution=8&rate=13
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    ptz: []
+    other: []
+  FI9816P V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9816V3:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI9818W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}:9060/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=0
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}:88/videostream.cgi?resolution=8&rate=13
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:8082/
+  FI9820P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI9820w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - rtsp://{user}:{pass}@{ip}/11
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - rtsp://{user}:{pass}@{ip}/ch0_0.h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/iphone/11?[USERNAME]:[PASSWORD]&
+  FI9821 W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIStream.cgi?cmd=GetMJStream
+    ptz: []
+    other: []
+  FI9821p:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  FI9821p v2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:8082/
+  FI9821P V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  FI9821P V3:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9821V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI9821W V2.1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI9821W2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9821WV2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI9826:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIStream.cgi?cmd=GetMJStream
+    ptz: []
+    other: []
+  FI9826 V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI98269:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream: []
+    ptz: []
+    other: []
+  FI9826p:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:8082/
+  FI9826P V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI9828:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9828P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    - http://{user}:{pass}@{ip}:1025/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]25&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  FI9828p V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI982p:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI9830P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}/snapshot.cgi?
+    stream: []
+    ptz: []
+    other: []
+  FI9831:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  FI9831EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  fI9831p:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  FI9831PV2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI9831W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  fi9853:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI9900:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI99000P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - rtsp://{user}:{pass}@{ip}:80/rtsph2641080p
+    ptz: []
+    other: []
+  FI99000P V4:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI99002P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI9900EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9900EP V3:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI9900P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9901EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9903:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI990P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9910EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  fi9928T:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI9936P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9961 EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9961EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9961EP V3:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FI99912EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  MGS5020:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  Unknown:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    - http://{user}:{pass}@{ip}:88/snapshot/view[CHANNEL].jpg
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:88/videostream.cgi?resolution=8&rate=13
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - rtsp://{user}:{pass}@{ip}/11
+    - rtsp://{user}:{pass}@{ip}/cam1/mpeg4
+    - rtsp://{user}:{pass}@{ip}:88/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - http://{user}:{pass}@{ip}:2124/videostream.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554/12
+    - http://{user}:{pass}@{ip}:15625/videostream.asf?&resolution=32
+    ptz: []
+    other: []
+  R2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  R2 V4:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  R2/R4:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  R2M:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  R2-V3:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  R2V4:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  R2V5:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}/cgi-bin/video_snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  R4 V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  r4m:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  R4S:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  RD v2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  SD2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  SD2X:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  T5EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  V5M:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  VD1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI89180w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi
+    ptz: []
+    other: []
+  C2E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  G2 MGS2012:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  PD5:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  MGS8010:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  FFI9803P V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]&
+    stream: []
+    ptz: []
+    other: []
+  C1-RTSP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  C1Xc:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  F19961EPV3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  F40 Floodlight:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI18904:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}:88/videostream.cgi?resolution=8&rate=13
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI18905E:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?camera=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI18908W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    ptz: []
+    other: []
+  FI1890W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  FI18910w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  FI18919W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi
+    ptz: []
+    other: []
+  FI19821P V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  FI19826P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI19828:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI19828P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  fi19903:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI19903P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI1990P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI2981W V2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI8900P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI8905E:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?camera=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=VGA
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    - http://{user}:{pass}@{ip}/video.cgi
+    ptz: []
+    other: []
+  fI8905w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other: []
+  FI8908:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI8910E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi
+    ptz: []
+    other: []
+  fi8913:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI8916P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  FI8916W:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi
+    ptz: []
+    other: []
+  FI8921 V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  FI8921EP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI8921P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  FI8921w V2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI8921W V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  FI8926P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  fi8931w:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI8953:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI900EP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9088P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9128P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - rtsp://{user}:{pass}@{ip}/ch0_0.h264
+    ptz: []
+    other: []
+  fi9555ep:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9628:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI966IEP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI98000p:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  Fi98004P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  Fi98004w:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9800E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9800EX:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9800P V3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9800PR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9803PV3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9804Wx:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9805p:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9805PE:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9810:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  FI9815:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9816P v3:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=%23Vk9KjtKRKkR&
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    ptz: []
+    other: []
+  FI9818W V2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI981W V2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9820:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:88/videostream.cgi?resolution=8&rate=13
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}/11
+    - http://{user}:{pass}@{ip}/video.cgi
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/iphone/11?[USERNAME]:[PASSWORD]&
+  fI9821:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9821E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9821P v2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9821W-V2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI98268:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9826J:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9826P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32
+    ptz: []
+    other: []
+  fI9826p v2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9826p v2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9826PB:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9826w:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf
+    ptz: []
+    other: []
+  Fi9826W-V2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9828P v2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI982P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI982W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9831P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}:88/videostream.cgi?resolution=8&rate=13
+    ptz: []
+    other: []
+  FI9831P v2:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9831v2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9832P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9853:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9853P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9900EP V1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9900p:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  fi9900p v3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9900P V3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  fi9900p v4:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9900P1:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9900P-1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9900PR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  fi9902p:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9903EP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9904W:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9909:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI990oEP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI990X:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9910P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9912P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI9921P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI99289W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9929p:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI996EP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9990:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI99909:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9999:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - rtsp://{user}:{pass}@{ip}:554/1
+    ptz: []
+    other: []
+  FiP908p:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  fl9928P v2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FS4:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  G4C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  MDS2060:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  MDS8010:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  MGS2012:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  MPS4012:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  MPS5040:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  PI9900:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  PI9900P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  QJ2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  R2 V3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  R2 v4:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  R2 v5:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  R29:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  R2B:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  R2D2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  r2e:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  R2V1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  r2-v3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  R4C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  R4W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  RC30:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  sd2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    - rtsp://{user}:{pass}@{ip}:88/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  SD4:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  SD4 V3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  X3E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  V5P-Black:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  F19821P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI9905B:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:8082/
+  MGS5030:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  M4R:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  g4ep:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  MGS4010:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/videoMain
+    ptz: []
+    other: []
+  FI18905e:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  FI18906W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  fi1891w:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  FI19810W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI8010:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    ptz: []
+    other: []
+  FI8180w:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  FI8198W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  FI8601W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - rtsp://{user}:{pass}@{ip}/11
+    - http://{user}:{pass}@{ip}/video.cgi
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/iphone/11?[USERNAME]:[PASSWORD]&
+  FI8606W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI8608W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    - http://{user}:{pass}@{ip}/snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegCam=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=M
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}/11
+    - http://{user}:{pass}@{ip}/video.cgi
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    - rtsp://{user}:{pass}@{ip}:8554/H264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/iphone/11?[USERNAME]:[PASSWORD]&
+  FI8609W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=M
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - rtsp://{user}:{pass}@{ip}/11
+    - http://{user}:{pass}@{ip}/video.cgi
+    ptz: []
+    other: []
+  FI8610w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video_snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi
+    ptz: []
+    other: []
+  FI8901:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  fi8904w:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:8082/
+  FI8905w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0
+    ptz: []
+    other: []
+  FI8906w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI8907W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    - http://{user}:{pass}@{ip}/snapshot.cgi?
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/video.cgi
+    ptz: []
+    other: []
+  FI8908W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/mobile_snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:88/videostream.cgi?resolution=8&rate=13
+    - http://{user}:{pass}@{ip}/video.cgi?resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi
+    - http://{user}:{pass}@{ip}:80/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320x240
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/iphone/11?[USERNAME]:[PASSWORD]&
+  FI8909W-NA:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}:80/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320*240
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI890W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  FI891:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  FI8910P:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  FI8910W-X:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  FI8918:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0
+    ptz: []
+    other: []
+  FI89180W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  FI8918E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi
+    ptz: []
+    other: []
+  FI8919:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  FI8919E:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  FI904W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  FI9210W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  FI9810w:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}:9060/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=0
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  FI9821W:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?
+    - http://{user}:{pass}@{ip}/snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=M
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/video.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIStream.cgi?cmd=GetMJStream
+    ptz: []
+    other: []
+  VNT665 6G6A40:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  VNT6656G6A40JPT3815W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  vtn6656g6a40:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    ptz: []
+    other: []
+  W31:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  C1 Light:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  C1 Lite:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  C1-Lite2:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  C1-V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI1903P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  fi1982:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI19912P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI8903EPp:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI8906P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI8910W TQ:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI8935EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI98005p:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI9802w:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI98038:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI9815p:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI9821P v3:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI9821PV2:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  fI9821w2.1:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI9826P v2:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI9828PV2:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI990:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI9900E:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI9902P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI990x:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  RE2:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  VDB1:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  G4EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  V5P:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  R8M:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  V5EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  SD8EP:
+    snapshot:
+    - http://{user}:{pass}@{ip}:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  C1 ISODOS_P:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    ptz: []
+    other: []
+  FI1845:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    ptz: []
+    other: []
+  FI18909W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI18919w:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    ptz: []
+    other: []
+  FI1982:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    ptz: []
+    other: []
+  FI8094W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32
+    ptz: []
+    other: []
+  FI8602W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=XL
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}:88/videostream.cgi?resolution=8&rate=13
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}/11
+    - http://{user}:{pass}@{ip}/video.cgi
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/iphone/11?[USERNAME]:[PASSWORD]&
+  FI8607W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    ptz: []
+    other: []
+  FI8608:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    - http://{user}:{pass}@{ip}/snap.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - rtsp://{user}:{pass}@{ip}/11
+    - http://{user}:{pass}@{ip}/video.cgi
+    ptz: []
+    other: []
+  FI8610W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    ptz: []
+    other: []
+  FI8620:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    - http://{user}:{pass}@{ip}/snap.jpg
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - rtsp://{user}:{pass}@{ip}/11
+    - http://{user}:{pass}@{ip}/video.cgi
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/iphone/11?[USERNAME]:[PASSWORD]&
+  FI8903w:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=1
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  FI8906:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    ptz: []
+    other: []
+  FI8906W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    - http://{user}:{pass}@{ip}/snapshot.cgi?
+    - http://{user}:{pass}@{ip}/snapshot.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:88/videostream.cgi?resolution=8&rate=13
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}:80/videostream.cgi?user=[USERNAME]&password=
+    ptz: []
+    other: []
+  FI8908 W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    ptz: []
+    other: []
+  FI8910_CRC:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    ptz: []
+    other: []
+  FI8910CRC:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    ptz: []
+    other: []
+  FI8910W_CRC:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    ptz: []
+    other: []
+  FI8916w:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    ptz: []
+    other: []
+  FI8916WB:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    ptz: []
+    other: []
+  FI8918w:
+    snapshot:
+    - http://{user}:{pass}@{ip}:9060/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=0
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - rtsp://{user}:{pass}@{ip}:554/2.3gp
+    ptz: []
+    other: []
+  fi8919:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    ptz: []
+    other: []
+  FI8919w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:88/videostream.cgi?resolution=8&rate=13
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/video.cgi
+    - http://{user}:{pass}@{ip}:80/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320x240
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:8082/
+  fi89904w:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    ptz: []
+    other: []
+  FI9205W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    ptz: []
+    other: []
+  FI9810W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&password=[PASSWORD]
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:8082/
+  FI9819w:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    ptz: []
+    other: []
+  FI9820W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    - http://{user}:{pass}@{ip}/snapshot.cgi
+    - http://{user}:{pass}@{ip}/snap.jpg
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=M
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - rtsp://{user}:{pass}@{ip}/11
+    - http://{user}:{pass}@{ip}/video.cgi
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/img/video.asf
+  FI982w:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    ptz: []
+    other: []
+  F18910W:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/snapshot.cgi?user=[USERNAME]&pwd=
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}:88/videostream.cgi?resolution=8&rate=13
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    ptz: []
+    other: []
+  C1-lite:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ucast/11
+    ptz: []
+    other: []
+  FI18905WFI:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  FI18907W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    ptz: []
+    other: []
+  FI7892:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  Fi8191:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  FI8505E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  fI88918w:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  fI8908w:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}:80/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320x240
+    ptz: []
+    other: []
+  FI8909:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  FI89105w:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  fI8910e:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  FI8910I:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  fi8910w:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    - http://{user}:{pass}@{ip}:80/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320x240
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:8082/
+  FI8910W-H:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  FI8915:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  fi8918w:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/snapshot/view0.jpg
+    stream:
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  fI8918w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?
+    - http://{user}:{pass}@{ip}:9060/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=0
+    stream:
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}:88/videostream.cgi?resolution=8&rate=13
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    - http://{user}:{pass}@{ip}/video.cgi
+    - http://{user}:{pass}@{ip}:80/videostream.cgi?user=[USERNAME]
+    - http://{user}:{pass}@{ip}:80/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320x240
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:8082/
+  fi8919w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}:88/videostream.cgi?resolution=8&rate=13
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    - http://{user}:{pass}@{ip}:4578/videostream.cgi?&resolution=32&rate=0
+    ptz: []
+    other: []
+  FI9808W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  FI9819:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI9831P V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegCam=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}:19930/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=64&rate=0
+    ptz: []
+    other: []
+  F18918W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320*240
+    ptz: []
+    other: []
+  VNT6656G6A40:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320*240
+    - rtsp://{user}:{pass}@{ip}/11
+    - http://{user}:{pass}@{ip}:80/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320x240
+    ptz: []
+    other: []
+  f19820:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/1
+    ptz: []
+    other: []
+  FI08910W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:88/videostream.cgi?resolution=8&rate=13
+    ptz: []
+    other: []
+  fi8906:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:88/videostream.cgi?resolution=8&rate=13
+    ptz: []
+    other: []
+  FI805w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI8905W_VT:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]&count=0
+    stream: []
+    ptz: []
+    other: []
+  FI9806W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI18910W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI9804w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=11
+    ptz: []
+    other: []
+  FI18906w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  fI8989w:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32
+    ptz: []
+    other: []
+  FI81904W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  fi9821w:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI8909w:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    ptz: []
+    other: []
+  FI8918w/E:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]
+    ptz: []
+    other: []
+  FI9818:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FW8910W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi
+    ptz: []
+    other: []
+  FI8910w:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  FI904P:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/VIDEO.CGI
+    ptz: []
+    other: []
+  FI1982W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI8910e:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI8918W/E:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI8900W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegSize=M
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  fi1890w:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  Fi8910:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI8910W_DW:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  FI8601:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/2.3gp
+    ptz: []
+    other: []
+  FI9802:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream: []
+    ptz: []
+    other: []
+  FI895w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  FI8904w:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/video?profile=[CHANNEL]
+  FI98290:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  fi8605:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  FI8921Wv2:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]
+    ptz: []
+    other: []
+  VNT6656G6A4X:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]
+    - http://{user}:{pass}@{ip}:80/videostream.asf?user=[USERNAME]&pwd=&resolution=320x240
+    ptz: []
+    other: []
+  FW8918W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    ptz: []
+    other: []
+  '8410':
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?
+    ptz: []
+    other: []
+  fi8906w:
+    snapshot:
+    - http://{user}:{pass}@{ip}:9060/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=0
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  FI-8918W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  FI89909W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  FI8901W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&password=[PASSWORD]
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0
+    - rtsp://{user}:{pass}@{ip}:554/2.3gp
+    ptz: []
+    other: []
+  ISO4030:
+    snapshot:
+    - http://{user}:{pass}@{ip}:8090/video.mjpg?q=30&fps=33&id=0.5
+    stream: []
+    ptz: []
+    other: []
+  FI1895W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/videostream.cgi?user=[USERNAME]
+    ptz: []
+    other: []
+  FI81920W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?JpegCam=[CHANNEL]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0
+    - rtsp://{user}:{pass}@{ip}/cam1/onvif-h264
+    ptz: []
+    other: []
+  FI8608w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg
+    stream: []
+    ptz: []
+    other: []
+  FI8908w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/snap.jpg?usr=[USERNAME]&pwd=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  fI8910w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/img/snapshot.cgi?size=2
+    stream: []
+    ptz: []
+    other: []
+  fi9805w:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:8282/video.cgi?resolution=640x480
+    ptz: []
+    other: []
+  R2 v3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  sl-130ipcwf:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  FI9800W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:88/?action=stream
+    ptz: []
+    other: []
+  fi9826:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/CGIStream.cgi?cmd=GetMJStream
+    ptz: []
+    other: []
+  TVIP2150:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif/stream1
+    ptz: []
+    other: []
+  f1890w:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/snapshot.cgi?user=[USERNAME]&pwd=
+    stream: []
+    ptz: []
+    other: []

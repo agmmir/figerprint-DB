@@ -1,0 +1,3563 @@
+panasonic:
+  019:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:16082/cgi-bin/mjpeg?stream=0
+    ptz: []
+    other: []
+  AW-HE2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpeg?session_id=1&buffer=0&prio=high&frame=4
+    stream:
+    - http://{user}:{pass}@{ip}:16082/cgi-bin/mjpeg?stream=0
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+    - http://{user}:{pass}@{ip}:80/cgi-bin/camera?ch=0&resolution=
+  AW-HE60H:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:16082/cgi-bin/mjpeg?stream=0
+    ptz: []
+    other: []
+  BB-SW175A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    stream:
+    - http://{user}:{pass}@{ip}:16082/cgi-bin/mjpeg?stream=0
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other: []
+  DMC-60:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:16082/cgi-bin/mjpeg?stream=0
+    ptz: []
+    other: []
+  DG-SF438:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream:
+    - http://{user}:{pass}@{ip}:16082/cgi-bin/mjpeg?stream=0
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV396:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream:
+    - http://{user}:{pass}@{ip}:16082/cgi-bin/mjpeg?stream=0
+    ptz: []
+    other: []
+  WV-NS202A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream:
+    - http://{user}:{pass}@{ip}:16082/cgi-bin/mjpeg?stream=0
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  WV-S1531L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream:
+    - http://{user}:{pass}@{ip}:16082/cgi-bin/mjpeg?stream=0
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/src/mediainput/stream_1
+    - rtsp://{user}:{pass}@{ip}/src/mediainput/stream_3
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  wv-s1536:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpeg?session_id=0&buffer=0&prio=high&frame=4
+    stream:
+    - http://{user}:{pass}@{ip}:16082/cgi-bin/mjpeg?stream=0
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpeg?stream=1
+    ptz: []
+    other: []
+  WV-S6110:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream:
+    - http://{user}:{pass}@{ip}:16082/cgi-bin/mjpeg?stream=0
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other: []
+  wv-sw158:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    stream:
+    - http://{user}:{pass}@{ip}:16082/cgi-bin/mjpeg?stream=0
+    ptz: []
+    other: []
+  wv-sw396:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    stream:
+    - http://{user}:{pass}@{ip}:16082/cgi-bin/mjpeg?stream=0
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/camera?ch=0&resolution=
+  WV-SW598:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream:
+    - http://{user}:{pass}@{ip}:16082/cgi-bin/mjpeg?stream=0
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-NW484S:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream:
+    - http://{user}:{pass}@{ip}:16082/cgi-bin/mjpeg?stream=0
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+  BB-ST162:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream:
+    - http://{user}:{pass}@{ip}:16082/cgi-bin/mjpeg?stream=0
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-NF284:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    - http://{user}:{pass}@{ip}/axis-cgi/jpg/image.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - http://{user}:{pass}@{ip}:16082/cgi-bin/mjpeg?stream=0
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  '104':
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other: []
+  '105':
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  '122':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  '135':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  '164':
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  '165':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  '222':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  '311':
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other: []
+  311AL:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  '332':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  '334':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  '335':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  '338':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  '384':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other: []
+  '458':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  502s:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  '509':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  '631':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  bb hcm531:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  BL-C111A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    - http://{user}:{pass}@{ip}/Image.jpg
+    - http://{user}:{pass}@{ip}/image.jpg
+    - http://{user}:{pass}@{ip}/image.jpg?type=motion
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/nphMpeg4/g726-640x48
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/nphContinuousServerPush
+  BL-VP101:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  BL-VP104:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  BL-VP104W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  BL-VT164:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  BL-VT164W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+  DG-SC385:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpeg?session_id=1&buffer=0&prio=high&frame=4
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/nphContinuousServerPush
+  DG-SF135:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpeg?stream=1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  DG-SF334:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/camera?ch=0&resolution=
+  DG-SF335:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+    - http://{user}:{pass}@{ip}:80/cgi-bin/camera?ch=0&resolution=
+  DG-SP509:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  DG-SW314:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  K-EF234L01:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  WV-SFN310:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+  BB-SC384:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+  SPN-531:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  BB-ST165:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  SW155:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  BB-SW316L:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  sw395:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  WJ-GXE100:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WJ-NV200:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/checkimage.cgi?UID=[USERNAME]&CAM=[CHANNEL]
+  WV-NP502:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-NW502:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-NW502S:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/nphContinuousServerPush
+  WV-S1510:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpeg?stream=1
+    ptz: []
+    other: []
+  WV-SB131M:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  WV-SC384:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SC385:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/nphContinuousServerPush
+  WV-SC386:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SC588:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  WV-SF135:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}:80/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=0&resolution=
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  wv-sf135e:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  WV-SF332:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SF336:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  WV-SF346:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SF438:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  WV-SF538:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SFR310:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SFR531:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  WV-SP105:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SP305:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  WV-SP306:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SP509:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other: []
+  WV-SPN310V:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  WV-SPN531:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SPV781L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SPW532L:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+  WV-SPW611L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SPW631LT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  WV-ST165:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  WV-SW155:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  WV-SW174W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SW175:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SW316:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other: []
+  WV-SW316L:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SW352:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SW355:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SW355E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  WV-SW395:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SW396:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SW396A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput?profile=1_def_profile6
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SW458:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  WV-SW458E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  WV-SW558:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SW559:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SW59:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput
+    ptz: []
+    other: []
+  311A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other: []
+  '331':
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  '511':
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCE481:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM110:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM311:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM311A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM331A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM371A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM381A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM511:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  bb--HCM511A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM511CE:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-hcm515:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other: []
+  BB-hcm515a:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other: []
+  bb-hcm527:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM527A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM527CE:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM531:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM531A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/nphMpeg4/g726-640x48
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/nphContinuousServerPush
+  BB-HCM547:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/nphContinuousServerPush
+  BB-HCM580:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM580A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM581:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM581A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM705:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  BB-HCM735:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    - rtsp://{user}:{pass}@{ip}:554/MediaInput/h264/stream_2
+    - http://{user}:{pass}@{ip}:50001/CgiStart?page=Single&Direction=&Resolution=640x480&Quality=Clarity&Size=STD&PresetOperation=Move&Data=0&Frame2=PanTilt&Type=&Language=1&PanTiltMin=0&RPeriod=65534&Sound=Enable&Mode=H264&SendMethod=1&View=Normal&license=OK
+    ptz: []
+    other: []
+  BB-HCM735A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}:81/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  BC-C101:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BL-C1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BL-C10:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BL-C101:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}:81/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}:80/mjpg/1/video.mjpg?Axis-Orig-Sw=true
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/VideoInput/0/h264/1
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  BL-C101A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  BL-C101C:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other: []
+  BL-C101CE:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other: []
+  BL-C10A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    - http://{user}:{pass}@{ip}:81/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/current[CHANNEL].jpg
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - rtsp://{user}:{pass}@{ip}/nphMpeg4/g726-640x48
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/nphContinuousServerPush
+  bl-c10e:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other: []
+  BL-C110A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  BL-C111:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/nphContinuousServerPush
+  BL-C121:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  BL-C121A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/CgiStart?page=Single&Language=0
+  BL-C130A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other: []
+  BL-C131:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  BL-C131A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/nphMpeg4/g726-640x48
+    - http://{user}:{pass}@{ip}/videostream.cgi?rate=0&user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/nphContinuousServerPush
+  BL-C140:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BL-C140A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/nphContinuousServerPush
+  BL-C1A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    - http://{user}:{pass}@{ip}/MJPEG.CGI
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/nphContinuousServerPush
+  BL-C1CE:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BL-C20:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BL-C20E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other: []
+  BL-C210:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  BL-C210a:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  BL-C230:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/nphContinuousServerPush
+  blc230a:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other: []
+  BL-C30:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    - http://{user}:{pass}@{ip}:81/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/image.jpg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/nphContinuousServerPush
+    - http://{user}:{pass}@{ip}/CgiStart?page=Single&Resolution=640x480&Quality=Standard&Language=0
+  BL-C30A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    - http://{user}:{pass}@{ip}/cgi-bin/video.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/nphContinuousServerPush
+  KX-HCM1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other: []
+  KX-HCM110A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other: []
+  BL-C210CE:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other: []
+  sf336:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapShotJPEG?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other: []
+  '3511':
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  AW-HE130:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/video?profile=[CHANNEL]
+  BB_HCM705:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HC403E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM331:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  BB-HCM511A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM515:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM527:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM531CE:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM581CE:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM715A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  BB-HMC511:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  bb-sc384b:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  BB-ST165A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  BB-SW175:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput?profile=1_def_profile6
+    ptz: []
+    other: []
+  BC-C104:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  BC-l30:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  BL-C11:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  BL-C131CE:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  BL-C160:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  bl-c210:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  BL-C230A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/nphContinuousServerPush
+  BL-V101:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  C131:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  C230A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  GXE500:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  KX-HCM170:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  KX-HCM230:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  KX-HCM280A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  KX-HXM170:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  DG-SF132:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  SFN481:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  VW-SW395:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WJ-NT304:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+  wv385:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  WV-NP240/G:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/jpg/image.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  WV-NP244:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    - http://{user}:{pass}@{ip}/jpeg/qvga.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  WV-NS202:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/jpg/image.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-NS954:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-NW484:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+    - http://{user}:{pass}@{ip}/cgi-bin/nphContinuousServerPush
+  wv-nw502:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  WV-NW964:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-S2531L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  WV-S6530:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  WV-SC385-PTZ:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  wv-sf135:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  WV-SF135E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  WV-SF346E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  WV-SP302:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SPN310:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+  WV-SPN311:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  WV-SPN311A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG?Resolution=320x240
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  BB-HCM701:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/nphContinuousServerPush
+  BL-C210A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/nphContinuousServerPush
+  WV-NM100:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+    - http://{user}:{pass}@{ip}/GetData.cgi?Status=false
+    - http://{user}:{pass}@{ip}/cgi-bin/cameraid?UID=
+  WV-NP1004:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-NP304:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SF539:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    stream: []
+    ptz: []
+    other: []
+  WV-ST162:
+    snapshot:
+    - http://{user}:{pass}@{ip}/SnapshotJPEG
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  aw-he20ke:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other: []
+  aw-he40:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    - http://{user}:{pass}@{ip}:80/live/index.html
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  AW-HE42:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other: []
+  AW-UE70:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  AW-UE70W:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  BB-SC364:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other: []
+  DG-NS202A:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other: []
+  DG-SF539:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other: []
+  WV-2530L1:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other: []
+  WV-S6130:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other: []
+  WV-S6131:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other: []
+  WV-SF305:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other: []
+  wv-sf332:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other: []
+  WV-SF559:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other: []
+  WV-SFN311:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SFV631L:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/checkimage.cgi?UID=[USERNAME]&CAM=[CHANNEL]
+  WV-SP102:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SW152:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=1&resolution=
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other: []
+  WV-sw174w:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other: []
+  WV-V2530L1:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?stream=[CHANNEL]
+    ptz: []
+    other: []
+  AW-70:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+  AW-HE60:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  AW-HE60S:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+  AW-RP50:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  BB-HCM705A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  BL-VT164P:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+  WV-NP240:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    - http://{user}:{pass}@{ip}/axis-cgi/jpg/image.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    - rtsp://{user}:{pass}@{ip}:1026/live.sdp
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+    - http://{user}:{pass}@{ip}/cgi-bin/cameraid?UID=
+  sw155:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+  WJ-GXE500:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  wv395:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+  WV-NF302:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-NP1000:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-NP472b:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-NS324:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  WV-NW474:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  WV-NW960:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+  WV-SF138:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SF336-D:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+  WV-SFN631:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?ch=[CHANNEL]&resolution=
+  '12345':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    stream: []
+    ptz: []
+    other: []
+  VW-SW175:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    stream: []
+    ptz: []
+    other: []
+  WV-S3131L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other: []
+  WV-SF335:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  WV-SFN110:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  WV-SFR631L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=[CHANNEL]&resolution=
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  1WV-SC384:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  '504':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  AW-UE4WG:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  DG-P304:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  GX500:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  K-EW214L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  kx-dt521x:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  N502:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  S2250L:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  SFN-531:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  sfr310:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  vl-cd235:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WJ-GXE500-2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV385:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-S2136L:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-S2550l:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-S3131:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SF132:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-Sf332:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SF348:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-Sf548:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SFN311A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SFN531:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SFV311:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SFV531:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SFV631LT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  WV-SFV781L:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SNF480:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SP105E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  wv-sp509:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SPN310AV:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    - rtsp://{user}:{pass}@{ip}:554/MediaInput/h264/stream_1
+    - rtsp://{user}:{pass}@{ip}:554/MediaInput/h264/stream_2
+    ptz: []
+    other: []
+  WV-SPN631:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SST165:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SW115:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SW158:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SW172:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SW174w:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SW332:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SW396E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SW397:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-SW596A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-VC30:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WV-X6531:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  WX-SW396A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/h264
+    ptz: []
+    other: []
+  '960':
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  AW-70UE:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  AW-HE40:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  AW-HE40S:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/live/index.html
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  BB-HCM715CE:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  BL-VP101U:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  DG-SP102:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  NF-WV302:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  NP-WV472E:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-NW470:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  sp306:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  spW532L:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  BB-SW316:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  WJ-HD220:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/view/camera.cgi?UID=[USERNAME]&CH=[CHANNEL]
+  WJ-ND400:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/checkimage.cgi?UID=[USERNAME]&CAM=[CHANNEL]
+  WV-NP320:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-NP472:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  wv-np472e:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  wv-nw964:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-S1131:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  wv-S2531l:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SF342:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  WV-SF439:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  wv-sfn110:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SFV481:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SP335:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  WV-SW395E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera
+  Unknown:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    - http://{user}:{pass}@{ip}/snapshot/view[CHANNEL].jpg
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:554/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snapshot.jpg
+    - http://{user}:{pass}@{ip}:80/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=1&resolution=
+    stream:
+    - http://{user}:{pass}@{ip}/liveimg.cgi?ch=[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}:1026/live.sdp
+    - http://{user}:{pass}@{ip}/videostream.asf
+    - http://{user}:{pass}@{ip}:50002/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=320x240
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}/VideoInput/[CHANNEL]/h264/1
+    - http://{user}:{pass}@{ip}/liveimg.cgi?serverpush=1
+    ptz: []
+    other: []
+  WV-s3131:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    stream: []
+    ptz: []
+    other: []
+  WV-SP302-OK:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    stream: []
+    ptz: []
+    other: []
+  WV-X4741:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg?session_id=[CHANNEL]&buffer=0&prio=high&frame=4
+    stream: []
+    ptz: []
+    other: []
+  '1234':
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  131A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  '5331':
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM331a:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM371:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-hcm371a:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM403A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM511a:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM515A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM515CE:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM527A1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM547A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM701CE:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCM735CE:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-HCN735:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-SC384B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-SW172:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BB-SW-175A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BC-L10:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  bl-1c:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  BL-C161:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  C10:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  C101:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  CM260:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  CM-260:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  KX-HCM10:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  KX-HCM130:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  KX-HCM270:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  VL-CM210:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/nphContinuousServerPush
+  VL-CM260:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  WV296:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  wv-nf284:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/
+  wv-nf302:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  wv-nw502s:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other: []
+  WV-S4150:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  WV-S8530N:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  wv-sc385:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpeg?session_id=1&buffer=0&prio=high&frame=4
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/MediaInput/h264/stream_1
+    ptz: []
+    other: []
+  WV-SF284:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    stream: []
+    ptz: []
+    other: []
+  WV-SFV310:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  wv-sp335:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  WV-U2132L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  WV-X1571LN:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    - http://{user}:{pass}@{ip}:80/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=1&resolution=
+    stream: []
+    ptz: []
+    other: []
+  B1-C1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=640x480&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  WV-SP508:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    stream: []
+    ptz: []
+    other: []
+  WV-U1142:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg
+    stream: []
+    ptz: []
+    other: []
+  BB-HMC735:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/nphContinuousServerPush
+  C230:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Motion
+    stream: []
+    ptz: []
+    other: []
+  BL-VP104w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  C31:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    stream: []
+    ptz: []
+    other: []
+  WJ-HD500:
+    snapshot:
+    - http://{user}:{pass}@{ip}/nphMotionJpeg?Resolution=320x240&Quality=Standard
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  aw -h1:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  PW-CP480:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  SNC-EM602R:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  WV-CP480:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  WV-S3511L:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  WV-SF549:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/camera?UID=[USERNAME]
+  AW HE40HWEJ:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpeg?stream=1
+    ptz: []
+    other: []
+  ps306:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream: []
+    ptz: []
+    other: []
+  WV-SPc611L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream: []
+    ptz: []
+    other: []
+  wv-spn311a:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/mjpeg
+    stream: []
+    ptz: []
+    other: []
+  AW-UE20:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/MediaInput/h264/stream_1
+    ptz: []
+    other: []
+  AW-UE20WE:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/snapshot/view0.jpg
+    stream: []
+    ptz: []
+    other: []
+  IP300:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  WJ-HD88:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/jpeg
+    stream: []
+    ptz: []
+    other: []
+  BL-C230-1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/MediaInput/mpeg4
+    ptz: []
+    other: []
+  WV-SF448:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/MediaInput/h264/stream_2
+    ptz: []
+    other: []
+  sfv130:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput?profile=1_def_profile6
+    ptz: []
+    other: []
+  HDR-101:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  EW104:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  K-EF234L03E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  K-EF103L06:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  K-EF104L06:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  K-EF114L03:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  K-EF114L06:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  k-ef134l:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}:80/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=0&resolution=320x240
+    stream: []
+    ptz: []
+    other: []
+  K-EF235L01E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  K-EW114L03:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  K-EW114L03E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  K-EW134:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  K-EW134L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  K-EW214L01E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  K-NL316K:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  PI-SFW103L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream: []
+    ptz: []
+    other: []
+  PI-SPW203L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  PI-SFW303L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  EW107:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream: []
+    ptz: []
+    other: []
+  K-EF134L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}:80/axis-cgi/mjpg/video.cgi?camera=1&resolution=1280x720
+    stream: []
+    ptz: []
+    other: []
+  K-EW114L06:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  WV-SPW103L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream: []
+    ptz: []
+    other: []
+  K-EP106l03:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  K-EW215L01E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  k104:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:63063/cam/realmonitor
+    ptz: []
+    other: []
+  K-EP104W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:63063/cam/realmonitor
+    ptz: []
+    other: []
+  K-ef134L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  K-EP104LWE:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  WV-SPW303L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  K-NL308K:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=[CHANNEL]&subtype=1
+    ptz: []
+    other: []
+  PI-HPN206CL:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=[CHANNEL]&subtype=1
+    ptz: []
+    other: []
+  KX-NTV160:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream: []
+    ptz: []
+    other: []
+  N-VT160:
+    snapshot:
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream: []
+    ptz: []
+    other: []
+  PI-SFW401DL:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  PS-SFW401DL:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  VCC-9574n:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/liveimg.cgi
+    ptz: []
+    other: []
+  VCC-p9574n:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/liveimg.cgi
+    ptz: []
+    other: []
+  VCC-HD2300P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/VideoInput/1/h264/1
+    ptz: []
+    other: []
+  VCC-hd3300p:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/VideoInput/1/h264/1
+    ptz: []
+    other: []
+  VCC-hd3500p:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/VideoInput/1/h264/1
+    ptz: []
+    other: []
+  VCC-HD4600:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/VideoInput/1/h264/1
+    ptz: []
+    other: []
+  VDC-HD3100P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/VideoInput/1/h264/1
+    ptz: []
+    other: []
+  VDC-HD3300P:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/liveimg.cgi?serverpush=1&jpeg=1&stream=[CHANNEL]
+    ptz: []
+    other: []
+  wv-8570n:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=1&resolution=
+    stream: []
+    ptz: []
+    other: []
+  WJ-NV300:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/cgi-bin/checkimage.cgi?UID=[USERNAME]&CAM=[CHANNEL]
+  wv-cp244ex:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/wappaint?camera_no=1&animation=0&name=[USERNAME]&password=[PASSWORD]&pic_size=2
+  WV-NW1531:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/src/mediainput/stream_1
+    - rtsp://{user}:{pass}@{ip}/src/mediainput/stream_3
+    ptz: []
+    other: []
+  WV-NW1531L:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/src/mediainput/stream_1
+    - rtsp://{user}:{pass}@{ip}/src/mediainput/stream_3
+    ptz: []
+    other: []
+  WV-X8570:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpeg?session_id=0&buffer=0&prio=high&frame=4
+    stream: []
+    ptz: []
+    other: []
+  wv-S2236LA:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpeg?session_id=4&buffer=0&prio=high&frame=4
+    stream: []
+    ptz: []
+    other: []
+  WV-U2532L:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/jpeg?connect=start&vmdinfo=none&UID=9&ch=0&resolution=
+    stream: []
+    ptz: []
+    other: []
+  WV-X2271L:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput?profile=def_profile1
+    - rtsp://{user}:{pass}@{ip}/ONVIF/MediaInput?profile=def_profile2
+    ptz: []
+    other: []

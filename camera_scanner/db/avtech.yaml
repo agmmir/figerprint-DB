@@ -1,0 +1,1489 @@
+avtech:
+  '701':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVC791 DVR:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    - http://{user}:{pass}@{ip}/live/mjpeg
+    ptz: []
+    other: []
+  AVI201:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    ptz: []
+    other: []
+  AVI201zp:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  AVM328Z:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    ptz: []
+    other: []
+  AVM357A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/live/h264/SXGA
+    ptz: []
+    other: []
+  avm359an:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  AVM457:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    ptz: []
+    other: []
+  AVM459:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    ptz: []
+    other: []
+  AVM5547:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    - rtsp://{user}:{pass}@{ip}:8151/live/video/profile1
+    - rtsp://{user}:{pass}@{ip}:554/live/h264/ch0
+    ptz: []
+    other: []
+  AVN211:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    ptz: []
+    other: []
+  AVN252:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    ptz: []
+    other: []
+  AVN257:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVN284:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  AVN314:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVN314-HS64:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVN362:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    - http://{user}:{pass}@{ip}/image/[CHANNEL].jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    - http://{user}:{pass}@{ip}/live/mjpeg
+    - http://{user}:{pass}@{ip}/live/h264_ulaw
+    - rtsp://{user}:{pass}@{ip}/live.h264
+    ptz: []
+    other: []
+  AVN420:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  avn701:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    ptz: []
+    other: []
+  AVN801:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    - http://{user}:{pass}@{ip}/live/mjpeg
+    - rtsp://{user}:{pass}@{ip}:88/live/h264_ulaw/HD720P
+    ptz: []
+    other: []
+  AVN801zeu:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    ptz: []
+    other: []
+  AVN80X:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    - http://{user}:{pass}@{ip}/live/mjpeg
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/live/h264_ulaw
+    ptz: []
+    other: []
+  AVN813:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    ptz: []
+    other: []
+  AVx 252:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    ptz: []
+    other: []
+  Unknown:
+    snapshot:
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    - http://{user}:{pass}@{ip}/snapshot.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8085/live/video_audio/ch01/record
+    - rtsp://{user}:{pass}@{ip}:554/live/h264/ch0
+    - rtsp://{user}:{pass}@{ip}/live.h264
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]
+    ptz: []
+    other: []
+  212Z:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  358-HD:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  80X:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  ANM357A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  ANN363V:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - http://{user}:{pass}@{ip}/live/mjpeg
+    ptz: []
+    other: []
+  AVC792:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVM2220TP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  AVM2421:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  AVM2421AP/F28:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVM2443:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  AVM317ZBP/F38:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  AVM328:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVM328A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    - rtsp://{user}:{pass}@{ip}:554/live/h264/HD1080
+    - rtsp://{user}:{pass}@{ip}:554/live/h264/ch0
+    ptz: []
+    other: []
+  AVM357a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    ptz: []
+    other: []
+  avm357zap:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVM357ZAP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  AVM358:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  AVM3650L-000E532CC486:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVM365A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVM417A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    - rtsp://{user}:{pass}@{ip}/live/h264/SXGA
+    ptz: []
+    other: []
+  AVM428ZDN:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  avm521cp/f38:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVM532F:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVM542AP/F28F12:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVM542B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    ptz: []
+    other: []
+  avm542fp:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVM543:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVM552:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  AVM561:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    - rtsp://{user}:{pass}@{ip}:88/live/video_audio/profile1
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    ptz: []
+    other: []
+  avm571:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    ptz: []
+    other: []
+  AVM583:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVN 362:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVN212:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    - http://{user}:{pass}@{ip}/live/mjpeg
+    ptz: []
+    other: []
+  avn244:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVN304:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    ptz: []
+    other: []
+  avn314z:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVN320:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVN362V:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVN363V:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVN363Z:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  avn801z:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    ptz: []
+    other: []
+  AVN807ZA:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVN812:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}:88/videoMain
+    ptz: []
+    other: []
+  AVP542B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVX 252:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - http://{user}:{pass}@{ip}/live/mjpeg
+    ptz: []
+    other: []
+  AVX931:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVZ529:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVZ592:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  CAM04:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  DC2:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  dgd2404:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  DGM 5106:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  dgm1105:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}:88/live/video_audio/profile1
+    ptz: []
+    other: []
+  dgm1304:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    - rtsp://{user}:{pass}@{ip}:88/live/video_audio/profile1
+    ptz: []
+    other: []
+  DM1306:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  NVM428:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    ptz: []
+    other: []
+  AVN244:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    ptz: []
+    other: []
+  3300auxsd:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/1
+    ptz: []
+    other: []
+  457A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  '465':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  '500':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  7dvr:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  7XX:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - http://{user}:{pass}@{ip}/Getvideo.cgi?Cookie=
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    - http://{user}:{pass}@{ip}/live/mjpeg
+    ptz: []
+    other: []
+  7xxdvr:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  AV5115-8B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    - rtsp://{user}:{pass}@{ip}/h264.sdp
+    ptz: []
+    other: []
+  av7:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  av801:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]x[HEIGHT]
+    ptz: []
+    other: []
+  AVC2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    ptz: []
+    other: []
+  AVC792 DVR:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    ptz: []
+    other: []
+  AVH308EA:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  avi201:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  AVI201ZP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  avi203z:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  AVM 521A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8151/live/video/profile1
+    ptz: []
+    other: []
+  AVM 571:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  avm2172:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  avm2451t:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  AVM301:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream: []
+    ptz: []
+    other: []
+  AVM317B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  AVM317bpP/F38:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  AVM328ZB/F38:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  AVM332P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  AVM3453P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  AVM357:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  AVM365:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live/h264/HD1080
+    ptz: []
+    other: []
+  avm4570:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  avm457z:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  avm457zap:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  AVM459AP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  AVM475:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  AVM511:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  AVM542A jpeg:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream: []
+    ptz: []
+    other: []
+  avm542BP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  AVM553JP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/live/h264_ulaw/HD720P
+    ptz: []
+    other: []
+  AVM565A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  avn216:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream: []
+    ptz: []
+    other: []
+  avn222:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  avn320:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  avn542:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  AVN801vv:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  AVN805:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  AVN815ez:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  avt216SE:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}:554/cgi-bin/guest/Video.cgi?media=JPEG&channel=16
+    stream: []
+    ptz: []
+    other: []
+  awm357:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream: []
+    ptz: []
+    other: []
+  DG1004:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  DGM1104:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  DGM1104QSP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  KPD675:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    ptz: []
+    other: []
+  KPD677H:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream: []
+    ptz: []
+    other: []
+  MDR757ZB-E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG&channel=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    ptz: []
+    other: []
+  452B:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    ptz: []
+    other: []
+  AVM 512AP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    ptz: []
+    other: []
+  avm301:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    ptz: []
+    other: []
+  avm357:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    ptz: []
+    other: []
+  AVM357ZAP/F38:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    ptz: []
+    other: []
+  AVM358CHF:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    ptz: []
+    other: []
+  AVM428:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  AVM428D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    ptz: []
+    other: []
+  AVM542fp:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    ptz: []
+    other: []
+  avm565a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    ptz: []
+    other: []
+  AVMU428D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    ptz: []
+    other: []
+  AVN216Z:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    ptz: []
+    other: []
+  avn284:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    ptz: []
+    other: []
+  AVN328ZBN:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    ptz: []
+    other: []
+  AVN420P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    ptz: []
+    other: []
+  dgm1104:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264_ulaw/VGA
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    - rtsp://{user}:{pass}@{ip}:88/live/video_audio/profile1
+    ptz: []
+    other: []
+  458C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  AV321:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  AV565:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  AVC793ZC:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  AVM 503P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  AVM417:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  AVM457ZAP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  AVM511P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  AVM521:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  avm542:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    - rtsp://{user}:{pass}@{ip}:554/live/video/profile3
+    ptz: []
+    other: []
+  AVN244zvp/22:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  AVN80x:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  AVT216SE:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  dg-104:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  DGM 5406P/F28:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  dgm1134:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    - rtsp://{user}:{pass}@{ip}:88/live/h264_ulaw/HD720P
+    ptz: []
+    other: []
+  dgm5206:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  DGM5206SVAT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  kpd677:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  KPD965:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  MDR759H:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  NVM328:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/HD1080P
+    ptz: []
+    other: []
+  '540':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/live/video_audio/profile1
+    ptz: []
+    other: []
+  AVH-408P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/live/video_audio/profile1
+    ptz: []
+    other: []
+  AVM2432P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/live/video_audio/profile1
+    ptz: []
+    other: []
+  AVM2451T:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/live/video_audio/profile1
+    ptz: []
+    other: []
+  avm2592L:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/live/video_audio/profile1
+    ptz: []
+    other: []
+  AVM420UP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/live/video_audio/profile1
+    ptz: []
+    other: []
+  AVM5:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/live/video_audio/profile1
+    ptz: []
+    other: []
+  AVM511p:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/live/video_audio/profile1
+    ptz: []
+    other: []
+  AVM592:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/live/video_audio/profile1
+    ptz: []
+    other: []
+  AVN 521A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/live/video_audio/profile1
+    ptz: []
+    other: []
+  C04:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/live/video_audio/profile1
+    ptz: []
+    other: []
+  KPD677:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/live/video_audio/profile1
+    ptz: []
+    other: []
+  YGN2003A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/live/video_audio/profile1
+    - rtsp://{user}:{pass}@{ip}:8151/live/video/profile1
+    ptz: []
+    other: []
+  AVH8516:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream: []
+    ptz: []
+    other: []
+  AVI203:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream: []
+    ptz: []
+    other: []
+  AVIZ321:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream: []
+    ptz: []
+    other: []
+  AVM 302AP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream: []
+    ptz: []
+    other: []
+  AVM311P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream: []
+    ptz: []
+    other: []
+  AVM311P/F28:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream: []
+    ptz: []
+    other: []
+  AVM359A:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream: []
+    ptz: []
+    other: []
+  AVM571:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream: []
+    ptz: []
+    other: []
+  AVx 322:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream: []
+    ptz: []
+    other: []
+  AVZ516:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    ptz: []
+    other: []
+  dgm5606:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    stream: []
+    ptz: []
+    other: []
+  AVM217Z:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    - rtsp://{user}:{pass}@{ip}/live/h264/SXGA
+    ptz: []
+    other: []
+  AVZ5192:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    ptz: []
+    other: []
+  MDR688B:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/ch[CHANNEL]
+    ptz: []
+    other: []
+  AVX 322:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/live/mjpeg
+    ptz: []
+    other: []
+  AV5115-9A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264.sdp
+    ptz: []
+    other: []
+  AV5455DN-50:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264.sdp
+    ptz: []
+    other: []
+  AVD744:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/live/h264_ulaw/HD720P
+    ptz: []
+    other: []
+  avm328:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/live/h264_ulaw/HD720P
+    ptz: []
+    other: []
+  AVM328B:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/live/h264_ulaw/HD720P
+    ptz: []
+    other: []
+  AVM328ZDP/F38:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/live/h264_ulaw/HD720P
+    ptz: []
+    other: []
+  AVM359AN:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/live/h264_ulaw/HD720P
+    ptz: []
+    other: []
+  AVM428A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/live/h264_ulaw/HD720P
+    ptz: []
+    other: []
+  AVS529:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:88/live/h264_ulaw/HD720P
+    - rtsp://{user}:{pass}@{ip}/live/h264/SXGA
+    ptz: []
+    other: []
+  AVH408P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8151/live/video/profile1
+    ptz: []
+    other: []
+  avm552:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8151/live/video/profile1
+    ptz: []
+    other: []
+  DGM 5606P/F28:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8151/live/video/profile1
+    ptz: []
+    other: []
+  DGM1105q:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8151/live/video/profile1
+    ptz: []
+    other: []
+  DGM2203:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8151/live/video/profile1
+    ptz: []
+    other: []
+  AVH800EA6:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:8085/live/video_audio/ch01/record
+    - rtsp://{user}:{pass}@{ip}:554/live/video_audio/ch01_ch01/pc
+    ptz: []
+    other: []
+  ygn2003a:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/live/video_audio/ch01_ch01/pc
+    ptz: []
+    other: []
+  avm217z:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.cgi?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  AVN815EZ:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live/h264/SXGA
+    ptz: []
+    other: []
+  AVM317BPP/F38:
+    snapshot:
+    - http://{user}:{pass}@{ip}:10554/snapshot.cgi
+    stream: []
+    ptz: []
+    other: []
+  AVM5447P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  avt420:
+    snapshot:
+    - http://{user}:{pass}@{ip}:51938/cgi-bin/guest/Video.cgi?media=JPEG&channel=1
+    - http://{user}:{pass}@{ip}:51938/cgi-bin/guest/Video.cgi?media=JPEG&channel=2
+    stream: []
+    ptz: []
+    other: []

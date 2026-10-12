@@ -1,0 +1,68 @@
+novus:
+  '2400':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/profile1
+    ptz: []
+    other: []
+  NVIP-3DN3012V/IR-1P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/profile1
+    ptz: []
+    other: []
+  '321':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam[CHANNEL]/h264
+    ptz: []
+    other: []
+  '7000':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam[CHANNEL]/h264
+    ptz: []
+    other: []
+  7020SD:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam[CHANNEL]/h264
+    ptz: []
+    other: []
+  Unknown:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam[CHANNEL]/h264
+    - rtsp://{user}:{pass}@{ip}:554/H264?ch=1&subtype=0
+    ptz: []
+    other: []
+  NVIP-2C2011D-P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam0/h264
+    ptz: []
+    other: []
+  NVIP-2H-6401:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  NVIP-2H-6502M/F:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  NVIP-6401F:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/profile2
+    ptz: []
+    other: []
+  NVIP-TDN5401C:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/GetData.cgi?Status=false

@@ -1,1 +1,2441 @@
-{}
+amcrest:
+  '000':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  '01046':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&authbasic=[AUTH]
+    ptz: []
+    other: []
+  '10518':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  Unknown:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=[CHANNEL]
+    - http://{user}:{pass}@{ip}/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=[CHANNEL]&subtype=1
+    - http://{user}:{pass}@{ip}:80/?action=stream
+    - rtsp://{user}:{pass}@{ip}/realmonitor
+    - http://{user}:{pass}@{ip}/videostream.asf?usr=[USERNAME]&pwd=[PASSWORD]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=2&subtype=0
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=31&subtype=0
+    ptz: []
+    other: []
+  1P2M-841B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  4kv1:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  4m1051:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  5IP5M-1176EB:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IPM-721S:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}/live
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=01&authbasic=[AUTH]
+    ptz: []
+    other: []
+  '841':
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  841b:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  '842':
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}/live
+    ptz: []
+    other: []
+  852EW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  960H:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=1sdp
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=6?subtype=0
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_05_main
+    - rtsp://{user}:{pass}@{ip}:554/h264Preview_06_main
+    ptz: []
+    other: []
+  960HBC:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  AD110:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&amp;subtype=1
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&amp;subtype=0
+    - rtsp://{user}:{pass}@{ip}:554/
+    - http://{user}:{pass}@{ip}:80/?action=stream
+    ptz: []
+    other:
+    - mms://{user}:{pass}@{ip}:554/img/video.asf
+  ADC2W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00
+    ptz: []
+    other: []
+  AMC4KBC28-W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  AMDV8m16:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  AMDV8M16-H5:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=4&subtype=0
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=6&subtype=0
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=10&subtype=0
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=11&subtype=0
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=13&subtype=0
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=12&subtype=0
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=14&subtype=0
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=15&subtype=0
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=16&subtype=0
+    ptz: []
+    other: []
+  ASH21-w:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1?subtype=0
+    ptz: []
+    other: []
+  ASH21-W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ASH26:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ASH26-W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=01&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=01&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ASH42:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ASH42-B:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=01&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ASH42-B -JP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ASH42-W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=01&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IMP-HX1B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/tmpfs/auto.jpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP2-841M:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/video.cgi?msubmenu=mjpg
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  ip2m-841b:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/video.cgi?msubmenu=mjpg
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}/live
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  ip2m-852ew:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP2M-752EW:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ip2m-841:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - http://{user}:{pass}@{ip}:80/?action=stream
+    ptz: []
+    other: []
+  IP2M-841:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/video.cgi?msubmenu=mjpg
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/image/jpeg.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=[CHANNEL]&subtype=1
+    ptz: []
+    other: []
+  IP2M-841B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}/live
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor
+    - rtsp://{user}:{pass}@{ip}:554/
+    - http://{user}:{pass}@{ip}:80/?action=stream
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=32&rate=0
+    ptz: []
+    other: []
+  ip2m-841b-v3:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpg/video.cgi?channel=1&subtype=1
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ip2m-841EB:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP2M-841EB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=01&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP2M-841EW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}/live
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor
+    ptz: []
+    other: []
+  IP2M-841S:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP2M-841W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP2M-841W-v3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP2M-842:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=[CHANNEL]&subtype=1
+    ptz: []
+    other: []
+  IP2M-842EW:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=[CHANNEL]&subtype=1
+    ptz: []
+    other: []
+  IP2M-842W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP2M-844E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/video.cgi?msubmenu=mjpg
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}/live
+    ptz: []
+    other: []
+  IP2M-844EW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}/live
+    ptz: []
+    other: []
+  IP2M-846B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=01&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=01&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP2M-846E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP2M-851:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP2M-851B:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ip2m-851w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP2M-851W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ip2m-852:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP2M-852 V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP2M-852B:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP2M-853E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=01&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ip2m-858w:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP2M-858W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP2M-866:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP2M-866E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ip2m-958w:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP2M-PH822:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP3M-941:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP3M-941B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/video.cgi?msubmenu=mjpg
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/mjpeg.cgi?user=[USERNAME]&password=[PASSWORD]&channel=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=01&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=01&subtype=01&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP3M-941S:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP3M-941W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpg/video.cgi?channel=1&subtype=1
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=01&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP3M-954E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}/live
+    ptz: []
+    other: []
+  IP3M-956:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP3M-956W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP3M-HX2B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP3M-HX2W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP4M-1026B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ip4m-1024e:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP4M-1025EB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/video.cgi?msubmenu=mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=[CHANNEL]&subtype=1
+    ptz: []
+    other: []
+  IP4M-1026:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP4M-1026E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=0&subtype=1&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP4M-1026EB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ip4m-1026w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/video.cgi?msubmenu=mjpg
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=01&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ip4m-1026W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP4M-1026W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP4M-1028:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ip4m-1028b:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP4M-1028E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP4M-1028EB:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP4M-1028EW:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP4M-1028W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP4M-1046E-AI:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP4M-1051:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ip4m-1051B:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  IP4M-1051B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - http://{user}:{pass}@{ip}:80/?action=stream
+    ptz: []
+    other: []
+  IP4M-1051W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=01&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor
+    ptz: []
+    other: []
+  IP4M-1053E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP4M-1054EW:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP4M-1055E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP4M-1055EW:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP4M-841B:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP4M-SN2110EW-AI:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP5M-T1179EW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}:80/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpg/video.cgi?channel=1&subtype=1
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=01&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/
+    - http://{user}:{pass}@{ip}:80/?action=stream
+    ptz: []
+    other: []
+  IP5M-1173E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1&authbasic=[AUTH]
+    - http://{user}:{pass}@{ip}:80/?action=stream
+    ptz: []
+    other: []
+  IP5M-1173EB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP5M-1173EW:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP5M-1176E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP5M-1179EW:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP5M-B1186-28mm:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  IP5M-B1186EB-28MM:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP5M-B1276EW:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP5M-D1188E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - http://{user}:{pass}@{ip}:80/?action=stream
+    ptz: []
+    other: []
+  IP5M-T1179EW-28MM:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    - rtsp://{user}:{pass}@{ip}:554/rtsp
+    ptz: []
+    other: []
+  IP67:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ip721:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP8M-2454EW:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP8M-2493:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP8M-2493E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=01&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=01&subtype=01&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP8M-2493EB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP8M-2493EW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP8M-2493W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP8M-2496E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpg/video.cgi?channel=1&subtype=1
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor
+    ptz: []
+    other: []
+  IP8M-2496EB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}:80/snapshot.jpg?user=[USERNAME]&pwd=[PASSWORD]&strm=0
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=01&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=02&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP8M-2496EW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  IP8M-2499:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpg/video.cgi?channel=1&subtype=1
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP8M-2499EB:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP8M-2499ew:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP8M-2597E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP8M-2597EB-28MM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ip8m-2597eb-6mm:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP8M-2597EW:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP8M-2599:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ip8m-2599e:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP8M-2779EW-AI:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ip8m-t2499:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP8M-T2499E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}/live
+    ptz: []
+    other: []
+  IP8M-T2499EB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP8M-T2499EW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ip8m-t25:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP8M-T2599EW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  IP2M-843:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IPM-721W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IPM-743E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IPM-941W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IPM-HX1B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP3M-843:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IPZ-841:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  NV2104E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  nv2108e:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=4&subtype=1&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=4&subtype=0&authbasic=[AUTH]
+    ptz: []
+    other: []
+  AMDV5M16:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=01&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IPM-721B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP8M-2496EW-AI-V3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=1&subtype=00&authbasic=[AUTH]
+    ptz: []
+    other: []
+  001B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  01482_9TC335:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  '1080':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/video.cgi?msubmenu=mjpg
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live
+    - http://{user}:{pass}@{ip}/videostream.cgi?usr=[USERNAME]&pwd=[PASSWORD]
+    ptz: []
+    other: []
+  1P2M-841W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}:80/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1&authbasic=[AUTH]
+    ptz: []
+    other: []
+  5000L:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  '720':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IPM-723S:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live
+    ptz: []
+    other: []
+  '721':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  722-IP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor
+    ptz: []
+    other: []
+  722S:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream: []
+    ptz: []
+    other: []
+  '723':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  723es:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  841w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}/videostream.asf?user=[USERNAME]&pwd=[PASSWORD]&resolution=[WIDTH]*[HEIGHT]
+    ptz: []
+    other: []
+  AD410:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}:80/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpg/video.cgi?channel=1&subtype=1
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/
+    - http://{user}:{pass}@{ip}:80/?action=stream
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1?subtype=0
+    ptz: []
+    other: []
+  AMC000DJ27SPS2C2QY:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  AMC1080:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  AMDV10804-4b-w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  DC2W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IMP722S:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  IMP-723:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}:80/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IPM-743:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IPM-751W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/video.cgi?msubmenu=mjpg
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  IP2M-841B-V3:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP2M-841e:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IP2M-842B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  IP2M-842E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/video.cgi?msubmenu=mjpg
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:555/h264Preview_01_main
+    ptz: []
+    other: []
+  ip2M-843EB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IP2M-844EB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  ip2m-851:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IP2M-851EB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP2M-851EW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IP2M-852:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  ip2m-853ew:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IP396ew:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IP3M-943:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP3M-943B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor
+    - http://{user}:{pass}@{ip}:80/?action=stream
+    ptz: []
+    other: []
+  IP3M-943S:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream: []
+    ptz: []
+    other: []
+  IP3M-943W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  IP3M-952E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:555/h264Preview_01_main
+    ptz: []
+    other: []
+  IP3M-954:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP3M-954EB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP3M-954EW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/video.cgi?msubmenu=mjpg
+    stream: []
+    ptz: []
+    other: []
+  IP3M-956B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}:80/?action=stream
+    ptz: []
+    other: []
+  IP3M-956E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/cgi-bin/video.cgi?msubmenu=mjpg
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:555/h264Preview_01_main
+    ptz: []
+    other: []
+  IP3M-956EB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  IP3M-956EW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=[CHANNEL]&subtype=1
+    ptz: []
+    other: []
+  IP3M-HX2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IP4M-1024EW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP4M-1025E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP4M-1025EW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP4M-1028B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}:80/?action=stream
+    ptz: []
+    other: []
+  ip4m-1028e:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=01&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ip4m-1055em:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  ip4m-1055EW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IP4M-1098EW-AI:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  ip5m-1179ew:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IP5M-B1186E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other:
+    - mms://{user}:{pass}@{ip}:554/img/video.asf
+  IP5M-B1186EB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=01
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=main
+    ptz: []
+    other:
+    - mms://{user}:{pass}@{ip}:554/img/video.asf
+  IP5M-B1186EW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - http://{user}:{pass}@{ip}:80/?action=stream
+    ptz: []
+    other: []
+  ip5m-b1186ew-28mm:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - http://{user}:{pass}@{ip}:80/?action=stream
+    ptz: []
+    other: []
+  IP5M-D1188EW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IP5M-D1188EW-22MM:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IP5M-T1179E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}:80/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpg/video.cgi?channel=1&subtype=1
+    stream:
+    - http://{user}:{pass}@{ip}:80/?action=stream
+    ptz: []
+    other:
+    - mms://{user}:{pass}@{ip}:554/img/video.asf
+  IP5M-T1179EB-28MM:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IP5M-T1277EW-AI:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IP8M-2493EW-V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=01&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  IP8M-2496EW-V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP8M-26963EW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IP8M-2796EW-AI:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IP8M-T2669:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IP8M-T2669E-AI:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP8M-T2669EW-AI:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}:80/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP8M-VB2796EW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}:80/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IPM-22S:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  ipm2-841:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  ipm2-851:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IPM-721:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  IPM-721P:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  ipm-723:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IPM-723B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/video.cgi?msubmenu=mjpg
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}:80/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  IPM-723W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IPM-743ESJP:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IPM-751B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpg/video.cgi?channel=1&subtype=1
+    stream: []
+    ptz: []
+    other: []
+  IPM-HX1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IPM-HX1W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP5M-T1277:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  841B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IP5M-B1276EW-AI:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  IP4M-1041B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpg/video.cgi?channel=1&subtype=1
+    stream: []
+    ptz: []
+    other: []
+  POE AI:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    stream: []
+    ptz: []
+    other: []
+  ASH21:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&authbasic=[AUTH]
+    ptz: []
+    other: []
+  ip4m-1025:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IP4M-1041W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=01
+    ptz: []
+    other: []
+  IP5M-T1179EB:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP8M-2496EB-V2:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpg/video.cgi?channel=1&subtype=1
+    stream: []
+    ptz: []
+    other: []
+  IP8M-2696E-AI:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  '722':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=[CHANNEL]&subtype=1
+    ptz: []
+    other: []
+  IMP-743:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live
+    ptz: []
+    other: []
+  ip2m-846e:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live
+    ptz: []
+    other: []
+  IP2M-846EB:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live
+    ptz: []
+    other: []
+  IP-842M:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live
+    ptz: []
+    other: []
+  IPM-722S:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=[CHANNEL]&subtype=1
+    ptz: []
+    other: []
+  ipm-743es:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}:6004/axis-cgi/mjpg/video.cgi?camera=0
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live
+    ptz: []
+    other: []
+  IPM-743ES:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=1&resolution=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/cgi-bin/video.cgi?msubmenu=mjpg
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?date=1&clock=1&camera=[CHANNEL]&resolution=[WIDTH]x[HEIGHT]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=[CHANNEL]&subtype=1
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=01&subtype=01&authbasic=[AUTH]
+    ptz: []
+    other: []
+  IPM-841B:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/live
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  841BIMI:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  IMP-722S:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream: []
+    ptz: []
+    other: []
+  IP2M-841E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}/11
+    ptz: []
+    other: []
+  ip2m-842:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream: []
+    ptz: []
+    other: []
+  ip2m-844e:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream: []
+    ptz: []
+    other: []
+  IP2M-846:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream: []
+    ptz: []
+    other: []
+  IP2M-854EW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream: []
+    ptz: []
+    other: []
+  ip3-951:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream: []
+    ptz: []
+    other: []
+  ip3m-956e:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream: []
+    ptz: []
+    other: []
+  ip4m-1025e:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream: []
+    ptz: []
+    other: []
+  IPM-723:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    stream: []
+    ptz: []
+    other: []
+  ipm-723w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/video.cgi?msubmenu=mjpg
+    stream: []
+    ptz: []
+    other: []
+  IPM-751:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  1190 W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  13p:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  '180':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  '193':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  '360':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  '481':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IPM-721ES:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  722s:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  841bimi:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  841W:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=1&authbasic=[AUTH]
+    ptz: []
+    other: []
+  850E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP2M-843EB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP2M-853EW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP4M-1024E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP5M-B1186EW-28MM:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpg/video.cgi?channel=1&subtype=1
+    stream: []
+    ptz: []
+    other: []
+  IP8M-2943EW:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpg/video.cgi?channel=1&subtype=1
+    stream: []
+    ptz: []
+    other: []
+  ipm2-852:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  ipm-721w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?chn=[CHANNEL]&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IPM-722:
+    snapshot:
+    - http://{user}:{pass}@{ip}/axis-cgi/mjpg/video.cgi?camera=[CHANNEL]
+    stream: []
+    ptz: []
+    other: []
+  IP3E-956:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.cgi?msubmenu=mjpg
+    stream: []
+    ptz: []
+    other: []
+  ip3m-943w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/video.cgi?msubmenu=mjpg
+    stream: []
+    ptz: []
+    other: []
+  '7225':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  '741':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  '821':
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  AMDV7204:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    - rtsp://{user}:{pass}@{ip}:555/h264Preview_01_main
+    ptz: []
+    other: []
+  IP2-851EB:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP2M-814B:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP2M-844E_JL:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  ip2m-846b:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    - http://{user}:{pass}@{ip}:6004/axis-cgi/mjpg/video.cgi?camera=0
+    stream: []
+    ptz: []
+    other: []
+  ip2m-851ew:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  ip2m-854ew:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP2M-863EW-AI:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  ip3m-943b:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  ip4m-1041b:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  ip5m-b1186e:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP8M-2496EW-V3:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP8M-2599E:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP8M-VT2679EW-AI:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  ipm2-841w:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  ipm-841:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  5m1179:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  IP2M-841w-v3:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/snapshot.cgi?chn=0&u=[USERNAME]&p=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  1P2m-844:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  IP8M-2597EW-AI:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  IP8M-VT2779EW:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
+    ptz: []
+    other: []
+  AMC041EC14:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor
+    ptz: []
+    other: []
+  AMDH10808:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam/realmonitor?channel=[CHANNEL]&subtype=1
+    ptz: []
+    other: []
+  960HP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:555/h264Preview_02_main
+    ptz: []
+    other: []
+  960HP8:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:555/h264Preview_01_main
+    ptz: []
+    other: []
+  ASH21-B:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - mms://{user}:{pass}@{ip}:554/img/video.asf
+  IP5M-B1188E:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpg/video.cgi?channel=1&subtype=1
+    stream: []
+    ptz: []
+    other:
+    - mms://{user}:{pass}@{ip}:554/img/video.asf
+  E2B:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  IP4M-1024EB:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  IP4M-1063EW-AI:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  IP5M-T1179EW-AI-V3:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpg/video.cgi?channel=1&subtype=1
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  IP8M-249EB-28MM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  IP8M-25:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/
+    ptz: []
+    other: []
+  IP4M-S2112EW-AI:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/mjpg/video.cgi?channel=1&subtype=1
+    stream: []
+    ptz: []
+    other: []
+  ASH22-W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=1&subtype=00
+    ptz: []
+    other: []
+  AMDV108116-H:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=13&subtype=00&authbasic=[AUTH]
+    - rtsp://{user}:{pass}@{ip}:554/cam/realmonitor?channel=13&subtype=01&authbasic=[AUTH]
+    ptz: []
+    other: []

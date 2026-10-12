@@ -1,1 +1,651 @@
-{}
+uniview:
+  '1234':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  '12345':
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC1112060880:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC2121RS3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC2122SR3-PF36:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC2123LR3-PF28M-F:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  IPC2124ER3-DPF40:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC2124LR3-PF40:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC2124SR3-DPF36:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/media/video3
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    - rtsp://{user}:{pass}@{ip}:554/media/video2
+    - rtsp://{user}:{pass}@{ip}:554/cam[CHANNEL]/h264
+    ptz: []
+    other: []
+  IPC2125SR3-ADUPF40:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC2222ER5-DUPF40-C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC2224SR5-DPF40-B:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC2322EBR-P:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC2324EBR-DP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC2324EBR-DPZ28:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}:554/media/video2
+    ptz: []
+    other: []
+  IPC2333:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC242ER5-DL:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC252ERA-X22:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC322LR-MLP28-RU:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC322SB:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC3232ER3-DVZ28-C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/mediavideo
+    ptz: []
+    other: []
+  IPC3235ER3-DUVZ:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC3611SR3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC3614SR3-DPF28M:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC3614SR3-DPF36:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC3615SE-ADF28KM-WL-IO:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC3615SR3-ADF28K-G:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  IPC6252SL-X33UP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC642E-X22-IN:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC-B112-PF28:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC-B114-P28:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}:85/unicast/c1/s1/live
+    ptz: []
+    other: []
+  IPC-B114-PF28:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC-B114-PF40:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  UN-IPC3611SR3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  6415SR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC2122SR3-F40W-D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}/media/video3
+    ptz: []
+    other: []
+  IPC2324LB-ADZK-G:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC3605SB-ADF16KM:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC3612ER3-PF28-B:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    ptz: []
+    other: []
+  IPC3612LR3-PF28:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video1
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  Unknown:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/unicast/c1/s1/live
+    - rtsp://{user}:{pass}@{ip}:554/unicast/c9/s0/live
+    ptz: []
+    other: []
+  IPC2122SR3-PF40:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/unicast/c1/s1/live
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC312SB-ADF28K-I0:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/unicast/c1/s1/live
+    ptz: []
+    other: []
+  IPC675LFW:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/unicast/c1/s1/live
+    ptz: []
+    other: []
+  NVR201-04LP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/unicast/c1/s1/live
+    ptz: []
+    other: []
+  NVR301-04 P4:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/unicast/c1/s1/live
+    ptz: []
+    other: []
+  IPC2122LR3-PF40-C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/unicast/c1/s1/live
+    ptz: []
+    other: []
+  IPC322LR3-VSPF28:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  IPC2122CR3-PF40-A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  IPC2224ER6-DSC40-C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    ptz: []
+    other: []
+  IPC3612ER3-PF28:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC322SR3-DVPF28-MX:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - rtsp://{user}:{pass}@{ip}:554/1
+    ptz: []
+    other: []
+  IPC2122LB-SF-40-A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/11
+    - rtsp://{user}:{pass}@{ip}:554/media/video2
+    ptz: []
+    other: []
+  DVZ28:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video3
+    ptz: []
+    other: []
+  IPC6252SL-X33-VF:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/media/video3
+    ptz: []
+    other: []
+  ip1200:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  IPC312SR-VPF28-C:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  IPC322ER3-DUVPF28-B:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  IPC322LR3-VSPF28-D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  IPC3234SR3-DVZ28:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  IPC324ER3-DVPF28:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  IPC324LR3-VSPF28-D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  IPC3612LR-MLP28-RU:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  IPC3638SR3-DPZ:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  IPC3F12P-RU3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/h264_stream
+    ptz: []
+    other: []
+  IPB4212M:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/1
+    ptz: []
+    other: []
+  IPC2324LBR3-SPZ28-D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/1
+    ptz: []
+    other: []
+  IPC2325LBR3:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/1
+    ptz: []
+    other: []
+  IPC2121SR3-PF36:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC2122LB-SF40-A:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC2122LR-MLP40-RU:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC2122SR3-UPF40-C-RU:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    - rtsp://{user}:{pass}@{ip}:554/media/video2
+    ptz: []
+    other: []
+  IPC222ER-F36:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC2321:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC2323S-IR3-F36-DT:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC232S-IR3-HF40-C-D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC314SR-DVPF28:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC322SR:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC325ER3-DUVPF28:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC3611ER3-PF28:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC3612:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC3612SR3-PF36:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC3614SR3-ADF28K-G:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  C1L-2WN:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC2122LR3-PF28M-D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC2325SB-DZK-I0:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC3612LB-ADF28K:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:85/videoMain
+    ptz: []
+    other: []
+  IPC325LR3-VSPF28-D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/media/video2
+    ptz: []
+    other: []
+  IPC6221ER-X20:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/media/video2
+    ptz: []
+    other: []
+  IPC328LE-ADF28K-G:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/media/video2
+    ptz: []
+    other: []
+  IPC2124LB-SF28KM-G:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/media/video0/
+    ptz: []
+    other: []
+  IPC-D114-PF40:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/media/video0/
+    ptz: []
+    other: []
+  IPC2124LR5-DUPF40M-F:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  IPC3614SB-ADF28KM-I0:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  IPC3618LE-ADF40K-G:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  IPC3634SB-ADZK-I0:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  IPC2122SR3-F40W:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/0
+    ptz: []
+    other: []
+  IPC322LR3-VSPF40-D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/unicast/c1/s0/live
+    ptz: []
+    other: []
+  IPC3232ER-VS:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  IPC2314LE-ADF28KM-WP:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/user=[USERNAME]_password=[PASSWORD]_channel=1_stream=0.sdp
+    ptz: []
+    other: []
+  NVR304-32E:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/unicast/c2/s1/live
+    ptz: []
+    other: []
+  PVR08H1:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?loginuse=[USERNAME]&loginpas=[PASSWORD]
+    stream: []
+    ptz: []
+    other: []
+  DPF36:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}/cam1/mpeg4
+    ptz: []
+    other: []
+  IPC3614SR3-ADPF28-F:
+    snapshot: []
+    stream: []
+    ptz: []
+    other:
+    - https://{user}:{pass}@{ip}:443/

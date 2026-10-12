@@ -1,0 +1,769 @@
+mobotix:
+  C16B:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=0
+    ptz: []
+    other: []
+  D71:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=0
+    ptz: []
+    other: []
+  M25:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/image.jpg
+    - http://{user}:{pass}@{ip}:80/cgi-bin/image.jpg?imgprof=VGA-L
+    stream:
+    - http://{user}:{pass}@{ip}:80/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=0
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    - http://{user}:{pass}@{ip}:80/cgi-bin/faststream.jpg?stream=full&fps=10.0
+    - http://{user}:{pass}@{ip}:80/control/faststream.jpg?stream=full&preview&previewsize=640x480&quality=40&fps=20.0
+    - http://{user}:{pass}@{ip}:80/control/faststream.jpg?stream=full&preview&previewsize=800x600&quality=80&fps=30.0
+    ptz: []
+    other: []
+  M12D-Sec:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    stream:
+    - http://{user}:{pass}@{ip}:80/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=0
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:20004/control/userimage.html
+  M-15D:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    - http://{user}:{pass}@{ip}/cgi-bin/image.jpg?size=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:80/cgi-bin/image.jpg?imgprof=VGA-L
+    - http://{user}:{pass}@{ip}:80/cgi-bin/image.jpg?imgprof=CIF
+    - http://{user}:{pass}@{ip}:80/cgi-bin/image.jpg?imgprof=MEGA
+    - http://{user}:{pass}@{ip}:80/cgi-bin/image.jpg?imgprof=VGA
+    - http://{user}:{pass}@{ip}:80/cgi-bin/image.jpg?imgprof=CIF-R
+    - http://{user}:{pass}@{ip}:80/cgi-bin/image.jpg?imgprof=CIF-L
+    - http://{user}:{pass}@{ip}:80/cgi-bin/image.jpg?imgprof=VGA-R
+    - http://{user}:{pass}@{ip}:8011/cgi-bin/image.jpg?imgprof=CIF-2
+    - http://{user}:{pass}@{ip}:8011/cgi-bin/image.jpg?imgprof=CIF-1
+    - http://{user}:{pass}@{ip}:8011/control/event.jpg
+    stream:
+    - http://{user}:{pass}@{ip}:80/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=0
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    - rtsp://{user}:{pass}@{ip}:554/onvif/mobotix.h264
+    ptz: []
+    other: []
+  M16:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=0
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    - http://{user}:{pass}@{ip}/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=[CHANNEL]
+    - http://{user}:{pass}@{ip}:80/control/faststream.jpg?stream=MxPEG&needlength&fps=24
+    ptz: []
+    other: []
+  M73:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=0
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  i26B-6D:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=0
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    - rtsp://{user}:{pass}@{ip}:554/onvif/mobotix.h264
+    - rtsp://{user}:{pass}@{ip}/onvif/stream3/mobotix.mjpeg
+    ptz: []
+    other: []
+  Mx-VH1A-12-IR-VA:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=0
+    ptz: []
+    other: []
+  P71:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=0
+    ptz: []
+    other: []
+  Q26B-6D:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=0
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    ptz: []
+    other: []
+  Q71:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=0
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  S74:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=0
+    ptz: []
+    other: []
+  M-15:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    - http://{user}:{pass}@{ip}/cgi-bin/image.jpg?size=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}:80/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=0
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  c25:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    ptz: []
+    other: []
+  C25 D016-AUD:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/image.jpg?size=[WIDTH]x[HEIGHT]
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  c26B-6D:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}:80/control/faststream.jpg?stream=MxPEG&preview&previewsize=1280x960&quality=70&fps=24&camera=auto
+    - rtsp://{user}:{pass}@{ip}/onvif/stream3/mobotix.mjpeg
+    ptz: []
+    other: []
+  D12:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    - http://{user}:{pass}@{ip}/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=[CHANNEL]
+    - http://{user}:{pass}@{ip}:80/cgi-bin/faststream.jpg?stream=full&fps=10
+    ptz: []
+    other: []
+  D-14:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    - http://{user}:{pass}@{ip}:80/cgi-bin/faststream.jpg?stream=full&fps=10.0
+    ptz: []
+    other: []
+  d14d:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    ptz: []
+    other: []
+  D24M:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    ptz: []
+    other: []
+  D25:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    ptz: []
+    other: []
+  DM-25M:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  DM-26:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    ptz: []
+    other: []
+  M10:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    - http://{user}:{pass}@{ip}:80/control/faststream.jpg?stream=MxPEG&needlength&fps=24
+    ptz: []
+    other: []
+  M-10:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  M12:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    - http://{user}:{pass}@{ip}:80/axis-cgi/mjpg/video.cgi?camera=1&resolution=320x240
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  M12D-SEC:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  m15d:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    ptz: []
+    other: []
+  m-24:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    ptz: []
+    other: []
+  M24:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  MX10:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    ptz: []
+    other: []
+  Mx-Q26B:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    ptz: []
+    other: []
+  Unknown:
+    snapshot:
+    - http://{user}:{pass}@{ip}/jpg/image.jpg?size=3
+    - http://{user}:{pass}@{ip}/cgi-bin/snapshot.cgi?1
+    - http://{user}:{pass}@{ip}/cgi-bin/guest/Video.cgi?media=JPEG
+    - http://{user}:{pass}@{ip}/jpeg/vga.jpg
+    - http://{user}:{pass}@{ip}/mjpeg
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}/-wvhttp-01-/GetOneShot?image_size=[WIDTH]x[HEIGHT]&frame_count=0
+  Q-24:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    - http://{user}:{pass}@{ip}/cgi-bin/image.jpg?size=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    - http://{user}:{pass}@{ip}:80/cgi-bin/faststream.jpg?stream=full&fps=10.0
+    ptz: []
+    other: []
+  Q24M:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    - http://{user}:{pass}@{ip}:80/control/faststream.jpg?stream=MxPEG&preview&previewsize=1280x960&quality=70&fps=24&camera=auto
+    - http://{user}:{pass}@{ip}:80/control/faststream.jpg?stream=MxPEG&needlength&fps=24
+    - rtsp://{user}:{pass}@{ip}:554/onvif/mobotix.h264
+    - http://{user}:{pass}@{ip}:80/control/faststream.jpg?stream=MxPEG&needlength&fps=0
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:8038/cgi-bin/guestimage.html
+  Q24m-Sec:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    ptz: []
+    other: []
+  Q24M-Sec:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}:80/control/faststream.jpg?stream=MxPEG&preview&previewsize=2048x1536&quality=100&fps=20&camera=auto
+    ptz: []
+    other: []
+  q25:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    ptz: []
+    other: []
+  S14:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  S15:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    ptz: []
+    other: []
+  S-15:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    - http://{user}:{pass}@{ip}/video.mjpg?q=30&fps=33&id=0.5
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    ptz: []
+    other: []
+  S16:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  S26:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    ptz: []
+    other: []
+  t24:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  T24M-Sec-Night:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  T25:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    - rtsp://{user}:{pass}@{ip}:554/stream0/mobotix.mjpeg
+    - rtsp://{user}:{pass}@{ip}/stream1/mobotix.mjpeg
+    ptz: []
+    other: []
+  T-25:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  V16 PLBN:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    ptz: []
+    other: []
+  V25:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=MxPEG&needlength&fps=6
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    - rtsp://{user}:{pass}@{ip}:554/stream0/mobotix.mjpeg
+    - http://{user}:{pass}@{ip}:80/control/faststream.jpg?stream=full&preview&previewsize=640x480&quality=40&fps=20.0
+    - rtsp://{user}:{pass}@{ip}/stream1/mobotix.mjpeg
+    - rtsp://{user}:{pass}@{ip}/stream1/mobotix.mxg
+    - rtsp://{user}:{pass}@{ip}/stream0/mobotix.mxg
+    ptz: []
+    other: []
+  C25:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  C25-2:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    stream: []
+    ptz: []
+    other: []
+  D-12:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  D15:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  D22:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    stream: []
+    ptz: []
+    other: []
+  D-22M:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  D-24:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  i25:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    - rtsp://{user}:{pass}@{ip}/
+    ptz: []
+    other: []
+  m12:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    - http://{user}:{pass}@{ip}/cgi-bin/image.jpg?size=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}:20001/cgi-bin/image.jpg?size=320x240
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  M-12:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  M-22:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    - http://{user}:{pass}@{ip}/cgi-bin/image.jpg?size=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/image.jpg
+    - http://{user}:{pass}@{ip}:20001/cgi-bin/image.jpg?size=320x240
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    - http://{user}:{pass}@{ip}/faststream.jpg?stream=full&fps=0
+    ptz: []
+    other: []
+  P25:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    stream: []
+    ptz: []
+    other: []
+  p25-Night:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    stream: []
+    ptz: []
+    other: []
+  Q-25:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  s-15:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    stream: []
+    ptz: []
+    other: []
+  s16:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    stream: []
+    ptz: []
+    other: []
+  T25M:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg?sync=-99
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  C26:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  D16:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    - rtsp://{user}:{pass}@{ip}:554/stream0/mobotix.mjpeg
+    ptz: []
+    other: []
+  D24:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  D24M-Night:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  I25:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  M15:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  m22d:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  M-24:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/image.jpg?size=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  M26:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  MQ24:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other:
+    - http://{user}:{pass}@{ip}:8038/cgi-bin/guestimage.html
+  p25:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  Q22:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  Q25M:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  S16b:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/image.jpg?imgprof=CIF-B
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  T-24:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/image.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    ptz: []
+    other: []
+  T26:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    stream:
+    - http://{user}:{pass}@{ip}/control/faststream.jpg?stream=full
+    - rtsp://{user}:{pass}@{ip}:554/stream/profile0
+    ptz: []
+    other: []
+  M22M:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/image.jpg?size=[WIDTH]x[HEIGHT]
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    stream: []
+    ptz: []
+    other: []
+  q25m:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/image.jpg?size=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  t25:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/image.jpg?size=[WIDTH]x[HEIGHT]
+    stream: []
+    ptz: []
+    other: []
+  C26B-D06:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=[CHANNEL]
+    ptz: []
+    other: []
+  sd1a:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}/api/mjpegvideo.cgi?InputNumber=1&StreamNumber=[CHANNEL]
+    ptz: []
+    other: []
+  d-15:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    stream: []
+    ptz: []
+    other: []
+  M1M:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    stream: []
+    ptz: []
+    other: []
+  Q-22:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    - http://{user}:{pass}@{ip}/cgi-bin/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  MX70:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    stream: []
+    ptz: []
+    other: []
+  m70:
+    snapshot:
+    - http://{user}:{pass}@{ip}/record/current.jpg
+    stream: []
+    ptz: []
+    other: []
+  D22M-Sec:
+    snapshot:
+    - http://{user}:{pass}@{ip}/cgi-bin/image.jpg
+    stream: []
+    ptz: []
+    other: []
+  M24M:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/faststream.jpg?stream=full&fps=10.0
+    ptz: []
+    other: []
+  Q26:
+    snapshot:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/image.jpg?display_mode=simple&size=3072x2048
+    - http://{user}:{pass}@{ip}:80/cgi-bin/image.jpg?display_mode=simple&size=3072x2048&textdisplay=datetime&displayfontsize=24&rotate=180
+    stream:
+    - http://{user}:{pass}@{ip}:80/cgi-bin/faststream.jpg?stream=full&fps=10.0
+    ptz: []
+    other: []
+  AG16:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream0/mobotix.mjpeg
+    ptz: []
+    other: []
+  D26:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/mobotix.h264
+    ptz: []
+    other: []
+  M26B:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/mobotix.h264
+    ptz: []
+    other: []
+  M72:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif/mobotix.h264
+    - rtsp://{user}:{pass}@{ip}:554/stream/profile0
+    ptz: []
+    other: []
+  c26B-AU-6D:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/onvif/mobotix.h264
+    ptz: []
+    other: []
+  mx574:
+    snapshot: []
+    stream:
+    - rtsp://{user}:{pass}@{ip}:554/stream/profile0
+    ptz: []
+    other: []
+  q24m-sec:
+    snapshot: []
+    stream:
+    - http://{user}:{pass}@{ip}:80/control/faststream.jpg?stream=MxPEG&preview&previewsize=2048x1536&quality=100&fps=20&camera=auto
+    ptz: []
+    other: []
