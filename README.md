@@ -112,6 +112,8 @@ Each probe reports whether it reached the device. `network_status` on the result
 
 The weak Dahua guess from open port 37777/37778 (confidence 0.40) runs only when `network_status` is `ok` or `partial`, and never overrides a stronger signal.
 
+**TCP proxy / VPN detection.** If outbound TCP is intercepted (a VPN or transparent proxy that accepts every connection), a port scan reports every port as open. `scan()` therefore first tries a TCP connect to a random high port on TEST-NET-1 (`192.0.2.1`, never routable); success means interception. In that case `result.tcp_proxied` is set, the evidence list gets `port_scan: unreliable (tcp proxy detected)`, and `open_ports` is kept for information only: no port-derived protocols and no port-37777 Dahua guess. HTTP/RTSP/SSL probes exchange real data and are unaffected. The CLI prints `Network: ok (behind TCP proxy — port data unreliable)` and marks the ports `(proxy-inflated)`. A proxy that only intercepts some destinations or ports is not detected.
+
 ---
 
 ## 1. Data sources and provenance

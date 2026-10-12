@@ -23,6 +23,8 @@ class CameraInfo(BaseModel):
     protocols: List[str] = []
     # Did we actually reach the device: ok | partial | unreachable | unknown
     network_status: str = "unknown"
+    # True when outbound TCP is intercepted (VPN/proxy): open_ports is unreliable
+    tcp_proxied: bool = False
 
     # Allow extra fields for flexibility
     model_config = ConfigDict(extra="allow")

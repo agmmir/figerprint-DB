@@ -1,5 +1,6 @@
 import asyncio
 import logging
+import random
 import re
 from typing import List, Dict, Any, Optional
 from urllib.parse import quote
@@ -53,6 +54,9 @@ class CameraScanner:
         # Deduplicate, keep order
         seen = set()
         self.common_ports = [p for p in self.common_ports if not (p in seen or seen.add(p))]
+        # Set per scan(): True when outbound TCP is intercepted (VPN/transparent
+        # proxy), which makes every TCP connect "succeed" and open_ports unreliable.
+        self._is_proxied = False
         # Load URL patterns from YAML
         self.url_patterns = self._load_url_patterns()
         # Non-standard favicon/image paths that signatures want hashed
@@ -115,6 +119,10 @@ class CameraScanner:
         logger.info(f"Scanning IP: {ip}")
         result = CameraInfo(ip=ip)
 
+        # Is outbound TCP proxied? If so, TCP-connect results are meaningless.
+        self._is_proxied = await self._is_tcp_proxied()
+        result.tcp_proxied = self._is_proxied
+
         # Step 1: Quick port check
         open_ports = await self._check_ports(ip)
         result.open_ports = open_ports
@@ -123,8 +131,13 @@ class CameraScanner:
             logger.info(f"No open ports found on {ip}")
             return result
 
-        # Determine likely protocols based on open ports
-        result.protocols = self._determine_protocols(open_ports)
+        if self._is_proxied:
+            # open_ports is kept for information only; nothing is attributed from it
+            # (no port-derived protocols, no port-37777 fallback below).
+            result.evidence.append("port_scan: unreliable (tcp proxy detected)")
+        else:
+            # Determine likely protocols based on open ports
+            result.protocols = self._determine_protocols(open_ports)
 
         # Step 2: HTTP probe
         http_info = await self._http_probe(ip)
@@ -216,6 +229,7 @@ class CameraScanner:
         # (unreachable/unknown) there is no basis for a brand and we stay honestly unknown.
         if (37777 in result.open_ports or 37778 in result.open_ports) \
                 and not result.manufacturer \
+                and not self._is_proxied \
                 and result.network_status in ("ok", "partial"):
             _dahua_port = 37777 if 37777 in result.open_ports else 37778
             result.manufacturer = "Dahua"
@@ -243,6 +257,36 @@ class CameraScanner:
 
         logger.info(f"Scan completed for {ip}: {result}")
         return result
+
+    # TEST-NET-1 (RFC 5737) is reserved for documentation and never routed, so
+    # a successful TCP connect to it means something is intercepting our TCP.
+    _PROXY_PROBE_IP = "192.0.2.1"
+
+    async def _is_tcp_proxied(self, timeout: float = 2.0) -> bool:
+        """
+        Detect an outbound TCP proxy / VPN that accepts connections on the
+        client's behalf: connect to a random high port on TEST-NET-1. Any
+        successful connect there is impossible on a clean network, so it means
+        the connection was intercepted. Failure, refusal or timeout means no proxy.
+        """
+        port = random.randint(20000, 60000)
+        try:
+            _reader, writer = await asyncio.wait_for(
+                asyncio.open_connection(self._PROXY_PROBE_IP, port),
+                timeout=timeout
+            )
+        except (asyncio.TimeoutError, OSError):
+            return False
+        except Exception as e:
+            logger.debug(f"TCP proxy detection error: {e}")
+            return False
+        try:
+            writer.close()
+            await writer.wait_closed()
+        except Exception as e:
+            logger.debug(f"TCP proxy detection: close error: {e}")
+        logger.info("Outbound TCP appears proxied (connect to TEST-NET-1 succeeded)")
+        return True
 
     async def _check_ports(self, ip: str) -> List[int]:
         """Check which common ports are open on the target IP (TCP connect only).
@@ -689,11 +733,14 @@ def format_result(info: "CameraInfo") -> str:
     dash = "\u2014"
     lines = [f"=== Scan result: {d.get('ip')} ==="]
     net = d.get("network_status") or "unknown"
-    lines.append(field("Network", net))
+    proxied = bool(d.get("tcp_proxied"))
+    net_label = net + (" (behind TCP proxy \u2014 port data unreliable)" if proxied else "")
+    lines.append(field("Network", net_label))
+    ports_text = ", ".join(map(str, d.get("open_ports") or [])) or dash
     if net == "unreachable":
         lines.append(field("Result", "could not contact device"))
-        lines.append(field("Open ports", (", ".join(map(str, d.get("open_ports") or [])) or dash)
-                           + "  (from port scan only)"))
+        lines.append(field("Open ports", ports_text
+                           + ("  (proxy-inflated)" if proxied else "  (from port scan only)")))
         return "\n".join(lines)
     lines.append(field("Manufacturer", d.get("manufacturer") or dash))
     if d.get("chipset"):
@@ -703,7 +750,7 @@ def format_result(info: "CameraInfo") -> str:
     if d.get("serial_number"):
         lines.append(field("Serial", d["serial_number"]))
     lines.append(field("Confidence", f"{d.get('confidence', 0.0):.2f}"))
-    lines.append(field("Open ports", ", ".join(map(str, d.get("open_ports") or [])) or dash))
+    lines.append(field("Open ports", ports_text + ("  (proxy-inflated)" if proxied else "")))
     lines.append(field("Protocols", ", ".join(d.get("protocols") or []) or dash))
     lines.append(field("Evidence", ", ".join(d.get("evidence") or []) or dash))
 
