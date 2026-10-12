@@ -22,7 +22,9 @@ camera_scanner/venv/bin/python -m pytest camera_scanner/tests/ -q
 # Single test
 camera_scanner/venv/bin/python -m pytest camera_scanner/tests/test_fingerprinter.py::test_hikvision_by_onvif
 
-# Scan an IP (also runnable as `python scanner.py <ip>` from inside camera_scanner/)
+# Scan an IP or ip:port (also runnable as `python scanner.py <ip>` from inside camera_scanner/).
+# ip:port => `CameraScanner(port=N)`: only that one TCP port is scanned/probed (HTTP, RTSP, URL tests);
+# ISAPI/Dahua authenticated probes (fixed default ports) are skipped.
 python -m camera_scanner.scanner <ip> --timeout 10 --semaphore 50 \
     --concurrency 10 --user <USER> --password '<PASS>' --json
 ```

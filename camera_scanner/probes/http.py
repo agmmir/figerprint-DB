@@ -31,13 +31,15 @@ def _classify_error(exc: BaseException) -> str:
     return "unknown"
 
 
-async def http_probe(ip: str, timeout: int = 10, extra_favicon_paths=None) -> Dict[str, Any]:
+async def http_probe(ip: str, timeout: int = 10, extra_favicon_paths=None,
+                     port: Optional[int] = None) -> Dict[str, Any]:
     """
     Probe HTTP/HTTPS endpoints on an IP address for camera information.
 
     Args:
         ip: Target IP address
         timeout: Request timeout in seconds
+        port: Explicit port (None = scheme default 80/443)
 
     Returns:
         Dictionary with any discovered information plus a "_status" key:
@@ -49,7 +51,8 @@ async def http_probe(ip: str, timeout: int = 10, extra_favicon_paths=None) -> Di
     schemes = ['http', 'https']
 
     for scheme in schemes:
-        url = f"{scheme}://{ip}"
+        base = f"{scheme}://{ip}" + (f":{port}" if port is not None else "")
+        url = base
         try:
             timeout_obj = aiohttp.ClientTimeout(total=timeout)
             async with aiohttp.ClientSession(timeout=timeout_obj) as session:
@@ -87,7 +90,7 @@ async def http_probe(ip: str, timeout: int = 10, extra_favicon_paths=None) -> Di
                 favicon_md5 = None
                 favicon_mmh3 = None
                 try:
-                    favicon_url = f"{scheme}://{ip}/favicon.ico"
+                    favicon_url = f"{base}/favicon.ico"
                     async with session.get(favicon_url, ssl=False) as fav_resp:
                         if fav_resp.status == 200:
                             favicon_bytes = await fav_resp.read()
@@ -109,7 +112,7 @@ async def http_probe(ip: str, timeout: int = 10, extra_favicon_paths=None) -> Di
                 favicon_md5_paths = {}
                 for extra_path in (extra_favicon_paths or []):
                     try:
-                        extra_url = f"{scheme}://{ip}{extra_path}"
+                        extra_url = f"{base}{extra_path}"
                         async with session.get(extra_url, ssl=False) as ex_resp:
                             if ex_resp.status == 200:
                                 ex_bytes = await ex_resp.read()

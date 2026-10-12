@@ -24,7 +24,8 @@ class CameraScanner:
     """
 
     def __init__(self, timeout: int = 10, semaphore_size: int = 50,
-                 user: str = "", password: str = "", url_test_concurrency: int = 10):
+                 user: str = "", password: str = "", url_test_concurrency: int = 10,
+                 port: Optional[int] = None):
         self.timeout = timeout
         self.semaphore = asyncio.Semaphore(semaphore_size)
         # Default credentials used when scan() is called without explicit ones
@@ -54,6 +55,10 @@ class CameraScanner:
         # Deduplicate, keep order
         seen = set()
         self.common_ports = [p for p in self.common_ports if not (p in seen or seen.add(p))]
+        # Explicit "ip:port" target: scan/probe exactly this one TCP port and no other.
+        self.explicit_port = port
+        if port is not None:
+            self.common_ports = [port]
         # Set per scan(): True when outbound TCP is intercepted (VPN/transparent
         # proxy), which makes every TCP connect "succeed" and open_ports unreliable.
         self._is_proxied = False
@@ -188,7 +193,9 @@ class CameraScanner:
                         result.evidence.append(_ev)
 
         # Step 5b: Authenticated device info (Hikvision ISAPI) when credentials are present
-        if user and password and result.manufacturer and result.manufacturer.lower() == 'hikvision':
+        # Explicit ip:port targets skip 5b/5c: these probes use fixed default ports.
+        if self.explicit_port is None and user and password and result.manufacturer \
+                and result.manufacturer.lower() == 'hikvision':
             try:
                 from .probes.isapi import isapi_device_info
             except ImportError:
@@ -206,7 +213,7 @@ class CameraScanner:
         # credentials are present, the device is Dahua, and no credible firmware
         # value was filled by an earlier, more-trusted stage. The version string
         # is taken verbatim from the device and never overwrites an existing one.
-        if user and password and not result.firmware_version and \
+        if self.explicit_port is None and user and password and not result.firmware_version and \
            result.manufacturer and result.manufacturer.lower() == 'dahua':
             try:
                 from .probes.dahua import dahua_firmware_version
@@ -253,7 +260,9 @@ class CameraScanner:
             url_patterns = self._get_url_patterns('generic', None)
 
         # Test each pattern and collect working URLs
-        await self._test_url_patterns(ip, url_patterns, result, user, password)
+        # For an explicit ip:port target, URLs are built as host:port so only that port is hit.
+        url_host = f"{ip}:{self.explicit_port}" if self.explicit_port is not None else ip
+        await self._test_url_patterns(url_host, url_patterns, result, user, password)
 
         logger.info(f"Scan completed for {ip}: {result}")
         return result
@@ -346,6 +355,9 @@ class CameraScanner:
             from .probes.http import http_probe
         except ImportError:
             from probes.http import http_probe
+        if self.explicit_port is not None:
+            return await http_probe(ip, self.timeout, extra_favicon_paths=self._extra_favicon_paths,
+                                    port=self.explicit_port)
         return await http_probe(ip, self.timeout, extra_favicon_paths=self._extra_favicon_paths)
 
     async def _rtsp_probe(self, ip: str) -> Dict[str, Any]:
@@ -361,7 +373,8 @@ class CameraScanner:
         # Try common RTSP ports
         rank = {"ok": 0, "empty": 1, "refused": 2, "timeout": 3, "unknown": 4}
         best_status = "unknown"
-        for port in [554, 8554, 10554]:
+        rtsp_ports = [self.explicit_port] if self.explicit_port is not None else [554, 8554, 10554]
+        for port in rtsp_ports:
             result = await rtsp_probe(ip, port, self.timeout)
             if result.get('rtsp_available'):
                 return result
@@ -409,8 +422,10 @@ class CameraScanner:
                 statuses.append(ssl_info.get('_status', 'unknown'))
                 data.update({k: v for k, v in ssl_info.items() if not k.startswith('_')})
         # Try ISAPI if we suspect Hikvision
-        if 'hikvision' in str(http_info.get('server', '')).lower() or \
-           'hikvision' in str(http_info.get('www_authenticate', '')).lower():
+        # (skipped for an explicit ip:port target: ISAPI would hit default ports)
+        if self.explicit_port is None and (
+                'hikvision' in str(http_info.get('server', '')).lower() or
+                'hikvision' in str(http_info.get('www_authenticate', '')).lower()):
             try:
                 from .probes.isapi import isapi_probe
             except ImportError:
@@ -723,6 +738,24 @@ class CameraScanner:
             return RTSP_UNREACHABLE
 
 
+def parse_target(s: str) -> tuple:
+    """Accept 'ip', 'ip:port', 'host:port'. Reject ports outside 1..65535.
+
+    Returns (host, port_or_None). A string with more than one ':' is treated as
+    IPv6 and returned unchanged.
+    """
+    if ":" in s and s.count(":") == 1:
+        host, port_s = s.rsplit(":", 1)
+        try:
+            port = int(port_s)
+            if not (host and 1 <= port <= 65535):
+                raise ValueError
+        except ValueError:
+            raise SystemExit(f"Invalid target or port in '{s}'")
+        return host, port
+    return s, None
+
+
 def format_result(info: "CameraInfo") -> str:
     """Render a CameraInfo as a readable, sectioned report for the CLI."""
     d = info.model_dump() if hasattr(info, "model_dump") else dict(info)
@@ -776,7 +809,7 @@ if __name__ == "__main__":
     import sys
 
     parser = argparse.ArgumentParser(description='Scan an IP address for IP cameras.')
-    parser.add_argument('ip', help='Target IP address to scan')
+    parser.add_argument('ip', help='Target IP address or ip:port to scan (ip:port scans only that port)')
     parser.add_argument('--timeout', type=int, default=10, help='Timeout in seconds for each probe (default: 10)')
     parser.add_argument('--semaphore', type=int, default=50, help='Max concurrent requests (default: 50)')
     parser.add_argument('--user', default='', help='Username for authenticated probes (optional)')
@@ -786,10 +819,12 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     async def main():
+        host, explicit_port = parse_target(args.ip)
         scanner = CameraScanner(timeout=args.timeout, semaphore_size=args.semaphore,
                                 user=args.user, password=args.password,
-                                url_test_concurrency=args.concurrency)
-        result = await scanner.scan(args.ip)
+                                url_test_concurrency=args.concurrency,
+                                port=explicit_port)
+        result = await scanner.scan(host)
         if args.json:
             import json
             print(json.dumps(result.model_dump(), ensure_ascii=False, indent=2, default=str))
