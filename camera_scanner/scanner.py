@@ -689,6 +689,14 @@ class CameraScanner:
             # Replace {user}/{pass} with URL-encoded credentials (empty if not provided)
             formatted = formatted.replace('{user}', quote(user or '', safe=''))
             formatted = formatted.replace('{pass}', quote(password or '', safe=''))
+            # iSpyConnect-style bracket placeholders (case-insensitive). Lambdas keep
+            # the substituted text literal (no backslash/group interpretation).
+            q_user, q_pass = quote(user or '', safe=''), quote(password or '', safe='')
+            for token, value in (('USERNAME', q_user), ('PASSWORD', q_pass),
+                                 ('CHANNEL', '1'), ('WIDTH', '640'),
+                                 ('HEIGHT', '480'), ('AUTH', '')):
+                formatted = re.sub(r'\[' + token + r'\]', lambda _m, v=value: v,
+                                   formatted, flags=re.I)
             # Collapse duplicate slashes in the path while preserving the scheme's "://"
             formatted = re.sub(r'(?<!:)//+', '/', formatted)
             return formatted
@@ -833,8 +841,10 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='Scan an IP address for IP cameras.')
     parser.add_argument('ip', nargs='?', help='Target IP address or ip:port to scan (ip:port scans only that port)')
-    parser.add_argument('--resolve', metavar='BRAND',
+    parser.add_argument('--resolve', '--resolve-manufacturer', metavar='BRAND',
                         help='Offline mode: list candidate URLs for BRAND (no scan). Use "generic" for brand-less patterns')
+    parser.add_argument('--ip', dest='ip_opt', default=None,
+                        help='Target IP for --resolve (same as the positional ip)')
     parser.add_argument('--model', default=None, help='Model for --resolve (optional)')
     parser.add_argument('--timeout', type=int, default=10, help='Timeout in seconds for each probe (default: 10)')
     parser.add_argument('--semaphore', type=int, default=50, help='Max concurrent requests (default: 50)')
@@ -845,6 +855,10 @@ if __name__ == "__main__":
                         help='Extra TCP ports to check, comma-separated (e.g. 7102,9001)')
     parser.add_argument('--json', action='store_true', help='Output raw JSON instead of the formatted report')
     args = parser.parse_args()
+    if args.ip_opt:
+        if args.ip and args.ip != args.ip_opt:
+            parser.error("give the target either as positional ip or --ip, not both")
+        args.ip = args.ip_opt
     if not args.resolve and not args.ip:
         parser.error("ip is required unless --resolve BRAND is given")
 

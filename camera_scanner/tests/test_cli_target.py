@@ -90,3 +90,28 @@ def test_cli_resolve_without_ip_and_with_ip():
 
 def test_cli_requires_ip_or_resolve():
     assert _run_cli().returncode == 2
+
+
+def test_format_url_bracket_placeholders():
+    sc = CameraScanner()
+    u = sc._format_url("http://{ip}/s.jpg?user=[USERNAME]&pwd=[password]&ch=[CHANNEL]"
+                       "&w=[WIDTH]&h=[Height]&a=[AUTH]", "1.2.3.4", "ad min", "p@\\1")
+    assert u == "http://1.2.3.4/s.jpg?user=ad%20min&pwd=p%40%5C1&ch=1&w=640&h=480&a="
+
+
+def test_resolve_urls_dlink_fully_filled():
+    urls = CameraScanner().resolve_urls(manufacturer="d-link", model="DCS-930L",
+                                        ip="1.2.3.4", user="admin", password="p")
+    text = str(urls)
+    for t in ("[USERNAME]", "[PASSWORD]", "{ip}", "{user}", "{pass}"):
+        assert t not in text
+    assert "1.2.3.4" in text
+
+
+def test_cli_resolve_accepts_ip_flag():
+    out = _run_cli("--resolve", "d-link", "--model", "DCS-930L", "--ip", "213.174.6.100",
+                   "--user", "admin", "--password", "secret")
+    assert out.returncode == 0
+    for t in ("{ip}", "{user}", "{pass}", "[USERNAME]", "[PASSWORD]"):
+        assert t not in out.stdout
+    assert "213.174.6.100" in out.stdout and "admin" in out.stdout
