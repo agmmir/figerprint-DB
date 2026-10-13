@@ -228,6 +228,39 @@ class CameraScanner:
             if fw:
                 result.firmware_version = fw
 
+        # Step 5d: Uniview model via its web RPC (unauthenticated; model only).
+        # Rides the device web port (explicit scan port when given), so unlike
+        # 5b/5c it is not gated on explicit_port. Only szDeviceName is read.
+        if not result.model and result.manufacturer \
+                and result.manufacturer.lower() == 'uniview':
+            try:
+                from .probes.uniview import uniview_device_info
+            except ImportError:
+                from probes.uniview import uniview_device_info
+            uv = await uniview_device_info(ip, self.timeout, port=self.explicit_port)
+            if uv and uv.get('model'):
+                result.model = uv['model']
+                if 'uniview:device_info' not in result.evidence:
+                    result.evidence.append('uniview:device_info')
+
+        # Step 5e: Uniview identification via its distinctive web RPC, used only
+        # when no stronger signal named a manufacturer and the device was reached.
+        # The main-cgi JSON shape is Uniview-specific; it fills manufacturer+model
+        # (model only, no credentials/user data). Runs before the weak port guess.
+        if not result.manufacturer and result.network_status in ('ok', 'partial'):
+            try:
+                from .probes.uniview import uniview_identify
+            except ImportError:
+                from probes.uniview import uniview_identify
+            uv = await uniview_identify(ip, self.timeout, port=self.explicit_port)
+            if uv:
+                result.manufacturer = uv['manufacturer']
+                if uv.get('model') and not result.model:
+                    result.model = uv['model']
+                result.confidence = max(result.confidence, 0.80)
+                if 'uniview:main-cgi' not in result.evidence:
+                    result.evidence.append('uniview:main-cgi')
+
         # NOTE: port 34567 alone is NOT sufficient to attribute the Xiongmai chipset
         # (it is a common DVRIP/Sofia port shared by many OEM firmwares). The earlier
         # "open_port:34567 -> chipset Xiongmai" heuristic was removed to avoid
